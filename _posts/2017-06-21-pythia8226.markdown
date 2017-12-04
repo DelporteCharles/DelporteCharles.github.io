@@ -1,0 +1,15 @@
+---
+layout: post
+title: pythia8226
+tags: 
+    - install
+    - pythia
+---
+
+{% highlight javascript %}
+./configure 
+--with-hepmc2-include=/usr/local/include/ --with-hepmc2-lib=/usr/local/lib/ 
+--with-root-include=/Applications/root_v6.09.02/include/ --with-root-lib=/Applications/root_v6.09.02/lib/   
+--with-python-lib=/usr/lib/  --with-python-include=/System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7/  
+--with-boost-include=/usr/local/include/ --with-boost-lib=/usr/local/lib/
+{% endhighlight %}
