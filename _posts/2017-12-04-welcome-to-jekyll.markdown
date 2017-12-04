@@ -4,7 +4,6 @@ title:  "Youhoo Welcome to Jekyll by Charles!"
 date:   2017-12-04 10:36:16 +0100
 categories: jekyll update
 ---
-
 J'écris de la littérature dans ce post, et pleins de chose inutiles ... c'est à ça que servent les tests. David, tu me reçois ?
 
 {% highlight ruby %}
