@@ -23,6 +23,8 @@ group :jekyll_plugins do
   gem "quivjek", "~> 0.0.5"
 end
 
+gem 'pygments.rb'
+
 #gem 'quivjek', '~> 0.0.5'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

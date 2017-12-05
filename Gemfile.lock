@@ -195,6 +195,7 @@ GEM
     minima (2.1.1)
       jekyll (~> 3.3)
     minitest (5.10.3)
+    multi_json (1.12.2)
     multipart-post (2.0.0)
     net-dns (0.8.0)
     nokogiri (1.8.1)
@@ -204,6 +205,8 @@ GEM
     pathutil (0.16.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
+    pygments.rb (1.2.0)
+      multi_json (>= 1.0.0)
     quivjek (0.0.7)
       front_matter_parser (= 0.1.1)
     rb-fsevent (0.10.2)
@@ -238,6 +241,7 @@ DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.6)
   minima (~> 2.0)
+  pygments.rb
   quivjek (~> 0.0.5)
   tzinfo-data
 

@@ -72,14 +72,18 @@ W- -> e nuebar : 184664.37 - 58160.867 - 125986.64 = 516.863000
 ![IMAGE](/images/q/0962E0BDDD2FEFBF2A649992E167048C.jpg)
 ## Leptons flavour
 ![IMAGE](/images/q/625D3AF43CA19979DC52B58311C7D127.jpg)
+![IMAGE](/images/q/4B2534EBC437EAB6AE060660F7662CA7.jpg)
 # Single lepton events
 ![IMAGE](/images/q/BC57C25FBF03BD4943945A58743791F8.jpg)
 ## pT of the neutrino / lepton
 ![IMAGE](/images/q/067B8674E1527574701AAE64A1B60D4E.jpg)
+![IMAGE](/images/q/7955725F12AC2F087FE70CD0407146DB.jpg)
 ## dR of the neutrino / lepton to the lepton W
 ![IMAGE](/images/q/F81DC01F4E247CD9197C1103E1B9F3A0.jpg)
+![IMAGE](/images/q/694869CFB0DAFE840AD4098ADE25A008.jpg)
 ## pT of the leptonically/hadronically decaying Ws
 ![IMAGE](/images/q/23F3C0B882266483FDCBF75EF6F248BE.jpg)
+![IMAGE](/images/q/62E823E2896934FD4A2846ACD1E3C91B.jpg)
 ## dPhi top b
 ![IMAGE](/images/q/AABEAEA42798FD03A025F4D984EE4870.jpg)
 ## nJ as a function of the hadronically decaying W
@@ -94,8 +98,23 @@ Average table :
 ![IMAGE](/images/q/8063F7F9CA18E29E4CCC02C6C9F635BF.jpg)
 ## pT of individual leptons / neutrinos
 * nu/lep in red, anu/alep in blue
-
+)
 ![IMAGE](/images/q/B296B9BF45CEE9B591480A8DA43B8820.jpg)
+![IMAGE](/images/q/6C4C54DCAA699CD49DC8189ED79637B0.jpg)
+![IMAGE](/images/q/941E06D835FADDF451E0F17AEC72B2C5.jpg)
+![IMAGE](/images/q/15604859AE09984312A8C6E8D0CEB564.jpg)
+![IMAGE](/images/q/B77738D77331FD7E93CCE6589CDB3F1D.jpg)
+--> the neutrinos are quite little collinear, and this is not correlated to pTvv
+![IMAGE](/images/q/73D25F6C3F5106D2536FC39F8D2BE698.jpg)
+![IMAGE](/images/q/4BD62ADC4B17140E5BCE7356C3FABEAA.jpg)
+![IMAGE](/images/q/F82B64E640558AC610A43CF2B830D548.jpg)
+--> When pTv<100 and pTav< 100, it does not necessarily mean that they are collinear :
+![IMAGE](/images/q/3CD5F6E44E794AA18E385D789F6FFEBC.jpg)
+![IMAGE](/images/q/98B825DA763769EFF103CB1E721D9740.jpg)
+![IMAGE](/images/q/91223B79C56CDA13FEFB3A2BA9B1194F.jpg)
+--> When neutrinos don't have sufficient pT/dR to produce MET>150, the MET-TruthMET difference is much larger (40 GeV instead of 10 GeV is one neutrino has very large pT) 
+)
+![IMAGE](/images/q/401091A9113BCFC00B560DEAC0246E5F.jpg)
 ## pT of the WW pair
 * if 0-lepton reconstructed in a dilepton truthdecay, the truthMET consists of the vector sum of the pT of the Ws
 * --> previous statement wrong, leptons accounted in the softtrk term of met
@@ -103,7 +122,9 @@ Average table :
 ## pT of the top in single/dilep events
 * single lep in red
 * dilep in blue
+)
 ![IMAGE](/images/q/21F47147C0D9BD1648384448A5D61525.jpg)
+![IMAGE](/images/q/25DFD6008713212C386CCFEC138EF10D.jpg)
 ## single lepton tau vs e/mu pT
 * taus are in blue
 ![IMAGE](/images/q/9EDCE3521C3835DDBBAD22F7CA300168.jpg)

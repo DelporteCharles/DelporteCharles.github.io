@@ -12,8 +12,8 @@ tags:
 
 | Category | Default | Trackjets |
 | ---------| ------- | --------- |
-| 2 jets   | 2.34 +- 0.03 | 1.63 +- 0.02 |
-| 3 jets   | 2.38 +- 0.03 | 1.65 +- 0.02
+| 2 jets   | 2.34 +- 0.03 | 2.38 +- 0.03 |
+| 3 jets   | 1.63 +- 0.02 | 1.65 +- 0.02
 | Combined | 2.8558  | 2.9045 |
 
 **New variables in red**
@@ -31,6 +31,8 @@ Combined sensitivity = 2.9045
 {% endhighlight %}
 
 ![IMAGE](/images/q/45F6EE0CBB0C7A7A1263BAF72FF9CD1E.jpg)
+![IMAGE](/images/q/1976041D41BA065AA07BA066AF00491A.jpg)
+![IMAGE](/images/q/7154B066EE53C39A37D3787840A5CCD5.jpg)
 {% highlight sh %}
 --- BDTCategories_tag28_Tr...: Training finished
 --- BDTCategories_tag28_Tr...: Begin ranking of input variables...
