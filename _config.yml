@@ -27,7 +27,8 @@ markdown: kramdown
 
 # theme: minima
 # theme: jekyll-theme-modernist
-theme: jekyll-theme-architect
+# theme: jekyll-theme-architect
+remote_theme: pietromenna/jekyll-architect-theme
 
 plugins:
   - jekyll-feed
