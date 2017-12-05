@@ -63,37 +63,7 @@ L89: What is the motivation to imposed a di-jet topology? Is a cut on the jet pt
 
 L93 why this choice of rho^2 mixing ungroomed and groomed, is this a theorist recommendation ? can it be justified in one sentence ? 
 L97: ref 54 refers to an introduction of PYTHIA 8.1. In the text it is just mentioned “PYTHIA” while in L98 you mention “PYTHIA 8.1”: what’s the difference? Different tune, version?
-Fig 2 caption : . This is rho^2, right ? as for Fig 3 ? error => error bar, experimental SYSTEMATICAL uncertainties
-Fig 2: On the MC/Data pad, please remove the data points which are also set at 1 and show the uncertainty as a shaded area as in Fig. 3.
-Fig2: On the data/MC pad, there are several points at exactly 1.2. They are likely out of scale. Could you adapt the y axis range?
-Fig2: In the legend, the green line corresponds to th PYTHIA 8.2 simulation. In the text, you only mention PYTHIA and additional radiation simulated with 8.1. Is it a typo in the legend?
-Fig2: ticks all around the frame are missing
-
-Fig3 : L155 tells about stat errors which are absent
-L164 « data falls somewhere in between » =>on Fig 3, this is true only for beta=0, not 1 or 2. Or is this paragraph just for beta=0 ? (given that L165 starts with « As beta increases » ?
-Fig3: It seems that there is no error shown for Pythia, Sherpa and Herwig. If it is correct, please remove the shaded area on the legend.
-Fig 3: Please remove the data points in the lower pad
-
-
-
-
-References
-
-
-L310 [48] and L329 [55] why title not italic ?
-L318 [51] CERN-PH-EP-2015-304
-L321 [52] CERN-EP-2017-038
-
-Auxiliary material
-
-
-
-
-  -the captions of plots in the auxiliary material are minimal.
-
-  -In Fig-6 what is plotted (from 10^-5 to 1) does not look like a bin number.  
-
-
+Fig 2 caption : . This is rho^2, right ? as for Fig 3 ? error)
 # Draft for final comments
 
 Thank you for this nicely written paper. Please find a few comments below :
@@ -141,4 +111,4 @@ Auxiliary material
 - In Fig-6 what is plotted (from 10^-5 to 1) does not look like a bin number (x-axis title).  
 
 
-
+)

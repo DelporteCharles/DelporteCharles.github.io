@@ -6,10 +6,7 @@ tags:
 ---
 # Single event study
 * Studying one single event hadronized 100 000 times
---> This event has mBB = 333 GeV, hence not passing the nominal VH(bb) selection ... to be replaced with another ME.
-
-## Nominal event
-
+--> This event has mBB)
 {% highlight javascript %}
 <event>                                                                                                                                  
  7   1  0.1716775E-08  0.3806288E+03  0.7546771E-02  0.1072767E+00                                                                       
@@ -31,7 +28,7 @@ tags:
 {% endhighlight %}
 
 ## Color Reverted event
-
+)
 {% highlight javascript %}
 <event>                                                                                                                                  
  7   1  0.1716775E-08  0.3806288E+03  0.7546771E-02  0.1072767E+00                                                                       
@@ -54,59 +51,22 @@ tags:
 
 ### Reminder of the selections
 - [ ] Here remind the cuts applied
-
+)
 ### Colors
 | Sample          | Color  | 
 | --------------- | ------ |
 | ppzgvvb         | Blue   |
 | ppzgvvbb_revert | Violet |
 | ppzavvbb        | Green  |
-
+)
 # Loose selection
 
 ## Leading jet
-### Jet radius = 0.4
-![dTheta1L_4.png](/images/q/dTheta1L_4.png)
-### Jet radius = 0.7
-![dTheta1L_7.png](/images/q/dTheta1L_7.png)
-### Jet radius = 1.0
-![dTheta1L_10.png](/images/q/dTheta1L_10.png)
-
-## Sub-leading jet
-### Jet radius = 0.4
-![dTheta2L_4.png](/images/q/dTheta2L_4.png)
-### Jet radius = 0.7
-![dTheta2L_7.png](/images/q/dTheta2L_7.png)
-### Jet radius = 1.0
-![dTheta2L_10.png](/images/q/dTheta2L_10.png)
-
-### Conclusion
-The larger is the jet, the sharper is the dTheta distribution
-
+### Jet radius)
 # Tight selection
 (with coarser binning)
 
 ## Leading jet
-### Jet radius = 0.4
-![dTheta1T_4.png](/images/q/dTheta1T_4.png)
-### Jet radius = 0.7
-![dTheta1T_7.png](/images/q/dTheta1T_7.png)
-### Jet radius = 1.0
-![dTheta1T_10.png](/images/q/dTheta1T_10.png)
+### Jet radius)
 
-## Sub-leading jet
-### Jet radius = 0.4
-![dTheta2T_4.png](/images/q/dTheta2T_4.png)
-### Jet radius = 0.7
-![dTheta2T_7.png](/images/q/dTheta2T_7.png)
-### Jet radius = 1.0
-![dTheta2T_10.png](/images/q/dTheta2T_10.png)
-
-### Conclusion
-- Large change in shape for the tight selection, sub-leading jet with radius 1.0
-- Missing statistics in tight selection phase space ?
-- [x] Check : what cut is removing that many events ? The only difference being the parton shower, either all events should pass, either none of them ...
-- - The mBB invariant mass was 330 GeV, hence nominal Matrix Element did not pass the cut 110 GeV < mBB < 140 GeV
-
-
-
+)

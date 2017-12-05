@@ -21,11 +21,11 @@ http://cdelport.web.cern.ch/cdelport//SMVHbb//plots_v28_5bins/index.html
 | ttbar  | 0.9          |
 | Zhf    | 1.3          |
 | Whf    | 1.22         |
-
+)
 To Do
 * [x] runBreakdown
 * [x] Understand the numbers "total unc" and "sum of sq"
-
+)
 {% highlight javascript %}
 // https://svnweb.cern.ch/trac/atlasphys-hsg5/browser/Physics/Higgs/HSG5/Limits/InputPreparation/WSMaker/trunk/macros/drawPlot_pulls.C
 
@@ -195,9 +195,7 @@ To Do
 
  Top range from -0.143718 to 0.168992
  Bottom range from -1.05481 to 1.24031
-total unc = 0.273621
-sum of sq = 0.210897
-
+total unc)
 {% highlight javascript %}
 muhat: 1.00000
 
@@ -390,9 +388,7 @@ DataStat All but normalizations
 
  Top range from -0.171923 to 0.198215
  Bottom range from -1.29734 to 1.49574
-total unc = 0.323871
-sum of sq = 0.192477
-
+total unc)
 {% highlight javascript %}
 muhat: 1.00000
 
@@ -556,10 +552,7 @@ DataStat All but normalizations
 
  Top range from -0.222435 to 0.242781
  Bottom range from -1.71471 to 1.87155
-total unc = 0.407064
-sum of sq = 0.271698
-
-
+total unc)
 {% highlight javascript %}
 muhat: 1.00000
 
@@ -723,9 +716,7 @@ DataStat All but normalizations
 
  Top range from -0.232909 to 0.254886
  Bottom range from -2.0659 to 2.26083
-total unc = 0.42682
-sum of sq = 0.217508
-
+total unc)
 {% highlight javascript %}
 muhat: 1.00000
 
@@ -782,70 +773,25 @@ DataStat All but normalizations
 ## 012-leptons
 ### Pre-fit impact
 * MVA
-![IMAGE](/images/q/IMAGE)
-[SMVHVZ_LHCP17_MVA_v05.lumi150scaled_fullRes_VHbbRun2_13TeV_lumi150scaled_012_125_Systs_use1tagFalse_mva_pulls_prefit_125.pdf](quiver-file-url/0685DBD156B907B66478911292FEC80E.pdf)
-* Cuts
-![IMAGE](/images/q/IMAGE)
-[SMVHVZ_LHCP17_MVA_v05.lumi150scaled_cuts_fullRes_VHbbRun2_13TeV_lumi150scaled_cuts_012_125_Systs_use1tagFalse_mBB_pulls_prefit_125.pdf](quiver-file-url/81C2B93D5ADEAEC83C365E814527CEA3.pdf)
-### Post-fit impact
-* MVA
-![IMAGE](/images/q/IMAGE)
-[SMVHVZ_LHCP17_MVA_v05.lumi150scaled_fullRes_VHbbRun2_13TeV_lumi150scaled_012_125_Systs_use1tagFalse_mva_pulls_125.pdf](quiver-file-url/A628DA00FE35F4917533DDAE38FEAD1B.pdf)
-* Cuts
-![IMAGE](/images/q/IMAGE)
-[SMVHVZ_LHCP17_MVA_v05.lumi150scaled_cuts_fullRes_VHbbRun2_13TeV_lumi150scaled_cuts_012_125_Systs_use1tagFalse_mBB_pulls_125.pdf](quiver-file-url/D97DAADC242BD97FC89C8CED2E4E08A2.pdf)
-
+![IMAGE](/images/q/72FA942B8C974D1BF0F3EED3628C9C73.jpg)
 ## 0-lepton
 ### Pre-fit impact
 * MVA
-![IMAGE](/images/q/IMAGE)
-[SMVHVZ_LHCP17_MVA_v05.lumi150scaled_fullRes_VHbbRun2_13TeV_lumi150scaled_0_125_Systs_use1tagFalse_mva_pulls_prefit_125.pdf](quiver-file-url/AEA6BCA183B27888B87EF96F82EC787E.pdf)
-* Cuts
-![IMAGE](/images/q/IMAGE)
-[SMVHVZ_LHCP17_MVA_v05.lumi150scaled_cuts_fullRes_VHbbRun2_13TeV_lumi150scaled_cuts_0_125_Systs_use1tagFalse_mBB_pulls_prefit_125.pdf](quiver-file-url/D9D07986EAE05CED2194FA87298DB3B1.pdf)
-### Post-fit impact
-* MVA
-![IMAGE](/images/q/IMAGE)
-[SMVHVZ_LHCP17_MVA_v05.lumi150scaled_fullRes_VHbbRun2_13TeV_lumi150scaled_0_125_Systs_use1tagFalse_mva_pulls_125.pdf](quiver-file-url/8ACB7CDD0BD1545847957B5DA3FB972E.pdf)
-* Cuts
-![IMAGE](/images/q/IMAGE)
-[SMVHVZ_LHCP17_MVA_v05.lumi150scaled_cuts_fullRes_VHbbRun2_13TeV_lumi150scaled_cuts_0_125_Systs_use1tagFalse_mBB_pulls_125.pdf](quiver-file-url/249420C4F7D13350CB68EA751995E452.pdf)
-
+![IMAGE](/images/q/0F08C6B236E599EBD16256E5C2877AC0.jpg)
 ## 1-lepton
 ### Pre-fit impact
 * MVA
-![IMAGE](/images/q/IMAGE)
-[SMVHVZ_LHCP17_MVA_v05.lumi150scaled_fullRes_VHbbRun2_13TeV_lumi150scaled_1_125_Systs_use1tagFalse_mva_pulls_prefit_125.pdf](quiver-file-url/1C43436CD33B83477CFEC81503295C19.pdf)
-* Cuts
-
-### Post-fit impact
-* MVA
-![IMAGE](/images/q/IMAGE)
-[SMVHVZ_LHCP17_MVA_v05.lumi150scaled_fullRes_VHbbRun2_13TeV_lumi150scaled_1_125_Systs_use1tagFalse_mva_pulls_125.pdf](quiver-file-url/9D5B2C26943BC3E55B494E18272C6766.pdf)
-* Cuts
-
+![IMAGE](/images/q/B0347624453C34131885C3E68B689E8D.jpg)
 ## 2-leptons
 ### Pre-fit impact
 * MVA
-![IMAGE](/images/q/IMAGE)
-[SMVHVZ_LHCP17_MVA_v05.lumi150scaled_fullRes_VHbbRun2_13TeV_lumi150scaled_2_125_Systs_use1tagFalse_mva_pulls_125.pdf](quiver-file-url/F008546E42D9133963A9288957CCCE38.pdf)
-* Cuts
-![IMAGE](/images/q/IMAGE)
-[SMVHVZ_LHCP17_MVA_v05.lumi150scaled_cuts_fullRes_VHbbRun2_13TeV_lumi150scaled_cuts_2_125_Systs_use1tagFalse_mBB_pulls_prefit_125.pdf](quiver-file-url/15752D824DD6514FBBC22BB6D7E149D2.pdf)
-### Pre-fit impact
-* MVA
-![IMAGE](/images/q/IMAGE)
-[SMVHVZ_LHCP17_MVA_v05.lumi150scaled_fullRes_VHbbRun2_13TeV_lumi150scaled_2_125_Systs_use1tagFalse_mva_pulls_125.pdf](quiver-file-url/F008546E42D9133963A9288957CCCE38.pdf)
-* Cuts
-![IMAGE](/images/q/IMAGE)
-[SMVHVZ_LHCP17_MVA_v05.lumi150scaled_cuts_fullRes_VHbbRun2_13TeV_lumi150scaled_cuts_2_125_Systs_use1tagFalse_mBB_pulls_125.pdf](quiver-file-url/0126048484377FE4359236271197E5F7.pdf)
-
+![IMAGE](/images/q/AF97D0E2F021984DCAAC736FEDE7F793.jpg)
 # Update 1 with Marumi's requests
 
 ## Ranking of NP with gamma_stat parameters
 
 ### 0-lepton Pre-fit impact
-
+)
 {% highlight javascript %}
 Rank 130:  	0.008338  	0.004487  	ATLAS_norm_Zbb_J2
 Rank 129:  	0.002708  	0.00357  	ATLAS_norm_Zbb_J3
@@ -984,11 +930,9 @@ total unc = 0.407064
 sum of sq = 0.399777
 {% endhighlight %}
 
-![IMAGE](/images/q/IMAGE)
-[SMVHVZ_LHCP17_MVA_v05.lumi150scaled_fullRes_VHbbRun2_13TeV_lumi150scaled_0_125_Systs_use1tagFalse_mva_pulls_prefit_125.pdf](quiver-file-url/A057B7D3F948768BBEF064D16868C72A.pdf)
-
+![IMAGE](/images/q/EB8BC75EC641DD75668855DAAA7F896F.jpg)
 ### 0-lepton Post-fit impact
-
+)
 {% highlight javascript %}
 Rank 130:  	2e-06  	2e-06  	alpha_SysJET_21NP_JET_EffectiveNP_8restTerm
 Rank 129:  	7e-06  	7e-06  	alpha_SysVHQCDscaleMbb
@@ -1127,13 +1071,9 @@ total unc = 0.407064
 sum of sq = 0.399777
 {% endhighlight %}
 
-![IMAGE](/images/q/IMAGE)
-[SMVHVZ_LHCP17_MVA_v05.lumi150scaled_fullRes_VHbbRun2_13TeV_lumi150scaled_0_125_Systs_use1tagFalse_mva_pulls_125.pdf](quiver-file-url/52015AF45B267023D40E55093D5FD120.pdf)
-
+![IMAGE](/images/q/CF4105FF4DF12ADE4B4F014C79E6696C.jpg)
 ## 012 Pre-fit impact
-![IMAGE](/images/q/IMAGE)
-[SMVHVZ_LHCP17_MVA_v05.lumi150scaled_fullRes_VHbbRun2_13TeV_lumi150scaled_012_125_Systs_use1tagFalse_mva_pulls_prefit_125.pdf](quiver-file-url/012A87AFCB26E26D91B5934981390B1C.pdf)
-
+![IMAGE](/images/q/D8A2119EC51AB7F09299D202EC6164D4.jpg)
 {% highlight javascript %}
 Rank 286:  	0  	0  	alpha_SysJET_21NP_JET_EffectiveNP_8restTerm
 Rank 285:  	0  	0  	alpha_SysJET_21NP_JET_EffectiveNP_6
@@ -1429,9 +1369,7 @@ sum of sq = 0.273584
 {% endhighlight %}
 
 ## 012 Post-fit impact
-![IMAGE](/images/q/IMAGE)
-[SMVHVZ_LHCP17_MVA_v05.lumi150scaled_fullRes_VHbbRun2_13TeV_lumi150scaled_012_125_Systs_use1tagFalse_mva_pulls_125.pdf](quiver-file-url/B9A0E8745A5AD44054B5D0FD9AEC1540.pdf)
-
+![IMAGE](/images/q/7771FA5D9F1A2F059D5B60E09F441ADB.jpg)
 {% highlight javascript %}
 Rank 286:  	0  	0  	alpha_SysJET_21NP_JET_EffectiveNP_8restTerm
 Rank 285:  	0  	0  	alpha_SysJET_21NP_JET_EffectiveNP_6
@@ -1743,4 +1681,4 @@ sum of sq = 0.273584
 | 1       | 3.5218                    | x                          |
 | 2       | 3.73324                   | 3.35952                    |
 | 012     | 6.38604                   | 5.19082                    |
-
+)

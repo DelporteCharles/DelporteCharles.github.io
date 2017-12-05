@@ -22,11 +22,10 @@ https://gitlab.cern.ch/CxAODFramework/CorrsAndSysts/commit/d9d3943229addca837bc4
 ## (Valerio)
 https://gitlab.cern.ch/CxAODFramework/CorrsAndSysts/commit/cdeaa63d63ca4bc5a07cd3367ace9219b85e4e8c
 https://gitlab.cern.ch/CxAODFramework/CorrsAndSysts/blame/b64aea4a3c8fcd0516e867c841216b0299131f6e/Root/CorrsAndSysts.cxx
-
+)
 # Shape comparison of the updated syst
 
-![IMAGE](/images/q/IMAGE)
-
+![IMAGE](/images/q/2FD0DC29E7FC6A050627EAAA6CD3321D.jpg)
 {% highlight sh %}
     TF1 *m_f_SysVVMbbME_WZlvqq = new TF1("mBB__WZlvqq_PS_Sherpa_fit","[0]+[7]*(x/1e3)*(x/1e3)+[1]*TMath::Exp(-(x/1e3)/[2])+[3]*((TMath::Gaus(((x/1e3)-[4])/[6])+1)/(TMath::Gaus(((x/1e3)-[5])/[6])+1))-1",25e3,500e3);
     m_f_SysVVMbbME_WZlvqq->SetParameter(0,-31.3129);
@@ -61,8 +60,7 @@ https://gitlab.cern.ch/CxAODFramework/CorrsAndSysts/blame/b64aea4a3c8fcd0516e867
     c1->SetGridy()
 {% endhighlight %}
 
-![IMAGE](/images/q/IMAGE)
-
+![IMAGE](/images/q/047952A553BC6A1A6E03AE8D5ABACA7E.jpg)
     TF1 *m_f_SysVVMbbME_ZZvvqq= new TF1("mBB__ZZqqvv_PS_Sherpa_fit","[0]+[7]*(x/1e3)*(x/1e3)+[1]*TMath::Exp(-(x/1e3)/[2])+[3]*((TMath::Gaus(((x/1e3)-[4])/[6])+1)/(TMath::Gaus(((x/1e3)-[5])/[6])+1))-1",25e3,500e3);
     m_f_SysVVMbbME_ZZvvqq->SetParameter(0,-9.82225);
     m_f_SysVVMbbME_ZZvvqq->SetParameter(1,10.7876);
@@ -88,11 +86,4 @@ https://gitlab.cern.ch/CxAODFramework/CorrsAndSysts/blame/b64aea4a3c8fcd0516e867
     m_f_SysVVMbbME_ZZvvqq_new->SetLineColor(kRed);
     m_f_SysVVMbbME_ZZvvqq_new->Draw("same")
     
-    TLegend *leg = new TLegend(0.7,0.7,0.9,0.9)
-    leg->AddEntry(m_f_SysVVMbbME_ZZvvqq, "Initial VVMbbME_ZZvvqq", "l")
-    leg->AddEntry(m_f_SysVVMbbME_ZZvvqq_new, "Updated VVMbbME_ZZvvqq", "l")
-
-    leg->Draw("same")
-    c1->SetGridx()
-    c1->SetGridy()
-
+    TLegend *leg)

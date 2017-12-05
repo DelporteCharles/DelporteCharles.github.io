@@ -13,7 +13,7 @@ tags:
 - produced with tag 26
 
 - very few events passing the nominal selection --> truthtagging wouldn't help
-
+)
 {% highlight javascript %}
 0ptag2jet_SR
     sampleName       entries      integral         error  error/integ.

@@ -7,7 +7,7 @@ tags:
 # Purpose
 
 * possible discrepancy between Rivet and TruthAOD observed https://indico.lal.in2p3.fr/event/4678/contributions/15128/attachments/12461/14706/konie25102017.pdf
-
+)
 ## Setup
 
 ### EVGEN
@@ -17,14 +17,14 @@ tags:
 ### RIVET
 
 
-
+)
 * Jets pt are exactly identical
 * met is different
   * Rivet MET (in Carlo's code) has all calo inputs (to jet building) within -5 < eta < 5 + muons wi
   * TruthDAOD NonInt MET as all stable, non-interacting particles including neutrinos
   
 https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/Run2xAODMissingET#MET_Truth_container
-
+)
 {% highlight sh %}
 RIVET jets
 

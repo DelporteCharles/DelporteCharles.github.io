@@ -14,5 +14,4 @@ mc15_13TeV.410007.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_allhad.merge.DAOD_HI
 * Contamination in the 4p jets categorie, 1 event in 3 jets 0 tag
 
 ## Cutflow
-![IMAGE](/images/q/IMAGE)
-
+![IMAGE](/images/q/360C16D4C40E1DBAD8CFA8CA5EDEAEFD.jpg)

@@ -87,29 +87,8 @@
   <li>Zbb would typically have back-to-back gluon and Z, i.e. close-by b-jets from the gluon splitting –&gt; reconnected in colour (MCNet)</li>
 </ul>
 
-<p><img src="/images/q/IMAGE" alt="IMAGE" /></p>
-
-<ul>
-  <li>
-    <p>Even more, the leading jet is likely to “steal” jets truht-constituents from the sub-leading jet, see for dR&lt;0.8, but this effect is invisible on ColourFlow21 in inclusive dR and will tend to make ColourFlow12 to peak at 0 !
-<img src="/images/q/IMAGE" alt="IMAGE" /></p>
-  </li>
-  <li>
-    <p>Inversely, typical ttbar events would have back-to-back top quarks, i.e. at first order back-to-back b-quarks –&gt; not reconnected in colour
-<img src="/images/q/colourflow_ttbar_dR.png" alt="colourflow_ttbar_dR.png" /></p>
-  </li>
-  <li>
-    <p>Same jet stealing in ttbar, but less stat at low dR</p>
-  </li>
-</ul>
-
-<p><img src="/images/q/IMAGE" alt="IMAGE" /></p>
-
-<p>Implemented in Sherpa (?)
-https://arxiv.org/pdf/hep-ph/0311085.pdf
-https://sherpa.hepforge.org/trac/wiki/SherpaPublications</p>
-
-<p>Hypothesis :</p>
+<p><img src="/images/q/86C9694EAC85A0C48C9ADB94BF99C2AA.jpg" alt="IMAGE" />
+Hypothesis :</p>
 <ul>
   <li>The leading jet steal constituents from the sub-leading jet</li>
 </ul>
@@ -119,36 +98,19 @@ https://sherpa.hepforge.org/trac/wiki/SherpaPublications</p>
   <li>Plot the distribution Sum(pT) over jets constituents from the B-hadron / B-hadron pT</li>
   <li>Sum(pT) over jets constituents from the B-hadron / B-jet pT is a bad idea, if the jet’s pt is actually falsified : leading will have enhanced pT so lower ratio, which is not intuitive</li>
   <li>No obvious evidence from the appropriate b quark / b jet constituents : maybe crossing the b quarks would show it better</li>
-  <li><img src="/images/q/IMAGE" alt="IMAGE" /></li>
-  <li>From a more direct approach, couting the number of constituents in the jet, it looks like close-by jets are exchanging constituents : these are probably not the largest pT contributions to the jet (as unseen from energy fractions) but if they are far from the jet’s center, they would have an important weight in colourflow computation</li>
-  <li><img src="/images/q/IMAGE" alt="IMAGE" />
-    <ul>
-      <li>looks like something is happening at dR &gt; 3 –&gt; related to the pseudo-rapidity maybe ?</li>
-    </ul>
-  </li>
-  <li><img src="/images/q/IMAGE" alt="IMAGE" /></li>
-  <li>Moreover, large correlation between the number of constituents and the pulVector magnitude</li>
-  <li><img src="/images/q/IMAGE" alt="IMAGE" /></li>
-  <li><img src="/images/q/IMAGE" alt="IMAGE" /></li>
-  <li>red is the leading jet, blue is subleading</li>
-  <li><img src="/images/q/IMAGE" alt="IMAGE" /></li>
-</ul>
-
-<p>2nd Hypothesis :</p>
-<ul>
+  <li><img src="/images/q/26DB0CE74FA4A25A8D68620BD283EC00.jpg" alt="IMAGE" />
+2nd Hypothesis :</li>
   <li>Without necessarily stealing constituents to the other jet, the distribution of constituents within the jet may vary, with some non-intuitive dependence on dRbb –&gt; previous hypothesis show that the subleading jet has less constituents, but is it due to the number of interacting daughters which is lower, or is there really some stealing ?</li>
   <li>Following plot shows at least that the magnitude of the pull angle is different according to dRbb, and is correlated with dTheta
-<img src="/images/q/IMAGE" alt="IMAGE" /></li>
+<img src="/images/q/FB6B747B913692838DD0008A79D078AA.jpg" alt="IMAGE" />
+    <h2 id="a-priori-final-answer-">A priori final answer :</h2>
+  </li>
+  <li>New implementation of the code
+)
+    <h3 id="stealing-number-of-constituents-depency">Stealing number of constituents depency</h3>
+    <p><img src="/images/q/872162E03A6C87138A367025C14A47ED.jpg" alt="IMAGE" /></p>
+  </li>
 </ul>
-
-<h2 id="a-priori-final-answer-">A priori final answer :</h2>
-<ul>
-  <li>New implementation of the code</li>
-</ul>
-
-<h3 id="stealing-number-of-constituents-depency">Stealing number of constituents depency</h3>
-<p><img src="/images/q/IMAGE" alt="IMAGE" />
-<img src="/images/q/IMAGE" alt="IMAGE" /></p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">root</span> <span class="o">-</span><span class="nx">l</span> <span class="nx">submitDir_ZnunuB_Pt140_280_Sherpa_Test</span><span class="o">/</span><span class="nx">hist</span><span class="o">-</span><span class="nx">user</span><span class="p">.</span><span class="nx">cdelport</span><span class="p">.</span><span class="nx">r363420e4772_Truth1_v2_EXT0</span><span class="p">.</span><span class="nx">root</span> <br data-jekyll-commonmark-ghpages="" /><span class="nx">tree</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"abs(dTheta2_4):nConstituentsIntLost2_4&gt;&gt;h"</span><span class="p">,</span><span class="s2">"passLoose_4==1&amp;&amp;dR_4&lt;0.8"</span><span class="p">,</span><span class="s2">"colz"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">h</span><span class="o">-&gt;</span><span class="nx">ProfileX</span><span class="p">(</span><span class="s2">"hh"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">hh</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">()</span><br data-jekyll-commonmark-ghpages="" /><span class="k">new</span> <span class="nx">TCanvas</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">tree</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"abs(dTheta2_4):nConstituentsIntLost2_4&gt;&gt;h2"</span><span class="p">,</span><span class="s2">"passLoose_4==1&amp;&amp;dR_4&gt;1"</span><span class="p">,</span><span class="s2">"colz"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">h2</span><span class="o">-&gt;</span><span class="nx">ProfileX</span><span class="p">(</span><span class="s2">"hh2"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">hh2</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">()</span><br data-jekyll-commonmark-ghpages="" /><span class="k">new</span> <span class="nx">TCanvas</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">tree</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"abs(dTheta2_4)"</span><span class="p">,</span><span class="s2">"passLoose_4==1&amp;&amp;dR_4&lt;0.8"</span><span class="p">,</span><span class="s2">"colz"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="k">new</span> <span class="nx">TCanvas</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">tree</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"abs(dTheta2_4)"</span><span class="p">,</span><span class="s2">"passLoose_4==1&amp;&amp;dR_4&gt;1"</span><span class="p">,</span><span class="s2">"colz"</span><span class="p">)</span></code></pre></figure>
 

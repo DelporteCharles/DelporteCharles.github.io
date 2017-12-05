@@ -90,18 +90,19 @@
 
 <h2 id="last-5-bdt-bins">Last 5 BDT bins</h2>
 <h3 id="2-jets-category">2 jets category</h3>
+<p>)</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">cd</span> <span class="o">/</span><span class="nx">sps</span><span class="o">/</span><span class="nx">atlas</span><span class="o">/</span><span class="nx">d</span><span class="o">/</span><span class="nx">delporte</span><span class="o">/</span><span class="nx">SMVHbbRun2</span><span class="o">/</span><span class="nx">CxAODFramework_tag28</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">vimdiff</span> <span class="nx">plots_v28</span><span class="o">/</span><span class="mi">2</span><span class="nx">tag2jet_150ptv_SR</span><span class="o">/</span><span class="nx">yield_2tag2jet_150ptv_SR</span><span class="p">.</span><span class="nx">txt</span>  <span class="nx">plots_last5binsYieldsTrafo2j</span><span class="o">/</span><span class="nx">yield_2tag2jet_150ptv_SR_mva28_trafo6</span><span class="p">.</span><span class="nx">txt</span></code></pre></figure>
 
-<p><img src="/images/q/IMAGE" alt="IMAGE" /></p>
-
+<p><img src="/images/q/0C6912DC8573AE4FE07B8780472D84A9.jpg" alt="IMAGE" /></p>
 <h3 id="3-jets-category">3 jets category</h3>
+<p>)</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">cd</span> <span class="o">/</span><span class="nx">sps</span><span class="o">/</span><span class="nx">atlas</span><span class="o">/</span><span class="nx">d</span><span class="o">/</span><span class="nx">delporte</span><span class="o">/</span><span class="nx">SMVHbbRun2</span><span class="o">/</span><span class="nx">CxAODFramework_tag28</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">vimdiff</span> <span class="nx">plots_v28</span><span class="o">/</span><span class="mi">2</span><span class="nx">tag3jet_150ptv_SR</span><span class="o">/</span><span class="nx">yield_2tag3jet_150ptv_SR</span><span class="p">.</span><span class="nx">txt</span>  <span class="nx">plots_last5binsYieldsTrafo3j</span><span class="o">/</span><span class="nx">yield_2tag3jet_150ptv_SR_mva28_trafo6</span><span class="p">.</span><span class="nx">txt</span></code></pre></figure>
 
-<p><img src="/images/q/IMAGE" alt="IMAGE" /></p>
-
+<p><img src="/images/q/68308B104B6DFEA0501F48DA813AFBD6.jpg" alt="IMAGE" /></p>
 <h2 id="contribution-from-each-vjet-slice">Contribution from each V+jet slice</h2>
+<p>)</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">cd</span> <span class="o">/</span><span class="nx">sps</span><span class="o">/</span><span class="nx">atlas</span><span class="o">/</span><span class="nx">d</span><span class="o">/</span><span class="nx">delporte</span><span class="o">/</span><span class="nx">SMVHbbRun2</span><span class="o">/</span><span class="nx">CxAODFramework_tag28</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">paste</span> <span class="nx">plots_v28</span><span class="o">/</span><span class="mi">2</span><span class="nx">tag2jet_150ptv_SR</span><span class="o">/</span><span class="nx">yield_2tag2jet_150ptv_SR</span><span class="p">.</span><span class="nx">txt</span> <span class="nx">sliceBreakdown</span><span class="o">/</span><span class="nx">plots_ZnunuB_v221</span><span class="o">/</span><span class="nx">yield_2tag2jet_150ptv_SR</span><span class="p">.</span><span class="nx">txt</span> <span class="o">|</span> <span class="nx">awk</span> <span class="s1">'{print "Histogram " $1 " : Entries " $7/($2+0.0001) " Yield " $8/($3+0.0001)}'</span><br data-jekyll-commonmark-ghpages="" /><span class="err">#</span> <span class="nx">to</span> <span class="nx">be</span> <span class="nx">generalised</span> <span class="nx">through</span> <span class="nx">some</span> <span class="nx">shell</span> <span class="nx">script</span></code></pre></figure>
 

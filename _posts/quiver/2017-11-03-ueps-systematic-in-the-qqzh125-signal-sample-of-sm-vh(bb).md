@@ -4,21 +4,15 @@ date: '2017-11-03'
 tags: []
 ---
 https://cds.cern.ch/record/2235887/files/ATL-COM-PHYS-2016-1747.pdf
-
+)
 50k events in
 * mc15_13TeV.345056.PowhegPythia8EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.evgen.EVNT.e5706
 * mc15_13TeV.345573.PowhegHerwig7EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.evgen.EVNT.e5971
 
 Pythia8 in red
 Herwig7 in blue
-
-![IMAGE](/images/q/IMAGE)
-![IMAGE](/images/q/IMAGE)
-
-* log
-![IMAGE](/images/q/IMAGE)
-![IMAGE](/images/q/IMAGE)
-
+)
+![IMAGE](/images/q/98EB549EFF476B5608830BB2B808D056.jpg)
 {% highlight sh %}
 TFile *_file0 = TFile::Open("PowhegPythia8EvtGen_345056/nominal.root")
 TFile *_file1 = TFile::Open("PowhegHerwig7EvtGen_345573/central.root")

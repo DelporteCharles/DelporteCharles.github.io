@@ -12,7 +12,7 @@ tags:
 https://twiki.cern.ch/twiki/bin/view/AtlasComputing/TransformConfiguration
 https://twiki.cern.ch/twiki/bin/view/AtlasProtected/TruthDAODTutorial
 https://twiki.cern.ch/twiki/bin/view/AtlasProtected/TruthDAOD
-
+)
 {% highlight javascript %}
 export EOS_MGM_URL=root://eosatlas.cern.ch
 export RUCIO_ACCOUNT=cdelport

@@ -10,7 +10,7 @@ tags:
 - ZH
 ---
 Which impact of alternative signal samples on the VH analysis ?
-
+)
 ### Cross sections
 
 | chan   | Xsec[pb]  | kFact | filtereff  | HistSvc_name   | physically_descriptive_name |
@@ -22,16 +22,16 @@ Which impact of alternative signal samples on the VH analysis ?
 | 343367 | 0.457850  | 1.00  | 4.5627E-01 | ttH125_allhad  | aMcAtNloPythia8EvtGen_A14_NNPDF23_NNPDF30ME_ttH125_allhad |
 | 342284 | 1.102     | 1.00  | 1.00       | WH125_inc      | Pythia8EvtGen_A14NNPDF23LO_WH125_inc |
 | 342285 | 0.600720  | 1.00  | 1.00       | ZH125_inc      | Pythia8EvtGen_A14NNPDF23LO_ZH125_inc |
-
+)
 ### Comments on the Cross sections
 - The cross-section * 0.58 for ZH is larger than that of the nominal sample because it is also inclusive in Z decay
 - - https://svnweb.cern.ch/trac/atlasoff/browser/Generators/MC15JobOptions/trunk/share/DSID342xxx/MC15.342285.Pythia8EvtGen_A14NNPDF23LO_ZH125_inc.py
 - - https://svnweb.cern.ch/trac/atlasoff/browser/Generators/MC15JobOptions/trunk/share/DSID345xxx/MC15.345056.PowhegPythia8EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.py
-
+)
 ### Comments on the procedure
 - ttH : merge samples
 - WH / ZH : contamination comes from other decays than H->bb
-
+)
 ### Yields
 | Sample name    | Yield 2 jets | Yield 3 jets |
 | -----------    | ------------ | ------------ |
@@ -50,7 +50,7 @@ Which impact of alternative signal samples on the VH analysis ?
 | ZH125 all flavours | 2.353835e+01 | 2.154479e+01 |
 | ZH125 bb         | 2.320183e+01 | 2.134803e+01 |
 | Nominal sample   | ~ 38         | ~ 41.7       |
-
+)
 ### Comments on the final numbers
 Histogram ttH125_dilep has 68 entries in 2jets, and 441 entries in 3jets
-
+)

@@ -12,15 +12,7 @@ tags:
 
 - [ ] Issue with parton container ordering after Parton Shower ? (fix with dR for now : label may be a good check)
 - [ ] Understand following plot
-![dRBBQuarki.png](/images/q/dRBBQuarki.png)
-![mBBQuarki.png](/images/q/mBBQuarki.png)
-* pT / Angular distance of b1 b2 smeared before PS only for ppzhvvbb (not for ppzgvvbb), but mass still 125 ...
-* Could be status 22 in Pythia, but it appears to be 23 ...
-* http://home.thep.lu.se/~torbjorn/pythia81html/ParticleProperties.html
-- [ ] Also suspicious
-![dRb1b1PSHist.png](/images/q/dRb1b1PSHist.png)
-- [ ] Herwig Parton Shower leads to much less energy spread ?
-
+![dRBBQuarki.png](/images/q/05CF499F6005B844263936DF3B5BB4A9.png)
 # Single event study
 * Studying one single event hadronized 100 000 times
 * Event selected from [aMC@NLO p p > zh, z > vl vl~, h > b b~](quiver-note-url/7055977C-8582-474F-8C5B-C178E002D558)
@@ -37,7 +29,7 @@ tags:
 | pTb2     | 96.316959  |
 
 ## Nominal Higgs event
-
+)
 {% highlight javascript %}
 <event>
  8   1  0.1076800E-05  0.4978218E+03  0.7546771E-02  0.1014349E+00
@@ -60,7 +52,7 @@ tags:
 {% endhighlight %}
 
 ## Beam color connected event
-
+)
 {% highlight javascript %}
 <event>
  7   1  0.1076800E-05  0.4978218E+03  0.7546771E-02  0.1014349E+00
@@ -82,7 +74,7 @@ tags:
 {% endhighlight %}
 
 ## Beam inverted color connected event
-
+)
 {% highlight javascript %}
 <event>
  7   1  0.1076800E-05  0.4978218E+03  0.7546771E-02  0.1014349E+00
@@ -104,89 +96,19 @@ tags:
 {% endhighlight %}
 
 ### Reminder of the selections
---> Focus on R = 0.4 jets for now (keep limited number of plots to understand !)
-
-| bool              | pass                                           |
-| ----------------- | ---------------------------------------------- |
-| pass2BJets        | exactly 2 b-jets (B-hadrons ConeExclHadF)      |
-| passJetAccept     | pT > 20 GeV, abseta < 2.5                      |
-| passMBB           | mBB in [100, 150] GeV                          |
-| passMET           | MET > 130 GeV to enhance stat. (158 GeV at ME) |
-| passdPhiBB        | dPhiBB < 140                                   |
-| passdPhiVBB       | dPhiVBB > 120                                  |
-| passmindPhiMETJet | mindPhiMETJet > 20                             |
-
-| Category | Cuts       |
-| -------- | ---------- |
-| Loose    | pass2BJets |
-| Tight    | all cuts   |
-
+--> Focus on R)
 # Cutflows
-![cutflow_4.png](/images/q/cutflow_4.png)
-* Quite large difference in efficiency with passMBB
-
+![cutflow_4.png](/images/q/73F165BEC6495C89E8A71C5217CD5D4C.png)
 # Inclusive cuts
-![cuts_4.png](/images/q/cuts_4.png)
-
+![cuts_4.png](/images/q/191E27FD4A45B5DE2566383CB0732583.png)
 # Loose selection
 ## Leading jet
-![dTheta1L_4.png](/images/q/dTheta1L_4.png)
-
-## Sub-leading jet
-![dTheta2L_4.png](/images/q/dTheta2L_4.png)
-
-## Correlations
-## ppzhvvbb
-![ppzhvvbb_dTheta12L_4.png](/images/q/ppzhvvbb_dTheta12L_4.png)
-## ppzhvvbb_herwig
-![ppzhvvbb_herwig_dTheta12L_4.png](/images/q/ppzhvvbb_herwig_dTheta12L_4.png)
-## ppzgvvbb
-![ppzgvvbb_dTheta12L_4.png](/images/q/ppzgvvbb_dTheta12L_4.png)
-## ppzgvvbb_herwig
-![ppzgvvbb_herwig_dTheta12L_4.png](/images/q/ppzgvvbb_herwig_dTheta12L_4.png)
-## ppzgvvbb_revert
-![ppzgvvbb_revert_dTheta12L_4.png](/images/q/ppzgvvbb_revert_dTheta12L_4.png)
-## ppzgvvbb_revert_herwig
-![ppzgvvbb_revert_herwig_dTheta12L_4.png](/images/q/ppzgvvbb_revert_herwig_dTheta12L_4.png)
-
-### Conclusion
-
+![dTheta1L_4.png](/images/q/849F5C74A0E11E30CF90B536ECA2FF08.png)
 # Tight selection
 ## Leading jet
-![dTheta1T_4.png](/images/q/dTheta1T_4.png)
-## Sub-leading jet
-![dTheta2T_4.png](/images/q/dTheta2T_4.png)
-
-## Correlations
-## ppzhvvbb
-![ppzhvvbb_dTheta12T_4.png](/images/q/ppzhvvbb_dTheta12T_4.png)
-## ppzhvvbb_herwig
-![ppzhvvbb_herwig_dTheta12T_4.png](/images/q/ppzhvvbb_herwig_dTheta12T_4.png)
-## ppzgvvbb
-![ppzgvvbb_dTheta12T_4.png](/images/q/ppzgvvbb_dTheta12T_4.png)
-## ppzgvvbb_herwig
-![ppzgvvbb_herwig_dTheta12T_4.png](/images/q/ppzgvvbb_herwig_dTheta12T_4.png)
-## ppzgvvbb_revert
-![ppzgvvbb_revert_dTheta12T_4.png](/images/q/ppzgvvbb_revert_dTheta12T_4.png)
-## ppzgvvbb_revert_herwig
-![ppzgvvbb_revert_herwig_dTheta12T_4.png](/images/q/ppzgvvbb_revert_herwig_dTheta12T_4.png)
-
-
-
-### Conclusion
-
+![dTheta1T_4.png](/images/q/1E256B070AC3460B1938C3FEE0D24132.png)
 # Additionnal distributions
 ## mBB
-![mBB_4.png](/images/q/mBB_4.png)
+![mBB_4.png](/images/q/10F3BCF00781AE1F3318911ED12D11EB.png)
 
-## dRBB
-![dRBB_4.png](/images/q/dRBB_4.png)
-
-## pTB1
-![pTB1_4.png](/images/q/pTB1_4.png)
-
-## pTB2
-![pTB2_4.png](/images/q/pTB2_4.png)
-
-
-
+)

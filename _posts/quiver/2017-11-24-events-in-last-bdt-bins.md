@@ -8,13 +8,13 @@ Pursue the analysis of the composition of the last BDT bins :
 [BDT composition per bin](quiver-note-url/8C9F172A-0451-4C87-BEBB-8175956C29FD)
 
 * checked how the bin stat. errors are computed : sqrt( SUM_{bins}{weight*weight} ) seems to give a perfect match
-
+)
 # ttbar
 * study already performed in some way for Valerio : (mail on 21/02/2017)
 [ttbarComposition.pdf](quiver-file-url/710DBB4A719381C66B8624BC8764B462.pdf)
-
+)
 ### 2 jets events
-
+)
 **1rst BDT bin**
 * contains only bc events
   * the 2nd b-quark generally has very low pT
@@ -22,7 +22,7 @@ Pursue the analysis of the composition of the last BDT bins :
 * single lepton decays with a truth tau, but no reconstructed tau
 * in most cases, large pT neutrino and low pT tau except for one event (row 503019)
   * in the latter case, TruthMET probably origins from the huge pT neutrino in the tau decay (small dPhi(TruthMET, tau))
-
+)
 {% highlight sh %}
 root [65] Nominal->Scan("EventWeight:mva28:mBB:MET:dRBB:pTB1:pTB2:nTaus:TruthMET:b1Flav:b2Flav:nTruthNuW:lep_pdgId:alep_pdgId:lep.Pt():lep.Eta():alep.Pt():alep.Eta():b.Pt():b.Eta():ab.Pt():ab.Eta():nu.Pt():anu.Pt():top.Pt():atop.Pt():TVector2::Phi_mpi_pi(lep.Phi()-TruthMETp4.Phi())","EventWeight*(nJ==2)*(nTags==2)*(mva28>0.634)","precision=3 colsize=3")
 ******************************************************************************************************************************************************************************
@@ -42,7 +42,7 @@ root [29] sqrt(0.405*0.405+0.326*0.326+0.316*0.316+1.05*1.05)
 
 * bTagging might help to reach a better rejection of these bc events with more performant tagging algorithms / ~tighter WP
   * 1/2 events rejected moving from 70% to 60% bJet efficieny (-->49% to 36% signal efficiency at first order)
-
+)
 {% highlight sh %}
 root [4] Nominal->Scan("EventWeight:mva28:mBB:pTB1:pTB2:b1Flav:b2Flav:MV2c10B1:MV2c10B2:MV2c10B1>0.934906:MV2c10B2>0.934906","EventWeight*(nJ==2)*(nTags==2)*(mva28>0.634)","precision=3 colsize=5")
 ****************************************************************************************************
@@ -61,7 +61,7 @@ root [4] Nominal->Scan("EventWeight:mva28:mBB:pTB1:pTB2:b1Flav:b2Flav:MV2c10B1:M
   * one dilepton event, with 40 GeV electron and a very small pT muon
 * TruthMET mostly origins from the neutrino, a few times (36475, 212842, 569282) from the tau decay product neutrino
 * Event (569282) has a very large asymetry in top-atop transverse momentum, which increases TruthMET
-
+)
 {% highlight sh %}
 root [66] Nominal->Scan("EventWeight:mva28:mBB:MET:dRBB:pTB1:pTB2:nTaus:TruthMET:b1Flav:b2Flav:nTruthNuW:lep_pdgId:alep_pdgId:lep.Pt():lep.Eta():alep.Pt():alep.Eta():b.Pt():b.Eta():ab.Pt():ab.Eta():nu.Pt():anu.Pt():top.Pt():atop.Pt():TVector2::Phi_mpi_pi(lep.Phi()-TruthMETp4.Phi())","EventWeight*(nJ==2)*(nTags==2)*(mva28>0.582&&mva28<0.634)","precision=3 colsize=3")
 ******************************************************************************************************************************************************************************
@@ -83,7 +83,7 @@ root [66] Nominal->Scan("EventWeight:mva28:mBB:MET:dRBB:pTB1:pTB2:nTaus:TruthMET
 
 * bTagging might help to reach a better rejection of these bc events with more performant tagging algorithms / ~tighter WP
   * 2/3 events rejected moving from 70% to 60% bJet efficieny (-->49% to 36% signal efficiency at first order)
-
+)
 {% highlight sh %}
 root [6] Nominal->Scan("EventWeight:mva28:mBB:pTB1:pTB2:b1Flav:b2Flav:MV2c10B1:MV2c10B2:MV2c10B1>0.934906:MV2c10B2>0.934906","EventWeight*(nJ==2)*(nTags==2)*(mva28>0.582)*(mva28<0.634)","precision=3 c****************************************************************************************************
 *    Row   * Event * mva28 *   mBB *  pTB1 *  pTB2 * b1Fla * b2Fla * MV2c1 * MV2c1 * MV2c1 * MV2c1 *
@@ -104,13 +104,12 @@ root [6] Nominal->Scan("EventWeight:mva28:mBB:pTB1:pTB2:b1Flav:b2Flav:MV2c10B1:M
 * majority of bc events
   * in half of the events, the other b is the 3rd jet is not even b labelled : one of the b is lost because of a very low transverse momentum
 * 1/3 events have a reconstructed tau
-
+)
 {% highlight sh %}
 root [70] Nominal->Scan("EventWeight:mva28:mBB:MET:dRBB:pTB1:pTB2:pTJ3:nTaus:TruthMET:b1Flav:b2Flav:j3Flav:nTruthNuW:lep_pdgId:alep_pdgId:lep.Pt():lep.Eta():alep.Pt():alep.Eta():b.Pt():b.Eta():ab.Pt():ab.Eta():nu.Pt():anu.Pt():top.Pt():atop.Pt():TVector2::Phi_mpi_pi(lep.Phi()-TruthMETp4.Phi())","EventWeight*(nJ==3)*(nTags==2)*(mva28>0.722)","precision=3 colsize=3")
 {% endhighlight %}
 
-![IMAGE](/images/q/IMAGE)
-
+![IMAGE](/images/q/AE147070C7669D4F1DB2FBE5341B3D62.jpg)
 {% highlight sh %}
 root [30] sqrt(0.263*0.263+0.223*0.223+0.505*0.505+0.596*0.596+0.386*0.386+0.449*0.449+0.444*0.444+0.207*0.207+0.286*0.286+0.324*0.324+0.264*0.264+0.292*0.292+0.344*0.344+0.378*0.378+0.306*0.306+0.492*0.492+0.409*0.409+0.312*0.312+0.565*0.565+0.332*0.332+0.453*0.453+0.311*0.311+0.351*0.351+0.585*0.585+0.376*0.376)
 (double) 1.964988
@@ -118,7 +117,7 @@ root [30] sqrt(0.263*0.263+0.223*0.223+0.505*0.505+0.596*0.596+0.386*0.386+0.449
 
 * bTagging might help to reach a better rejection of these bc events with more performant tagging algorithms / ~tighter WP
   * 14/25 events rejected moving from 70% to 60% bJet efficieny (-->49% to 36% signal efficiency at first order)
-
+)
 {% highlight sh %}
 root [7] Nominal->Scan("EventWeight:mva28:mBB:pTB1:pTB2:b1Flav:b2Flav:MV2c10B1:MV2c10B2:MV2c10B1>0.934906:MV2c10B2>0.934906","EventWeight*(nJ==3)*(nTags==2)*(mva28>0.722)","precision=3 colsize=5")
 ****************************************************************************************************
@@ -152,13 +151,13 @@ root [7] Nominal->Scan("EventWeight:mva28:mBB:pTB1:pTB2:b1Flav:b2Flav:MV2c10B1:M
 {% endhighlight %}
 
 ## single top Wt
-
+)
 ### 2 jets events
 * contains almost only bc events
 * ~half of the events have a reconstructed tau
-
+)
 **1rst BDT bin**
-
+)
 {% highlight sh %}
 root [6] Nominal->Scan("EventWeight:mva28:mBB:MET:dRBB:pTB1:pTB2:nTaus:TruthMET:b1Flav:b2Flav:nTruthNuW:lep_pdgId:alep_pdgId:lep.Pt():lep.Eta():alep.Pt():alep.Eta():b.Pt():b.Eta():ab.Pt():ab.Eta():nu.Pt():anu.Pt():top.Pt():atop.Pt():TVector2::Phi_mpi_pi(lep.Phi()-TruthMETp4.Phi())","EventWeight*(nJ==2)*(nTags==2)*(mva28>0.634)","precision=3 colsize=3")
 Error in <TTreeFormula::Compile>:  Bad numerical expression : "atop.Pt()"
@@ -181,7 +180,7 @@ root [3] sqrt(0.285*0.285+0.578*0.578+0.277*0.277+0.465*0.465+0.314*0.314)
 {% endhighlight %}
 
 **2nd BDT bin**
-
+)
 {% highlight sh %}
 root [7] Nominal->Scan("EventWeight:mva28:mBB:MET:dRBB:pTB1:pTB2:nTaus:TruthMET:b1Flav:b2Flav:nTruthNuW:lep_pdgId:alep_pdgId:lep.Pt():lep.Eta():alep.Pt():alep.Eta():b.Pt():b.Eta():ab.Pt():ab.Eta():nu.Pt():anu.Pt():top.Pt():atop.Pt():TVector2::Phi_mpi_pi(lep.Phi()-TruthMETp4.Phi())","EventWeight*(nJ==2)*(nTags==2)*(mva28>0.582&&mva28<0.634)","precision=3 colsize=3")
 Error in <TTreeFormula::Compile>:  Bad numerical expression : "atop.Pt()"
@@ -197,7 +196,7 @@ Error in <TTreeFormula::Compile>:  Bad numerical expression : "atop.Pt()"
 
 * bTagging might help to reach a better rejection of these bc events with more performant tagging algorithms / ~tighter WP
   * 6/7 events rejected moving from 70% to 60% bJet efficieny (-->49% to 36% signal efficiency at first order)
-
+)
 {% highlight sh %}
 root [1] Nominal->Scan("EventWeight:mva28:mBB:pTB1:pTB2:b1Flav:b2Flav:MV2c10B1:MV2c10B2:MV2c10B1>0.934906:MV2c10B2>0.934906","EventWeight*(nJ==2)*(nTags==2)*(mva28>0.582)","precision=3 colsize=5")
 ****************************************************************************************************
@@ -216,13 +215,12 @@ root [1] Nominal->Scan("EventWeight:mva28:mBB:pTB1:pTB2:b1Flav:b2Flav:MV2c10B1:M
 ### 3 jets events
 * majority of bb events, with 3rd jet light-labelled
 * most events have a reconstructed tau
-
+)
 {% highlight sh %}
 root [8] Nominal->Scan("EventWeight:mva28:mBB:MET:dRBB:pTB1:pTB2:pTJ3:nTaus:TruthMET:b1Flav:b2Flav:j3Flav:nTruthNuW:lep_pdgId:alep_pdgId:lep.Pt():lep.Eta():alep.Pt():alep.Eta():b.Pt():b.Eta():ab.Pt():ab.Eta():nu.Pt():anu.Pt():top.Pt():atop.Pt():TVector2::Phi_mpi_pi(lep.Phi()-TruthMETp4.Phi())","EventWeight*(nJ==3)*(nTags==2)*(mva28>0.722)","precision=3 colsize=3")
 {% endhighlight %}
 
-![IMAGE](/images/q/IMAGE)
-
+![IMAGE](/images/q/ED85D5A96806E142E9BD77BBC29CF75F.jpg)
 {% highlight sh %}
 root [4] sqrt(0.213*0.213+0.432*0.432+0.213*0.213+0.363*0.363+0.218*0.218+0.307*0.307)
 (double) 0.742229
@@ -230,7 +228,7 @@ root [4] sqrt(0.213*0.213+0.432*0.432+0.213*0.213+0.363*0.363+0.218*0.218+0.307*
 
 * bTagging might help to reach a better rejection of these bc events with more performant tagging algorithms / ~tighter WP
   * 4/6 events rejected moving from 70% to 60% bJet efficieny (-->49% to 36% signal efficiency at first order)
-
+)
 {% highlight sh %}
 ****************************************************************************************************
 *    Row   * Event * mva28 *   mBB *  pTB1 *  pTB2 * b1Fla * b2Fla * MV2c1 * MV2c1 * MV2c1 * MV2c1 *

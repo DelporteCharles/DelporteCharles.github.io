@@ -6,16 +6,16 @@ tags: []
 # Purpose
 What filtering strategy (pTV or Max(HT,pTV)) is the most interesting for 0-lepton ?
 --> A priori pTV (MET) because we trigger on MET and produce CxAODs with MET>140
-
+)
 # Yield files
 
 Major observations : Efficiency in Maker Derivations is much higher with the pTV filter
 * visible in the ratio Out/In in the pTV and MAXHtPTV filtered samples of CxAOD26
-
+)
 # ChannelNumber / Sample name
-
+)
 ## Sherpa 22
-
+)
 {% highlight javascript %}
 363364        Sherpa_NNPDF30NNLO_Zmumu_Pt0_70_CVetoBVeto
 363365        Sherpa_NNPDF30NNLO_Zmumu_Pt0_70_CFilterBVeto
@@ -116,7 +116,7 @@ Major observations : Efficiency in Maker Derivations is much higher with the pTV
 {% endhighlight %}
 
 ## Sherpa 221
-
+)
 {% highlight javascript %}
 364100        Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_CVetoBVeto
 364101        Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_CFilterBVeto
@@ -177,7 +177,7 @@ Major observations : Efficiency in Maker Derivations is much higher with the pTV
 {% endhighlight %}
 
 ## Madgraph
-
+)
 {% highlight javascript %}
 361515   7518.4             1.2283         1.0            Z_MG               mc15_13TeV.361515.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np0
 361516   1200.1             1.2283         1.0            Z_MG               mc15_13TeV.361516.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np1
@@ -234,7 +234,7 @@ Major observations : Efficiency in Maker Derivations is much higher with the pTV
 | 364153 | 8887350 | 2913958 | 8353354.671824 | MAXHTPTV280_500_BFilter |  **0.327877** |
 | 364154 | 9869000 | 4124030 | 9812913.476152 | MAXHTPTV500_1000 |  0.417877 |
 | 364155 | 100000 | 50308 | 102593.592347 | MAXHTPTV1000_E_CMS |  0.50308 |
-
+)
 ## CxAOD 28
 
 | DSID   | In      | Out | Weight | Sample | Efficiency Out/In |
@@ -253,18 +253,18 @@ Major observations : Efficiency in Maker Derivations is much higher with the pTV
 | 364153 | 8887350.0 | 2914715.0 | 8353354.67182 |  MAXHTPTV280_500_BFilter |  0.327962 |
 | 364154 | 9869000.0 | 4125521.0 | 9812913.47615 |  MAXHTPTV500_1000 |  0.418028 |
 | 364155 | 4951000.0 | 2496530.0 | 5077324.08866 |  MAXHTPTV1000_E_CMS |  0.504248 |
-
+)
 # Reader selection yields, Valerio style table
-
+)
 {% highlight javascript %}
 # awk instruction
 less plots_ZJet_CxAOD26_Sherpa22/yield_2tag2jet_150ptv_SR_clean.txt | awk 'BEGIN {totalErr2=0} {totalErr2+=$4*$4; print $0 "      " $3/1659.93*100 "        " $4*$4/3130.19} END{print "totalErr2 = " sqrt(totalErr2)}'
 {% endhighlight %}
 
 ## CxAOD 26
-
+)
 ### Sherpa 22
-
+)
 {% highlight javascript %}
 * 2 jets
 
@@ -343,9 +343,9 @@ totalStatErr = 53.8796
 {% endhighlight %}
 
 ## CxAOD 28
-
+)
 ### Sherpa 221
-
+)
 {% highlight javascript %}
 * 2 jets
 
@@ -412,7 +412,7 @@ totalStatErr = 41.3127
 {% endhighlight %}
 
 ### Madgraph
-
+)
 {% highlight javascript %}
 * 2 jets
 
@@ -443,18 +443,7 @@ totalStatErr = 89.7631
 
 # TruthMET Plots in CxAOD28 MAXHTPTV Filtered samples
 
-![IMAGE](/images/q/IMAGE)
-![IMAGE](/images/q/IMAGE)
-![IMAGE](/images/q/IMAGE)
-![IMAGE](/images/q/IMAGE)
-![IMAGE](/images/q/IMAGE)
-![IMAGE](/images/q/IMAGE)
-
-![IMAGE](/images/q/IMAGE)
-![IMAGE](/images/q/IMAGE)
-![IMAGE](/images/q/IMAGE)
-![IMAGE](/images/q/IMAGE)
-
+![IMAGE](/images/q/B7790D63691E310476B24366E7271E6D.jpg)
 {% highlight javascript %}
 THStack *hs = new THStack("hs","Stacked 2tag3jet MET");
 
@@ -509,29 +498,13 @@ leg->Draw("same")
 
 --> Purpose : Look how behaves the stat error with pTV filter if we had the same AOD stat as in CxAOD 28 :
 
-err26' = err26 \* sqrt(nEntries26) / sqrt(nEntries26*nAOD28/nAOD26)
-
-With the AOD stat of CxAODs 28 :
-
-| Slice               | Error after selection with MAXHTPtV filter | Error after selection with PtV filter |
-| ------------------- | ------------------------------------------ | ------------------------------------- |
-| BFilter pTV-70-140  |                                      10.77 |                                 6.49  |
-| BFilter pTV-140-280 |                                      16.58 |                                 8.57  |
-| BFilter pTV-280-500 |                                       5.37 |                                  1.13 |
-| Combined            |                                      20.48 |                                 10.81 |
-
-* If we had to optimize the slicing in pTV, the TruthMET distribution at CxAOD level (selection = 2jets, MET reco > 140 GeV) shows that cutting on MET truth > 90 GeV allows to keep most events. Since we apply MET reco > 150 GeV in the analysis, a slice starting with low edge MET truth > 100 GeV should still be efficient.
-
-![IMAGE](/images/q/IMAGE)
-
+err26')
 # Requests from Nicolas for the PMG presentation
 
 * Distribution of TruthMET after full selection : done for Valerio a long time ago
   * Superimpose bb, bc, cc, and bl in a stack
   
-  ![IMAGE](/images/q/IMAGE)
-  ![IMAGE](/images/q/IMAGE)
-
+  ![IMAGE](/images/q/F03D6C8B9E3E4064B9A842AC72502389.jpg)
 {% highlight javascript %}
 THStack *hs = new THStack("hs","Stacked 2tag2jet TruthMET");
 
@@ -565,8 +538,7 @@ leg->Draw("same")
 {% endhighlight %}
 
 * Get the ratio of cross sections between 70-100 to 100-140
-![IMAGE](/images/q/IMAGE)
-
+![IMAGE](/images/q/2A4B10E967194FCD5A6AF6559D493443.jpg)
 {% highlight javascript %}
 TF1 *f = new TF1("fb","[0]*TMath::Exp([1]*x)",0,500);
 f->SetParameter(0,30000) // 6000/exp(-ln(6000/1200)*70)
@@ -583,48 +555,14 @@ f->Integral(70,100)/f->Integral(70,140)
 // (double) 0.377058
 {% endhighlight %}
 
-* Compare the distribution of TruthMET with pT(Z) from TruthParticle neutrino with status = 3
-
+* Compare the distribution of TruthMET with pT(Z) from TruthParticle neutrino with status)
 {% highlight javascript %}
 CollectionTree->Draw("sqrt((TruthParticles___NominalAuxDyn.px[0]+TruthParticles___NominalAuxDyn.px[1])*(TruthParticles___NominalAuxDyn.px[0]+TruthParticles___NominalAuxDyn.px[1])+(TruthParticles___NominalAuxDyn.py[0]+TruthParticles___NominalAuxDyn.py[1])*(TruthParticles___NominalAuxDyn.py[0]+TruthParticles___NominalAuxDyn.py[1]))")
 {% endhighlight %}
 
-![IMAGE](/images/q/IMAGE)
-![IMAGE](/images/q/IMAGE)
-
-THStack *hs = new THStack("hs","Stacked 2tag2jet pTZ");
-
-Zv22_363417_2tag2jet_0ptv_SR_pTZ->RebinX(5)
-Zv22_363420_2tag2jet_0ptv_SR_pTZ->RebinX(5)
-Zv22_363423_2tag2jet_0ptv_SR_pTZ->RebinX(5)
-
-Zv22_363417_2tag2jet_0ptv_SR_pTZ->SetFillColor(kAzure+10)
-Zv22_363420_2tag2jet_0ptv_SR_pTZ->SetFillColor(kPink-9)
-Zv22_363423_2tag2jet_0ptv_SR_pTZ->SetFillColor(kSpring+10)
-
-Zv22_363417_2tag2jet_0ptv_SR_pTZ->SetMarkerColor(kAzure+10)
-Zv22_363420_2tag2jet_0ptv_SR_pTZ->SetMarkerColor(kPink-9)
-Zv22_363423_2tag2jet_0ptv_SR_pTZ->SetMarkerColor(kSpring+10)
-
-Zv22_363417_2tag2jet_0ptv_SR_pTZ->SetMarkerStyle(21)
-Zv22_363420_2tag2jet_0ptv_SR_pTZ->SetMarkerStyle(21)
-Zv22_363423_2tag2jet_0ptv_SR_pTZ->SetMarkerStyle(21)
-
-hs->Add(Zv22_363417_2tag2jet_0ptv_SR_pTZ)
-hs->Add(Zv22_363420_2tag2jet_0ptv_SR_pTZ)
-hs->Add(Zv22_363423_2tag2jet_0ptv_SR_pTZ)
-
-TLegend *leg = new TLegend(0.7,0.7,0.9,0.9)
-leg->AddEntry(Zv22_363417_2tag2jet_0ptv_SR_pTZ,"70-140","f")
-leg->AddEntry(Zv22_363420_2tag2jet_0ptv_SR_pTZ,"140-280","f")
-leg->AddEntry(Zv22_363423_2tag2jet_0ptv_SR_pTZ,"280-500","f")
-
-hs->Draw("hist")
-leg->Draw("same")
-
-![IMAGE](/images/q/IMAGE)
-![IMAGE](/images/q/IMAGE)
-
+![IMAGE](/images/q/C9EE5291CBC87973087D94C4F9909824.jpg)
+THStack *hs)
+![IMAGE](/images/q/734DEC113482243C6B1BD84AC0FA815E.jpg)
 {% highlight javascript %}
 THStack *hs = new THStack("hs","Stacked 2tag2jet pTZTruthMETratio");
 
@@ -656,25 +594,11 @@ leg->Draw("same")
 
 * **After full selection, CxAOD26 with pTZ slicing**
 
-x-axis = pTZ (from neutrinos at parton level)
-y-axis = MET reco
-
-* **70<pTV<140 GeV**
-![IMAGE](/images/q/IMAGE)
-![IMAGE](/images/q/IMAGE)
-
-* **140<pTV<280 GeV**
-![IMAGE](/images/q/IMAGE)
-![IMAGE](/images/q/IMAGE)
-
-* **280<pTV<500 GeV**
-![IMAGE](/images/q/IMAGE)
-![IMAGE](/images/q/IMAGE)
-
+x-axis)
 ### Notes from PMG
 
 * Optimal filter analysis specifics ?
 * What about non-B filtered samples ?
 * Restricted to nunu ? -> y
 
-
+)

@@ -16,18 +16,4 @@ qqZllH125 345055
 --> the trigger item “HLT_xe110_mht_L1XE50”, which is used for data periods data16D4E3 to data16F2L11 (run number >= 302872) is not filled in Tasneem’s CxAODs. This period of data represents 75% of the integrated luminosity : these events do not pass the trigger selection, hence a factor 1/4.
 
 * unweighted
-![IMAGE](/images/q/IMAGE)
-
-* weighted
-![IMAGE](/images/q/IMAGE)
-
-* Trigger MET >110
-  * 0-lepton
-    ![IMAGE](/images/q/IMAGE)
-    ![IMAGE](/images/q/IMAGE)
-  * 2-leptons
-    ![IMAGE](/images/q/IMAGE)
-    ![IMAGE](/images/q/IMAGE)
-
-
-
+![IMAGE](/images/q/F0EB527A28496DC9F00A7796835A2268.jpg)

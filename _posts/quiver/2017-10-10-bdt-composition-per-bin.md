@@ -62,7 +62,7 @@ tags:
 | 5.09475  | 29.983   | 0.930433   |
 
 Statistical errors can be recomputed bin by bin as sqrt(Sum_events(weight*weight))
-
+)
 {% highlight sh %}
 # 2 jets signal processes
 
@@ -208,7 +208,7 @@ Zbb         Wbb        stopWt      ttbar       background
 | 824  | 0.646  |
 | 862  | 0.722  |
 | 1002 | 1.002  |
-
+)
 Columns are :
 
 |             |
@@ -221,19 +221,19 @@ Columns are :
 | bin 0       |
 | ...         |
 | bin 14      |
-
+)
 # Infos
 
 * yield ratios are with respect to total sig for sig samples, to total bkg for bkg samples
 * error ratios are with respect to total sig for sig samples, to total bkg for bkg samples
 * error ratios are with respect to the square error ... e.g. err2 / sum(err2)(all samples)
-
+)
 # Results
-
+)
 * signal sample qqWH125 contributes a lot to the signal error with respect to its yield
-
+)
 ## Yields in 2 jets
-
+)
 {% highlight javascript %}
 sample   qqWlvH125  ggZvvH125  qqZvvH125  ttbar      Zbl         Zbc        Zbb        Wbl         Wbc          Wbb        stopWt
 nEntries 0.2        0.2        0.2        0.0526316  0.0526316   0.0526316  0.0526316  0.0526316   0.0526316    0.0526316  0.0526316
@@ -258,7 +258,7 @@ bin 14   0.198686   0.059854   0.735165   0.162663   0.0151694   0.0119566  0.40
 {% endhighlight %}
 
 ## Errors^2 in 2 jets
-
+)
 {% highlight javascript %}
 sample   qqWlvH125  ggZvvH125  qqZvvH125   ttbar       Zbl         Zbc         Zbb         Wbl          Wbc          Wbb         stopWt      signal err background err
 nEntries 0.2        0.2        0.2         0.0526316   0.0526316   0.0526316   0.0526316   0.0526316    0.0526316    0.0526316   0.0526316   33.541     65.3835
@@ -287,9 +287,9 @@ bin 14   0.277485   0.172148   0.548765    0.446419    0.00346662  0.00240559  0
 * We should not worry to much about Wbc because of the 0-yield in last BDT bins : it already gives 0-yield in low-BDT bins, with small stat uncertainty
 * Same conclusion for single top s and t samples : 0-yield in last BDT bins does not mean that we necessarily will have stat. issues if it truly shows 0-yield already in the low-BDT bins 
 * We should focus on qqZH if we have to increase the stat in one of the signal samples
-
+)
 ## Fraction of Errors^2 / Fraction Yield in 2 jets
-
+)
 {% highlight javascript %}
 sample   qqWlvH125 ggZvvH125 qqZvvH125  ttbar     Zbl        Zbc        Zbb       Wbl        Wbc        Wbb       stopWt 
 nEntries 1         1         1          1         1          1          1         1          1          1         1
@@ -314,7 +314,7 @@ bin_14   1.3966    2.87613   0.746451   2.74444   0.228527   0.201193   0.278096
 {% endhighlight %}
 
 ## Yields in 3 jets
-
+)
 {% highlight javascript %}
 sample   qqWlvH125  ggZvvH125  qqZvvH125  ttbar      Zbl        Zbc        Zbb        Wbl         Wbc         Wbb        stopWt
 nEntries 0.2        0.2        0.2        0.0526316  0.0526316  0.0526316  0.0526316  0.0526316   0.0526316   0.0526316  0.0526316
@@ -339,7 +339,7 @@ bin 14   0.201134   0.142127   0.650112   0.315165   0.0164638  0.0208191  0.304
 {% endhighlight %}
 
 ## Errors^2 in 3 jets
-
+)
 {% highlight javascript %}
 sample   qqWlvH125  ggZvvH125  qqZvvH125   ttbar       Zbl         Zbc         Zbb         Wbl          Wbc          Wbb        stopWt      signal err background err
 nEntries 0.2        0.2        0.2         0.0526316   0.0526316   0.0526316   0.0526316   0.0526316    0.0526316    0.0526316  0.0526316   33.541     65.3835
@@ -364,9 +364,9 @@ bin 14   0.206302   0.435577   0.356861    0.53457     0.00700684  0.00624997  0
 {% endhighlight %}
 
 * The error in the last bin of Wbl is probably due to some bad luck, looking at the previous bins where it shows very little contribution to the total stat error
-
+)
 ## Fraction of Errors^2 / Fraction Yield in 3 jets
-
+)
 {% highlight javascript %}
 
 sample   qqWlvH125 ggZvvH125 qqZvvH125  ttbar     Zbl        Zbc       Zbb       Wbl        Wbc        Wbb       stopWt
@@ -392,7 +392,7 @@ bin_14   1.02569   3.0647    0.548922   1.69616   0.425591   0.300204  0.309776 
 {% endhighlight %}
 
 # Code snippets
-
+)
 {% highlight javascript %}
 # Table for yield ratios
 
@@ -440,7 +440,7 @@ less  mva28_trafo6_2j_Err.txt  | column -t | awk 'NR>1 {sig=$1*$1+$2*$2+$3*$3+$4
 
 awk '{print $1 "   "  $2 "   " $3  "   " $24 "   " $14 "   " $12 "   " $13 "   " $18 "   "  $19 "   " $20 "   " $21}' temp.txt | column -t
 awk '{print $1 "   "  $2 "   " $3  "   " $24 "   " $14 "   " $12 "   " $13 "   " $18 "   "  $19 "   " $20 "   " $21 "   " $25 "   " $26}' temp.txt | column -t
-
+)
 {% highlight javascript %}
 # Compute effective number of MC events
 

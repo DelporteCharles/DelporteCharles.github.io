@@ -9,7 +9,7 @@ Optimise the cut based analysis, given that it is more robust than the MVA analy
 * dRRbb cut optimised in 1-lepton : https://indico.cern.ch/event/666694/contributions/2732739/attachments/1530946/2396135/VHbb_1lepton_20170927.pdf
 * * MET < 250 : dRbb < ~~1.4~~ 1.6 instead of 1.8 if MET < 200
 * * MET > 250 : dRbb < 1.2 instead of 1.2 if MET > 200
-
+)
 ## Result
 * Re-using the cuts optimised in the 1-lepton channel :
 * Direct tagging for all
@@ -21,7 +21,7 @@ Optimise the cut based analysis, given that it is more robust than the MVA analy
 | 3j 150-200/250 GeV | 0.710155                  | 0.97543                   |
 | 3j > 200/250 GeV   | 1.11866                   | 0.938928                  |
 | Combination        | 2.59739 +/- 0.0555672     | 2.61943 +/- 0.0609429     |
-
+)
 ## Proper optimisation
 * Re-optimise dRBB cut for both regions 150-200, 200ptV and 150-250,250pTV
 * Using truthtagging TTree (already available + more stat)
@@ -102,8 +102,7 @@ Optimise the cut based analysis, given that it is more robust than the MVA analy
 | Combination        | 2.787203     |                  |
 
 **--> Improvement but very large stat uncertainty (to be quantified in the next update)**
-![IMAGE](/images/q/IMAGE)
-
+![IMAGE](/images/q/950892AD432523D8467BBD2C753A9049.jpg)
 # Update : Jean-François requests
 
 --> Test a few configurations
@@ -142,9 +141,9 @@ Optimise the cut based analysis, given that it is more robust than the MVA analy
 | 3j >300    |     0.755469 |
 | Combined   |     2.613675 |
 
-
+)
 # JF plots
-
+)
 {% highlight c_cpp %}
 TH1F *hsig=new TH1F("hsig","Signal",17,30,200)
 TH1F *hbkg=new TH1F("hbkg","Background",17,30,200)
@@ -160,7 +159,7 @@ hbkg->Draw("text same")
 {% endhighlight %}
 
 # 2nd set of requests from Jean-François
-
+)
 * **150-200, dRBB < 1.8 :**
 
 | Region     | Significance |
@@ -185,4 +184,4 @@ hbkg->Draw("text same")
 
 
 **Combination : 2.617575**
-
+)

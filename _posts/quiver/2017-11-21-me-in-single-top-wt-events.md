@@ -24,12 +24,12 @@ root [1] CollectionTree->Scan("TruthParticles___NominalAuxDyn.status:TruthPartic
 {% endhighlight %}
 
 The anti-b quark -5(0) is spectator
-
+)
 The outgoing Partons are W- -24(2) and top 6 (1)
-
+)
 The top 6(1) decays to W 24(3) and b 5(4). Then, W 24(3) goes to anti-muon -13(7) and neutrino 14(8).
-
+)
 The W- -24(2) goes to s 3(5) cbar -4(6)
+)
 
-
-
+)

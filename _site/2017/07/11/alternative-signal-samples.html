@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Alternative signal samples</title>
-  <meta name="description" content="Which impact of alternative signal samples on the VH analysis ?">
+  <meta name="description" content="Which impact of alternative signal samples on the VH analysis ? ) Cross sections">
 
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="canonical" href="/2017/07/11/alternative-signal-samples.html">
@@ -80,81 +80,20 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>Which impact of alternative signal samples on the VH analysis ?</p>
-
+    <p>Which impact of alternative signal samples on the VH analysis ?
+)</p>
 <h3 id="cross-sections">Cross sections</h3>
 
-<table>
-  <thead>
-    <tr>
-      <th>chan</th>
-      <th>Xsec[pb]</th>
-      <th>kFact</th>
-      <th>filtereff</th>
-      <th>HistSvc_name</th>
-      <th>physically_descriptive_name</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>342282</td>
-      <td>30.196</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>ggH125_inc</td>
-      <td>PowhegPythia8EvtGen_CT10_AZNLOCTEQ6L1_ggH125_inc</td>
-    </tr>
-    <tr>
-      <td>342283</td>
-      <td>3.828</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>VBFH125_inc</td>
-      <td>PowhegPythia8EvtGen_CT10_AZNLOCTEQ6L1_VBFH125_inc</td>
-    </tr>
-    <tr>
-      <td>343365</td>
-      <td>0.048237</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>ttH125_dilep</td>
-      <td>aMcAtNloPythia8EvtGen_A14_NNPDF23_NNPDF30ME_ttH125_dilep</td>
-    </tr>
-    <tr>
-      <td>343366</td>
-      <td>0.458070</td>
-      <td>1.00</td>
-      <td>4.3783E-01</td>
-      <td>ttH125_semilep</td>
-      <td>aMcAtNloPythia8EvtGen_A14_NNPDF23_NNPDF30ME_ttH125_semilep</td>
-    </tr>
-    <tr>
-      <td>343367</td>
-      <td>0.457850</td>
-      <td>1.00</td>
-      <td>4.5627E-01</td>
-      <td>ttH125_allhad</td>
-      <td>aMcAtNloPythia8EvtGen_A14_NNPDF23_NNPDF30ME_ttH125_allhad</td>
-    </tr>
-    <tr>
-      <td>342284</td>
-      <td>1.102</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>WH125_inc</td>
-      <td>Pythia8EvtGen_A14NNPDF23LO_WH125_inc</td>
-    </tr>
-    <tr>
-      <td>342285</td>
-      <td>0.600720</td>
-      <td>1.00</td>
-      <td>1.00</td>
-      <td>ZH125_inc</td>
-      <td>Pythia8EvtGen_A14NNPDF23LO_ZH125_inc</td>
-    </tr>
-  </tbody>
-</table>
-
+<p>| chan   | Xsec[pb]  | kFact | filtereff  | HistSvc_name   | physically_descriptive_name |
+| ——-| ———-| —– |———– | ————– | —————————–
+| 342282 | 30.196    | 1.00  | 1.00       | ggH125_inc     | PowhegPythia8EvtGen_CT10_AZNLOCTEQ6L1_ggH125_inc |
+| 342283 | 3.828     | 1.00  | 1.00       | VBFH125_inc    | PowhegPythia8EvtGen_CT10_AZNLOCTEQ6L1_VBFH125_inc |
+| 343365 | 0.048237   | 1.00  | 1.00       | ttH125_dilep   | aMcAtNloPythia8EvtGen_A14_NNPDF23_NNPDF30ME_ttH125_dilep |
+| 343366 | 0.458070  | 1.00  | 4.3783E-01 | ttH125_semilep | aMcAtNloPythia8EvtGen_A14_NNPDF23_NNPDF30ME_ttH125_semilep |
+| 343367 | 0.457850  | 1.00  | 4.5627E-01 | ttH125_allhad  | aMcAtNloPythia8EvtGen_A14_NNPDF23_NNPDF30ME_ttH125_allhad |
+| 342284 | 1.102     | 1.00  | 1.00       | WH125_inc      | Pythia8EvtGen_A14NNPDF23LO_WH125_inc |
+| 342285 | 0.600720  | 1.00  | 1.00       | ZH125_inc      | Pythia8EvtGen_A14NNPDF23LO_ZH125_inc |
+)</p>
 <h3 id="comments-on-the-cross-sections">Comments on the Cross sections</h3>
 <ul>
   <li>The cross-section * 0.58 for ZH is larger than that of the nominal sample because it is also inclusive in Z decay</li>
@@ -165,76 +104,39 @@
   </li>
   <li>
     <ul>
-      <li>https://svnweb.cern.ch/trac/atlasoff/browser/Generators/MC15JobOptions/trunk/share/DSID345xxx/MC15.345056.PowhegPythia8EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.py</li>
+      <li>https://svnweb.cern.ch/trac/atlasoff/browser/Generators/MC15JobOptions/trunk/share/DSID345xxx/MC15.345056.PowhegPythia8EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.py
+)
+        <h3 id="comments-on-the-procedure">Comments on the procedure</h3>
+      </li>
     </ul>
   </li>
-</ul>
-
-<h3 id="comments-on-the-procedure">Comments on the procedure</h3>
-<ul>
   <li>ttH : merge samples</li>
-  <li>WH / ZH : contamination comes from other decays than H-&gt;bb</li>
-</ul>
-
-<h3 id="yields">Yields</h3>
-<p>| Sample name    | Yield 2 jets | Yield 3 jets |
+  <li>WH / ZH : contamination comes from other decays than H-&gt;bb
+)
+    <h3 id="yields">Yields</h3>
+    <p>| Sample name    | Yield 2 jets | Yield 3 jets |
 | ———–    | ———— | ———— |
 | ggH125_inc     | 0            | 0            |
 | VBFH125_inc    | 0            | 0            |
 | ttH125_allhad  | 0            | 4.454061e-03 |
 | ttH125_semilep | 3.253839e-02 | 3.376862e-01 |
 | ttH125_dilep   | 4.616329e-02 | 2.367366e-01 |</p>
+  </li>
+</ul>
 
-<table>
-  <thead>
-    <tr>
-      <th>Sample name</th>
-      <th>Yield 2 jets</th>
-      <th>Yield 3 jets</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>WH125 all flavours</td>
-      <td>1.093704e+01</td>
-      <td>9.586789e+00</td>
-    </tr>
-    <tr>
-      <td>WH125 bb</td>
-      <td>1.093704e+01</td>
-      <td>9.586789e+00</td>
-    </tr>
-    <tr>
-      <td>Nominal sample</td>
-      <td>8.77331</td>
-      <td>10.0641</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>ZH125 all flavours</td>
-      <td>2.353835e+01</td>
-      <td>2.154479e+01</td>
-    </tr>
-    <tr>
-      <td>ZH125 bb</td>
-      <td>2.320183e+01</td>
-      <td>2.134803e+01</td>
-    </tr>
-    <tr>
-      <td>Nominal sample</td>
-      <td>~ 38</td>
-      <td>~ 41.7</td>
-    </tr>
-  </tbody>
-</table>
-
+<p>| Sample name      | Yield 2 jets | Yield 3 jets |
+| —————- | ———— | ———— |
+| WH125 all flavours | 1.093704e+01 | 9.586789e+00 |
+| WH125 bb         | 1.093704e+01 | 9.586789e+00 |
+| Nominal sample   | 8.77331      | 10.0641      |
+|                  |              |              |
+| ZH125 all flavours | 2.353835e+01 | 2.154479e+01 |
+| ZH125 bb         | 2.320183e+01 | 2.134803e+01 |
+| Nominal sample   | ~ 38         | ~ 41.7       |
+)</p>
 <h3 id="comments-on-the-final-numbers">Comments on the final numbers</h3>
-<p>Histogram ttH125_dilep has 68 entries in 2jets, and 441 entries in 3jets</p>
-
+<p>Histogram ttH125_dilep has 68 entries in 2jets, and 441 entries in 3jets
+)</p>
 
   </div>
 

@@ -92,54 +92,24 @@
   </li>
   <li>
     <ul>
-      <li>MET &gt; 250 : dRbb &lt; 1.2 instead of 1.2 if MET &gt; 200</li>
+      <li>MET &gt; 250 : dRbb &lt; 1.2 instead of 1.2 if MET &gt; 200
+)
+        <h2 id="result">Result</h2>
+      </li>
     </ul>
   </li>
-</ul>
-
-<h2 id="result">Result</h2>
-<ul>
   <li>Re-using the cuts optimised in the 1-lepton channel :</li>
   <li>Direct tagging for all</li>
 </ul>
 
-<table>
-  <thead>
-    <tr>
-      <th>Region</th>
-      <th>Significance with 200 GeV</th>
-      <th>Significance with 250 GeV</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>2j 150-200/250 GeV</td>
-      <td>1.18923</td>
-      <td>1.6336</td>
-    </tr>
-    <tr>
-      <td>2j &gt; 200/250 GeV</td>
-      <td>1.89115</td>
-      <td>1.53613</td>
-    </tr>
-    <tr>
-      <td>3j 150-200/250 GeV</td>
-      <td>0.710155</td>
-      <td>0.97543</td>
-    </tr>
-    <tr>
-      <td>3j &gt; 200/250 GeV</td>
-      <td>1.11866</td>
-      <td>0.938928</td>
-    </tr>
-    <tr>
-      <td>Combination</td>
-      <td>2.59739 +/- 0.0555672</td>
-      <td>2.61943 +/- 0.0609429</td>
-    </tr>
-  </tbody>
-</table>
-
+<p>| Region             | Significance with 200 GeV | Significance with 250 GeV |
+| —————— | ————————- | ————————- |
+| 2j 150-200/250 GeV | 1.18923                   | 1.6336                    |
+| 2j &gt; 200/250 GeV   | 1.89115                   | 1.53613                   |
+| 3j 150-200/250 GeV | 0.710155                  | 0.97543                   |
+| 3j &gt; 200/250 GeV   | 1.11866                   | 0.938928                  |
+| Combination        | 2.59739 +/- 0.0555672     | 2.61943 +/- 0.0609429     |
+)</p>
 <h2 id="proper-optimisation">Proper optimisation</h2>
 <ul>
   <li>Re-optimise dRBB cut for both regions 150-200, 200ptV and 150-250,250pTV</li>
@@ -412,8 +382,7 @@
 </table>
 
 <p><strong>–&gt; Improvement but very large stat uncertainty (to be quantified in the next update)</strong>
-<img src="/images/q/IMAGE" alt="IMAGE" /></p>
-
+<img src="/images/q/950892AD432523D8467BBD2C753A9049.jpg" alt="IMAGE" /></p>
 <h1 id="update--jean-françois-requests">Update : Jean-François requests</h1>
 
 <p>–&gt; Test a few configurations
@@ -532,12 +501,14 @@
   </tbody>
 </table>
 
+<p>)</p>
 <h1 id="jf-plots">JF plots</h1>
+<p>)</p>
 
 <figure class="highlight"><pre><code class="language-c_cpp" data-lang="c_cpp">TH1F *hsig=new TH1F("hsig","Signal",17,30,200)<br data-jekyll-commonmark-ghpages="" />TH1F *hbkg=new TH1F("hbkg","Background",17,30,200)<br data-jekyll-commonmark-ghpages="" />// TFile *_file0 = TFile::Open("sigDirectTag.root")<br data-jekyll-commonmark-ghpages="" />// TFile *_file1 = TFile::Open("bkgDirectTag.root")<br data-jekyll-commonmark-ghpages="" />_file0-&gt;cd()<br data-jekyll-commonmark-ghpages="" />Nominal-&gt;Draw("mBB&gt;&gt;hsig","EventWeight*(MET&gt;300&amp;&amp;MET&lt;500&amp;&amp;nJ==2&amp;&amp;nTags==2&amp;&amp;dRBB&lt;0.9)")<br data-jekyll-commonmark-ghpages="" />_file1-&gt;cd()<br data-jekyll-commonmark-ghpages="" />Nominal-&gt;Draw("mBB&gt;&gt;hbkg","EventWeight*(MET&gt;300&amp;&amp;MET&lt;500&amp;&amp;nJ==2&amp;&amp;nTags==2&amp;&amp;dRBB&lt;0.9)")<br data-jekyll-commonmark-ghpages="" />// hsig-&gt;SetLineColor(kRed)<br data-jekyll-commonmark-ghpages="" />hsig-&gt;Draw("text")<br data-jekyll-commonmark-ghpages="" />hbkg-&gt;Draw("text same")</code></pre></figure>
 
 <h1 id="2nd-set-of-requests-from-jean-françois">2nd set of requests from Jean-François</h1>
-
+<p>)</p>
 <ul>
   <li><strong>150-200, dRBB &lt; 1.8 :</strong></li>
 </ul>
@@ -607,8 +578,8 @@
   </tbody>
 </table>
 
-<p><strong>Combination : 2.617575</strong></p>
-
+<p><strong>Combination : 2.617575</strong>
+)</p>
 
   </div>
 

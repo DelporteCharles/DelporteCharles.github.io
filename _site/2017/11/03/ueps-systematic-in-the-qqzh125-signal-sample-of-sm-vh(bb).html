@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>UEPS systematic in the qqZH125 signal sample of SM VH(bb)</title>
-  <meta name="description" content="https://cds.cern.ch/record/2235887/files/ATL-COM-PHYS-2016-1747.pdf">
+  <meta name="description" content="https://cds.cern.ch/record/2235887/files/ATL-COM-PHYS-2016-1747.pdf ) 50k events in mc15_13TeV.345056.PowhegPythia8EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT....">
 
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="canonical" href="/2017/11/03/ueps-systematic-in-the-qqzh125-signal-sample-of-sm-vh(bb).html">
@@ -80,25 +80,18 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>https://cds.cern.ch/record/2235887/files/ATL-COM-PHYS-2016-1747.pdf</p>
-
-<p>50k events in</p>
+    <p>https://cds.cern.ch/record/2235887/files/ATL-COM-PHYS-2016-1747.pdf
+)
+50k events in</p>
 <ul>
   <li>mc15_13TeV.345056.PowhegPythia8EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.evgen.EVNT.e5706</li>
   <li>mc15_13TeV.345573.PowhegHerwig7EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.evgen.EVNT.e5971</li>
 </ul>
 
 <p>Pythia8 in red
-Herwig7 in blue</p>
-
-<p><img src="/images/q/IMAGE" alt="IMAGE" />
-<img src="/images/q/IMAGE" alt="IMAGE" /></p>
-
-<ul>
-  <li>log
-<img src="/images/q/IMAGE" alt="IMAGE" />
-<img src="/images/q/IMAGE" alt="IMAGE" /></li>
-</ul>
+Herwig7 in blue
+)
+<img src="/images/q/98EB549EFF476B5608830BB2B808D056.jpg" alt="IMAGE" /></p>
 
 <figure class="highlight"><pre><code class="language-sh" data-lang="sh">TFile <span class="k">*</span>_file0 <span class="o">=</span> TFile::Open<span class="o">(</span><span class="s2">"PowhegPythia8EvtGen_345056/nominal.root"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />TFile <span class="k">*</span>_file1 <span class="o">=</span> TFile::Open<span class="o">(</span><span class="s2">"PowhegHerwig7EvtGen_345573/central.root"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />.ls<br data-jekyll-commonmark-ghpages="" />TH1F <span class="k">*</span><span class="nv">py8</span><span class="o">=(</span>TH1F<span class="k">*</span><span class="o">)</span>_file0-&gt;Get<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/Cuts3j"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" /> TH1F <span class="k">*</span><span class="nv">he7</span><span class="o">=(</span>TH1F<span class="k">*</span><span class="o">)</span>_file1-&gt;Get<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/Cuts3j"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />py8-&gt;GetBinContent<span class="o">(</span>0<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />py8-&gt;GetBinContent<span class="o">(</span>1<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />he7-&gt;GetBinContent<span class="o">(</span>1<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />py8-&gt;Scale<span class="o">(</span>he7-&gt;GetBinContent<span class="o">(</span>1<span class="o">)</span>/py8-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><br data-jekyll-commonmark-ghpages="" />py8-&gt;SetLineColor<span class="o">(</span>kRed<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />py8-&gt;Draw<span class="o">(</span><span class="s2">"text"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />he7-&gt;Draw<span class="o">(</span><span class="s2">"same text"</span><span class="o">)</span></code></pre></figure>
 

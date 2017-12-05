@@ -96,27 +96,26 @@
 
 <h2 id="valerio">(Valerio)</h2>
 <p>https://gitlab.cern.ch/CxAODFramework/CorrsAndSysts/commit/cdeaa63d63ca4bc5a07cd3367ace9219b85e4e8c
-https://gitlab.cern.ch/CxAODFramework/CorrsAndSysts/blame/b64aea4a3c8fcd0516e867c841216b0299131f6e/Root/CorrsAndSysts.cxx</p>
-
+https://gitlab.cern.ch/CxAODFramework/CorrsAndSysts/blame/b64aea4a3c8fcd0516e867c841216b0299131f6e/Root/CorrsAndSysts.cxx
+)</p>
 <h1 id="shape-comparison-of-the-updated-syst">Shape comparison of the updated syst</h1>
 
-<p><img src="/images/q/IMAGE" alt="IMAGE" /></p>
+<p><img src="/images/q/2FD0DC29E7FC6A050627EAAA6CD3321D.jpg" alt="IMAGE" /></p>
 
 <figure class="highlight"><pre><code class="language-sh" data-lang="sh">    TF1 <span class="k">*</span>m_f_SysVVMbbME_WZlvqq <span class="o">=</span> new TF1<span class="o">(</span><span class="s2">"mBB__WZlvqq_PS_Sherpa_fit"</span>,<span class="s2">"[0]+[7]*(x/1e3)*(x/1e3)+[1]*TMath::Exp(-(x/1e3)/[2])+[3]*((TMath::Gaus(((x/1e3)-[4])/[6])+1)/(TMath::Gaus(((x/1e3)-[5])/[6])+1))-1"</span>,25e3,500e3<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;SetParameter<span class="o">(</span>0,-31.3129<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;SetParameter<span class="o">(</span>1,32.2119<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;SetParameter<span class="o">(</span>2,15016.9<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;SetParameter<span class="o">(</span>3,0.210291<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;SetParameter<span class="o">(</span>4,94.0918<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;SetParameter<span class="o">(</span>5,26.2236<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;SetParameter<span class="o">(</span>6,15<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;SetParameter<span class="o">(</span>7,3.91378e-06<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    <br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;GetHistogram<span class="o">()</span>-&gt;SetTitle<span class="o">(</span><span class="s2">"SysVVMbbME_WZlvqq 2j"</span><span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    <br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;SetLineColor<span class="o">(</span>kBlue<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;Draw<span class="o">()</span><br data-jekyll-commonmark-ghpages="" />    <br data-jekyll-commonmark-ghpages="" />    TF1 <span class="k">*</span>m_f_SysVVMbbME_WZlvqq_new <span class="o">=</span> new TF1<span class="o">(</span><span class="s2">"mBB__WZlvqq_PS_Sherpa_fit_new"</span>,<span class="s2">"[0]+[1]*tanh( (x/1e3-[2])/[3] )"</span>,25e3,500e3<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq_new-&gt;SetParameter<span class="o">(</span>0,0.28196    <span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq_new-&gt;SetParameter<span class="o">(</span>1, 4.30023e-01<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq_new-&gt;SetParameter<span class="o">(</span>2,1.01083e+02<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq_new-&gt;SetParameter<span class="o">(</span>3,1.87708e+01<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq_new-&gt;SetLineColor<span class="o">(</span>kRed<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq_new-&gt;Draw<span class="o">(</span><span class="s2">"same"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />    <br data-jekyll-commonmark-ghpages="" />    TLegend <span class="k">*</span>leg <span class="o">=</span> new TLegend<span class="o">(</span>0.7,0.7,0.9,0.9<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />    leg-&gt;AddEntry<span class="o">(</span>m_f_SysVVMbbME_WZlvqq, <span class="s2">"Initial VVMbbME_WZlvqq"</span>, <span class="s2">"l"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />    leg-&gt;AddEntry<span class="o">(</span>m_f_SysVVMbbME_WZlvqq_new, <span class="s2">"Updated VVMbbME_WZlvqq"</span>, <span class="s2">"l"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />    leg-&gt;Draw<span class="o">(</span><span class="s2">"same"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />    c1-&gt;SetGridx<span class="o">()</span><br data-jekyll-commonmark-ghpages="" />    c1-&gt;SetGridy<span class="o">()</span></code></pre></figure>
 
-<p><img src="/images/q/IMAGE" alt="IMAGE" /></p>
+<p><img src="/images/q/047952A553BC6A1A6E03AE8D5ABACA7E.jpg" alt="IMAGE" />
+    TF1 <em>m_f_SysVVMbbME_ZZvvqq= new TF1(“mBB__ZZqqvv_PS_Sherpa_fit”,”[0]+[7]</em>(x/1e3)<em>(x/1e3)+[1]</em>TMath::Exp(-(x/1e3)/[2])+[3]*((TMath::Gaus(((x/1e3)-[4])/[6])+1)/(TMath::Gaus(((x/1e3)-[5])/[6])+1))-1”,25e3,500e3);
+    m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(0,-9.82225);
+    m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(1,10.7876);
+    m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(2,4292.31);
+    m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(3,0.180446);
+    m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(4,96.0217);
+    m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(5,64.1412);
+    m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(6,12.0295);
+    m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(7,5.22119e-06);</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TF1 *m_f_SysVVMbbME_ZZvvqq= new TF1("mBB__ZZqqvv_PS_Sherpa_fit","[0]+[7]*(x/1e3)*(x/1e3)+[1]*TMath::Exp(-(x/1e3)/[2])+[3]*((TMath::Gaus(((x/1e3)-[4])/[6])+1)/(TMath::Gaus(((x/1e3)-[5])/[6])+1))-1",25e3,500e3);
-m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(0,-9.82225);
-m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(1,10.7876);
-m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(2,4292.31);
-m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(3,0.180446);
-m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(4,96.0217);
-m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(5,64.1412);
-m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(6,12.0295);
-m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(7,5.22119e-06);
-
-m_f_SysVVMbbME_ZZvvqq-&gt;GetHistogram()-&gt;SetTitle("SysVVMbbME_ZZvvqq 2j");
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>m_f_SysVVMbbME_ZZvvqq-&gt;GetHistogram()-&gt;SetTitle("SysVVMbbME_ZZvvqq 2j");
 
 m_f_SysVVMbbME_ZZvvqq-&gt;SetLineColor(kBlue);
 m_f_SysVVMbbME_ZZvvqq-&gt;Draw()
@@ -131,15 +130,8 @@ m_f_SysVVMbbME_ZZvvqq_new-&gt;SetParameter(3,1.46196e+01);
 m_f_SysVVMbbME_ZZvvqq_new-&gt;SetLineColor(kRed);
 m_f_SysVVMbbME_ZZvvqq_new-&gt;Draw("same")
 
-TLegend *leg = new TLegend(0.7,0.7,0.9,0.9)
-leg-&gt;AddEntry(m_f_SysVVMbbME_ZZvvqq, "Initial VVMbbME_ZZvvqq", "l")
-leg-&gt;AddEntry(m_f_SysVVMbbME_ZZvvqq_new, "Updated VVMbbME_ZZvvqq", "l")
-
-leg-&gt;Draw("same")
-c1-&gt;SetGridx()
-c1-&gt;SetGridy()
+TLegend *leg)
 </code></pre></div></div>
-
 
   </div>
 
