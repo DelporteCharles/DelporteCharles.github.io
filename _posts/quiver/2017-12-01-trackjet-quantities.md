@@ -8,18 +8,28 @@ tags:
 # Purpose
 * look for new discriminating variables from track jets
 
+* Significance
+
+| Category | Default | Trackjets |
+| ---------| ------- | --------- |
+| 2 jets   | 2.34 +- 0.03 | 1.63 +- 0.02 |
+| 3 jets   | 2.38 +- 0.03 | 1.65 +- 0.02
+| Combined | 2.8558  | 2.9045 |
+
 **New variables in red**
-
 ![IMAGE](/images/q/84BFB608081376C5908DA07194E3A17F.jpg)
-[delporte@cca007 MVA]$ significance training_TrkJets_defaultVars/TMVA.root 
-
-RooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby 
-                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
-                All rights reserved, please read http://roofit.sourceforge.net/license.txt
-
+{% highlight c_cpp %}
 Testing training in directory : training_TrkJets_defaultVars/TMVA.root
-BDT branch BDTCategories_tag28_TrkJets_defaultVars
-Sensitivity 2j)
+Sensitivity 2j = 2.34426 +- 0.0306169
+Sensitivity 3j = 1.63096 +- 0.0185295
+Combined sensitivity = 2.8558
+
+Testing training in directory : training_TrkJets/TMVA.root
+Sensitivity 2j = 2.38815 +- 0.0344475
+Sensitivity 3j = 1.65314 +- 0.0192968
+Combined sensitivity = 2.9045
+{% endhighlight %}
+
 ![IMAGE](/images/q/45F6EE0CBB0C7A7A1263BAF72FF9CD1E.jpg)
 {% highlight sh %}
 --- BDTCategories_tag28_Tr...: Training finished
