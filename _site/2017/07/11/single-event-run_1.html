@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Single event run_1</title>
+  <meta name="description" content="To-Do list [ ] Issue with Herwig parton status ?">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2017/07/11/single-event-run_1.html">
+  <link rel="alternate" type="application/rss+xml" title="My PhD notes" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">My PhD notes</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Single event run_1</h1>
+    <p class="post-meta">
+      <time datetime="2017-07-11T00:00:00+02:00" itemprop="datePublished">
+        
+        Jul 11, 2017
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="to-do-list">To-Do list</h1>
+<ul>
+  <li>[ ] Issue with Herwig parton status ?</li>
+</ul>
+
+<p><code class="highlighter-rouge">root -l /sps/atlas/d/delporte/COLORFLOW/athena/production/ppzgvvbb_herwig/DAOD/DAOD_TRUTH1.test2_ppzgvvbb.pool.root</code>
+<code class="highlighter-rouge">CollectionTree-&gt;Scan("TruthParticlesAux.status:TruthParticlesAux.pdgId")</code></p>
+
+<ul>
+  <li>[ ] Issue with parton container ordering after Parton Shower ? (fix with dR for now : label may be a good check)</li>
+  <li>[ ] Understand following plot
+<img src="/images/q/dRBBQuarki.png" alt="dRBBQuarki.png" />
+<img src="/images/q/mBBQuarki.png" alt="mBBQuarki.png" /></li>
+  <li>pT / Angular distance of b1 b2 smeared before PS only for ppzhvvbb (not for ppzgvvbb), but mass still 125 …</li>
+  <li>Could be status 22 in Pythia, but it appears to be 23 …</li>
+  <li>http://home.thep.lu.se/~torbjorn/pythia81html/ParticleProperties.html</li>
+  <li>[ ] Also suspicious
+<img src="/images/q/dRb1b1PSHist.png" alt="dRb1b1PSHist.png" /></li>
+  <li>[ ] Herwig Parton Shower leads to much less energy spread ?</li>
+</ul>
+
+<h1 id="single-event-study">Single event study</h1>
+<ul>
+  <li>Studying one single event hadronized 100 000 times</li>
+  <li>Event selected from <a href="quiver-note-url/7055977C-8582-474F-8C5B-C178E002D558">aMC@NLO p p &gt; zh, z &gt; vl vl~, h &gt; b b~</a></li>
+</ul>
+
+<h3 id="event-number-2-in-unweighted_eventslhe">Event number 2 in unweighted_events.lhe</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mbb</td>
+      <td>124.999444</td>
+    </tr>
+    <tr>
+      <td>dRbb</td>
+      <td>1.372611</td>
+    </tr>
+    <tr>
+      <td>MET</td>
+      <td>158.759398</td>
+    </tr>
+    <tr>
+      <td>dPhiVbb</td>
+      <td>3.587706</td>
+    </tr>
+    <tr>
+      <td>pTb1</td>
+      <td>88.564032</td>
+    </tr>
+    <tr>
+      <td>pTb2</td>
+      <td>96.316959</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="nominal-higgs-event">Nominal Higgs event</h2>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&lt;</span><span class="nx">event</span><span class="o">&gt;</span><br data-jekyll-commonmark-ghpages="" /> <span class="mi">8</span>   <span class="mi">1</span>  <span class="mf">0.1076800</span><span class="nx">E</span><span class="o">-</span><span class="mi">05</span>  <span class="mf">0.4978218</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.7546771</span><span class="nx">E</span><span class="o">-</span><span class="mi">02</span>  <span class="mf">0.1014349</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span><br data-jekyll-commonmark-ghpages="" />       <span class="o">-</span><span class="mi">2</span>   <span class="o">-</span><span class="mi">1</span>    <span class="mi">0</span>    <span class="mi">0</span>    <span class="mi">0</span>  <span class="mi">501</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span>  <span class="mf">0.19485010094</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.19485010094</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span> <span class="mi">0</span><span class="p">.</span>  <span class="mi">1</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" />        <span class="mi">2</span>   <span class="o">-</span><span class="mi">1</span>    <span class="mi">0</span>    <span class="mi">0</span>  <span class="mi">501</span>    <span class="mi">0</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span> <span class="o">-</span><span class="mf">0.31797080540</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.31797080540</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span> <span class="mi">0</span><span class="p">.</span> <span class="o">-</span><span class="mi">1</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" />       <span class="mi">25</span>    <span class="mi">2</span>    <span class="mi">1</span>    <span class="mi">2</span>    <span class="mi">0</span>    <span class="mi">0</span> <span class="o">-</span><span class="mf">0.93032735873</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.12864469144</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.99692722244</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.22531765691</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.12499944427</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span> <span class="mi">0</span><span class="p">.</span>  <span class="mi">0</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" />       <span class="mi">23</span>    <span class="mi">2</span>    <span class="mi">1</span>    <span class="mi">2</span>    <span class="mi">0</span>    <span class="mi">0</span>  <span class="mf">0.93032735873</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span> <span class="o">-</span><span class="mf">0.12864469144</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span> <span class="o">-</span><span class="mf">0.22281342671</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.28750324943</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.88361466344</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span> <span class="mi">0</span><span class="p">.</span>  <span class="mi">0</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" />       <span class="mi">14</span>    <span class="mi">1</span>    <span class="mi">4</span>    <span class="mi">4</span>    <span class="mi">0</span>    <span class="mi">0</span>  <span class="mf">0.48605111649</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span> <span class="o">-</span><span class="mf">0.10999805969</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span> <span class="o">-</span><span class="mf">0.20184968256</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.23495813321</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span> <span class="mi">0</span><span class="p">.</span> <span class="o">-</span><span class="mi">1</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" />      <span class="o">-</span><span class="mi">14</span>    <span class="mi">1</span>    <span class="mi">4</span>    <span class="mi">4</span>    <span class="mi">0</span>    <span class="mi">0</span>  <span class="mf">0.44427624224</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span> <span class="o">-</span><span class="mf">0.18646631753</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span> <span class="o">-</span><span class="mf">0.20963744145</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.52545116219</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span> <span class="mi">0</span><span class="p">.</span>  <span class="mi">1</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" />        <span class="mi">5</span>    <span class="mi">1</span>    <span class="mi">3</span>    <span class="mi">3</span>  <span class="mi">502</span>    <span class="mi">0</span> <span class="o">-</span><span class="mf">0.82211340881</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.32937565085</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.29723361873</span><span class="nx">E</span><span class="o">+</span><span class="mi">01</span>  <span class="mf">0.88738450209</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.47000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">01</span> <span class="mi">0</span><span class="p">.</span> <span class="o">-</span><span class="mi">1</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" />       <span class="o">-</span><span class="mi">5</span>    <span class="mi">1</span>    <span class="mi">3</span>    <span class="mi">3</span>    <span class="mi">0</span>  <span class="mi">502</span> <span class="o">-</span><span class="mf">0.10821394993</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.95707126355</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.96720386057</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.13657920670</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.47000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">01</span> <span class="mi">0</span><span class="p">.</span> <span class="o">-</span><span class="mi">1</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" /><span class="o">&lt;</span><span class="nx">mgrwt</span><span class="o">&gt;</span><br data-jekyll-commonmark-ghpages="" /><span class="o">&lt;</span><span class="nx">rscale</span><span class="o">&gt;</span>  <span class="mi">0</span> <span class="mf">0.49782183</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span><span class="o">&lt;</span><span class="sr">/rscale</span><span class="err">&gt;<br data-jekyll-commonmark-ghpages="" /></span><span class="o">&lt;</span><span class="nx">asrwt</span><span class="o">&gt;</span><span class="mi">0</span><span class="o">&lt;</span><span class="sr">/asrwt</span><span class="err">&gt;<br data-jekyll-commonmark-ghpages="" /></span><span class="o">&lt;</span><span class="nx">pdfrwt</span> <span class="nx">beam</span><span class="o">=</span><span class="s2">"1"</span><span class="o">&gt;</span>  <span class="mi">1</span>        <span class="mi">2</span> <span class="mf">0.48918585</span><span class="nx">E</span><span class="o">-</span><span class="mi">01</span> <span class="mf">0.49782183</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span><span class="o">&lt;</span><span class="sr">/pdfrwt</span><span class="err">&gt;<br data-jekyll-commonmark-ghpages="" /></span><span class="o">&lt;</span><span class="nx">pdfrwt</span> <span class="nx">beam</span><span class="o">=</span><span class="s2">"2"</span><span class="o">&gt;</span>  <span class="mi">1</span>       <span class="o">-</span><span class="mi">2</span> <span class="mf">0.29976939</span><span class="nx">E</span><span class="o">-</span><span class="mi">01</span> <span class="mf">0.49782183</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span><span class="o">&lt;</span><span class="sr">/pdfrwt</span><span class="err">&gt;<br data-jekyll-commonmark-ghpages="" /></span><span class="o">&lt;</span><span class="nx">totfact</span><span class="o">&gt;</span> <span class="mf">0.10572441</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span><span class="o">&lt;</span><span class="sr">/totfact</span><span class="err">&gt;<br data-jekyll-commonmark-ghpages="" /></span><span class="o">&lt;</span><span class="sr">/mgrwt</span><span class="err">&gt;<br data-jekyll-commonmark-ghpages="" /></span><span class="o">&lt;</span><span class="sr">/event&gt;                                                                                                                              </span></code></pre></figure>
+
+<h2 id="beam-color-connected-event">Beam color connected event</h2>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&lt;</span><span class="nx">event</span><span class="o">&gt;</span><br data-jekyll-commonmark-ghpages="" /> <span class="mi">7</span>   <span class="mi">1</span>  <span class="mf">0.1076800</span><span class="nx">E</span><span class="o">-</span><span class="mi">05</span>  <span class="mf">0.4978218</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.7546771</span><span class="nx">E</span><span class="o">-</span><span class="mi">02</span>  <span class="mf">0.1014349</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span><br data-jekyll-commonmark-ghpages="" />       <span class="o">-</span><span class="mi">2</span>   <span class="o">-</span><span class="mi">1</span>    <span class="mi">0</span>    <span class="mi">0</span>    <span class="mi">0</span>  <span class="mi">502</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span>  <span class="mf">0.19485010094</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.19485010094</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span> <span class="mi">0</span><span class="p">.</span>  <span class="mi">1</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" />        <span class="mi">2</span>   <span class="o">-</span><span class="mi">1</span>    <span class="mi">0</span>    <span class="mi">0</span>  <span class="mi">501</span>    <span class="mi">0</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span> <span class="o">-</span><span class="mf">0.31797080540</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.31797080540</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span> <span class="mi">0</span><span class="p">.</span> <span class="o">-</span><span class="mi">1</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" />       <span class="mi">23</span>    <span class="mi">2</span>    <span class="mi">1</span>    <span class="mi">2</span>    <span class="mi">0</span>    <span class="mi">0</span>  <span class="mf">0.93032735873</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span> <span class="o">-</span><span class="mf">0.12864469144</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span> <span class="o">-</span><span class="mf">0.22281342671</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.28750324943</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.88361466344</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span> <span class="mi">0</span><span class="p">.</span>  <span class="mi">0</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" />       <span class="mi">14</span>    <span class="mi">1</span>    <span class="mi">3</span>    <span class="mi">3</span>    <span class="mi">0</span>    <span class="mi">0</span>  <span class="mf">0.48605111649</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span> <span class="o">-</span><span class="mf">0.10999805969</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span> <span class="o">-</span><span class="mf">0.20184968256</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.23495813321</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span> <span class="mi">0</span><span class="p">.</span> <span class="o">-</span><span class="mi">1</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" />      <span class="o">-</span><span class="mi">14</span>    <span class="mi">1</span>    <span class="mi">3</span>    <span class="mi">3</span>    <span class="mi">0</span>    <span class="mi">0</span>  <span class="mf">0.44427624224</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span> <span class="o">-</span><span class="mf">0.18646631753</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span> <span class="o">-</span><span class="mf">0.20963744145</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.52545116219</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span> <span class="mi">0</span><span class="p">.</span>  <span class="mi">1</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" />        <span class="mi">5</span>    <span class="mi">1</span>    <span class="mi">1</span>    <span class="mi">2</span>  <span class="mi">501</span>    <span class="mi">0</span> <span class="o">-</span><span class="mf">0.82211340881</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.32937565085</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.29723361873</span><span class="nx">E</span><span class="o">+</span><span class="mi">01</span>  <span class="mf">0.88738450209</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.47000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">01</span> <span class="mi">0</span><span class="p">.</span> <span class="o">-</span><span class="mi">1</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" />       <span class="o">-</span><span class="mi">5</span>    <span class="mi">1</span>    <span class="mi">1</span>    <span class="mi">2</span>    <span class="mi">0</span>  <span class="mi">502</span> <span class="o">-</span><span class="mf">0.10821394993</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.95707126355</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.96720386057</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.13657920670</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.47000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">01</span> <span class="mi">0</span><span class="p">.</span> <span class="o">-</span><span class="mi">1</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" /><span class="o">&lt;</span><span class="nx">mgrwt</span><span class="o">&gt;</span><br data-jekyll-commonmark-ghpages="" /><span class="o">&lt;</span><span class="nx">rscale</span><span class="o">&gt;</span>  <span class="mi">0</span> <span class="mf">0.49782183</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span><span class="o">&lt;</span><span class="sr">/rscale</span><span class="err">&gt;<br data-jekyll-commonmark-ghpages="" /></span><span class="o">&lt;</span><span class="nx">asrwt</span><span class="o">&gt;</span><span class="mi">0</span><span class="o">&lt;</span><span class="sr">/asrwt</span><span class="err">&gt;<br data-jekyll-commonmark-ghpages="" /></span><span class="o">&lt;</span><span class="nx">pdfrwt</span> <span class="nx">beam</span><span class="o">=</span><span class="s2">"1"</span><span class="o">&gt;</span>  <span class="mi">1</span>        <span class="mi">2</span> <span class="mf">0.48918585</span><span class="nx">E</span><span class="o">-</span><span class="mi">01</span> <span class="mf">0.49782183</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span><span class="o">&lt;</span><span class="sr">/pdfrwt</span><span class="err">&gt;<br data-jekyll-commonmark-ghpages="" /></span><span class="o">&lt;</span><span class="nx">pdfrwt</span> <span class="nx">beam</span><span class="o">=</span><span class="s2">"2"</span><span class="o">&gt;</span>  <span class="mi">1</span>       <span class="o">-</span><span class="mi">2</span> <span class="mf">0.29976939</span><span class="nx">E</span><span class="o">-</span><span class="mi">01</span> <span class="mf">0.49782183</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span><span class="o">&lt;</span><span class="sr">/pdfrwt</span><span class="err">&gt;<br data-jekyll-commonmark-ghpages="" /></span><span class="o">&lt;</span><span class="nx">totfact</span><span class="o">&gt;</span> <span class="mf">0.10572441</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span><span class="o">&lt;</span><span class="sr">/totfact</span><span class="err">&gt;<br data-jekyll-commonmark-ghpages="" /></span><span class="o">&lt;</span><span class="sr">/mgrwt</span><span class="err">&gt;<br data-jekyll-commonmark-ghpages="" /></span><span class="o">&lt;</span><span class="sr">/event&gt;</span></code></pre></figure>
+
+<h2 id="beam-inverted-color-connected-event">Beam inverted color connected event</h2>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&lt;</span><span class="nx">event</span><span class="o">&gt;</span><br data-jekyll-commonmark-ghpages="" /> <span class="mi">7</span>   <span class="mi">1</span>  <span class="mf">0.1076800</span><span class="nx">E</span><span class="o">-</span><span class="mi">05</span>  <span class="mf">0.4978218</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.7546771</span><span class="nx">E</span><span class="o">-</span><span class="mi">02</span>  <span class="mf">0.1014349</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span><br data-jekyll-commonmark-ghpages="" />       <span class="mi">2</span>    <span class="o">-</span><span class="mi">1</span>    <span class="mi">0</span>    <span class="mi">0</span>    <span class="mi">501</span>  <span class="mi">0</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span>  <span class="mf">0.19485010094</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.19485010094</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span> <span class="mi">0</span><span class="p">.</span>  <span class="mi">1</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" />       <span class="o">-</span><span class="mi">2</span>   <span class="o">-</span><span class="mi">1</span>    <span class="mi">0</span>    <span class="mi">0</span>  <span class="mi">0</span>    <span class="mi">502</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span> <span class="o">-</span><span class="mf">0.31797080540</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.31797080540</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span> <span class="mi">0</span><span class="p">.</span> <span class="o">-</span><span class="mi">1</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" />       <span class="mi">23</span>    <span class="mi">2</span>    <span class="mi">1</span>    <span class="mi">2</span>    <span class="mi">0</span>    <span class="mi">0</span>  <span class="mf">0.93032735873</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span> <span class="o">-</span><span class="mf">0.12864469144</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span> <span class="o">-</span><span class="mf">0.22281342671</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.28750324943</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.88361466344</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span> <span class="mi">0</span><span class="p">.</span>  <span class="mi">0</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" />       <span class="mi">14</span>    <span class="mi">1</span>    <span class="mi">3</span>    <span class="mi">3</span>    <span class="mi">0</span>    <span class="mi">0</span>  <span class="mf">0.48605111649</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span> <span class="o">-</span><span class="mf">0.10999805969</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span> <span class="o">-</span><span class="mf">0.20184968256</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.23495813321</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span> <span class="mi">0</span><span class="p">.</span> <span class="o">-</span><span class="mi">1</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" />      <span class="o">-</span><span class="mi">14</span>    <span class="mi">1</span>    <span class="mi">3</span>    <span class="mi">3</span>    <span class="mi">0</span>    <span class="mi">0</span>  <span class="mf">0.44427624224</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span> <span class="o">-</span><span class="mf">0.18646631753</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span> <span class="o">-</span><span class="mf">0.20963744145</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.52545116219</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.00000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">00</span> <span class="mi">0</span><span class="p">.</span>  <span class="mi">1</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" />        <span class="mi">5</span>    <span class="mi">1</span>    <span class="mi">1</span>    <span class="mi">2</span>  <span class="mi">501</span>    <span class="mi">0</span> <span class="o">-</span><span class="mf">0.82211340881</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.32937565085</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.29723361873</span><span class="nx">E</span><span class="o">+</span><span class="mi">01</span>  <span class="mf">0.88738450209</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.47000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">01</span> <span class="mi">0</span><span class="p">.</span> <span class="o">-</span><span class="mi">1</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" />       <span class="o">-</span><span class="mi">5</span>    <span class="mi">1</span>    <span class="mi">1</span>    <span class="mi">2</span>    <span class="mi">0</span>  <span class="mi">502</span> <span class="o">-</span><span class="mf">0.10821394993</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.95707126355</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.96720386057</span><span class="nx">E</span><span class="o">+</span><span class="mi">02</span>  <span class="mf">0.13657920670</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span>  <span class="mf">0.47000000000</span><span class="nx">E</span><span class="o">+</span><span class="mi">01</span> <span class="mi">0</span><span class="p">.</span> <span class="o">-</span><span class="mi">1</span><span class="p">.</span><br data-jekyll-commonmark-ghpages="" /><span class="o">&lt;</span><span class="nx">mgrwt</span><span class="o">&gt;</span><br data-jekyll-commonmark-ghpages="" /><span class="o">&lt;</span><span class="nx">rscale</span><span class="o">&gt;</span>  <span class="mi">0</span> <span class="mf">0.49782183</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span><span class="o">&lt;</span><span class="sr">/rscale</span><span class="err">&gt;<br data-jekyll-commonmark-ghpages="" /></span><span class="o">&lt;</span><span class="nx">asrwt</span><span class="o">&gt;</span><span class="mi">0</span><span class="o">&lt;</span><span class="sr">/asrwt</span><span class="err">&gt;<br data-jekyll-commonmark-ghpages="" /></span><span class="o">&lt;</span><span class="nx">pdfrwt</span> <span class="nx">beam</span><span class="o">=</span><span class="s2">"1"</span><span class="o">&gt;</span>  <span class="mi">1</span>        <span class="mi">2</span> <span class="mf">0.48918585</span><span class="nx">E</span><span class="o">-</span><span class="mi">01</span> <span class="mf">0.49782183</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span><span class="o">&lt;</span><span class="sr">/pdfrwt</span><span class="err">&gt;<br data-jekyll-commonmark-ghpages="" /></span><span class="o">&lt;</span><span class="nx">pdfrwt</span> <span class="nx">beam</span><span class="o">=</span><span class="s2">"2"</span><span class="o">&gt;</span>  <span class="mi">1</span>       <span class="o">-</span><span class="mi">2</span> <span class="mf">0.29976939</span><span class="nx">E</span><span class="o">-</span><span class="mi">01</span> <span class="mf">0.49782183</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span><span class="o">&lt;</span><span class="sr">/pdfrwt</span><span class="err">&gt;<br data-jekyll-commonmark-ghpages="" /></span><span class="o">&lt;</span><span class="nx">totfact</span><span class="o">&gt;</span> <span class="mf">0.10572441</span><span class="nx">E</span><span class="o">+</span><span class="mi">03</span><span class="o">&lt;</span><span class="sr">/totfact</span><span class="err">&gt;<br data-jekyll-commonmark-ghpages="" /></span><span class="o">&lt;</span><span class="sr">/mgrwt</span><span class="err">&gt;<br data-jekyll-commonmark-ghpages="" /></span><span class="o">&lt;</span><span class="sr">/event&gt;</span></code></pre></figure>
+
+<h3 id="reminder-of-the-selections">Reminder of the selections</h3>
+<p>–&gt; Focus on R = 0.4 jets for now (keep limited number of plots to understand !)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>bool</th>
+      <th>pass</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pass2BJets</td>
+      <td>exactly 2 b-jets (B-hadrons ConeExclHadF)</td>
+    </tr>
+    <tr>
+      <td>passJetAccept</td>
+      <td>pT &gt; 20 GeV, abseta &lt; 2.5</td>
+    </tr>
+    <tr>
+      <td>passMBB</td>
+      <td>mBB in [100, 150] GeV</td>
+    </tr>
+    <tr>
+      <td>passMET</td>
+      <td>MET &gt; 130 GeV to enhance stat. (158 GeV at ME)</td>
+    </tr>
+    <tr>
+      <td>passdPhiBB</td>
+      <td>dPhiBB &lt; 140</td>
+    </tr>
+    <tr>
+      <td>passdPhiVBB</td>
+      <td>dPhiVBB &gt; 120</td>
+    </tr>
+    <tr>
+      <td>passmindPhiMETJet</td>
+      <td>mindPhiMETJet &gt; 20</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Cuts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Loose</td>
+      <td>pass2BJets</td>
+    </tr>
+    <tr>
+      <td>Tight</td>
+      <td>all cuts</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="cutflows">Cutflows</h1>
+<p><img src="/images/q/cutflow_4.png" alt="cutflow_4.png" /></p>
+<ul>
+  <li>Quite large difference in efficiency with passMBB</li>
+</ul>
+
+<h1 id="inclusive-cuts">Inclusive cuts</h1>
+<p><img src="/images/q/cuts_4.png" alt="cuts_4.png" /></p>
+
+<h1 id="loose-selection">Loose selection</h1>
+<h2 id="leading-jet">Leading jet</h2>
+<p><img src="/images/q/dTheta1L_4.png" alt="dTheta1L_4.png" /></p>
+
+<h2 id="sub-leading-jet">Sub-leading jet</h2>
+<p><img src="/images/q/dTheta2L_4.png" alt="dTheta2L_4.png" /></p>
+
+<h2 id="correlations">Correlations</h2>
+<h2 id="ppzhvvbb">ppzhvvbb</h2>
+<p><img src="/images/q/ppzhvvbb_dTheta12L_4.png" alt="ppzhvvbb_dTheta12L_4.png" /></p>
+<h2 id="ppzhvvbb_herwig">ppzhvvbb_herwig</h2>
+<p><img src="/images/q/ppzhvvbb_herwig_dTheta12L_4.png" alt="ppzhvvbb_herwig_dTheta12L_4.png" /></p>
+<h2 id="ppzgvvbb">ppzgvvbb</h2>
+<p><img src="/images/q/ppzgvvbb_dTheta12L_4.png" alt="ppzgvvbb_dTheta12L_4.png" /></p>
+<h2 id="ppzgvvbb_herwig">ppzgvvbb_herwig</h2>
+<p><img src="/images/q/ppzgvvbb_herwig_dTheta12L_4.png" alt="ppzgvvbb_herwig_dTheta12L_4.png" /></p>
+<h2 id="ppzgvvbb_revert">ppzgvvbb_revert</h2>
+<p><img src="/images/q/ppzgvvbb_revert_dTheta12L_4.png" alt="ppzgvvbb_revert_dTheta12L_4.png" /></p>
+<h2 id="ppzgvvbb_revert_herwig">ppzgvvbb_revert_herwig</h2>
+<p><img src="/images/q/ppzgvvbb_revert_herwig_dTheta12L_4.png" alt="ppzgvvbb_revert_herwig_dTheta12L_4.png" /></p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<h1 id="tight-selection">Tight selection</h1>
+<h2 id="leading-jet-1">Leading jet</h2>
+<p><img src="/images/q/dTheta1T_4.png" alt="dTheta1T_4.png" /></p>
+<h2 id="sub-leading-jet-1">Sub-leading jet</h2>
+<p><img src="/images/q/dTheta2T_4.png" alt="dTheta2T_4.png" /></p>
+
+<h2 id="correlations-1">Correlations</h2>
+<h2 id="ppzhvvbb-1">ppzhvvbb</h2>
+<p><img src="/images/q/ppzhvvbb_dTheta12T_4.png" alt="ppzhvvbb_dTheta12T_4.png" /></p>
+<h2 id="ppzhvvbb_herwig-1">ppzhvvbb_herwig</h2>
+<p><img src="/images/q/ppzhvvbb_herwig_dTheta12T_4.png" alt="ppzhvvbb_herwig_dTheta12T_4.png" /></p>
+<h2 id="ppzgvvbb-1">ppzgvvbb</h2>
+<p><img src="/images/q/ppzgvvbb_dTheta12T_4.png" alt="ppzgvvbb_dTheta12T_4.png" /></p>
+<h2 id="ppzgvvbb_herwig-1">ppzgvvbb_herwig</h2>
+<p><img src="/images/q/ppzgvvbb_herwig_dTheta12T_4.png" alt="ppzgvvbb_herwig_dTheta12T_4.png" /></p>
+<h2 id="ppzgvvbb_revert-1">ppzgvvbb_revert</h2>
+<p><img src="/images/q/ppzgvvbb_revert_dTheta12T_4.png" alt="ppzgvvbb_revert_dTheta12T_4.png" /></p>
+<h2 id="ppzgvvbb_revert_herwig-1">ppzgvvbb_revert_herwig</h2>
+<p><img src="/images/q/ppzgvvbb_revert_herwig_dTheta12T_4.png" alt="ppzgvvbb_revert_herwig_dTheta12T_4.png" /></p>
+
+<h3 id="conclusion-1">Conclusion</h3>
+
+<h1 id="additionnal-distributions">Additionnal distributions</h1>
+<h2 id="mbb">mBB</h2>
+<p><img src="/images/q/mBB_4.png" alt="mBB_4.png" /></p>
+
+<h2 id="drbb">dRBB</h2>
+<p><img src="/images/q/dRBB_4.png" alt="dRBB_4.png" /></p>
+
+<h2 id="ptb1">pTB1</h2>
+<p><img src="/images/q/pTB1_4.png" alt="pTB1_4.png" /></p>
+
+<h2 id="ptb2">pTB2</h2>
+<p><img src="/images/q/pTB2_4.png" alt="pTB2_4.png" /></p>
+
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">My PhD notes</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              My PhD notes
+            
+            </li>
+            
+            <li><a href="mailto:charles.delporte@cern.ch">charles.delporte@cern.ch</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

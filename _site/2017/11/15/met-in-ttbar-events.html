@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>MET in ttbar events</title>
+  <meta name="description" content="Purpose better understand the origin of recoMET &amp;gt; 150 in ttbar events most plots in 2-3j 2tags after full selection">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2017/11/15/met-in-ttbar-events.html">
+  <link rel="alternate" type="application/rss+xml" title="My PhD notes" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">My PhD notes</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">MET in ttbar events</h1>
+    <p class="post-meta">
+      <time datetime="2017-11-15T00:00:00+01:00" itemprop="datePublished">
+        
+        Nov 15, 2017
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="purpose">Purpose</h1>
+<ul>
+  <li>better understand the origin of recoMET &gt; 150 in ttbar events</li>
+  <li>most plots in 2-3j 2tags after full selection</li>
+</ul>
+
+<p>https://svnweb.cern.ch/trac/atlasoff/browser/Generators/MC15JobOptions/trunk/share/DSID410xxx/MC15.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.py</p>
+
+<h2 id="understanding-the-nonallhad">Understanding the nonallhad</h2>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">root <span class="nt">-l</span> ttbar_PwPy8EG/user.nwhallon.mc15_13TeV.410501.PwPy8EG_A14_ttbar_hdamp258p75_nonallhad.s2726.HIGG5D1.28-05_CxAOD.root/user.nwhallon.11149918._000001.CxAOD.root <br data-jekyll-commonmark-ghpages="" /> CollectionTree-&gt;Scan<span class="o">(</span><span class="s2">"TruthParticles___NominalAuxDyn.pdgId:TruthParticles___NominalAuxDyn.status:TruthParticles___NominalAuxDyn.e"</span><span class="o">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="k">***********************************************************</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>    Row   <span class="k">*</span> Instance <span class="k">*</span> TruthPart <span class="k">*</span> TruthPart <span class="k">*</span> TruthPart <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">***********************************************************</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        0 <span class="k">*</span>        0 <span class="k">*</span>         6 <span class="k">*</span>        22 <span class="k">*</span> 339215.53 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        0 <span class="k">*</span>        1 <span class="k">*</span>        <span class="nt">-6</span> <span class="k">*</span>        22 <span class="k">*</span> 443397.28 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        0 <span class="k">*</span>        2 <span class="k">*</span>        24 <span class="k">*</span>        22 <span class="k">*</span> 160723.54 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        0 <span class="k">*</span>        3 <span class="k">*</span>         5 <span class="k">*</span>        23 <span class="k">*</span> 172398.18 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        0 <span class="k">*</span>        4 <span class="k">*</span>       <span class="nt">-24</span> <span class="k">*</span>        22 <span class="k">*</span> 366797.53 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        0 <span class="k">*</span>        5 <span class="k">*</span>        <span class="nt">-5</span> <span class="k">*</span>        23 <span class="k">*</span> 89583.546 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        0 <span class="k">*</span>        6 <span class="k">*</span>        <span class="nt">-1</span> <span class="k">*</span>        23 <span class="k">*</span>  118947.5 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        0 <span class="k">*</span>        7 <span class="k">*</span>         2 <span class="k">*</span>        23 <span class="k">*</span> 41517.613 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        0 <span class="k">*</span>        8 <span class="k">*</span>        15 <span class="k">*</span>        23 <span class="k">*</span> 69350.429 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        0 <span class="k">*</span>        9 <span class="k">*</span>       <span class="nt">-16</span> <span class="k">*</span>        23 <span class="k">*</span> 297447.09 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        0 <span class="k">*</span>       10 <span class="k">*</span>        15 <span class="k">*</span>         2 <span class="k">*</span> 69350.421 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        0 <span class="k">*</span>       11 <span class="k">*</span>       <span class="nt">-16</span> <span class="k">*</span>         1 <span class="k">*</span> 297447.09 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nt">--</span><span class="o">&gt;</span> Event 0 has :<br data-jekyll-commonmark-ghpages="" />  W+ -&gt; dbar u   : 160723.54 - 118947.5 - 41517.613 <span class="o">=</span> 258.427000<br data-jekyll-commonmark-ghpages="" />  W- -&gt; tau nutaubar : 366797 - 69350 - 297447 <span class="o">=</span> 0<br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        1 <span class="k">*</span>        0 <span class="k">*</span>         6 <span class="k">*</span>        22 <span class="k">*</span> 946104.81 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        1 <span class="k">*</span>        1 <span class="k">*</span>        <span class="nt">-6</span> <span class="k">*</span>        22 <span class="k">*</span> 212530.70 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        1 <span class="k">*</span>        2 <span class="k">*</span>        24 <span class="k">*</span>        22 <span class="k">*</span> 574257.93 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        1 <span class="k">*</span>        3 <span class="k">*</span>         5 <span class="k">*</span>        23 <span class="k">*</span> 311078.93 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        1 <span class="k">*</span>        4 <span class="k">*</span>       <span class="nt">-24</span> <span class="k">*</span>        22 <span class="k">*</span> 150873.62 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        1 <span class="k">*</span>        5 <span class="k">*</span>        <span class="nt">-5</span> <span class="k">*</span>        23 <span class="k">*</span> 65454.550 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        1 <span class="k">*</span>        6 <span class="k">*</span>       <span class="nt">-15</span> <span class="k">*</span>         2 <span class="k">*</span> 545113.37 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        1 <span class="k">*</span>        7 <span class="k">*</span>        16 <span class="k">*</span>         1 <span class="k">*</span> 28801.480 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        1 <span class="k">*</span>        8 <span class="k">*</span>         1 <span class="k">*</span>        23 <span class="k">*</span> 27643.168 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        1 <span class="k">*</span>        9 <span class="k">*</span>        <span class="nt">-2</span> <span class="k">*</span>        23 <span class="k">*</span> 121780.64 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nt">--</span><span class="o">&gt;</span> Event 1 has :<br data-jekyll-commonmark-ghpages="" />  W+ -&gt; taubar nutau : 574257.93 - 545113.37 - 28801.480 <span class="o">=</span> 343.080000<br data-jekyll-commonmark-ghpages="" />  W- -&gt; d ubar   : 150873.62 - 27643.168 - 121780.64 <span class="o">=</span> 1449.812000<br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        2 <span class="k">*</span>        0 <span class="k">*</span>         6 <span class="k">*</span>        22 <span class="k">*</span> 327585.96 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        2 <span class="k">*</span>        1 <span class="k">*</span>        <span class="nt">-6</span> <span class="k">*</span>        22 <span class="k">*</span> 257544.12 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        2 <span class="k">*</span>        2 <span class="k">*</span>        24 <span class="k">*</span>        22 <span class="k">*</span> 249918.20 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        2 <span class="k">*</span>        3 <span class="k">*</span>         5 <span class="k">*</span>        23 <span class="k">*</span> 71037.335 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        2 <span class="k">*</span>        4 <span class="k">*</span>       <span class="nt">-24</span> <span class="k">*</span>        22 <span class="k">*</span> 184664.37 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        2 <span class="k">*</span>        5 <span class="k">*</span>        <span class="nt">-5</span> <span class="k">*</span>        23 <span class="k">*</span> 84284.265 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        2 <span class="k">*</span>        6 <span class="k">*</span>        <span class="nt">-1</span> <span class="k">*</span>        23 <span class="k">*</span> 118276.26 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        2 <span class="k">*</span>        7 <span class="k">*</span>         2 <span class="k">*</span>        23 <span class="k">*</span> 123962.85 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        2 <span class="k">*</span>        8 <span class="k">*</span>        11 <span class="k">*</span>        23 <span class="k">*</span> 58160.867 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        2 <span class="k">*</span>        9 <span class="k">*</span>       <span class="nt">-12</span> <span class="k">*</span>        23 <span class="k">*</span> 125986.64 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />W+ -&gt; dbar u : 249918.20 - 118276.26 - 123962.85 <span class="o">=</span> 7679.090000<br data-jekyll-commonmark-ghpages="" />W- -&gt; e nuebar : 184664.37 - 58160.867 - 125986.64 <span class="o">=</span> 516.863000</code></pre></figure>
+
+<h2 id="number-of-neutrinos-per-event">Number of neutrinos per event</h2>
+<ul>
+  <li>very often 1 neutrino + 1 lepton in W dec, 72% of them 
+<img src="/images/q/IMAGE" alt="IMAGE" /></li>
+</ul>
+
+<h2 id="leptons-flavour">Leptons flavour</h2>
+<p><img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<h1 id="single-lepton-events">Single lepton events</h1>
+<p><img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<h2 id="pt-of-the-neutrino--lepton">pT of the neutrino / lepton</h2>
+<p><img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<h2 id="dr-of-the-neutrino--lepton-to-the-lepton-w">dR of the neutrino / lepton to the lepton W</h2>
+<p><img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<h2 id="pt-of-the-leptonicallyhadronically-decaying-ws">pT of the leptonically/hadronically decaying Ws</h2>
+<p><img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<h2 id="dphi-top-b">dPhi top b</h2>
+<p><img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<h2 id="nj-as-a-function-of-the-hadronically-decaying-w">nJ as a function of the hadronically decaying W</h2>
+
+<p>Average table :
+|  nJ | pT W   |
+| — | —— |
+| 2   | 70 GeV |
+| 3   | 91 GeV |
+<img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<h1 id="dilepton-events">Dilepton events</h1>
+<p><img src="/images/q/IMAGE" alt="IMAGE" /></p>
+<h2 id="pt-of-the-neutrino--lepton-pair">pT of the neutrino / lepton pair</h2>
+<p><img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<h2 id="pt-of-individual-leptons--neutrinos">pT of individual leptons / neutrinos</h2>
+<ul>
+  <li>nu/lep in red, anu/alep in blue</li>
+</ul>
+
+<p><img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" />
+–&gt; the neutrinos are quite little collinear, and this is not correlated to pTvv
+<img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" />
+–&gt; When pTv&lt;100 and pTav&lt; 100, it does not necessarily mean that they are collinear :
+<img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" />
+–&gt; When neutrinos don’t have sufficient pT/dR to produce MET&gt;150, the MET-TruthMET difference is much larger (40 GeV instead of 10 GeV is one neutrino has very large pT) 
+<img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<h2 id="pt-of-the-ww-pair">pT of the WW pair</h2>
+<ul>
+  <li>if 0-lepton reconstructed in a dilepton truthdecay, the truthMET consists of the vector sum of the pT of the Ws</li>
+  <li>–&gt; previous statement wrong, leptons accounted in the softtrk term of met
+<img src="/images/q/IMAGE" alt="IMAGE" /></li>
+</ul>
+
+<h2 id="pt-of-the-top-in-singledilep-events">pT of the top in single/dilep events</h2>
+<ul>
+  <li>single lep in red</li>
+  <li>dilep in blue
+<img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" /></li>
+</ul>
+
+<h2 id="single-lepton-tau-vs-emu-pt">single lepton tau vs e/mu pT</h2>
+<ul>
+  <li>taus are in blue
+<img src="/images/q/IMAGE" alt="IMAGE" /></li>
+</ul>
+
+<h2 id="number-of-taus-in-dilep-events">number of taus in dilep events</h2>
+<ul>
+  <li>47% of events have 2 tau leptons –&gt;should look at their respective decays in order to compute met …
+<img src="/images/q/IMAGE" alt="IMAGE" /></li>
+</ul>
+
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">My PhD notes</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              My PhD notes
+            
+            </li>
+            
+            <li><a href="mailto:charles.delporte@cern.ch">charles.delporte@cern.ch</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

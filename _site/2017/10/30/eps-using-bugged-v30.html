@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>EPS using bugged v30</title>
+  <meta name="description" content="Context">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2017/10/30/eps-using-bugged-v30.html">
+  <link rel="alternate" type="application/rss+xml" title="My PhD notes" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">My PhD notes</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">EPS using bugged v30</h1>
+    <p class="post-meta">
+      <time datetime="2017-10-30T00:00:00+01:00" itemprop="datePublished">
+        
+        Oct 30, 2017
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="context">Context</h1>
+
+<p>Andy B. and Changqiao have been using the bugged version of v30 0-lepton inputs for EPS, which has non-up-to-date diboson modelling systematics</p>
+
+<h1 id="candidate-commits-for-updated-shapes">Candidate commits for updated shapes</h1>
+
+<p>https://gitlab.cern.ch/CxAODFramework/CorrsAndSysts/commits/master/Root/CorrsAndSysts.cxx</p>
+
+<h2 id="vh-and-vv-psue-systematics-nicolas">VH and VV PSUE systematics (Nicolas)</h2>
+<p>https://gitlab.cern.ch/CxAODFramework/CorrsAndSysts/commit/b64aea4a3c8fcd0516e867c841216b0299131f6e</p>
+
+<h2 id="bug-fix-for-jets-multiplicities-nicolas">Bug fix for jets multiplicities (Nicolas)</h2>
+<p>https://gitlab.cern.ch/CxAODFramework/CorrsAndSysts/commit/d9d3943229addca837bc4cd0b33b3b3c17fc09e6</p>
+
+<h2 id="valerio">(Valerio)</h2>
+<p>https://gitlab.cern.ch/CxAODFramework/CorrsAndSysts/commit/cdeaa63d63ca4bc5a07cd3367ace9219b85e4e8c
+https://gitlab.cern.ch/CxAODFramework/CorrsAndSysts/blame/b64aea4a3c8fcd0516e867c841216b0299131f6e/Root/CorrsAndSysts.cxx</p>
+
+<h1 id="shape-comparison-of-the-updated-syst">Shape comparison of the updated syst</h1>
+
+<p><img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">    TF1 <span class="k">*</span>m_f_SysVVMbbME_WZlvqq <span class="o">=</span> new TF1<span class="o">(</span><span class="s2">"mBB__WZlvqq_PS_Sherpa_fit"</span>,<span class="s2">"[0]+[7]*(x/1e3)*(x/1e3)+[1]*TMath::Exp(-(x/1e3)/[2])+[3]*((TMath::Gaus(((x/1e3)-[4])/[6])+1)/(TMath::Gaus(((x/1e3)-[5])/[6])+1))-1"</span>,25e3,500e3<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;SetParameter<span class="o">(</span>0,-31.3129<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;SetParameter<span class="o">(</span>1,32.2119<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;SetParameter<span class="o">(</span>2,15016.9<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;SetParameter<span class="o">(</span>3,0.210291<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;SetParameter<span class="o">(</span>4,94.0918<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;SetParameter<span class="o">(</span>5,26.2236<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;SetParameter<span class="o">(</span>6,15<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;SetParameter<span class="o">(</span>7,3.91378e-06<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    <br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;GetHistogram<span class="o">()</span>-&gt;SetTitle<span class="o">(</span><span class="s2">"SysVVMbbME_WZlvqq 2j"</span><span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    <br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;SetLineColor<span class="o">(</span>kBlue<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq-&gt;Draw<span class="o">()</span><br data-jekyll-commonmark-ghpages="" />    <br data-jekyll-commonmark-ghpages="" />    TF1 <span class="k">*</span>m_f_SysVVMbbME_WZlvqq_new <span class="o">=</span> new TF1<span class="o">(</span><span class="s2">"mBB__WZlvqq_PS_Sherpa_fit_new"</span>,<span class="s2">"[0]+[1]*tanh( (x/1e3-[2])/[3] )"</span>,25e3,500e3<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq_new-&gt;SetParameter<span class="o">(</span>0,0.28196    <span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq_new-&gt;SetParameter<span class="o">(</span>1, 4.30023e-01<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq_new-&gt;SetParameter<span class="o">(</span>2,1.01083e+02<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq_new-&gt;SetParameter<span class="o">(</span>3,1.87708e+01<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq_new-&gt;SetLineColor<span class="o">(</span>kRed<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    m_f_SysVVMbbME_WZlvqq_new-&gt;Draw<span class="o">(</span><span class="s2">"same"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />    <br data-jekyll-commonmark-ghpages="" />    TLegend <span class="k">*</span>leg <span class="o">=</span> new TLegend<span class="o">(</span>0.7,0.7,0.9,0.9<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />    leg-&gt;AddEntry<span class="o">(</span>m_f_SysVVMbbME_WZlvqq, <span class="s2">"Initial VVMbbME_WZlvqq"</span>, <span class="s2">"l"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />    leg-&gt;AddEntry<span class="o">(</span>m_f_SysVVMbbME_WZlvqq_new, <span class="s2">"Updated VVMbbME_WZlvqq"</span>, <span class="s2">"l"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />    leg-&gt;Draw<span class="o">(</span><span class="s2">"same"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />    c1-&gt;SetGridx<span class="o">()</span><br data-jekyll-commonmark-ghpages="" />    c1-&gt;SetGridy<span class="o">()</span></code></pre></figure>
+
+<p><img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TF1 *m_f_SysVVMbbME_ZZvvqq= new TF1("mBB__ZZqqvv_PS_Sherpa_fit","[0]+[7]*(x/1e3)*(x/1e3)+[1]*TMath::Exp(-(x/1e3)/[2])+[3]*((TMath::Gaus(((x/1e3)-[4])/[6])+1)/(TMath::Gaus(((x/1e3)-[5])/[6])+1))-1",25e3,500e3);
+m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(0,-9.82225);
+m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(1,10.7876);
+m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(2,4292.31);
+m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(3,0.180446);
+m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(4,96.0217);
+m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(5,64.1412);
+m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(6,12.0295);
+m_f_SysVVMbbME_ZZvvqq-&gt;SetParameter(7,5.22119e-06);
+
+m_f_SysVVMbbME_ZZvvqq-&gt;GetHistogram()-&gt;SetTitle("SysVVMbbME_ZZvvqq 2j");
+
+m_f_SysVVMbbME_ZZvvqq-&gt;SetLineColor(kBlue);
+m_f_SysVVMbbME_ZZvvqq-&gt;Draw()
+   
+   
+TF1 *m_f_SysVVMbbME_ZZvvqq_new= new TF1("mBB__ZZqqvv_PS_Sherpa_fit_new","[0]+[1]*tanh( (x/1e3-[2])/[3] )",25e3,500e3);
+m_f_SysVVMbbME_ZZvvqq_new-&gt;SetParameter(0,0.24918    );
+m_f_SysVVMbbME_ZZvvqq_new-&gt;SetParameter(1,4.07409e-01);
+m_f_SysVVMbbME_ZZvvqq_new-&gt;SetParameter(2,9.51575e+01);
+m_f_SysVVMbbME_ZZvvqq_new-&gt;SetParameter(3,1.46196e+01);
+
+m_f_SysVVMbbME_ZZvvqq_new-&gt;SetLineColor(kRed);
+m_f_SysVVMbbME_ZZvvqq_new-&gt;Draw("same")
+
+TLegend *leg = new TLegend(0.7,0.7,0.9,0.9)
+leg-&gt;AddEntry(m_f_SysVVMbbME_ZZvvqq, "Initial VVMbbME_ZZvvqq", "l")
+leg-&gt;AddEntry(m_f_SysVVMbbME_ZZvvqq_new, "Updated VVMbbME_ZZvvqq", "l")
+
+leg-&gt;Draw("same")
+c1-&gt;SetGridx()
+c1-&gt;SetGridy()
+</code></pre></div></div>
+
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">My PhD notes</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              My PhD notes
+            
+            </li>
+            
+            <li><a href="mailto:charles.delporte@cern.ch">charles.delporte@cern.ch</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

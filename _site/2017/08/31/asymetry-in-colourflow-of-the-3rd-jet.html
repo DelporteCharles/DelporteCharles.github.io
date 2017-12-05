@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Asymetry in ColourFlow of the 3rd jet</title>
+  <meta name="description" content="Context We observed an asymetry in reco samples with tracks (multiple events samples)">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2017/08/31/asymetry-in-colourflow-of-the-3rd-jet.html">
+  <link rel="alternate" type="application/rss+xml" title="My PhD notes" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">My PhD notes</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Asymetry in ColourFlow of the 3rd jet</h1>
+    <p class="post-meta">
+      <time datetime="2017-08-31T00:00:00+02:00" itemprop="datePublished">
+        
+        Aug 31, 2017
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="context">Context</h1>
+<ul>
+  <li>We observed an asymetry in reco samples with tracks (multiple events samples)
+<img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" /></li>
+</ul>
+
+<h1 id="major-update">Major update</h1>
+<ul>
+  <li>Actually, this is not a complete asymetry : the mean is 0</li>
+  <li>Example with ZnunuB Sherpa 221 MaxHTPtV 140-280 GeV
+<img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" /></li>
+</ul>
+
+<h1 id="truth-samples">Truth Samples</h1>
+
+<h2 id="single-event">Single event</h2>
+<h3 id="energy-deposits-and-jets-location">Energy deposits and jets location</h3>
+<p>| Object         | DrawOption |
+| ————– | ———- |
+| TruthParticles | colz       |
+| Jets           | “” (dots)  |</p>
+<ul>
+  <li>Shows no asymetry
+    <h3 id="leading-jet">Leading jet</h3>
+    <p><img src="/images/q/IMAGE" alt="IMAGE" /></p>
+    <h3 id="subleading-jet">SubLeading jet</h3>
+    <p><img src="/images/q/IMAGE" alt="IMAGE" /></p>
+    <h3 id="3rd-jet">3rd jet</h3>
+    <p><img src="/images/q/IMAGE" alt="IMAGE" />
+Same picture but reverting the draw options : 3rd jet in colz
+<img src="/images/q/IMAGE" alt="IMAGE" /></p>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">root</span> <span class="o">-</span><span class="nx">l</span> <span class="o">/</span><span class="nx">sps</span><span class="o">/</span><span class="nx">atlas</span><span class="o">/</span><span class="nx">d</span><span class="o">/</span><span class="nx">delporte</span><span class="o">/</span><span class="nx">COLORFLOW</span><span class="o">/</span><span class="nx">framework</span><span class="o">/</span><span class="nx">submitDir_ppzhvvbb</span><span class="o">/</span><span class="nx">hist</span><span class="o">-</span><span class="nx">DAOD</span><span class="p">.</span><span class="nx">root</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">energyDeposits_4</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"colz"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">tree</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"Jet3_4-&gt;Phi():Jet3_4-&gt;Rapidity()"</span><span class="p">,</span><span class="s2">"passLoose_4"</span><span class="p">,</span><span class="s2">"same"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="k">new</span> <span class="nx">TCanvas</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">energyDeposits_4</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"colz"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">tree</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"bJet1_4-&gt;Phi():bJet1_4-&gt;Rapidity()"</span><span class="p">,</span><span class="s2">"passLoose_4"</span><span class="p">,</span><span class="s2">"same"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="k">new</span> <span class="nx">TCanvas</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">tree</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"bJet2_4-&gt;Phi():bJet2_4-&gt;Rapidity()"</span><span class="p">,</span><span class="s2">"passLoose_4"</span><span class="p">,</span><span class="s2">"same"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">energyDeposits_4</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"colz"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">tree</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"bJet2_4-&gt;Phi():bJet2_4-&gt;Rapidity()"</span><span class="p">,</span><span class="s2">"passLoose_4"</span><span class="p">,</span><span class="s2">"same"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="k">new</span> <span class="nx">TCanvas</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">tree</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"Jet3_4-&gt;Phi():Jet3_4-&gt;Rapidity()"</span><span class="p">,</span><span class="s2">"passLoose_4"</span><span class="p">,</span><span class="s2">"colz"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">energyDeposits_4</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"same"</span><span class="p">)</span></code></pre></figure>
+
+<h2 id="multiple-events">Multiple events</h2>
+<ul>
+  <li>Looking in Zbb which presented the effect and has a large statistics</li>
+  <li>Looking both loose and tight selections, but effect initially observed in tight selection (mBB cut to be removed ?)</li>
+</ul>
+
+<h2 id="pullangle-jet-3-distributions">PullAngle jet 3 distributions</h2>
+
+<h3 id="calo-interacting">Calo interacting</h3>
+<ul>
+  <li>No asymetry observed
+<img src="/images/q/IMAGE" alt="IMAGE" /></li>
+</ul>
+
+<h3 id="pixels-interacting">Pixels interacting</h3>
+<ul>
+  <li>No asymetry observed</li>
+  <li>Possible bias with respect to CxAODReader_VHbb : mBB region ?
+<img src="/images/q/IMAGE" alt="IMAGE" /></li>
+</ul>
+
+<h2 id="distribution-of-dr-jet---constituent">Distribution of dR Jet - constituent</h2>
+<p><img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<h1 id="reco-samples">Reco Samples</h1>
+
+<p>Dependency highly correlated to the rapidity of the 3rd jet
+<img src="/images/q/IMAGE" alt="IMAGE" />
+These are most likely pile-up jets (from the etaJ3 distribution) which are not rejected beyond the pixels acceptance if abseta &gt; 2.5.
+<img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">Nominal</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"ColourFlowAngleJ31:MindPhiMETJet"</span><span class="p">,</span><span class="s2">"nJ==3&amp;&amp;abs(etaJ3)&gt;2.5"</span><span class="p">,</span><span class="s2">"colz"</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">Nominal</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"TVector2::Phi_mpi_pi(phiJ3-phiB1):ColourFlowAngleJ31"</span><span class="p">,</span><span class="s2">"nJ==3&amp;&amp;abs(etaJ3)&gt;2.5"</span><span class="p">,</span><span class="s2">"colz"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="k">new</span> <span class="nx">TCanvas</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Nominal</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"TVector2::Phi_mpi_pi(phiJ3-phiB1):etaJ3-etaB1"</span><span class="p">,</span><span class="s2">"nJ==3&amp;&amp;abs(etaJ3)&gt;2.5"</span><span class="p">,</span><span class="s2">"colz"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="k">new</span> <span class="nx">TCanvas</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Nominal</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"ColourFlowAngleJ31"</span><span class="p">,</span><span class="s2">"nJ==3&amp;&amp;abs(etaJ3)&gt;2.5&amp;&amp;TVector2::Phi_mpi_pi(phiJ3-phiB1)&lt;0.4&amp;&amp;etaJ3-etaB1&lt;0.4"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="k">new</span> <span class="nx">TCanvas</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Nominal</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"ColourFlowAngleJ31"</span><span class="p">,</span><span class="s2">"nJ==3&amp;&amp;abs(etaJ3)&gt;2.5&amp;&amp;TVector2::Phi_mpi_pi(phiJ3-phiB1)&lt;0.4&amp;&amp;etaB1-etaJ3&lt;0.4"</span><span class="p">)</span></code></pre></figure>
+
+<p><img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">Nominal</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"etaJ3-etaB1:TVector2::Phi_mpi_pi(phiJ3-phiB1):ColourFlowAngleJ31"</span><span class="p">,</span><span class="s2">"nJ==3&amp;&amp;abs(etaJ3)&gt;2.5"</span><span class="p">,</span><span class="s2">"glbox"</span><span class="p">)</span></code></pre></figure>
+
+<p><img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"> <span class="nx">Nominal</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"TVector2::Phi_mpi_pi(phiJ3-phiB1):ColourFlowAngleJ31"</span><span class="p">,</span><span class="s2">"nJ==3&amp;&amp;etaJ3&lt;-2.5"</span><span class="p">,</span><span class="s2">"colz"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /> <span class="k">new</span> <span class="nx">TCanvas</span><br data-jekyll-commonmark-ghpages="" /> <span class="nx">Nominal</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"TVector2::Phi_mpi_pi(phiJ3-phiB1):ColourFlowAngleJ31"</span><span class="p">,</span><span class="s2">"nJ==3&amp;&amp;etaJ3&gt;2.5"</span><span class="p">,</span><span class="s2">"colz"</span><span class="p">)</span></code></pre></figure>
+
+<p><img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<p><img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<p><img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">Nominal</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"TVector2::Phi_mpi_pi(phiJ3-phiB1):ColourFlowAngleJ31:etaJ3-etaB1"</span><span class="p">,</span><span class="s2">"nJ==3&amp;&amp;etaJ3&gt;3"</span><span class="p">,</span><span class="s2">"glbox"</span><span class="p">)</span></code></pre></figure>
+
+<p><img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>It was due to a small bug which did not protect computing 3rd jet colourflow variable against no tracks matched … should check for the other nJ
+<img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<h2 id="updated-distributions">Updated distributions</h2>
+<p><img src="/images/q/2tag3jet_150ptv_SR_ColourFlowAngleJ12.png" alt="2tag3jet_150ptv_SR_ColourFlowAngleJ12.png" />
+<img src="/images/q/2tag3jet_150ptv_SR_ColourFlowAngleJ13.png" alt="2tag3jet_150ptv_SR_ColourFlowAngleJ13.png" />
+<img src="/images/q/2tag3jet_150ptv_SR_ColourFlowAngleJ21.png" alt="2tag3jet_150ptv_SR_ColourFlowAngleJ21.png" />
+<img src="/images/q/2tag3jet_150ptv_SR_ColourFlowAngleJ23.png" alt="2tag3jet_150ptv_SR_ColourFlowAngleJ23.png" />
+<img src="/images/q/2tag3jet_150ptv_SR_ColourFlowAngleJ31.png" alt="2tag3jet_150ptv_SR_ColourFlowAngleJ31.png" />
+<img src="/images/q/2tag3jet_150ptv_SR_ColourFlowAngleJ32.png" alt="2tag3jet_150ptv_SR_ColourFlowAngleJ32.png" /></p>
+
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">My PhD notes</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              My PhD notes
+            
+            </li>
+            
+            <li><a href="mailto:charles.delporte@cern.ch">charles.delporte@cern.ch</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

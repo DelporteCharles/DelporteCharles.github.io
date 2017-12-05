@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Rivet - TruthAOD comparison</title>
+  <meta name="description" content="Purpose">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2017/10/26/rivet-truthaod-comparison.html">
+  <link rel="alternate" type="application/rss+xml" title="My PhD notes" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">My PhD notes</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Rivet - TruthAOD comparison</h1>
+    <p class="post-meta">
+      <time datetime="2017-10-26T00:00:00+02:00" itemprop="datePublished">
+        
+        Oct 26, 2017
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="purpose">Purpose</h1>
+
+<ul>
+  <li>possible discrepancy between Rivet and TruthAOD observed https://indico.lal.in2p3.fr/event/4678/contributions/15128/attachments/12461/14706/konie25102017.pdf</li>
+</ul>
+
+<h2 id="setup">Setup</h2>
+
+<h3 id="evgen">EVGEN</h3>
+
+<ul>
+  <li>dataset : mc15_13TeV.361610.PowhegPy8EG_CT10nloME_AZNLOCTEQ6L1_ZZqqll_mqq20mll20.evgen.EVNT.e4711//EVNT.11330746._000623.pool.root.1</li>
+</ul>
+
+<h3 id="rivet">RIVET</h3>
+
+<ul>
+  <li>Jets pt are exactly identical</li>
+  <li>met is different
+    <ul>
+      <li>Rivet MET (in Carlo’s code) has all calo inputs (to jet building) within -5 &lt; eta &lt; 5 + muons wi</li>
+      <li>TruthDAOD NonInt MET as all stable, non-interacting particles including neutrinos</li>
+    </ul>
+  </li>
+</ul>
+
+<p>https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/Run2xAODMissingET#MET_Truth_container</p>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">RIVET jets<br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="k">************************************************************************</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>    Row   <span class="k">*</span> EventNumb <span class="k">*</span> pTB1<span class="k">*</span>1.e3 <span class="k">*</span>     etaB1 <span class="k">*</span> pTB2<span class="k">*</span>1.e3 <span class="k">*</span>     etaB2 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">************************************************************************</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        0 <span class="k">*</span>         1 <span class="k">*</span> 95619.438 <span class="k">*</span> <span class="nt">-0</span>.564450 <span class="k">*</span> 81161.720 <span class="k">*</span> <span class="nt">-0</span>.107315 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        1 <span class="k">*</span>         3 <span class="k">*</span> 47771.823 <span class="k">*</span> 1.7002637 <span class="k">*</span> 20069.929 <span class="k">*</span> 0.4099104 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        2 <span class="k">*</span>         4 <span class="k">*</span> 58382.812 <span class="k">*</span> 0.4399697 <span class="k">*</span> 56662.647 <span class="k">*</span> <span class="nt">-0</span>.958044 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        3 <span class="k">*</span>         6 <span class="k">*</span> 51766.811 <span class="k">*</span> <span class="nt">-1</span>.078743 <span class="k">*</span> 32097.457 <span class="k">*</span> <span class="nt">-1</span>.689256 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        4 <span class="k">*</span>        10 <span class="k">*</span> 69664.932 <span class="k">*</span> 0.5761168 <span class="k">*</span> 36315.792 <span class="k">*</span> <span class="nt">-0</span>.031526 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        5 <span class="k">*</span>        11 <span class="k">*</span> 55025.081 <span class="k">*</span> <span class="nt">-0</span>.813290 <span class="k">*</span> 48745.853 <span class="k">*</span> <span class="nt">-0</span>.285057 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        6 <span class="k">*</span>        16 <span class="k">*</span> 54641.780 <span class="k">*</span> 1.1936298 <span class="k">*</span> 29722.761 <span class="k">*</span> 0.1187076 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        7 <span class="k">*</span>        19 <span class="k">*</span> 62080.200 <span class="k">*</span> <span class="nt">-1</span>.696432 <span class="k">*</span> 31237.388 <span class="k">*</span> <span class="nt">-1</span>.350311 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        8 <span class="k">*</span>        21 <span class="k">*</span> 114952.54 <span class="k">*</span> 0.1762699 <span class="k">*</span> 34672.977 <span class="k">*</span> 0.5478904 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        9 <span class="k">*</span>        23 <span class="k">*</span> 109366.93 <span class="k">*</span> <span class="nt">-1</span>.399320 <span class="k">*</span> 97440.391 <span class="k">*</span> <span class="nt">-0</span>.921300 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       10 <span class="k">*</span>        24 <span class="k">*</span> 50983.173 <span class="k">*</span> 1.6566625 <span class="k">*</span> 23473.129 <span class="k">*</span> 1.9141296 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       11 <span class="k">*</span>        25 <span class="k">*</span> 178793.99 <span class="k">*</span> <span class="nt">-0</span>.127727 <span class="k">*</span> 65759.277 <span class="k">*</span> <span class="nt">-0</span>.983641 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       12 <span class="k">*</span>        28 <span class="k">*</span> 86498.603 <span class="k">*</span> 1.2834656 <span class="k">*</span> 51395.450 <span class="k">*</span> 0.7653285 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       13 <span class="k">*</span>        29 <span class="k">*</span> 68664.550 <span class="k">*</span> 1.1709669 <span class="k">*</span> 45299.564 <span class="k">*</span> 0.8375054 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       14 <span class="k">*</span>        30 <span class="k">*</span> 198347.13 <span class="k">*</span> 0.3910346 <span class="k">*</span> 58193.897 <span class="k">*</span> <span class="nt">-0</span>.346949 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       15 <span class="k">*</span>        31 <span class="k">*</span> 59627.224 <span class="k">*</span> <span class="nt">-0</span>.815979 <span class="k">*</span> 38522.293 <span class="k">*</span> <span class="nt">-0</span>.782113 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       16 <span class="k">*</span>        33 <span class="k">*</span> 76850.654 <span class="k">*</span> <span class="nt">-0</span>.928892 <span class="k">*</span> 31636.299 <span class="k">*</span> <span class="nt">-0</span>.653065 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       17 <span class="k">*</span>        35 <span class="k">*</span> 128814.56 <span class="k">*</span> <span class="nt">-0</span>.873090 <span class="k">*</span> 41355.789 <span class="k">*</span> 2.3431582 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       18 <span class="k">*</span>        36 <span class="k">*</span> 81337.417 <span class="k">*</span> 2.4125900 <span class="k">*</span> 31527.425 <span class="k">*</span> 2.3968567 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       19 <span class="k">*</span>        37 <span class="k">*</span> 71886.787 <span class="k">*</span> 0.5990429 <span class="k">*</span> 41835.266 <span class="k">*</span> <span class="nt">-2</span>.120939 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       20 <span class="k">*</span>        39 <span class="k">*</span> 60514.583 <span class="k">*</span> 0.6407112 <span class="k">*</span> 32092.197 <span class="k">*</span> 1.5275182 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       21 <span class="k">*</span>        41 <span class="k">*</span> 84094.207 <span class="k">*</span> 0.8324434 <span class="k">*</span> 63458.736 <span class="k">*</span> 0.0581189 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       22 <span class="k">*</span>        42 <span class="k">*</span> 51541.263 <span class="k">*</span> 0.9128297 <span class="k">*</span> 36517.215 <span class="k">*</span> 0.3193244 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       23 <span class="k">*</span>        43 <span class="k">*</span> 47993.831 <span class="k">*</span> 0.4865719 <span class="k">*</span> 44290.351 <span class="k">*</span> <span class="nt">-1</span>.010752 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       24 <span class="k">*</span>        44 <span class="k">*</span> 27069.101 <span class="k">*</span> <span class="nt">-0</span>.949719 <span class="k">*</span> 26907.339 <span class="k">*</span> <span class="nt">-1</span>.011615 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       25 <span class="k">*</span>        45 <span class="k">*</span> 153347.47 <span class="k">*</span> 0.2131102 <span class="k">*</span> 49012.256 <span class="k">*</span> <span class="nt">-0</span>.172546 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       26 <span class="k">*</span>        46 <span class="k">*</span> 54276.584 <span class="k">*</span> <span class="nt">-0</span>.200806 <span class="k">*</span> 31135.646 <span class="k">*</span> <span class="nt">-1</span>.127707 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       27 <span class="k">*</span>        47 <span class="k">*</span> 138657.91 <span class="k">*</span> <span class="nt">-0</span>.223761 <span class="k">*</span> 91776.069 <span class="k">*</span> 0.5214113 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       28 <span class="k">*</span>        48 <span class="k">*</span> 39180.717 <span class="k">*</span> <span class="nt">-2</span>.278843 <span class="k">*</span> 22199.794 <span class="k">*</span> <span class="nt">-0</span>.799239 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       29 <span class="k">*</span>        49 <span class="k">*</span> 94624.893 <span class="k">*</span> <span class="nt">-2</span>.139678 <span class="k">*</span> 45535.656 <span class="k">*</span> <span class="nt">-2</span>.002133 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>       30 <span class="k">*</span>        50 <span class="k">*</span> 87447.853 <span class="k">*</span> <span class="nt">-1</span>.064825 <span class="k">*</span> 42510.696 <span class="k">*</span> <span class="nt">-1</span>.316671 <span class="k">*</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">TRUTHDAOD jets<br data-jekyll-commonmark-ghpages="" /><span class="k">***********************************************************</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>    Row   <span class="k">*</span> Instance <span class="k">*</span> EventInfo <span class="k">*</span> AntiKt4Tr <span class="k">*</span> AntiKt4Tr <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">***********************************************************</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        0 <span class="k">*</span>        0 <span class="k">*</span>         0 <span class="k">*</span> 95619.437 <span class="k">*</span> <span class="nt">-0</span>.564450 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        0 <span class="k">*</span>        1 <span class="k">*</span>         0 <span class="k">*</span> 81161.726 <span class="k">*</span> <span class="nt">-0</span>.107315 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        0 <span class="k">*</span>        2 <span class="k">*</span>         0 <span class="k">*</span> 5842.2919 <span class="k">*</span> <span class="nt">-2</span>.231831 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        0 <span class="k">*</span>        3 <span class="k">*</span>         0 <span class="k">*</span> 5317.1752 <span class="k">*</span> <span class="nt">-1</span>.888138 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        1 <span class="k">*</span>        0 <span class="k">*</span>         0 <span class="k">*</span> 60697.234 <span class="k">*</span> 1.7458726 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        1 <span class="k">*</span>        1 <span class="k">*</span>         0 <span class="k">*</span> 21325.242 <span class="k">*</span> 3.3504548 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        1 <span class="k">*</span>        2 <span class="k">*</span>         0 <span class="k">*</span> 10533.277 <span class="k">*</span> 2.5811593 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        1 <span class="k">*</span>        3 <span class="k">*</span>         0 <span class="k">*</span> 9525.5888 <span class="k">*</span> 2.2138798 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        1 <span class="k">*</span>        4 <span class="k">*</span>         0 <span class="k">*</span> 7646.8149 <span class="k">*</span> <span class="nt">-2</span>.073031 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        1 <span class="k">*</span>        5 <span class="k">*</span>         0 <span class="k">*</span> 6710.2607 <span class="k">*</span> <span class="nt">-4</span>.392134 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        1 <span class="k">*</span>        6 <span class="k">*</span>         0 <span class="k">*</span> 6265.1894 <span class="k">*</span> 2.0036082 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        2 <span class="k">*</span>        0 <span class="k">*</span>         0 <span class="k">*</span> 47771.824 <span class="k">*</span> 1.7002637 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        2 <span class="k">*</span>        1 <span class="k">*</span>         0 <span class="k">*</span> 20069.929 <span class="k">*</span> 0.4099104 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        2 <span class="k">*</span>        2 <span class="k">*</span>         0 <span class="k">*</span> 17050.884 <span class="k">*</span> 1.6796519 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        2 <span class="k">*</span>        3 <span class="k">*</span>         0 <span class="k">*</span> 13296.936 <span class="k">*</span> 2.3199164 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        2 <span class="k">*</span>        4 <span class="k">*</span>         0 <span class="k">*</span> 7405.9931 <span class="k">*</span> 3.2522587 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        2 <span class="k">*</span>        5 <span class="k">*</span>         0 <span class="k">*</span> 7149.1142 <span class="k">*</span> 2.9668126 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        2 <span class="k">*</span>        6 <span class="k">*</span>         0 <span class="k">*</span> 5480.1064 <span class="k">*</span> 1.6205971 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        3 <span class="k">*</span>        0 <span class="k">*</span>         0 <span class="k">*</span> 58382.812 <span class="k">*</span> 0.4399697 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        3 <span class="k">*</span>        1 <span class="k">*</span>         0 <span class="k">*</span> 56662.648 <span class="k">*</span> <span class="nt">-0</span>.958044 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        3 <span class="k">*</span>        2 <span class="k">*</span>         0 <span class="k">*</span> 8177.5083 <span class="k">*</span> 0.0952794 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        3 <span class="k">*</span>        3 <span class="k">*</span>         0 <span class="k">*</span> 6725.3173 <span class="k">*</span> <span class="nt">-2</span>.840110 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        3 <span class="k">*</span>        4 <span class="k">*</span>         0 <span class="k">*</span> 6050.9355 <span class="k">*</span> <span class="nt">-3</span>.226393 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        3 <span class="k">*</span>        5 <span class="k">*</span>         0 <span class="k">*</span> 5938.2177 <span class="k">*</span> 4.4696846 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        3 <span class="k">*</span>        6 <span class="k">*</span>         0 <span class="k">*</span> 5598.3837 <span class="k">*</span> 1.7335447 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        3 <span class="k">*</span>        7 <span class="k">*</span>         0 <span class="k">*</span> 5588.6440 <span class="k">*</span> <span class="nt">-2</span>.244199 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        4 <span class="k">*</span>        0 <span class="k">*</span>         0 <span class="k">*</span> 111459.60 <span class="k">*</span> <span class="nt">-1</span>.890346 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        4 <span class="k">*</span>        1 <span class="k">*</span>         0 <span class="k">*</span> 66989.281 <span class="k">*</span> <span class="nt">-3</span>.267955 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        4 <span class="k">*</span>        2 <span class="k">*</span>         0 <span class="k">*</span> 58305.714 <span class="k">*</span> <span class="nt">-3</span>.107010 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        4 <span class="k">*</span>        3 <span class="k">*</span>         0 <span class="k">*</span> 19962.289 <span class="k">*</span> <span class="nt">-3</span>.366006 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        4 <span class="k">*</span>        4 <span class="k">*</span>         0 <span class="k">*</span> 13915.561 <span class="k">*</span> 2.5033011 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        4 <span class="k">*</span>        5 <span class="k">*</span>         0 <span class="k">*</span> 7830.6689 <span class="k">*</span> <span class="nt">-0</span>.455691 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        4 <span class="k">*</span>        6 <span class="k">*</span>         0 <span class="k">*</span> 6756.5102 <span class="k">*</span> 1.7076833 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        4 <span class="k">*</span>        7 <span class="k">*</span>         0 <span class="k">*</span> 5557.4731 <span class="k">*</span> 0.9128074 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        5 <span class="k">*</span>        0 <span class="k">*</span>         0 <span class="k">*</span> 51766.812 <span class="k">*</span> <span class="nt">-1</span>.078743 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        5 <span class="k">*</span>        1 <span class="k">*</span>         0 <span class="k">*</span> 32097.459 <span class="k">*</span> <span class="nt">-1</span>.689256 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        5 <span class="k">*</span>        2 <span class="k">*</span>         0 <span class="k">*</span> 15294.395 <span class="k">*</span> <span class="nt">-2</span>.391642 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        5 <span class="k">*</span>        3 <span class="k">*</span>         0 <span class="k">*</span> 11289.845 <span class="k">*</span> 1.4950412 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        5 <span class="k">*</span>        4 <span class="k">*</span>         0 <span class="k">*</span> 10382.897 <span class="k">*</span> 1.7665406 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        5 <span class="k">*</span>        5 <span class="k">*</span>         0 <span class="k">*</span> 8708.4169 <span class="k">*</span> 2.6065459 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        5 <span class="k">*</span>        6 <span class="k">*</span>         0 <span class="k">*</span> 8320.2431 <span class="k">*</span> <span class="nt">-0</span>.750116 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        5 <span class="k">*</span>        7 <span class="k">*</span>         0 <span class="k">*</span> 8054.5522 <span class="k">*</span> 0.8573129 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        5 <span class="k">*</span>        8 <span class="k">*</span>         0 <span class="k">*</span> 7014.7524 <span class="k">*</span> <span class="nt">-0</span>.209030 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        5 <span class="k">*</span>        9 <span class="k">*</span>         0 <span class="k">*</span> 6631.1084 <span class="k">*</span> <span class="nt">-3</span>.173136 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        5 <span class="k">*</span>       10 <span class="k">*</span>         0 <span class="k">*</span> 6435.3598 <span class="k">*</span> <span class="nt">-0</span>.557720 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        5 <span class="k">*</span>       11 <span class="k">*</span>         0 <span class="k">*</span> 6271.2802 <span class="k">*</span> <span class="nt">-0</span>.416771 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        5 <span class="k">*</span>       12 <span class="k">*</span>         0 <span class="k">*</span> 5931.2988 <span class="k">*</span> 3.1248571 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        5 <span class="k">*</span>       13 <span class="k">*</span>         0 <span class="k">*</span> 5867.2348 <span class="k">*</span> <span class="nt">-1</span>.257823 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        5 <span class="k">*</span>       14 <span class="k">*</span>         0 <span class="k">*</span> 5821.7973 <span class="k">*</span> <span class="nt">-1</span>.245562 <span class="k">*</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>        5 <span class="k">*</span>       15 <span class="k">*</span>         0 <span class="k">*</span> 5689.0058 <span class="k">*</span> <span class="nt">-1</span>.465563 <span class="k">*</span></code></pre></figure>
+
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">My PhD notes</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              My PhD notes
+            
+            </li>
+            
+            <li><a href="mailto:charles.delporte@cern.ch">charles.delporte@cern.ch</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

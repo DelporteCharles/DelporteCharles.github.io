@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Z+jet filter strategy</title>
+  <meta name="description" content="Purpose What filtering strategy (pTV or Max(HT,pTV)) is the most interesting for 0-lepton ? –&amp;gt; A priori pTV (MET) because we trigger on MET and produce Cx...">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2017/10/04/z+jet-filter-strategy.html">
+  <link rel="alternate" type="application/rss+xml" title="My PhD notes" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">My PhD notes</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Z+jet filter strategy</h1>
+    <p class="post-meta">
+      <time datetime="2017-10-04T00:00:00+02:00" itemprop="datePublished">
+        
+        Oct 4, 2017
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="purpose">Purpose</h1>
+<p>What filtering strategy (pTV or Max(HT,pTV)) is the most interesting for 0-lepton ?
+–&gt; A priori pTV (MET) because we trigger on MET and produce CxAODs with MET&gt;140</p>
+
+<h1 id="yield-files">Yield files</h1>
+
+<p>Major observations : Efficiency in Maker Derivations is much higher with the pTV filter</p>
+<ul>
+  <li>visible in the ratio Out/In in the pTV and MAXHtPTV filtered samples of CxAOD26</li>
+</ul>
+
+<h1 id="channelnumber--sample-name">ChannelNumber / Sample name</h1>
+
+<h2 id="sherpa-22">Sherpa 22</h2>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="mi">363364</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt0_70_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363365</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt0_70_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363366</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt0_70_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363367</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt70_140_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363368</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt70_140_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363369</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt70_140_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363370</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt140_280_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363371</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt140_280_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363372</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt140_280_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363373</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt280_500_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363374</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt280_500_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363375</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt280_500_BFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363376</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt500_700_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363377</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt500_700_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363378</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt500_700_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363379</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt700_1000_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363380</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt700_1000_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363381</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt700_1000_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363382</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt1000_2000_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363383</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt1000_2000_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363384</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt1000_2000_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363385</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt2000_E_CMS_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363386</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt2000_E_CMS_CFilterBVet</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363387</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zmumu_Pt2000_E_CMS_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363388</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt0_70_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363389</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt0_70_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363390</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt0_70_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363391</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt70_140_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363392</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt70_140_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363393</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt70_140_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363394</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt140_280_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363395</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt140_280_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363396</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt140_280_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363397</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt280_500_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363398</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt280_500_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363399</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt280_500_BFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363400</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt500_700_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363401</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt500_700_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363402</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt500_700_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363403</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt700_1000_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363404</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt700_1000_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363405</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt700_1000_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363406</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt1000_2000_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363407</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt1000_2000_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363408</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt1000_2000_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363409</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt2000_E_CMS_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363410</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt2000_E_CMS_CFilterBVet</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363411</span>        <span class="nx">Sherpa_NNPDF30NNLO_Zee_Pt2000_E_CMS_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363361</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt0_70_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363362</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt0_70_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363363</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt0_70_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363102</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt70_140_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363103</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt70_140_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363104</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt70_140_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363105</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt140_280_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363106</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt140_280_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363107</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt140_280_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363108</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt280_500_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363109</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt280_500_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363110</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt280_500_BFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363111</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt500_700_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363112</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt500_700_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363113</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt500_700_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363114</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt700_1000_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363115</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt700_1000_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363116</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt700_1000_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363117</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt1000_2000_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363118</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt1000_2000_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363119</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt1000_2000_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363120</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt2000_E_CMS_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363121</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt2000_E_CMS_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363122</span>        <span class="nx">Sherpa_NNPDF30NNLO_Ztautau_Pt2000_E_CMS_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363412</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt0_70_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363413</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt0_70_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363414</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt0_70_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363415</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt70_140_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363416</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt70_140_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363417</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt70_140_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363418</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt140_280_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363419</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt140_280_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363420</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt140_280_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363421</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt280_500_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363422</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt280_500_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363423</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt280_500_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363424</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt500_700_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363425</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt500_700_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363426</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt500_700_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363427</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt700_1000_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363428</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt700_1000_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363429</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt700_1000_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363430</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt1000_2000_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363431</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt1000_2000_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363432</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt1000_2000_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363433</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt2000_E_CMS_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363434</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt2000_E_CMS_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">363435</span>        <span class="nx">Sherpa_NNPDF30NNLO_Znunu_Pt2000_E_CMS_BFilter</span></code></pre></figure>
+
+<h2 id="sherpa-221">Sherpa 221</h2>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="mi">364100</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364101</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364102</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364103</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364104</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364105</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364106</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364107</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364108</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364109</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364110</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364111</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364112</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV500_1000</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364113</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV1000_E_CMS</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364114</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364115</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364116</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364117</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364118</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364119</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364120</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364121</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364122</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364123</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364124</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364125</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364126</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV500_1000</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364127</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV1000_E_CMS</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364128</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364129</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364130</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364131</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364132</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364133</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364134</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364135</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364136</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364137</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364138</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364139</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364140</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV500_1000</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364141</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV1000_E_CMS</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364142</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV0_70_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364143</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV0_70_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364144</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV0_70_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364145</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV70_140_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364146</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV70_140_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364147</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV70_140_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364148</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV140_280_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364149</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV140_280_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364150</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV140_280_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364151</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV280_500_CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364152</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV280_500_CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364153</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV280_500_BFilter</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364154</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV500_1000</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">364155</span>        <span class="nx">Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV1000_E_CMS</span></code></pre></figure>
+
+<h2 id="madgraph">Madgraph</h2>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="mi">361515</span>   <span class="mf">7518.4</span>             <span class="mf">1.2283</span>         <span class="mf">1.0</span>            <span class="nx">Z_MG</span>               <span class="nx">mc15_13TeV</span><span class="p">.</span><span class="mi">361515</span><span class="p">.</span><span class="nx">MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np0</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">361516</span>   <span class="mf">1200.1</span>             <span class="mf">1.2283</span>         <span class="mf">1.0</span>            <span class="nx">Z_MG</span>               <span class="nx">mc15_13TeV</span><span class="p">.</span><span class="mi">361516</span><span class="p">.</span><span class="nx">MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np1</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">361517</span>   <span class="mf">387.16</span>             <span class="mf">1.2283</span>         <span class="mf">1.0</span>            <span class="nx">Z_MG</span>               <span class="nx">mc15_13TeV</span><span class="p">.</span><span class="mi">361517</span><span class="p">.</span><span class="nx">MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np2</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">361518</span>   <span class="mf">110.08</span>             <span class="mf">1.2283</span>         <span class="mf">1.0</span>            <span class="nx">Z_MG</span>               <span class="nx">mc15_13TeV</span><span class="p">.</span><span class="mi">361518</span><span class="p">.</span><span class="nx">MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np3</span><br data-jekyll-commonmark-ghpages="" /><span class="mi">361519</span>   <span class="mf">43.389</span>             <span class="mf">1.2283</span>         <span class="mf">1.0</span>            <span class="nx">Z_MG</span>               <span class="nx">mc15_13TeV</span><span class="p">.</span><span class="mi">361519</span><span class="p">.</span><span class="nx">MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np4</span></code></pre></figure>
+
+<h2 id="cxaod26">CxAOD26</h2>
+
+<h3 id="ptv-filter">PTV Filter</h3>
+<p>| DSID   | In Maker     | Out Maker    | Weight          | Sample                      | Out/In       | XSection pb  |
+| —— | ——- | ——- | ————— | ————————— | ———— | ———— |
+| 363412 | 7952000 | 801     | 5267767.595836  | PTV_0_70_CVetoBVeto         |  0.000100729 |    1.122e+04 |
+| 363413 | 4941000 | 999     | 2895544.753176  | PTV_0_70_CFilterBVeto       |  0.000202186 |    1.122e+04 |
+| 363414 | 4927000 | 952     | 2613355.412099  | PTV_0_70_BFilter            |  0.000193221 |    1.122e+04 |
+| 363415 | 2967000 | 123987  | 1376663.700830  | PTV_70_140_CVetoBVeto       |  0.0417887   |        404.0 |
+| 363416 | 1980000 | 100793  | 1015015.028485  | PTV_70_140_CFilterBVeto     |  0.0509056   |        404.0 |
+| 363417 | 2471000 | 111906  | 1262467.293281  | PTV_70_140_BFilter          |  <strong>0.0452877</strong>   |        404.0 |
+| 363418 | 1946000 | 1240781 | 1068596.120936  | PTV_140_280_CVetoBVeto      |  0.637606    |        62.21 |
+| 363419 | 1903000 | 1306642 | 1230026.079352  | PTV_140_280_CFilterBVeto    |  0.686622    |        62.21 |
+| 363420 | 1983000 | 1275761 | 1359566.754346  | PTV_140_280_BFilter         |  <strong>0.643349</strong>    |        62.21 |
+| 363421 | 1480000 | 1434245 | 944456.868093   | PTV_280_500_CVetoBVeto      |  0.969084    |        4.612 |
+| 363422 | 991000  | 966928  | 746432.061863   | PTV_280_500_CFilterBVeto    |  0.975709    |        4.612 |
+| 363423 | 984000  | 949039  | 814451.400598   | PTV_280_500_BFilter         |  <strong>0.964471</strong>    |        4.612 |
+| 363424 | 989000  | 977446  | 714282.064698   | PTV_500_700_CVetoBVeto      |  0.988317    |       0.2871 |
+| 363425 | 589000  | 582735  | 475752.457689   | PTV_500_700_CFilterBVeto    |  0.989363    |       0.2871 |
+| 363426 | 591000  | 580434  | 526420.666568   |  PTV_500_700_BFilter        |  0.982122    |       0.2871 |
+| 363427 | 150000  | 148277  | 101000.461664   |  PTV_700_1000_CVetoBVeto    |  0.988513    |      0.05102 |
+| 363428 | 97000   |  95878  |  80945.344066   |  PTV_700_1000_CFilterBVeto  |  0.988433    |      0.05102 |
+| 363429 | 99000   |  97283  |  89527.868552   | PTV_700_1000_BFilter        |  0.982657    |      0.05102 |
+| 363430 | 99000   |  97331  |  72869.703318   | PTV_1000_2000_CVetoBVeto    |  0.983141    |     0.006491 |
+| 363431 | 50000   |  49190  |  42122.993251   | PTV_1000_2000_CFilterBVeto  |  0.9838      |     0.006491 |
+| 363432 | 50000   |  48916  |  44874.128457   | PTV_1000_2000_BFilter       |  0.97832     |     0.006491 |
+| 363433 | 49000   |  47321  |  26411.386037   | PTV_2000_E_CMS_CVetoBVeto   |  0.965735    |    2.429e-05 |
+| 363434 | 30000   |  29175  |  21409.903714   | PTV_2000_E_CMS_CFilterBVeto |  0.9725      |    2.429e-05 |
+| 363435 | 5000    |   4839  |   3675.361879   | PTV_2000_E_CMS_BFilter      |  0.9678      |    2.429e-05 |</p>
+
+<h3 id="maxhtptv-filter">MAXHTPTV Filter</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>DSID</th>
+      <th>In</th>
+      <th>Out</th>
+      <th>Weight</th>
+      <th>Sample</th>
+      <th>Efficiency Out/In</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>364142</td>
+      <td>9923000</td>
+      <td>653</td>
+      <td>6556534.009083</td>
+      <td>MAXHTPTV0_70_CVetoBVeto</td>
+      <td>6.58067e-05</td>
+    </tr>
+    <tr>
+      <td>364143</td>
+      <td>7881000</td>
+      <td>963</td>
+      <td>4469945.171151</td>
+      <td>MAXHTPTV0_70_CFilterBVeto</td>
+      <td>0.000122193</td>
+    </tr>
+    <tr>
+      <td>364144</td>
+      <td>7926800</td>
+      <td>811</td>
+      <td>4001217.033898</td>
+      <td>MAXHTPTV0_70_BFilter</td>
+      <td>0.000102311</td>
+    </tr>
+    <tr>
+      <td>364145</td>
+      <td>14805000</td>
+      <td>207497</td>
+      <td>5324654.434868</td>
+      <td>MAXHTPTV70_140_CVetoBVeto</td>
+      <td>0.0140153</td>
+    </tr>
+    <tr>
+      <td>364146</td>
+      <td>14763800</td>
+      <td>223184</td>
+      <td>5348559.595827</td>
+      <td>MAXHTPTV70_140_CFilterBVeto</td>
+      <td>0.015117</td>
+    </tr>
+    <tr>
+      <td>364147</td>
+      <td>19728500</td>
+      <td>252213</td>
+      <td>6908641.604304</td>
+      <td>MAXHTPTV70_140_BFilter</td>
+      <td><strong>0.0127842</strong></td>
+    </tr>
+    <tr>
+      <td>364148</td>
+      <td>14822800</td>
+      <td>3128015</td>
+      <td>8786406.073091</td>
+      <td>MAXHTPTV140_280_CVetoBVeto</td>
+      <td>0.211027</td>
+    </tr>
+    <tr>
+      <td>364149</td>
+      <td>12364500</td>
+      <td>2395253</td>
+      <td>8200906.721326</td>
+      <td>MAXHTPTV140_280_CFilterBVeto</td>
+      <td>0.19372</td>
+    </tr>
+    <tr>
+      <td>364150</td>
+      <td>9864900</td>
+      <td>1667032</td>
+      <td>6840968.190181</td>
+      <td>MAXHTPTV140_280_BFilter</td>
+      <td><strong>0.168986</strong></td>
+    </tr>
+    <tr>
+      <td>364151</td>
+      <td>4937400</td>
+      <td>1946370</td>
+      <td>4262731.737315</td>
+      <td>MAXHTPTV280_500_CVetoBVeto</td>
+      <td>0.39421</td>
+    </tr>
+    <tr>
+      <td>364152</td>
+      <td>3445500</td>
+      <td>1207082</td>
+      <td>3174769.384160</td>
+      <td>MAXHTPTV280_500_CFilterBVeto</td>
+      <td>0.350336</td>
+    </tr>
+    <tr>
+      <td>364153</td>
+      <td>8887350</td>
+      <td>2913958</td>
+      <td>8353354.671824</td>
+      <td>MAXHTPTV280_500_BFilter</td>
+      <td><strong>0.327877</strong></td>
+    </tr>
+    <tr>
+      <td>364154</td>
+      <td>9869000</td>
+      <td>4124030</td>
+      <td>9812913.476152</td>
+      <td>MAXHTPTV500_1000</td>
+      <td>0.417877</td>
+    </tr>
+    <tr>
+      <td>364155</td>
+      <td>100000</td>
+      <td>50308</td>
+      <td>102593.592347</td>
+      <td>MAXHTPTV1000_E_CMS</td>
+      <td>0.50308</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="cxaod-28">CxAOD 28</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>DSID</th>
+      <th>In</th>
+      <th>Out</th>
+      <th>Weight</th>
+      <th>Sample</th>
+      <th>Efficiency Out/In</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>364142</td>
+      <td>9923000.0</td>
+      <td>633.0</td>
+      <td>6556534.00908</td>
+      <td>MAXHTPTV0_70_CVetoBVeto</td>
+      <td>6.37912e-05</td>
+    </tr>
+    <tr>
+      <td>364143</td>
+      <td>7881000.0</td>
+      <td>928.0</td>
+      <td>4469945.17115</td>
+      <td>MAXHTPTV0_70_CFilterBVeto</td>
+      <td>0.000117752</td>
+    </tr>
+    <tr>
+      <td>364144</td>
+      <td>7926800.0</td>
+      <td>774.0</td>
+      <td>4001217.0339</td>
+      <td>MAXHTPTV0_70_BFilter</td>
+      <td>9.76434e-05</td>
+    </tr>
+    <tr>
+      <td>364145</td>
+      <td>14805000.0</td>
+      <td>206084.0</td>
+      <td>5324654.43487</td>
+      <td>MAXHTPTV70_140_CVetoBVeto</td>
+      <td>0.0139199</td>
+    </tr>
+    <tr>
+      <td>364146</td>
+      <td>14763800.0</td>
+      <td>218605.0</td>
+      <td>5348559.59583</td>
+      <td>MAXHTPTV70_140_CFilterBVeto</td>
+      <td>0.0148068</td>
+    </tr>
+    <tr>
+      <td>364147</td>
+      <td>19728500.0</td>
+      <td>249878.0</td>
+      <td>6908641.6043</td>
+      <td>MAXHTPTV70_140_BFilter</td>
+      <td>0.0126658</td>
+    </tr>
+    <tr>
+      <td>364148</td>
+      <td>14822800.0</td>
+      <td>3128989.0</td>
+      <td>8786406.07309</td>
+      <td>MAXHTPTV140_280_CVetoBVeto</td>
+      <td>0.211093</td>
+    </tr>
+    <tr>
+      <td>364149</td>
+      <td>12364500.0</td>
+      <td>2388315.0</td>
+      <td>8200906.72133</td>
+      <td>MAXHTPTV140_280_CFilterBVeto</td>
+      <td>0.193159</td>
+    </tr>
+    <tr>
+      <td>364150</td>
+      <td>19745300.0</td>
+      <td>3334939.0</td>
+      <td>13694888.3195</td>
+      <td>MAXHTPTV140_280_BFilter</td>
+      <td>0.168898</td>
+    </tr>
+    <tr>
+      <td>364151</td>
+      <td>4937400.0</td>
+      <td>1947041.0</td>
+      <td>4262731.73731</td>
+      <td>MAXHTPTV280_500_CVetoBVeto</td>
+      <td>0.394345</td>
+    </tr>
+    <tr>
+      <td>364152</td>
+      <td>3445500.0</td>
+      <td>1207024.0</td>
+      <td>3174769.38416</td>
+      <td>MAXHTPTV280_500_CFilterBVeto</td>
+      <td>0.350319</td>
+    </tr>
+    <tr>
+      <td>364153</td>
+      <td>8887350.0</td>
+      <td>2914715.0</td>
+      <td>8353354.67182</td>
+      <td>MAXHTPTV280_500_BFilter</td>
+      <td>0.327962</td>
+    </tr>
+    <tr>
+      <td>364154</td>
+      <td>9869000.0</td>
+      <td>4125521.0</td>
+      <td>9812913.47615</td>
+      <td>MAXHTPTV500_1000</td>
+      <td>0.418028</td>
+    </tr>
+    <tr>
+      <td>364155</td>
+      <td>4951000.0</td>
+      <td>2496530.0</td>
+      <td>5077324.08866</td>
+      <td>MAXHTPTV1000_E_CMS</td>
+      <td>0.504248</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="reader-selection-yields-valerio-style-table">Reader selection yields, Valerio style table</h1>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="err">#</span> <span class="nx">awk</span> <span class="nx">instruction</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">less</span> <span class="nx">plots_ZJet_CxAOD26_Sherpa22</span><span class="o">/</span><span class="nx">yield_2tag2jet_150ptv_SR_clean</span><span class="p">.</span><span class="nx">txt</span> <span class="o">|</span> <span class="nx">awk</span> <span class="s1">'BEGIN {totalErr2=0} {totalErr2+=$4*$4; print $0 "      " $3/1659.93*100 "        " $4*$4/3130.19} END{print "totalErr2 = " sqrt(totalErr2)}'</span></code></pre></figure>
+
+<h2 id="cxaod-26">CxAOD 26</h2>
+
+<h3 id="sherpa-22-1">Sherpa 22</h3>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">*</span> <span class="mi">2</span> <span class="nx">jets</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">sampleName</span>       <span class="nx">entries</span>         <span class="nx">integral</span>         <span class="nx">error</span>  <span class="nx">error</span><span class="o">/</span><span class="nx">integ</span><span class="p">.</span>      <span class="nx">Fraction</span> <span class="k">of</span> <span class="nx">total</span> <span class="k">yield</span> <span class="o">%</span>   <span class="nx">Fraction</span> <span class="k">of</span> <span class="nx">total</span> <span class="nx">error</span><span class="o">^</span><span class="mi">2</span> <br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363104</span>             <span class="mi">5</span>          <span class="mf">3.5061</span>       <span class="mf">1.74353</span>      <span class="mf">0.497284</span>      <span class="mf">0.21122</span>                     <span class="mf">0.0971154</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363105</span>             <span class="mi">1</span>         <span class="mf">1.51463</span>       <span class="mf">1.51463</span>             <span class="mi">1</span>      <span class="mf">0.0912466</span>                   <span class="mf">0.0732896</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363106</span>             <span class="mi">1</span>         <span class="mf">2.37666</span>       <span class="mf">2.37666</span>             <span class="mi">1</span>      <span class="mf">0.143178</span>                    <span class="mf">0.180453</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363107</span>            <span class="mi">33</span>         <span class="mf">8.40973</span>       <span class="mf">2.49863</span>      <span class="mf">0.297112</span>      <span class="mf">0.506632</span>                    <span class="mf">0.19945</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363109</span>             <span class="mi">1</span>         <span class="mf">0.16825</span>       <span class="mf">0.16825</span>             <span class="mi">1</span>      <span class="mf">0.010136</span>                    <span class="mf">0.000904356</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363110</span>           <span class="mi">130</span>         <span class="mf">2.02866</span>      <span class="mf">0.298527</span>      <span class="mf">0.147155</span>      <span class="mf">0.122214</span>                    <span class="mf">0.00284706</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363112</span>             <span class="mi">1</span>      <span class="mf">0.00584871</span>    <span class="mf">0.00584871</span>             <span class="mi">1</span>      <span class="mf">0.000352347</span>                 <span class="mf">1.09282</span><span class="nx">e</span><span class="o">-</span><span class="mi">06</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363113</span>            <span class="mi">27</span>       <span class="mf">0.0683804</span>     <span class="mf">0.0175172</span>      <span class="mf">0.256173</span>      <span class="mf">0.00411947</span>                  <span class="mf">9.80299</span><span class="nx">e</span><span class="o">-</span><span class="mi">06</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363369</span>             <span class="mi">1</span>        <span class="mf">0.153216</span>      <span class="mf">0.153216</span>             <span class="mi">1</span>      <span class="mf">0.00923027</span>                  <span class="mf">0.000749959</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363372</span>           <span class="mi">127</span>          <span class="mf">2.7304</span>      <span class="mf">0.415626</span>      <span class="mf">0.152221</span>      <span class="mf">0.164489</span>                    <span class="mf">0.00551867</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363375</span>            <span class="mi">10</span>        <span class="mf">0.128108</span>      <span class="mf">0.114512</span>      <span class="mf">0.893864</span>      <span class="mf">0.00771767</span>                  <span class="mf">0.00041892</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363416</span>             <span class="mi">1</span>         <span class="mf">35.1421</span>       <span class="mf">35.1421</span>             <span class="mi">1</span>      <span class="mf">2.11708</span>                     <span class="mf">39.4534</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363417</span>           <span class="mi">130</span>         <span class="mf">117.384</span>       <span class="mf">18.3471</span>        <span class="mf">0.1563</span>      <span class="mf">7.07162</span>                     <span class="mf">10.7539</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363418</span>             <span class="mi">4</span>         <span class="mf">34.6557</span>       <span class="mf">21.2289</span>      <span class="mf">0.612565</span>      <span class="mf">2.08778</span>                     <span class="mf">14.3974</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363419</span>           <span class="mi">104</span>         <span class="mf">95.9347</span>       <span class="mf">18.7216</span>      <span class="mf">0.195149</span>      <span class="mf">5.77944</span>                     <span class="mf">11.1973</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363420</span>          <span class="mi">7802</span>         <span class="mf">1218.64</span>       <span class="mf">26.8702</span>     <span class="mf">0.0220493</span>      <span class="mf">73.4151</span>                     <span class="mf">23.0659</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363421</span>             <span class="mi">6</span>       <span class="o">-</span><span class="mf">0.220455</span>       <span class="mf">1.15169</span>      <span class="o">-</span><span class="mf">5.22416</span>      <span class="o">-</span><span class="mf">0.013281</span>                   <span class="mf">0.0423741</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363422</span>            <span class="mi">73</span>         <span class="mf">8.35735</span>       <span class="mf">2.18509</span>      <span class="mf">0.261457</span>      <span class="mf">0.503476</span>                    <span class="mf">0.152534</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363423</span>          <span class="mi">5242</span>         <span class="mf">124.265</span>        <span class="mf">3.4244</span>     <span class="mf">0.0275572</span>      <span class="mf">7.48616</span>                     <span class="mf">0.374626</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363424</span>             <span class="mi">3</span>       <span class="mf">0.0445619</span>     <span class="mf">0.0575149</span>       <span class="mf">1.29067</span>      <span class="mf">0.00268457</span>                  <span class="mf">0.000105679</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363425</span>            <span class="mi">23</span>        <span class="mf">0.172965</span>     <span class="mf">0.0781493</span>      <span class="mf">0.451822</span>      <span class="mf">0.01042</span>                     <span class="mf">0.00019511</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363426</span>          <span class="mi">1643</span>         <span class="mf">3.87886</span>      <span class="mf">0.197005</span>     <span class="mf">0.0507894</span>      <span class="mf">0.233676</span>                    <span class="mf">0.00123989</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363428</span>             <span class="mi">1</span>       <span class="mf">0.0183582</span>     <span class="mf">0.0183582</span>             <span class="mi">1</span>      <span class="mf">0.00110596</span>                  <span class="mf">1.07669</span><span class="nx">e</span><span class="o">-</span><span class="mi">05</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363429</span>           <span class="mi">183</span>        <span class="mf">0.505213</span>     <span class="mf">0.0706112</span>      <span class="mf">0.139765</span>      <span class="mf">0.0304358</span>                   <span class="mf">0.000159286</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363431</span>             <span class="mi">4</span>      <span class="mf">0.00672931</span>    <span class="mf">0.00936126</span>       <span class="mf">1.39112</span>      <span class="mf">0.000405397</span>                 <span class="mf">2.79961</span><span class="nx">e</span><span class="o">-</span><span class="mi">06</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363432</span>            <span class="mi">62</span>       <span class="mf">0.0506529</span>    <span class="mf">0.00907181</span>      <span class="mf">0.179098</span>      <span class="mf">0.00305151</span>                  <span class="mf">2.62916</span><span class="nx">e</span><span class="o">-</span><span class="mi">06</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363434</span>             <span class="mi">2</span>     <span class="mf">9.78395</span><span class="nx">e</span><span class="o">-</span><span class="mi">05</span>   <span class="mf">6.91847</span><span class="nx">e</span><span class="o">-</span><span class="mi">05</span>      <span class="mf">0.707125</span>      <span class="mf">5.89419</span><span class="nx">e</span><span class="o">-</span><span class="mi">06</span>                 <span class="mf">1.52915</span><span class="nx">e</span><span class="o">-</span><span class="mi">10</span>              <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363435</span>             <span class="mi">4</span>     <span class="mf">0.000271956</span>   <span class="mf">0.000183997</span>      <span class="mf">0.676569</span>      <span class="mf">1.63836</span><span class="nx">e</span><span class="o">-</span><span class="mi">05</span>                 <span class="mf">1.08156</span><span class="nx">e</span><span class="o">-</span><span class="mi">09</span>                <br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">bkg</span><span class="p">:</span>          <span class="mi">15624</span>       <span class="mf">1659.93</span>      <span class="mi">100</span>        <span class="mi">0</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">totalStatErr</span> <span class="o">=</span> <span class="mf">55.9481</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">*</span> <span class="mi">3</span> <span class="nx">jets</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">sampleName</span>       <span class="nx">entries</span>         <span class="nx">integral</span>         <span class="nx">error</span>  <span class="nx">error</span><span class="o">/</span><span class="nx">integ</span><span class="p">.</span>      <span class="nx">Fraction</span> <span class="k">of</span> <span class="nx">total</span> <span class="k">yield</span> <span class="o">%</span>   <span class="nx">Fraction</span> <span class="k">of</span> <span class="nx">total</span> <span class="nx">error</span><span class="o">^</span><span class="mi">2</span> <br data-jekyll-commonmark-ghpages="" />   <br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363104</span>             <span class="mi">7</span>       <span class="mf">2.93961</span>       <span class="mf">1.49476</span>       <span class="mf">0.50849</span>        <span class="mf">0.110786</span>                      <span class="mf">0.0769655</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363107</span>            <span class="mi">51</span>       <span class="mf">19.3049</span>         <span class="mf">4.077</span>      <span class="mf">0.211189</span>        <span class="mf">0.727548</span>                      <span class="mf">0.572578</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363109</span>             <span class="mi">4</span>      <span class="mf">0.356358</span>      <span class="mf">0.181865</span>      <span class="mf">0.510345</span>        <span class="mf">0.0134301</span>                     <span class="mf">0.00113933</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363110</span>           <span class="mi">210</span>       <span class="mf">3.28583</span>      <span class="mf">0.297812</span>     <span class="mf">0.0906351</span>        <span class="mf">0.123834</span>                      <span class="mf">0.00305518</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363112</span>             <span class="mi">4</span>     <span class="mf">0.0456029</span>     <span class="mf">0.0250728</span>      <span class="mf">0.549807</span>        <span class="mf">0.00171865</span>                    <span class="mf">2.1655</span><span class="nx">e</span><span class="o">-</span><span class="mi">05</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363113</span>            <span class="mi">64</span>      <span class="mf">0.177331</span>     <span class="mf">0.0296053</span>      <span class="mf">0.166949</span>        <span class="mf">0.00668311</span>                    <span class="mf">3.0192</span><span class="nx">e</span><span class="o">-</span><span class="mi">05</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363116</span>             <span class="mi">3</span>    <span class="mf">0.00147912</span>    <span class="mf">0.00767338</span>        <span class="mf">5.1878</span>        <span class="mf">5.57439</span><span class="nx">e</span><span class="o">-</span><span class="mi">05</span>                   <span class="mf">2.02827</span><span class="nx">e</span><span class="o">-</span><span class="mi">06</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363119</span>             <span class="mi">5</span>    <span class="mf">0.00104432</span>   <span class="mf">0.000816468</span>      <span class="mf">0.781817</span>        <span class="mf">3.93575</span><span class="nx">e</span><span class="o">-</span><span class="mi">05</span>                   <span class="mf">2.29631</span><span class="nx">e</span><span class="o">-</span><span class="mi">08</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363369</span>             <span class="mi">4</span>      <span class="mf">0.852547</span>      <span class="mf">0.444765</span>      <span class="mf">0.521689</span>        <span class="mf">0.0321301</span>                     <span class="mf">0.00681419</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363371</span>             <span class="mi">2</span>      <span class="mf">0.896403</span>      <span class="mf">0.634016</span>      <span class="mf">0.707289</span>        <span class="mf">0.0337829</span>                     <span class="mf">0.0138469</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363372</span>           <span class="mi">232</span>       <span class="mf">5.42046</span>      <span class="mf">0.597084</span>      <span class="mf">0.110154</span>        <span class="mf">0.204282</span>                      <span class="mf">0.0122807</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363375</span>            <span class="mi">25</span>      <span class="mf">0.524305</span>      <span class="mf">0.128208</span>       <span class="mf">0.24453</span>        <span class="mf">0.0197596</span>                     <span class="mf">0.000566217</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363416</span>             <span class="mi">2</span>       <span class="mf">14.1144</span>        <span class="mf">9.9864</span>      <span class="mf">0.707533</span>        <span class="mf">0.531932</span>                      <span class="mf">3.43535</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363417</span>           <span class="mi">227</span>       <span class="mf">238.117</span>       <span class="mf">28.2976</span>      <span class="mf">0.118839</span>        <span class="mf">8.97397</span>                       <span class="mf">27.5837</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363418</span>             <span class="mi">8</span>       <span class="mf">43.2011</span>       <span class="mf">19.5246</span>      <span class="mf">0.451946</span>        <span class="mf">1.62813</span>                       <span class="mf">13.1316</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363419</span>           <span class="mi">110</span>       <span class="mf">116.807</span>        <span class="mf">17.575</span>      <span class="mf">0.150462</span>        <span class="mf">4.40213</span>                       <span class="mf">10.64</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363420</span>          <span class="mi">9119</span>          <span class="mi">1952</span>       <span class="mf">35.5456</span>     <span class="mf">0.0182099</span>        <span class="mf">73.5654</span>                       <span class="mf">43.5236</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363421</span>             <span class="mi">8</span>      <span class="mf">0.922451</span>      <span class="mf">0.997895</span>       <span class="mf">1.08179</span>        <span class="mf">0.0347646</span>                     <span class="mf">0.0343023</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363422</span>           <span class="mi">107</span>       <span class="mf">11.8282</span>       <span class="mf">3.31393</span>      <span class="mf">0.280173</span>        <span class="mf">0.445772</span>                      <span class="mf">0.378303</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363423</span>          <span class="mi">7538</span>       <span class="mf">230.768</span>       <span class="mf">4.10972</span>     <span class="mf">0.0178089</span>        <span class="mf">8.697</span>                         <span class="mf">0.581805</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363424</span>             <span class="mi">2</span>    <span class="o">-</span><span class="mf">0.0127646</span>     <span class="mf">0.0640348</span>      <span class="o">-</span><span class="mf">5.01658</span>        <span class="o">-</span><span class="mf">0.000481062</span>                  <span class="mf">0.000141249</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363425</span>            <span class="mi">36</span>      <span class="mf">0.692093</span>       <span class="mf">0.22345</span>      <span class="mf">0.322862</span>        <span class="mf">0.0260831</span>                     <span class="mf">0.00171994</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363426</span>          <span class="mi">3128</span>       <span class="mf">9.81498</span>      <span class="mf">0.261777</span>     <span class="mf">0.0266712</span>        <span class="mf">0.369899</span>                      <span class="mf">0.00236056</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363428</span>             <span class="mi">8</span>     <span class="mf">0.0079048</span>     <span class="mf">0.0564974</span>       <span class="mf">7.14723</span>        <span class="mf">0.00029791</span>                    <span class="mf">0.000109954</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363429</span>           <span class="mi">415</span>       <span class="mf">1.24189</span>     <span class="mf">0.0873394</span>     <span class="mf">0.0703278</span>        <span class="mf">0.0468034</span>                     <span class="mf">0.000262769</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363431</span>             <span class="mi">2</span>    <span class="mf">0.00884029</span>    <span class="mf">0.00634914</span>      <span class="mf">0.718205</span>        <span class="mf">0.000333166</span>                   <span class="mf">1.38862</span><span class="nx">e</span><span class="o">-</span><span class="mi">06</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363432</span>           <span class="mi">153</span>      <span class="mf">0.106963</span>     <span class="mf">0.0146764</span>       <span class="mf">0.13721</span>        <span class="mf">0.00403114</span>                    <span class="mf">7.4198</span><span class="nx">e</span><span class="o">-</span><span class="mi">06</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363434</span>             <span class="mi">5</span>  <span class="o">-</span><span class="mf">6.89901</span><span class="nx">e</span><span class="o">-</span><span class="mi">06</span>   <span class="mf">0.000122573</span>      <span class="o">-</span><span class="mf">17.7668</span>        <span class="o">-</span><span class="mf">2.60004</span><span class="nx">e</span><span class="o">-</span><span class="mi">07</span>                  <span class="mf">5.17538</span><span class="nx">e</span><span class="o">-</span><span class="mi">10</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363435</span>            <span class="mi">11</span>   <span class="mf">0.000319722</span>    <span class="mf">0.00016951</span>      <span class="mf">0.530179</span>        <span class="mf">1.20494</span><span class="nx">e</span><span class="o">-</span><span class="mi">05</span>                   <span class="mf">9.89791</span><span class="nx">e</span><span class="o">-</span><span class="mi">10</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">bkg</span><span class="p">:</span>          <span class="mi">21490</span>       <span class="mf">2653.42</span>      <span class="mi">100</span>        <span class="mi">0</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">totalStatErr</span> <span class="o">=</span> <span class="mf">53.8796</span></code></pre></figure>
+
+<h2 id="cxaod-28-1">CxAOD 28</h2>
+
+<h3 id="sherpa-221-1">Sherpa 221</h3>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">*</span> <span class="mi">2</span> <span class="nx">jets</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">sampleName</span>       <span class="nx">entries</span>         <span class="nx">integral</span>         <span class="nx">error</span>  <span class="nx">error</span><span class="o">/</span><span class="nx">integ</span><span class="p">.</span>      <span class="nx">Fraction</span> <span class="k">of</span> <span class="nx">total</span> <span class="k">yield</span> <span class="o">%</span>   <span class="nx">Fraction</span> <span class="k">of</span> <span class="nx">total</span> <span class="nx">error</span><span class="o">^</span><span class="mi">2</span> <br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364107</span>             <span class="mi">1</span>       <span class="mf">0.45828</span>       <span class="mf">0.45828</span>             <span class="mi">1</span>           <span class="mf">0.0284701</span>                   <span class="mf">0.0305542</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364108</span>           <span class="mi">129</span>       <span class="mf">2.70186</span>      <span class="mf">0.397822</span>       <span class="mf">0.14724</span>           <span class="mf">0.16785</span>                     <span class="mf">0.0230243</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364111</span>            <span class="mi">18</span>      <span class="mf">0.302236</span>       <span class="mf">0.14944</span>       <span class="mf">0.49445</span>           <span class="mf">0.018776</span>                    <span class="mf">0.00324895</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364112</span>             <span class="mi">1</span>    <span class="o">-</span><span class="mf">0.0174837</span>     <span class="mf">0.0174837</span>            <span class="o">-</span><span class="mi">1</span>           <span class="o">-</span><span class="mf">0.00108615</span>                 <span class="mf">4.44709</span><span class="nx">e</span><span class="o">-</span><span class="mi">05</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364131</span>             <span class="mi">1</span>      <span class="o">-</span><span class="mf">4.55101</span>       <span class="mf">4.55101</span>            <span class="o">-</span><span class="mi">1</span>           <span class="o">-</span><span class="mf">0.282726</span>                   <span class="mf">3.01318</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364133</span>             <span class="mi">2</span>      <span class="mf">0.425577</span>      <span class="mf">0.300968</span>      <span class="mf">0.707201</span>           <span class="mf">0.0264384</span>                   <span class="mf">0.013178</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364134</span>             <span class="mi">2</span>       <span class="mf">1.86513</span>       <span class="mf">1.37772</span>      <span class="mf">0.738669</span>           <span class="mf">0.115869</span>                    <span class="mf">0.276141</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364135</span>             <span class="mi">3</span>       <span class="mf">1.65917</span>      <span class="mf">0.997579</span>      <span class="mf">0.601253</span>           <span class="mf">0.103074</span>                    <span class="mf">0.144778</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364136</span>           <span class="mi">248</span>       <span class="mf">9.56135</span>       <span class="mf">1.17735</span>      <span class="mf">0.123136</span>           <span class="mf">0.593987</span>                    <span class="mf">0.20166</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364139</span>           <span class="mi">167</span>       <span class="mf">3.12677</span>      <span class="mf">0.489898</span>      <span class="mf">0.156679</span>           <span class="mf">0.194247</span>                    <span class="mf">0.0349157</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364140</span>            <span class="mi">19</span>      <span class="mf">0.373859</span>      <span class="mf">0.190152</span>      <span class="mf">0.508619</span>           <span class="mf">0.0232255</span>                   <span class="mf">0.00526031</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364146</span>             <span class="mi">4</span>       <span class="mf">6.20219</span>       <span class="mf">5.14412</span>      <span class="mf">0.829403</span>           <span class="mf">0.385303</span>                    <span class="mf">3.84974</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364147</span>           <span class="mi">272</span>       <span class="mf">27.2461</span>       <span class="mf">10.7761</span>      <span class="mf">0.395511</span>           <span class="mf">1.69263</span>                     <span class="mf">16.894</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364148</span>             <span class="mi">8</span>       <span class="mf">14.9204</span>       <span class="mf">7.65233</span>      <span class="mf">0.512876</span>           <span class="mf">0.926911</span>                    <span class="mf">8.51916</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364149</span>           <span class="mi">157</span>       <span class="mf">75.6182</span>       <span class="mf">11.3939</span>      <span class="mf">0.150677</span>           <span class="mf">4.69769</span>                     <span class="mf">18.8866</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364150</span>         <span class="mi">19691</span>       <span class="mf">1145.82</span>       <span class="mf">16.5863</span>     <span class="mf">0.0144755</span>           <span class="mf">71.1827</span>                     <span class="mf">40.0229</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364151</span>             <span class="mi">6</span>      <span class="o">-</span><span class="mf">1.59388</span>        <span class="mf">1.9448</span>      <span class="o">-</span><span class="mf">1.22017</span>           <span class="o">-</span><span class="mf">0.0990178</span>                  <span class="mf">0.550249</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364152</span>            <span class="mi">40</span>       <span class="mf">17.0909</span>       <span class="mf">4.56668</span>        <span class="mf">0.2672</span>           <span class="mf">1.06175</span>                     <span class="mf">3.03397</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364153</span>         <span class="mi">11577</span>        <span class="mf">291.46</span>       <span class="mf">5.37418</span>     <span class="mf">0.0184388</span>           <span class="mf">18.1066</span>                     <span class="mf">4.20179</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364154</span>           <span class="mi">545</span>       <span class="mf">16.8537</span>       <span class="mf">1.42836</span>     <span class="mf">0.0847509</span>           <span class="mf">1.04702</span>                     <span class="mf">0.296814</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364155</span>            <span class="mi">24</span>        <span class="mf">0.1651</span>     <span class="mf">0.0472089</span>      <span class="mf">0.285941</span>           <span class="mf">0.0102566</span>                   <span class="mf">0.000324233</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">bkg</span><span class="p">:</span>          <span class="mi">32915</span>       <span class="mf">1609.69</span>      <span class="mi">100</span>        <span class="mi">0</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">totalStatErr</span> <span class="o">=</span> <span class="mf">26.2179</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">*</span> <span class="mi">3</span> <span class="nx">jets</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">sampleName</span>       <span class="nx">entries</span>    <span class="nx">integral</span>         <span class="nx">error</span>  <span class="nx">error</span><span class="o">/</span><span class="nx">integ</span><span class="p">.</span>      <span class="nx">Fraction</span> <span class="k">of</span> <span class="nx">total</span> <span class="k">yield</span> <span class="o">%</span>   <span class="nx">Fraction</span> <span class="k">of</span> <span class="nx">total</span> <span class="nx">error</span><span class="o">^</span><span class="mi">2</span> <br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364105</span>             <span class="mi">1</span>      <span class="mf">0.178698</span>      <span class="mf">0.178698</span>             <span class="mi">1</span>      <span class="mf">0.00689522</span>                  <span class="mf">0.00187099</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364106</span>             <span class="mi">1</span>      <span class="o">-</span><span class="mf">1.55801</span>       <span class="mf">1.55801</span>            <span class="o">-</span><span class="mi">1</span>      <span class="o">-</span><span class="mf">0.0601172</span>                  <span class="mf">0.142224</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364108</span>           <span class="mi">235</span>       <span class="mf">5.02512</span>      <span class="mf">0.561957</span>       <span class="mf">0.11183</span>      <span class="mf">0.193899</span>                    <span class="mf">0.0185029</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364111</span>            <span class="mi">58</span>       <span class="mf">1.88213</span>      <span class="mf">0.285475</span>      <span class="mf">0.151676</span>      <span class="mf">0.0726237</span>                   <span class="mf">0.00477495</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364112</span>             <span class="mi">3</span>     <span class="mf">0.0352137</span>     <span class="mf">0.0476411</span>       <span class="mf">1.35291</span>      <span class="mf">0.00135875</span>                  <span class="mf">0.000132983</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364133</span>             <span class="mi">7</span>       <span class="mf">1.07091</span>      <span class="mf">0.975224</span>      <span class="mf">0.910652</span>      <span class="mf">0.041322</span>                    <span class="mf">0.0557239</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364134</span>             <span class="mi">1</span>      <span class="o">-</span><span class="mf">2.82036</span>       <span class="mf">2.82036</span>            <span class="o">-</span><span class="mi">1</span>      <span class="o">-</span><span class="mf">0.108826</span>                   <span class="mf">0.46606</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364135</span>             <span class="mi">1</span>      <span class="mf">0.488246</span>      <span class="mf">0.488246</span>             <span class="mi">1</span>      <span class="mf">0.0188394</span>                   <span class="mf">0.0139672</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364136</span>           <span class="mi">298</span>        <span class="mf">14.795</span>       <span class="mf">1.57693</span>      <span class="mf">0.106585</span>      <span class="mf">0.570878</span>                    <span class="mf">0.145699</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364138</span>             <span class="mi">3</span>      <span class="mf">0.756395</span>      <span class="mf">0.439748</span>      <span class="mf">0.581373</span>      <span class="mf">0.0291862</span>                   <span class="mf">0.0113303</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364139</span>           <span class="mi">325</span>       <span class="mf">9.07022</span>      <span class="mf">0.732121</span>      <span class="mf">0.080717</span>      <span class="mf">0.349983</span>                    <span class="mf">0.031405</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364140</span>            <span class="mi">25</span>      <span class="mf">0.636031</span>      <span class="mf">0.175049</span>      <span class="mf">0.275221</span>      <span class="mf">0.0245418</span>                   <span class="mf">0.00179536</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364141</span>             <span class="mi">1</span>    <span class="mf">0.00406431</span>    <span class="mf">0.00406431</span>             <span class="mi">1</span>      <span class="mf">0.000156825</span>                 <span class="mf">9.67846</span><span class="nx">e</span><span class="o">-</span><span class="mi">07</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364145</span>             <span class="mi">1</span>       <span class="mf">15.6245</span>       <span class="mf">15.6245</span>             <span class="mi">1</span>      <span class="mf">0.602885</span>                    <span class="mf">14.3036</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364146</span>             <span class="mi">5</span>        <span class="mf">26.549</span>       <span class="mf">18.7172</span>      <span class="mf">0.705005</span>      <span class="mf">1.02442</span>                     <span class="mf">20.5265</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364147</span>           <span class="mi">332</span>       <span class="mf">55.8044</span>       <span class="mf">9.73645</span>      <span class="mf">0.174475</span>      <span class="mf">2.15326</span>                     <span class="mf">5.55436</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364148</span>            <span class="mi">10</span>        <span class="mf">9.1132</span>       <span class="mf">15.0491</span>       <span class="mf">1.65135</span>      <span class="mf">0.351641</span>                    <span class="mf">13.2695</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364149</span>           <span class="mi">167</span>       <span class="mf">104.997</span>       <span class="mf">15.9265</span>      <span class="mf">0.151686</span>      <span class="mf">4.0514</span>                      <span class="mf">14.8619</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364150</span>         <span class="mi">20460</span>       <span class="mf">1544.66</span>       <span class="mf">20.0682</span>      <span class="mf">0.012992</span>      <span class="mf">59.6021</span>                     <span class="mf">23.5966</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364151</span>             <span class="mi">2</span>       <span class="mf">2.02229</span>       <span class="mf">1.55545</span>      <span class="mf">0.769154</span>      <span class="mf">0.0780319</span>                   <span class="mf">0.141757</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364152</span>            <span class="mi">94</span>       <span class="mf">33.3771</span>       <span class="mf">7.17451</span>      <span class="mf">0.214953</span>      <span class="mf">1.28789</span>                     <span class="mf">3.0159</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364153</span>         <span class="mi">19328</span>       <span class="mf">706.453</span>       <span class="mf">7.76019</span>     <span class="mf">0.0109847</span>      <span class="mf">27.2591</span>                     <span class="mf">3.5284</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364154</span>          <span class="mi">1521</span>       <span class="mf">62.5034</span>       <span class="mf">2.28882</span>     <span class="mf">0.0366192</span>      <span class="mf">2.41175</span>                     <span class="mf">0.306942</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364155</span>           <span class="mi">108</span>      <span class="mf">0.952879</span>      <span class="mf">0.129812</span>      <span class="mf">0.136231</span>      <span class="mf">0.0367677</span>                   <span class="mf">0.00098733</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">bkg</span><span class="p">:</span>          <span class="mi">42987</span>       <span class="mf">2591.62</span>      <span class="mi">100</span>        <span class="mi">0</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">totalStatErr</span> <span class="o">=</span> <span class="mf">41.3127</span></code></pre></figure>
+
+<h3 id="madgraph-1">Madgraph</h3>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">*</span> <span class="mi">2</span> <span class="nx">jets</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">sampleName</span>       <span class="nx">entries</span>    <span class="nx">integral</span>         <span class="nx">error</span>  <span class="nx">error</span><span class="o">/</span><span class="nx">integ</span><span class="p">.</span>      <span class="nx">Fraction</span> <span class="k">of</span> <span class="nx">total</span> <span class="k">yield</span> <span class="o">%</span>   <span class="nx">Fraction</span> <span class="k">of</span> <span class="nx">total</span> <span class="nx">error</span><span class="o">^</span><span class="mi">2</span> <br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_MG_361516</span>           <span class="mi">119</span>       <span class="mf">280.291</span>       <span class="mf">29.2696</span>      <span class="mf">0.104426</span>      <span class="mf">10.3003</span>                  <span class="mf">10.3644</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_MG_361517</span>           <span class="mi">810</span>       <span class="mf">2032.72</span>       <span class="mf">82.5293</span>     <span class="mf">0.0406005</span>      <span class="mf">74.6997</span>                  <span class="mf">82.3998</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_MG_361518</span>           <span class="mi">382</span>       <span class="mf">377.654</span>       <span class="mf">23.6184</span>     <span class="mf">0.0625397</span>      <span class="mf">13.8783</span>                  <span class="mf">6.74856</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_MG_361519</span>            <span class="mi">32</span>       <span class="mf">30.5248</span>        <span class="mf">6.3511</span>      <span class="mf">0.208063</span>      <span class="mf">1.12174</span>                  <span class="mf">0.487986</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">bkg</span><span class="p">:</span>           <span class="mi">1343</span>       <span class="mf">2721.19</span>      <span class="mi">100</span>        <span class="mi">0</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">totalStatErr</span> <span class="o">=</span> <span class="mf">90.9173</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">*</span> <span class="mi">3</span> <span class="nx">jets</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">sampleName</span>       <span class="nx">entries</span>    <span class="nx">integral</span>         <span class="nx">error</span>  <span class="nx">error</span><span class="o">/</span><span class="nx">integ</span><span class="p">.</span>      <span class="nx">Fraction</span> <span class="k">of</span> <span class="nx">total</span> <span class="k">yield</span> <span class="o">%</span>   <span class="nx">Fraction</span> <span class="k">of</span> <span class="nx">total</span> <span class="nx">error</span><span class="o">^</span><span class="mi">2</span> <br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_MG_361516</span>            <span class="mi">67</span>       <span class="mf">151.451</span>       <span class="mf">19.8961</span>       <span class="mf">0.13137</span>      <span class="mf">4.10644</span>                  <span class="mf">4.91293</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_MG_361517</span>           <span class="mi">520</span>       <span class="mf">1228.51</span>       <span class="mf">68.8564</span>     <span class="mf">0.0560487</span>      <span class="mf">33.3098</span>                  <span class="mf">58.8428</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_MG_361518</span>          <span class="mi">2264</span>        <span class="mf">1900.6</span>       <span class="mf">49.3195</span>     <span class="mf">0.0259495</span>      <span class="mf">51.5329</span>                  <span class="mf">30.1885</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_MG_361519</span>           <span class="mi">538</span>        <span class="mf">407.57</span>       <span class="mf">22.0893</span>     <span class="mf">0.0541975</span>      <span class="mf">11.0509</span>                  <span class="mf">6.05576</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">bkg</span><span class="p">:</span>           <span class="mi">3389</span>       <span class="mf">3688.13</span>      <span class="mi">100</span>        <span class="mi">0</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">totalStatErr</span> <span class="o">=</span> <span class="mf">89.7631</span></code></pre></figure>
+
+<h1 id="truthmet-plots-in-cxaod28-maxhtptv-filtered-samples">TruthMET Plots in CxAOD28 MAXHTPTV Filtered samples</h1>
+
+<p><img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<p><img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">THStack</span> <span class="o">*</span><span class="nx">hs</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THStack</span><span class="p">(</span><span class="s2">"hs"</span><span class="p">,</span><span class="s2">"Stacked 2tag3jet MET"</span><span class="p">);</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364147_2tag3jet_0ptv_SR_MET</span><span class="o">-&gt;</span><span class="nx">RebinX</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364150_2tag3jet_0ptv_SR_MET</span><span class="o">-&gt;</span><span class="nx">RebinX</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364153_2tag3jet_0ptv_SR_MET</span><span class="o">-&gt;</span><span class="nx">RebinX</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364147_2tag3jet_0ptv_SR_MET</span><span class="o">-&gt;</span><span class="nx">SetFillColor</span><span class="p">(</span><span class="nx">kAzure</span><span class="o">+</span><span class="mi">10</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364150_2tag3jet_0ptv_SR_MET</span><span class="o">-&gt;</span><span class="nx">SetFillColor</span><span class="p">(</span><span class="nx">kPink</span><span class="o">-</span><span class="mi">9</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364153_2tag3jet_0ptv_SR_MET</span><span class="o">-&gt;</span><span class="nx">SetFillColor</span><span class="p">(</span><span class="nx">kSpring</span><span class="o">+</span><span class="mi">10</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364147_2tag3jet_0ptv_SR_MET</span><span class="o">-&gt;</span><span class="nx">SetMarkerColor</span><span class="p">(</span><span class="nx">kAzure</span><span class="o">+</span><span class="mi">10</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364150_2tag3jet_0ptv_SR_MET</span><span class="o">-&gt;</span><span class="nx">SetMarkerColor</span><span class="p">(</span><span class="nx">kPink</span><span class="o">-</span><span class="mi">9</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364153_2tag3jet_0ptv_SR_MET</span><span class="o">-&gt;</span><span class="nx">SetMarkerColor</span><span class="p">(</span><span class="nx">kSpring</span><span class="o">+</span><span class="mi">10</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364147_2tag3jet_0ptv_SR_MET</span><span class="o">-&gt;</span><span class="nx">SetMarkerStyle</span><span class="p">(</span><span class="mi">21</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364150_2tag3jet_0ptv_SR_MET</span><span class="o">-&gt;</span><span class="nx">SetMarkerStyle</span><span class="p">(</span><span class="mi">21</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Z_364153_2tag3jet_0ptv_SR_MET</span><span class="o">-&gt;</span><span class="nx">SetMarkerStyle</span><span class="p">(</span><span class="mi">21</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">hs</span><span class="o">-&gt;</span><span class="nx">Add</span><span class="p">(</span><span class="nx">Z_364147_2tag3jet_0ptv_SR_MET</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">hs</span><span class="o">-&gt;</span><span class="nx">Add</span><span class="p">(</span><span class="nx">Z_364150_2tag3jet_0ptv_SR_MET</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">hs</span><span class="o">-&gt;</span><span class="nx">Add</span><span class="p">(</span><span class="nx">Z_364153_2tag3jet_0ptv_SR_MET</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">TLegend</span> <span class="o">*</span><span class="nx">leg</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">TLegend</span><span class="p">(</span><span class="mf">0.7</span><span class="p">,</span><span class="mf">0.7</span><span class="p">,</span><span class="mf">0.9</span><span class="p">,</span><span class="mf">0.9</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">leg</span><span class="o">-&gt;</span><span class="nx">AddEntry</span><span class="p">(</span><span class="nx">Z_364147_2tag3jet_0ptv_SR_MET</span><span class="p">,</span><span class="s2">"MAXMETPTV70_140_BFilter"</span><span class="p">,</span><span class="s2">"f"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">leg</span><span class="o">-&gt;</span><span class="nx">AddEntry</span><span class="p">(</span><span class="nx">Z_364150_2tag3jet_0ptv_SR_MET</span><span class="p">,</span><span class="s2">"MAXMETPTV140_280_BFilter"</span><span class="p">,</span><span class="s2">"f"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">leg</span><span class="o">-&gt;</span><span class="nx">AddEntry</span><span class="p">(</span><span class="nx">Z_364153_2tag3jet_0ptv_SR_MET</span><span class="p">,</span><span class="s2">"MAXMETPTV280_500_BFilter"</span><span class="p">,</span><span class="s2">"f"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">hs</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"hist"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">leg</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"same"</span><span class="p">)</span></code></pre></figure>
+
+<h3 id="summary-for-valerio">Summary for Valerio</h3>
+
+<ul>
+  <li>
+    <p>2tag 2 jets</p>
+  </li>
+  <li>
+    <ul>
+      <li>CxAOD 26 pTV Filter</li>
+    </ul>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample</th>
+      <th>Filter</th>
+      <th>nAOD</th>
+      <th>Entries after selection</th>
+      <th>Yield after selection</th>
+      <th>Error after selection</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>363417</td>
+      <td>BFilter pTV-70-140</td>
+      <td>2 471 000</td>
+      <td>130</td>
+      <td>117</td>
+      <td>18.34</td>
+    </tr>
+    <tr>
+      <td>363420</td>
+      <td>BFilter pTV-140-280</td>
+      <td>1 983 000</td>
+      <td>7 802</td>
+      <td>1 218</td>
+      <td>26.87</td>
+    </tr>
+    <tr>
+      <td>363423</td>
+      <td>BFilter pTV-280-500</td>
+      <td>984 000</td>
+      <td>5242</td>
+      <td>124</td>
+      <td>3.42</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>
+    <ul>
+      <li>CxAOD 28 MAXHTPtV Filter</li>
+    </ul>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample</th>
+      <th>Filter</th>
+      <th>nAOD</th>
+      <th>Entries after selection</th>
+      <th>Yield after selection</th>
+      <th>Error after selection</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>364147</td>
+      <td>BFilter MAXHTPtV-70-140</td>
+      <td>19 728 500</td>
+      <td>272</td>
+      <td>27</td>
+      <td>10.77</td>
+    </tr>
+    <tr>
+      <td>364150</td>
+      <td>BFilter MAXHTPtV-140-280</td>
+      <td>19 745 300</td>
+      <td>19 691</td>
+      <td>1 145</td>
+      <td>16.58</td>
+    </tr>
+    <tr>
+      <td>364153</td>
+      <td>BFilter MAXHTPtV-280-500</td>
+      <td>8 887 350</td>
+      <td>11 577</td>
+      <td>291</td>
+      <td>5.37</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>–&gt; Purpose : Look how behaves the stat error with pTV filter if we had the same AOD stat as in CxAOD 28 :</p>
+
+<p>err26’ = err26 * sqrt(nEntries26) / sqrt(nEntries26*nAOD28/nAOD26)</p>
+
+<p>With the AOD stat of CxAODs 28 :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Slice</th>
+      <th>Error after selection with MAXHTPtV filter</th>
+      <th>Error after selection with PtV filter</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BFilter pTV-70-140</td>
+      <td>10.77</td>
+      <td>6.49</td>
+    </tr>
+    <tr>
+      <td>BFilter pTV-140-280</td>
+      <td>16.58</td>
+      <td>8.57</td>
+    </tr>
+    <tr>
+      <td>BFilter pTV-280-500</td>
+      <td>5.37</td>
+      <td>1.13</td>
+    </tr>
+    <tr>
+      <td>Combined</td>
+      <td>20.48</td>
+      <td>10.81</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>If we had to optimize the slicing in pTV, the TruthMET distribution at CxAOD level (selection = 2jets, MET reco &gt; 140 GeV) shows that cutting on MET truth &gt; 90 GeV allows to keep most events. Since we apply MET reco &gt; 150 GeV in the analysis, a slice starting with low edge MET truth &gt; 100 GeV should still be efficient.</li>
+</ul>
+
+<p><img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<h1 id="requests-from-nicolas-for-the-pmg-presentation">Requests from Nicolas for the PMG presentation</h1>
+
+<ul>
+  <li>Distribution of TruthMET after full selection : done for Valerio a long time ago
+    <ul>
+      <li>Superimpose bb, bc, cc, and bl in a stack</li>
+    </ul>
+
+    <p><img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" /></p>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">THStack</span> <span class="o">*</span><span class="nx">hs</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THStack</span><span class="p">(</span><span class="s2">"hs"</span><span class="p">,</span><span class="s2">"Stacked 2tag2jet TruthMET"</span><span class="p">);</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zbb_2tag2jet_150ptv_SR_TruthMET</span><span class="o">-&gt;</span><span class="nx">RebinX</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zbc_2tag2jet_150ptv_SR_TruthMET</span><span class="o">-&gt;</span><span class="nx">RebinX</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zbl_2tag2jet_150ptv_SR_TruthMET</span><span class="o">-&gt;</span><span class="nx">RebinX</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zbb_2tag2jet_150ptv_SR_TruthMET</span><span class="o">-&gt;</span><span class="nx">SetFillColor</span><span class="p">(</span><span class="nx">kAzure</span><span class="o">+</span><span class="mi">10</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zbc_2tag2jet_150ptv_SR_TruthMET</span><span class="o">-&gt;</span><span class="nx">SetFillColor</span><span class="p">(</span><span class="nx">kPink</span><span class="o">-</span><span class="mi">9</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zbl_2tag2jet_150ptv_SR_TruthMET</span><span class="o">-&gt;</span><span class="nx">SetFillColor</span><span class="p">(</span><span class="nx">kSpring</span><span class="o">+</span><span class="mi">10</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zbb_2tag2jet_150ptv_SR_TruthMET</span><span class="o">-&gt;</span><span class="nx">SetMarkerColor</span><span class="p">(</span><span class="nx">kAzure</span><span class="o">+</span><span class="mi">10</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zbc_2tag2jet_150ptv_SR_TruthMET</span><span class="o">-&gt;</span><span class="nx">SetMarkerColor</span><span class="p">(</span><span class="nx">kPink</span><span class="o">-</span><span class="mi">9</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zbl_2tag2jet_150ptv_SR_TruthMET</span><span class="o">-&gt;</span><span class="nx">SetMarkerColor</span><span class="p">(</span><span class="nx">kSpring</span><span class="o">+</span><span class="mi">10</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zbb_2tag2jet_150ptv_SR_TruthMET</span><span class="o">-&gt;</span><span class="nx">SetMarkerStyle</span><span class="p">(</span><span class="mi">21</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zbc_2tag2jet_150ptv_SR_TruthMET</span><span class="o">-&gt;</span><span class="nx">SetMarkerStyle</span><span class="p">(</span><span class="mi">21</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zbl_2tag2jet_150ptv_SR_TruthMET</span><span class="o">-&gt;</span><span class="nx">SetMarkerStyle</span><span class="p">(</span><span class="mi">21</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">hs</span><span class="o">-&gt;</span><span class="nx">Add</span><span class="p">(</span><span class="nx">Zbl_2tag2jet_150ptv_SR_TruthMET</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">hs</span><span class="o">-&gt;</span><span class="nx">Add</span><span class="p">(</span><span class="nx">Zbc_2tag2jet_150ptv_SR_TruthMET</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">hs</span><span class="o">-&gt;</span><span class="nx">Add</span><span class="p">(</span><span class="nx">Zbb_2tag2jet_150ptv_SR_TruthMET</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">TLegend</span> <span class="o">*</span><span class="nx">leg</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">TLegend</span><span class="p">(</span><span class="mf">0.7</span><span class="p">,</span><span class="mf">0.7</span><span class="p">,</span><span class="mf">0.9</span><span class="p">,</span><span class="mf">0.9</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">leg</span><span class="o">-&gt;</span><span class="nx">AddEntry</span><span class="p">(</span><span class="nx">Zbb_2tag2jet_150ptv_SR_TruthMET</span><span class="p">,</span><span class="s2">"Zbb"</span><span class="p">,</span><span class="s2">"f"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">leg</span><span class="o">-&gt;</span><span class="nx">AddEntry</span><span class="p">(</span><span class="nx">Zbc_2tag2jet_150ptv_SR_TruthMET</span><span class="p">,</span><span class="s2">"Zbc"</span><span class="p">,</span><span class="s2">"f"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">leg</span><span class="o">-&gt;</span><span class="nx">AddEntry</span><span class="p">(</span><span class="nx">Zbl_2tag2jet_150ptv_SR_TruthMET</span><span class="p">,</span><span class="s2">"Zbl"</span><span class="p">,</span><span class="s2">"f"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">hs</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"hist"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">leg</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"same"</span><span class="p">)</span></code></pre></figure>
+
+<ul>
+  <li>Get the ratio of cross sections between 70-100 to 100-140
+<img src="/images/q/IMAGE" alt="IMAGE" /></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">TF1</span> <span class="o">*</span><span class="nx">f</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">TF1</span><span class="p">(</span><span class="s2">"fb"</span><span class="p">,</span><span class="s2">"[0]*TMath::Exp([1]*x)"</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">500</span><span class="p">);</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">f</span><span class="o">-&gt;</span><span class="nx">SetParameter</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">30000</span><span class="p">)</span> <span class="c1">// 6000/exp(-ln(6000/1200)*70)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">f</span><span class="o">-&gt;</span><span class="nx">SetParameter</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mf">0.023</span><span class="p">)</span> <span class="c1">// -ln(6000/1200)/70</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">f</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">()</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">f</span><span class="o">-&gt;</span><span class="nx">Integral</span><span class="p">(</span><span class="mi">70</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span><span class="o">/</span><span class="nx">f</span><span class="o">-&gt;</span><span class="nx">Integral</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">140</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="c1">// (double) 1.652115</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">f</span><span class="o">-&gt;</span><span class="nx">Integral</span><span class="p">(</span><span class="mi">70</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span><span class="o">/</span><span class="nx">f</span><span class="o">-&gt;</span><span class="nx">Integral</span><span class="p">(</span><span class="mi">70</span><span class="p">,</span><span class="mi">140</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="c1">// (double) 0.622942</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /> <span class="nx">f</span><span class="o">-&gt;</span><span class="nx">Integral</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">140</span><span class="p">)</span><span class="o">/</span><span class="nx">f</span><span class="o">-&gt;</span><span class="nx">Integral</span><span class="p">(</span><span class="mi">70</span><span class="p">,</span><span class="mi">140</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="c1">// (double) 0.377058</span></code></pre></figure>
+
+<ul>
+  <li>Compare the distribution of TruthMET with pT(Z) from TruthParticle neutrino with status = 3</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">CollectionTree</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"sqrt((TruthParticles___NominalAuxDyn.px[0]+TruthParticles___NominalAuxDyn.px[1])*(TruthParticles___NominalAuxDyn.px[0]+TruthParticles___NominalAuxDyn.px[1])+(TruthParticles___NominalAuxDyn.py[0]+TruthParticles___NominalAuxDyn.py[1])*(TruthParticles___NominalAuxDyn.py[0]+TruthParticles___NominalAuxDyn.py[1]))"</span><span class="p">)</span></code></pre></figure>
+
+<p><img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<p>THStack *hs = new THStack(“hs”,”Stacked 2tag2jet pTZ”);</p>
+
+<p>Zv22_363417_2tag2jet_0ptv_SR_pTZ-&gt;RebinX(5)
+Zv22_363420_2tag2jet_0ptv_SR_pTZ-&gt;RebinX(5)
+Zv22_363423_2tag2jet_0ptv_SR_pTZ-&gt;RebinX(5)</p>
+
+<p>Zv22_363417_2tag2jet_0ptv_SR_pTZ-&gt;SetFillColor(kAzure+10)
+Zv22_363420_2tag2jet_0ptv_SR_pTZ-&gt;SetFillColor(kPink-9)
+Zv22_363423_2tag2jet_0ptv_SR_pTZ-&gt;SetFillColor(kSpring+10)</p>
+
+<p>Zv22_363417_2tag2jet_0ptv_SR_pTZ-&gt;SetMarkerColor(kAzure+10)
+Zv22_363420_2tag2jet_0ptv_SR_pTZ-&gt;SetMarkerColor(kPink-9)
+Zv22_363423_2tag2jet_0ptv_SR_pTZ-&gt;SetMarkerColor(kSpring+10)</p>
+
+<p>Zv22_363417_2tag2jet_0ptv_SR_pTZ-&gt;SetMarkerStyle(21)
+Zv22_363420_2tag2jet_0ptv_SR_pTZ-&gt;SetMarkerStyle(21)
+Zv22_363423_2tag2jet_0ptv_SR_pTZ-&gt;SetMarkerStyle(21)</p>
+
+<p>hs-&gt;Add(Zv22_363417_2tag2jet_0ptv_SR_pTZ)
+hs-&gt;Add(Zv22_363420_2tag2jet_0ptv_SR_pTZ)
+hs-&gt;Add(Zv22_363423_2tag2jet_0ptv_SR_pTZ)</p>
+
+<p>TLegend *leg = new TLegend(0.7,0.7,0.9,0.9)
+leg-&gt;AddEntry(Zv22_363417_2tag2jet_0ptv_SR_pTZ,”70-140”,”f”)
+leg-&gt;AddEntry(Zv22_363420_2tag2jet_0ptv_SR_pTZ,”140-280”,”f”)
+leg-&gt;AddEntry(Zv22_363423_2tag2jet_0ptv_SR_pTZ,”280-500”,”f”)</p>
+
+<p>hs-&gt;Draw(“hist”)
+leg-&gt;Draw(“same”)</p>
+
+<p><img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" /></p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">THStack</span> <span class="o">*</span><span class="nx">hs</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THStack</span><span class="p">(</span><span class="s2">"hs"</span><span class="p">,</span><span class="s2">"Stacked 2tag2jet pTZTruthMETratio"</span><span class="p">);</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363417_2tag2jet_0ptv_SR_pTZTruthMETratio</span><span class="o">-&gt;</span><span class="nx">SetMarkerColor</span><span class="p">(</span><span class="nx">kAzure</span><span class="o">+</span><span class="mi">10</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363420_2tag2jet_0ptv_SR_pTZTruthMETratio</span><span class="o">-&gt;</span><span class="nx">SetMarkerColor</span><span class="p">(</span><span class="nx">kPink</span><span class="o">-</span><span class="mi">9</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363423_2tag2jet_0ptv_SR_pTZTruthMETratio</span><span class="o">-&gt;</span><span class="nx">SetMarkerColor</span><span class="p">(</span><span class="nx">kSpring</span><span class="o">+</span><span class="mi">10</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363417_2tag2jet_0ptv_SR_pTZTruthMETratio</span><span class="o">-&gt;</span><span class="nx">SetMarkerStyle</span><span class="p">(</span><span class="mi">21</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363420_2tag2jet_0ptv_SR_pTZTruthMETratio</span><span class="o">-&gt;</span><span class="nx">SetMarkerStyle</span><span class="p">(</span><span class="mi">21</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363423_2tag2jet_0ptv_SR_pTZTruthMETratio</span><span class="o">-&gt;</span><span class="nx">SetMarkerStyle</span><span class="p">(</span><span class="mi">21</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363420_2tag2jet_0ptv_SR_pTZTruthMETratio</span><span class="o">-&gt;</span><span class="nx">DrawNormalized</span><span class="p">(</span><span class="s2">"HIST p"</span><span class="p">);</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363417_2tag2jet_0ptv_SR_pTZTruthMETratio</span><span class="o">-&gt;</span><span class="nx">DrawNormalized</span><span class="p">(</span><span class="s2">"HIST p same"</span><span class="p">);</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363423_2tag2jet_0ptv_SR_pTZTruthMETratio</span><span class="o">-&gt;</span><span class="nx">DrawNormalized</span><span class="p">(</span><span class="s2">"HIST p same"</span><span class="p">);</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363417_2tag2jet_0ptv_SR_pTZTruthMETratio</span><span class="o">-&gt;</span><span class="nx">SetFillColor</span><span class="p">(</span><span class="nx">kAzure</span><span class="o">+</span><span class="mi">10</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363420_2tag2jet_0ptv_SR_pTZTruthMETratio</span><span class="o">-&gt;</span><span class="nx">SetFillColor</span><span class="p">(</span><span class="nx">kPink</span><span class="o">-</span><span class="mi">9</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">Zv22_363423_2tag2jet_0ptv_SR_pTZTruthMETratio</span><span class="o">-&gt;</span><span class="nx">SetFillColor</span><span class="p">(</span><span class="nx">kSpring</span><span class="o">+</span><span class="mi">10</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">TLegend</span> <span class="o">*</span><span class="nx">leg</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">TLegend</span><span class="p">(</span><span class="mf">0.7</span><span class="p">,</span><span class="mf">0.7</span><span class="p">,</span><span class="mf">0.9</span><span class="p">,</span><span class="mf">0.9</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">leg</span><span class="o">-&gt;</span><span class="nx">AddEntry</span><span class="p">(</span><span class="nx">Zv22_363417_2tag2jet_0ptv_SR_pTZTruthMETratio</span><span class="p">,</span><span class="s2">"70-140"</span><span class="p">,</span><span class="s2">"f"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">leg</span><span class="o">-&gt;</span><span class="nx">AddEntry</span><span class="p">(</span><span class="nx">Zv22_363420_2tag2jet_0ptv_SR_pTZTruthMETratio</span><span class="p">,</span><span class="s2">"140-280"</span><span class="p">,</span><span class="s2">"f"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><span class="nx">leg</span><span class="o">-&gt;</span><span class="nx">AddEntry</span><span class="p">(</span><span class="nx">Zv22_363423_2tag2jet_0ptv_SR_pTZTruthMETratio</span><span class="p">,</span><span class="s2">"280-500"</span><span class="p">,</span><span class="s2">"f"</span><span class="p">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="nx">leg</span><span class="o">-&gt;</span><span class="nx">Draw</span><span class="p">(</span><span class="s2">"same"</span><span class="p">)</span></code></pre></figure>
+
+<h3 id="tatsuya-s-requests">Tatsuya ‘s requests</h3>
+
+<ul>
+  <li><strong>After full selection, CxAOD26 with pTZ slicing</strong></li>
+</ul>
+
+<p>x-axis = pTZ (from neutrinos at parton level)
+y-axis = MET reco</p>
+
+<ul>
+  <li>
+    <p><strong>70&lt;pTV&lt;140 GeV</strong>
+<img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" /></p>
+  </li>
+  <li>
+    <p><strong>140&lt;pTV&lt;280 GeV</strong>
+<img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" /></p>
+  </li>
+  <li>
+    <p><strong>280&lt;pTV&lt;500 GeV</strong>
+<img src="/images/q/IMAGE" alt="IMAGE" />
+<img src="/images/q/IMAGE" alt="IMAGE" /></p>
+  </li>
+</ul>
+
+<h3 id="notes-from-pmg">Notes from PMG</h3>
+
+<ul>
+  <li>Optimal filter analysis specifics ?</li>
+  <li>What about non-B filtered samples ?</li>
+  <li>Restricted to nunu ? -&gt; y</li>
+</ul>
+
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">My PhD notes</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              My PhD notes
+            
+            </li>
+            
+            <li><a href="mailto:charles.delporte@cern.ch">charles.delporte@cern.ch</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
