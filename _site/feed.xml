@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-05T16:09:22+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">TrackJet quantities</title><link href="/2017/12/01/trackjet-quantities.html" rel="alternate" type="text/html" title="TrackJet quantities" /><published>2017-12-01T00:00:00+01:00</published><updated>2017-12-01T00:00:00+01:00</updated><id>/2017/12/01/trackjet-quantities</id><content type="html" xml:base="/2017/12/01/trackjet-quantities.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-06T13:30:42+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">TrackJet quantities</title><link href="/2017/12/01/trackjet-quantities.html" rel="alternate" type="text/html" title="TrackJet quantities" /><published>2017-12-01T00:00:00+01:00</published><updated>2017-12-01T00:00:00+01:00</updated><id>/2017/12/01/trackjet-quantities</id><content type="html" xml:base="/2017/12/01/trackjet-quantities.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;look for new discriminating variables from track jets&lt;/p&gt;
@@ -348,7 +348,19 @@
     &lt;h2 id=&quot;number-of-taus-in-dilep-events&quot;&gt;number of taus in dilep events&lt;/h2&gt;
   &lt;/li&gt;
   &lt;li&gt;47% of events have 2 tau leptons –&amp;gt;should look at their respective decays in order to compute met …
-&lt;img src=&quot;/images/q/72CEA09AA7A0B702480871BBF09E8B16.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;/images/q/72CEA09AA7A0B702480871BBF09E8B16.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+    &lt;h1 id=&quot;shape-of-mbb-in-singlelep-vs-dilepton-events&quot;&gt;Shape of mBB in singleLep vs dilepton events&lt;/h1&gt;
+  &lt;/li&gt;
+  &lt;li&gt;check statement of Marumi, if I remember well : ttbar has a peak in single lep at mBB~100 GeV which is not in dilepton events
+    &lt;ul&gt;
+      &lt;li&gt;–&amp;gt; sharper in single lep, but not that much : mBB is not flat in dilepton events
+)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Single lepton events
+&lt;img src=&quot;/images/q/726F526FAA2EEEB84E0AB659E97F98B1.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Dilepton events
+&lt;img src=&quot;/images/q/E205840E68401BC0EF456625692BEC83.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;)&lt;/p&gt;</content><author><name></name></author><summary type="html">Purpose better understand the origin of recoMET &amp;gt; 150 in ttbar events most plots in 2-3j 2tags after full selection</summary></entry><entry><title type="html">Tau studies in ttbar samples</title><link href="/2017/11/14/tau-studies-in-ttbar-samples.html" rel="alternate" type="text/html" title="Tau studies in ttbar samples" /><published>2017-11-14T00:00:00+01:00</published><updated>2017-11-14T00:00:00+01:00</updated><id>/2017/11/14/tau-studies-in-ttbar-samples</id><content type="html" xml:base="/2017/11/14/tau-studies-in-ttbar-samples.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;

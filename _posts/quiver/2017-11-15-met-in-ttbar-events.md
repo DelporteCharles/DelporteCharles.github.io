@@ -131,5 +131,13 @@ Average table :
 ## number of taus in dilep events
 * 47% of events have 2 tau leptons -->should look at their respective decays in order to compute met ...
 ![IMAGE](/images/q/72CEA09AA7A0B702480871BBF09E8B16.jpg)
+# Shape of mBB in singleLep vs dilepton events
+* check statement of Marumi, if I remember well : ttbar has a peak in single lep at mBB~100 GeV which is not in dilepton events
+  * --> sharper in single lep, but not that much : mBB is not flat in dilepton events
+)
+* Single lepton events
+![IMAGE](/images/q/726F526FAA2EEEB84E0AB659E97F98B1.jpg)
+* Dilepton events
+![IMAGE](/images/q/E205840E68401BC0EF456625692BEC83.jpg)
 
 )
