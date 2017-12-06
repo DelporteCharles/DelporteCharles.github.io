@@ -1,52 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-06T15:51:13+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">ttbar sliced in TruthMET</title><link href="/2017/12/06/ttbar-sliced-in-truthmet.html" rel="alternate" type="text/html" title="ttbar sliced in TruthMET" /><published>2017-12-06T00:00:00+01:00</published><updated>2017-12-06T00:00:00+01:00</updated><id>/2017/12/06/ttbar-sliced-in-truthmet</id><content type="html" xml:base="/2017/12/06/ttbar-sliced-in-truthmet.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-06T15:57:59+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">ttbar sliced in TruthMET</title><link href="/2017/12/06/ttbar-sliced-in-truthmet.html" rel="alternate" type="text/html" title="ttbar sliced in TruthMET" /><published>2017-12-06T00:00:00+01:00</published><updated>2017-12-06T00:00:00+01:00</updated><id>/2017/12/06/ttbar-sliced-in-truthmet</id><content type="html" xml:base="/2017/12/06/ttbar-sliced-in-truthmet.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 &lt;p&gt;SUSY will have filtered ttbar samples with TruthMET&amp;gt; 200 GeV
 –&amp;gt; Is it worth to propose a slicing for TruthMET &amp;lt; 200 ?
 )&lt;/p&gt;
 &lt;h2 id=&quot;raw-numbers-of-events-and-yields-per-slice&quot;&gt;Raw numbers of events and yields per slice&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;a very basic slicing strategy might be :&lt;/li&gt;
+  &lt;li&gt;a very basic slicing strategy might be :
+)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;| Category | Slice                        |
-|———-|——————————|
-| Low      | TruthMET &amp;lt; 100 GeV           |
-| Medium   | 100 GeV &amp;lt; TruthMET &amp;lt; 200 GeV |
-| High     | TruthMET &amp;gt; 200 GeV           |
-)&lt;/p&gt;
-&lt;h3 id=&quot;2-jets-2-tags-mva-selection&quot;&gt;2 jets 2 tags (MVA selection)&lt;/h3&gt;
-&lt;p&gt;)
-| Slice  | NEvents | Yield  |
-| —— | ——- | —— |
-| Low    | 87      | 26.59  |
-| Medium | 1280    | 386.61 |
-| High   | 190     | 62.90  |
-| All    | 1557    | 476.1  |
-)&lt;/p&gt;
-&lt;h3 id=&quot;fractions--2-jets-2-tags-mva-selection&quot;&gt;Fractions : 2 jets 2 tags (MVA selection)&lt;/h3&gt;
-&lt;p&gt;)
-| Slice  | NEvents | Yield  |
-|——–|———|——–|
-| Low    | 5.6%    | 5.6%   |
-| Medium | 82.2%   | 81.2%  |
-| High   | 12.2%   | 13.2%  |
-)&lt;/p&gt;
-&lt;h3 id=&quot;3-jets-2-tags-mva-selection&quot;&gt;3 jets 2 tags (MVA selection)&lt;/h3&gt;
-&lt;p&gt;)
-| Slice  | NEvents | Yield   |
-|——–|———|———|
-| Low    | 550     | 165.79  |
-| Medium | 8909    | 2643.49 |
-| High   | 1967    | 591.26  |
-| All    | 11426   | 3400.54 |
-)&lt;/p&gt;
-&lt;h3 id=&quot;fractions--3-jets-2-tags-mva-selection&quot;&gt;Fractions : 3 jets 2 tags (MVA selection)&lt;/h3&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;| Category | Slice                        |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;|----------|------------------------------|&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| Low      | TruthMET &amp;lt; 100 GeV           |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| Medium   | 100 GeV &amp;lt; TruthMET &amp;lt; 200 GeV |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| High     | TruthMET &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; 200 GeV           |&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;| Slice  | NEvents | Yield   |
-| —— | ——- | ——- |
-| Low    | 4.8%    | 4.8%    |
-| Medium | 77.9%   | 77.7%   |
-| High   | 17.2%   | 17.4%   |
-)&lt;/p&gt;
+&lt;h3 id=&quot;2-jets-2-tags-mva-selection&quot;&gt;2 jets 2 tags (MVA selection)&lt;/h3&gt;
+&lt;p&gt;)&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;| Slice  | NEvents | Yield  |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| &lt;span class=&quot;nt&quot;&gt;------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;------&lt;/span&gt; |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| Low    | 87      | 26.59  |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| Medium | 1280    | 386.61 |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| High   | 190     | 62.90  |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| All    | 1557    | 476.1  |&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;fractions--2-jets-2-tags-mva-selection&quot;&gt;Fractions : 2 jets 2 tags (MVA selection)&lt;/h3&gt;
+&lt;p&gt;)&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;| Slice  | NEvents | Yield  |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;|--------|---------|--------|&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| Low    | 5.6%    | 5.6%   |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| Medium | 82.2%   | 81.2%  |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| High   | 12.2%   | 13.2%  |&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;3-jets-2-tags-mva-selection&quot;&gt;3 jets 2 tags (MVA selection)&lt;/h3&gt;
+&lt;p&gt;)&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;| Slice  | NEvents | Yield   |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;|--------|---------|---------|&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| Low    | 550     | 165.79  |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| Medium | 8909    | 2643.49 |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| High   | 1967    | 591.26  |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| All    | 11426   | 3400.54 |&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;c&quot;&gt;### Fractions : 3 jets 2 tags (MVA selection)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| Slice  | NEvents | Yield   |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| &lt;span class=&quot;nt&quot;&gt;------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-------&lt;/span&gt; |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| Low    | 4.8%    | 4.8%    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| Medium | 77.9%   | 77.7%   |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| High   | 17.2%   | 17.4%   |&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
 &lt;h2 id=&quot;slices-in-mbb&quot;&gt;Slices in mBB&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;MVA selection, applying SM VHbb Reader on EPS CxAODs
@@ -73,27 +53,18 @@
       &lt;li&gt;&lt;strong&gt;mc15_13TeV.410501.PowhegPythia8EvtGen_A14_ttbar_hdamp258p75_nonallhad.merge.DAOD_HIGG5D1.e5458_s2726_r7772_r7676_p2949&lt;/strong&gt;
 &lt;img src=&quot;/images/q/10F556ED05E8F0A2D01E6A50E746665A.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
         &lt;h3 id=&quot;all-n-jets-all-n-tags-no-selection-higg5d1-daod&quot;&gt;all n-jets all n-tags (no selection, HIGG5D1 DAOD)&lt;/h3&gt;
+        &lt;p&gt;)&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;| Slice  | NEvents  | Yield            |
-| —— | ——– | —————- |
-| Low    | 9711814  | 7041811302.00    |
-| Medium | 3862066  | 2789444888.00    |
-| High   | 417988   | 296028135.00     |
-| All    | 13991868 | 10127284325      |
-)&lt;/p&gt;
-&lt;h3 id=&quot;fractions--all-n-jets-all-n-tags-no-selection-higg5d1-daod&quot;&gt;Fractions : all n-jets all n-tags (no selection, HIGG5D1 DAOD)&lt;/h3&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;| Slice  | NEvents  | Yield            |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| &lt;span class=&quot;nt&quot;&gt;------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;----------------&lt;/span&gt; |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| Low    | 9711814  | 7041811302.00    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| Medium | 3862066  | 2789444888.00    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| High   | 417988   | 296028135.00     |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| All    | 13991868 | 10127284325      |&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;| Slice  | NEvents  | Yield  |
-| —— | ——– | —— |
-| Low    | 69.4     | 69.5   |
-| Medium | 27.6     | 27.5   |
-| High   | 2.9      | 2.9    |
-| All    | 100%     | 100%   |
-)&lt;/p&gt;
+&lt;h3 id=&quot;fractions--all-n-jets-all-n-tags-no-selection-higg5d1-daod&quot;&gt;Fractions : all n-jets all n-tags (no selection, HIGG5D1 DAOD)&lt;/h3&gt;
+&lt;p&gt;)&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;| Slice  | NEvents  | Yield  |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| &lt;span class=&quot;nt&quot;&gt;------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;------&lt;/span&gt; |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| Low    | 69.4     | 69.5   |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| Medium | 27.6     | 27.5   |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| High   | 2.9      | 2.9    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| All    | 100%     | 100%   |&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;TChain &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;CollectionTree &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TChain&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;CollectionTree&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;CollectionTree-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;DAOD_HIGG5D1.1*&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;THStack &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;hs &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new THStack&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hs&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;mva in TruthMET slices&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h100m &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h100m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h100m&quot;&lt;/span&gt;,100,0.,500.&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h100p200m &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h100p200m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h100p200m&quot;&lt;/span&gt;,100,0.,500.&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h200p &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h200p&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h200p&quot;&lt;/span&gt;,100,0.,500.&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;CollectionTree-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&amp;gt;&amp;gt;h100p200m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&amp;gt;100)*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&amp;lt;=200)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;CollectionTree-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&amp;gt;&amp;gt;h100m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&amp;lt;=100)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;CollectionTree-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&amp;gt;&amp;gt;h200p&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&amp;gt;200)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h200p-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kAzure+10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h100p200m-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kPink-9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h100m-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kSpring+10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100m&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100p200m&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h200p&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TLegend &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;leg &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TLegend&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.7,0.7,0.9,0.9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100m,&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET&amp;lt;100GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100p200m,&lt;span class=&quot;s2&quot;&gt;&quot;100&amp;lt;TruthMET&amp;lt;200GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h200p,&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET&amp;gt;200GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hist&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;same&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
@@ -118,7 +89,7 @@
 )&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="filter" /><category term="truth" /><category term="ttbar" /><category term="VHbb" /><summary type="html">Purpose SUSY will have filtered ttbar samples with TruthMET&amp;gt; 200 GeV –&amp;gt; Is it worth to propose a slicing for TruthMET &amp;lt; 200 ? ) Raw numbers of events and yields per slice a very basic slicing strategy might be :</summary></entry><entry><title type="html">TrackJet quantities</title><link href="/2017/12/01/trackjet-quantities.html" rel="alternate" type="text/html" title="TrackJet quantities" /><published>2017-12-01T00:00:00+01:00</published><updated>2017-12-01T00:00:00+01:00</updated><id>/2017/12/01/trackjet-quantities</id><content type="html" xml:base="/2017/12/01/trackjet-quantities.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="filter" /><category term="truth" /><category term="ttbar" /><category term="VHbb" /><summary type="html">Purpose SUSY will have filtered ttbar samples with TruthMET&amp;gt; 200 GeV –&amp;gt; Is it worth to propose a slicing for TruthMET &amp;lt; 200 ? ) Raw numbers of events and yields per slice a very basic slicing strategy might be : ) | Category | Slice ||----------|------------------------------|| Low | TruthMET &amp;lt; 100 GeV || Medium | 100 GeV &amp;lt; TruthMET &amp;lt; 200 GeV || High | TruthMET &amp;gt; 200 GeV |</summary></entry><entry><title type="html">TrackJet quantities</title><link href="/2017/12/01/trackjet-quantities.html" rel="alternate" type="text/html" title="TrackJet quantities" /><published>2017-12-01T00:00:00+01:00</published><updated>2017-12-01T00:00:00+01:00</updated><id>/2017/12/01/trackjet-quantities</id><content type="html" xml:base="/2017/12/01/trackjet-quantities.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;look for new discriminating variables from track jets&lt;/p&gt;

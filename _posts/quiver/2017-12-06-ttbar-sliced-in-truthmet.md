@@ -13,39 +13,48 @@ SUSY will have filtered ttbar samples with TruthMET> 200 GeV
 )
 ## Raw numbers of events and yields per slice
 * a very basic slicing strategy might be :
-
+)
+{% highlight sh %}
 | Category | Slice                        |
 |----------|------------------------------|
 | Low      | TruthMET < 100 GeV           |
 | Medium   | 100 GeV < TruthMET < 200 GeV |
 | High     | TruthMET > 200 GeV           |
-)
+{% endhighlight %}
+
 ### 2 jets 2 tags (MVA selection)
 )
+{% highlight sh %}
 | Slice  | NEvents | Yield  |
 | ------ | ------- | ------ |
 | Low    | 87      | 26.59  |
 | Medium | 1280    | 386.61 |
 | High   | 190     | 62.90  |
 | All    | 1557    | 476.1  |
-)
+{% endhighlight %}
+
 ### Fractions : 2 jets 2 tags (MVA selection)
 )
+{% highlight sh %}
 | Slice  | NEvents | Yield  |
 |--------|---------|--------|
 | Low    | 5.6%    | 5.6%   |
 | Medium | 82.2%   | 81.2%  |
 | High   | 12.2%   | 13.2%  |
-)
+{% endhighlight %}
+
 ### 3 jets 2 tags (MVA selection)
 )
+{% highlight sh %}
 | Slice  | NEvents | Yield   |
 |--------|---------|---------|
 | Low    | 550     | 165.79  |
 | Medium | 8909    | 2643.49 |
 | High   | 1967    | 591.26  |
 | All    | 11426   | 3400.54 |
-)
+{% endhighlight %}
+
+{% highlight sh %}
 ### Fractions : 3 jets 2 tags (MVA selection)
 
 | Slice  | NEvents | Yield   |
@@ -53,7 +62,8 @@ SUSY will have filtered ttbar samples with TruthMET> 200 GeV
 | Low    | 4.8%    | 4.8%    |
 | Medium | 77.9%   | 77.7%   |
 | High   | 17.2%   | 17.4%   |
-)
+{% endhighlight %}
+
 ## Slices in mBB
 * MVA selection, applying SM VHbb Reader on EPS CxAODs
 )
@@ -100,23 +110,27 @@ leg->Draw("same")
   * **mc15_13TeV.410501.PowhegPythia8EvtGen_A14_ttbar_hdamp258p75_nonallhad.merge.DAOD_HIGG5D1.e5458_s2726_r7772_r7676_p2949**
 ![IMAGE](/images/q/10F556ED05E8F0A2D01E6A50E746665A.jpg)
 ### all n-jets all n-tags (no selection, HIGG5D1 DAOD)
-
+)
+{% highlight sh %}
 | Slice  | NEvents  | Yield            |
 | ------ | -------- | ---------------- |
 | Low    | 9711814  | 7041811302.00    |
 | Medium | 3862066  | 2789444888.00    |
 | High   | 417988   | 296028135.00     |
 | All    | 13991868 | 10127284325      |
-)
-### Fractions : all n-jets all n-tags (no selection, HIGG5D1 DAOD)
+{% endhighlight %}
 
+### Fractions : all n-jets all n-tags (no selection, HIGG5D1 DAOD)
+)
+{% highlight sh %}
 | Slice  | NEvents  | Yield  |
 | ------ | -------- | ------ |
 | Low    | 69.4     | 69.5   |
 | Medium | 27.6     | 27.5   |
 | High   | 2.9      | 2.9    |
 | All    | 100%     | 100%   |
-)
+{% endhighlight %}
+
 {% highlight sh %}
 TChain *CollectionTree = new TChain("CollectionTree")
 CollectionTree->Add("DAOD_HIGG5D1.1*")
