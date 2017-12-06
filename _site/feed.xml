@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-06T13:30:42+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">TrackJet quantities</title><link href="/2017/12/01/trackjet-quantities.html" rel="alternate" type="text/html" title="TrackJet quantities" /><published>2017-12-01T00:00:00+01:00</published><updated>2017-12-01T00:00:00+01:00</updated><id>/2017/12/01/trackjet-quantities</id><content type="html" xml:base="/2017/12/01/trackjet-quantities.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-06T14:26:45+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">ttbar sliced in TruthMET</title><link href="/2017/12/06/ttbar-sliced-in-truthmet.html" rel="alternate" type="text/html" title="ttbar sliced in TruthMET" /><published>2017-12-06T00:00:00+01:00</published><updated>2017-12-06T00:00:00+01:00</updated><id>/2017/12/06/ttbar-sliced-in-truthmet</id><content type="html" xml:base="/2017/12/06/ttbar-sliced-in-truthmet.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+&lt;p&gt;SUSY will have filtered ttbar samples with TruthMET&amp;gt; 200 GeV
+–&amp;gt; Is it worth to propose a slicing for TruthMET &amp;lt; 200 ?
+)&lt;/p&gt;
+&lt;h2 id=&quot;raw-numbers-of-events-and-yields-per-slice&quot;&gt;Raw numbers of events and yields per slice&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;a very basic slicing strategy might be :
+  | Category | Slice |
+  | ——– | —– |
+  | Low      | TruthMET &amp;lt; 100 GeV |
+  | Medium   | 100 GeV &amp;lt; TruthMET &amp;lt; 200 GeV |
+  | High     | TruthMET &amp;gt; 200 GeV |&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-jets-2-tags-mva-selection&quot;&gt;2 jets 2 tags (MVA selection)&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Slice&lt;/th&gt;
+      &lt;th&gt;NEvents&lt;/th&gt;
+      &lt;th&gt;Yield&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Low&lt;/td&gt;
+      &lt;td&gt;87&lt;/td&gt;
+      &lt;td&gt;26.59&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Medium&lt;/td&gt;
+      &lt;td&gt;1280&lt;/td&gt;
+      &lt;td&gt;386.61&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;High&lt;/td&gt;
+      &lt;td&gt;190&lt;/td&gt;
+      &lt;td&gt;62.90&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;All&lt;/td&gt;
+      &lt;td&gt;1557&lt;/td&gt;
+      &lt;td&gt;476.1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;3-jets-2-tags-mva-selection&quot;&gt;3 jets 2 tags (MVA selection)&lt;/h3&gt;
+
+&lt;p&gt;| Slice  | NEvents | Yield   |
+| —— | ——- | ——- |
+| Low    | 550     | 165.79  |
+| Medium | 8909    | 2643.49 |
+| High   | 1967    | 591.26  |
+| All    | 11426   | 3400.54 |
+)&lt;/p&gt;
+&lt;h2 id=&quot;slices-in-mbb&quot;&gt;Slices in mBB&lt;/h2&gt;
+&lt;p&gt;)&lt;/p&gt;
+&lt;h3 id=&quot;2-jets&quot;&gt;2 jets&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/images/q/DF0A9243CE1696F5ED9452BC1B00696A.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;3-jets&quot;&gt;3 jets&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/images/q/32BEA2849EF084B664C887306AAF03AB.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;slices-in-mva28&quot;&gt;Slices in mva28&lt;/h2&gt;
+&lt;p&gt;)&lt;/p&gt;
+&lt;h3 id=&quot;2-jets-1&quot;&gt;2 jets&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/images/q/853D300053723F451049F21F5C8D4474.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;3-jets-1&quot;&gt;3 jets&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/images/q/C919BC0F60CEAF961A6B2BE6C196C9A4.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;THStack &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;hs &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new THStack&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hs&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;mva in TruthMET slices&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h100m &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h100m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h100m&quot;&lt;/span&gt;,20,-1.,1.&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h100p200m &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h100p200m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h100p200m&quot;&lt;/span&gt;,20,-1.,1.&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h200p &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h200p&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h200p&quot;&lt;/span&gt;,20,-1.,1.&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Nominal-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;mva28&amp;gt;&amp;gt;h100p200m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nJ==2)*(nTags==2)*(TruthMET&amp;gt;100)*(TruthMET&amp;lt;=200)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Nominal-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;mva28&amp;gt;&amp;gt;h100m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nJ==2)*(nTags==2)*(TruthMET&amp;lt;=100)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Nominal-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;mva28&amp;gt;&amp;gt;h200p&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nJ==2)*(nTags==2)*(TruthMET&amp;gt;200)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h200p-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kAzure+10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h100p200m-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kPink-9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h100m-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kSpring+10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100m&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100p200m&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h200p&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TLegend &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;leg &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TLegend&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.7,0.7,0.9,0.9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100m,&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET&amp;lt;100GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100p200m,&lt;span class=&quot;s2&quot;&gt;&quot;100&amp;lt;TruthMET&amp;lt;200GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h200p,&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET&amp;gt;200GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hist&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;same&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="filter" /><category term="truth" /><category term="ttbar" /><category term="VHbb" /><summary type="html">Purpose SUSY will have filtered ttbar samples with TruthMET&amp;gt; 200 GeV –&amp;gt; Is it worth to propose a slicing for TruthMET &amp;lt; 200 ? ) Raw numbers of events and yields per slice a very basic slicing strategy might be : | Category | Slice | | ——– | —– | | Low | TruthMET &amp;lt; 100 GeV | | Medium | 100 GeV &amp;lt; TruthMET &amp;lt; 200 GeV | | High | TruthMET &amp;gt; 200 GeV |</summary></entry><entry><title type="html">TrackJet quantities</title><link href="/2017/12/01/trackjet-quantities.html" rel="alternate" type="text/html" title="TrackJet quantities" /><published>2017-12-01T00:00:00+01:00</published><updated>2017-12-01T00:00:00+01:00</updated><id>/2017/12/01/trackjet-quantities</id><content type="html" xml:base="/2017/12/01/trackjet-quantities.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;look for new discriminating variables from track jets&lt;/p&gt;
@@ -361,6 +431,20 @@
 &lt;img src=&quot;/images/q/726F526FAA2EEEB84E0AB659E97F98B1.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;Dilepton events
 &lt;img src=&quot;/images/q/E205840E68401BC0EF456625692BEC83.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;2 jets
+    &lt;ul&gt;
+      &lt;li&gt;single lepton in red&lt;/li&gt;
+      &lt;li&gt;dilepton in blue
+&lt;img src=&quot;/images/q/9852BE41817CBEA60FB14AA8F4B81659.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;3 jets
+    &lt;ul&gt;
+      &lt;li&gt;single lepton in red&lt;/li&gt;
+      &lt;li&gt;dilepton in blue
+&lt;img src=&quot;/images/q/624867072F4F25C5F5415DD1C6501D61.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;)&lt;/p&gt;</content><author><name></name></author><summary type="html">Purpose better understand the origin of recoMET &amp;gt; 150 in ttbar events most plots in 2-3j 2tags after full selection</summary></entry><entry><title type="html">Tau studies in ttbar samples</title><link href="/2017/11/14/tau-studies-in-ttbar-samples.html" rel="alternate" type="text/html" title="Tau studies in ttbar samples" /><published>2017-11-14T00:00:00+01:00</published><updated>2017-11-14T00:00:00+01:00</updated><id>/2017/11/14/tau-studies-in-ttbar-samples</id><content type="html" xml:base="/2017/11/14/tau-studies-in-ttbar-samples.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
@@ -558,12 +642,4 @@ m_f_SysVVMbbME_ZZvvqq_new-&amp;gt;SetLineColor(kRed);
 m_f_SysVVMbbME_ZZvvqq_new-&amp;gt;Draw(&quot;same&quot;)
 
 TLegend *leg)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="bug" /><category term="VHbb" /><summary type="html">Context</summary></entry><entry><title type="html">Impact of bTagging systematics in the SM VH(bb) cut-based analysis </title><link href="/2017/10/13/impact-of-btagging-systematics-in-the-sm-vh(bb)-cut-based-analysis.html" rel="alternate" type="text/html" title="Impact of bTagging systematics in the SM VH(bb) cut-based analysis " /><published>2017-10-13T00:00:00+02:00</published><updated>2017-10-13T00:00:00+02:00</updated><id>/2017/10/13/impact-of-btagging-systematics-in-the-sm-vh(bb)-cut-based-analysis%20</id><content type="html" xml:base="/2017/10/13/impact-of-btagging-systematics-in-the-sm-vh(bb)-cut-based-analysis.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
-&lt;p&gt;In ranking plots for L=150fb-1 prospects, and a priori for EPS as well, the first bTagging NP &lt;strong&gt;b-jet tagging efficiency 0&lt;/strong&gt; ranks high in the MVA analysis and low in the cut-based analysis&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;quiver-note-url/BCAB7800-29DB-4D33-9915-8202FCCDE136&quot;&gt;VH(bb) prospects for L=150fb-1&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;MVA
-&lt;img src=&quot;/images/q/7BA11C06F26B7E42D25C74DEF916685D.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="btagging" /><category term="VHbb" /><summary type="html">Purpose In ranking plots for L=150fb-1 prospects, and a priori for EPS as well, the first bTagging NP b-jet tagging efficiency 0 ranks high in the MVA analysis and low in the cut-based analysis</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="bug" /><category term="VHbb" /><summary type="html">Context</summary></entry></feed>

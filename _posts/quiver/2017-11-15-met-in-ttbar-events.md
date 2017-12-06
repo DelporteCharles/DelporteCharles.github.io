@@ -139,5 +139,13 @@ Average table :
 ![IMAGE](/images/q/726F526FAA2EEEB84E0AB659E97F98B1.jpg)
 * Dilepton events
 ![IMAGE](/images/q/E205840E68401BC0EF456625692BEC83.jpg)
+* 2 jets
+  * single lepton in red
+  * dilepton in blue
+![IMAGE](/images/q/9852BE41817CBEA60FB14AA8F4B81659.jpg)
+* 3 jets
+  * single lepton in red
+  * dilepton in blue
+![IMAGE](/images/q/624867072F4F25C5F5415DD1C6501D61.jpg)
 
 )
