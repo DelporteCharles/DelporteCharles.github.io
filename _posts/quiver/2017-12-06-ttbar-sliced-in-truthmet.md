@@ -15,13 +15,13 @@ SUSY will have filtered ttbar samples with TruthMET> 200 GeV
 * a very basic slicing strategy might be :
 
 | Category | Slice                        |
-| -------- | ---------------------------- |
+|----------|------------------------------|
 | Low      | TruthMET < 100 GeV           |
 | Medium   | 100 GeV < TruthMET < 200 GeV |
 | High     | TruthMET > 200 GeV           |
 )
 ### 2 jets 2 tags (MVA selection)
-
+)
 | Slice  | NEvents | Yield  |
 | ------ | ------- | ------ |
 | Low    | 87      | 26.59  |
@@ -30,17 +30,17 @@ SUSY will have filtered ttbar samples with TruthMET> 200 GeV
 | All    | 1557    | 476.1  |
 )
 ### Fractions : 2 jets 2 tags (MVA selection)
-
+)
 | Slice  | NEvents | Yield  |
-| ------ | ------- | ------ |
+|--------|---------|--------|
 | Low    | 5.6%    | 5.6%   |
 | Medium | 82.2%   | 81.2%  |
 | High   | 12.2%   | 13.2%  |
 )
 ### 3 jets 2 tags (MVA selection)
-
+)
 | Slice  | NEvents | Yield   |
-| ------ | ------- | ------- |
+|--------|---------|---------|
 | Low    | 550     | 165.79  |
 | Medium | 8909    | 2643.49 |
 | High   | 1967    | 591.26  |

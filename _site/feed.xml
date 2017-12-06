@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-06T15:39:57+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">ttbar sliced in TruthMET</title><link href="/2017/12/06/ttbar-sliced-in-truthmet.html" rel="alternate" type="text/html" title="ttbar sliced in TruthMET" /><published>2017-12-06T00:00:00+01:00</published><updated>2017-12-06T00:00:00+01:00</updated><id>/2017/12/06/ttbar-sliced-in-truthmet</id><content type="html" xml:base="/2017/12/06/ttbar-sliced-in-truthmet.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-06T15:51:13+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">ttbar sliced in TruthMET</title><link href="/2017/12/06/ttbar-sliced-in-truthmet.html" rel="alternate" type="text/html" title="ttbar sliced in TruthMET" /><published>2017-12-06T00:00:00+01:00</published><updated>2017-12-06T00:00:00+01:00</updated><id>/2017/12/06/ttbar-sliced-in-truthmet</id><content type="html" xml:base="/2017/12/06/ttbar-sliced-in-truthmet.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 &lt;p&gt;SUSY will have filtered ttbar samples with TruthMET&amp;gt; 200 GeV
 –&amp;gt; Is it worth to propose a slicing for TruthMET &amp;lt; 200 ?
 )&lt;/p&gt;
@@ -8,14 +8,14 @@
 &lt;/ul&gt;
 
 &lt;p&gt;| Category | Slice                        |
-| ——– | —————————- |
+|———-|——————————|
 | Low      | TruthMET &amp;lt; 100 GeV           |
 | Medium   | 100 GeV &amp;lt; TruthMET &amp;lt; 200 GeV |
 | High     | TruthMET &amp;gt; 200 GeV           |
 )&lt;/p&gt;
 &lt;h3 id=&quot;2-jets-2-tags-mva-selection&quot;&gt;2 jets 2 tags (MVA selection)&lt;/h3&gt;
-
-&lt;p&gt;| Slice  | NEvents | Yield  |
+&lt;p&gt;)
+| Slice  | NEvents | Yield  |
 | —— | ——- | —— |
 | Low    | 87      | 26.59  |
 | Medium | 1280    | 386.61 |
@@ -23,17 +23,17 @@
 | All    | 1557    | 476.1  |
 )&lt;/p&gt;
 &lt;h3 id=&quot;fractions--2-jets-2-tags-mva-selection&quot;&gt;Fractions : 2 jets 2 tags (MVA selection)&lt;/h3&gt;
-
-&lt;p&gt;| Slice  | NEvents | Yield  |
-| —— | ——- | —— |
+&lt;p&gt;)
+| Slice  | NEvents | Yield  |
+|——–|———|——–|
 | Low    | 5.6%    | 5.6%   |
 | Medium | 82.2%   | 81.2%  |
 | High   | 12.2%   | 13.2%  |
 )&lt;/p&gt;
 &lt;h3 id=&quot;3-jets-2-tags-mva-selection&quot;&gt;3 jets 2 tags (MVA selection)&lt;/h3&gt;
-
-&lt;p&gt;| Slice  | NEvents | Yield   |
-| —— | ——- | ——- |
+&lt;p&gt;)
+| Slice  | NEvents | Yield   |
+|——–|———|———|
 | Low    | 550     | 165.79  |
 | Medium | 8909    | 2643.49 |
 | High   | 1967    | 591.26  |
