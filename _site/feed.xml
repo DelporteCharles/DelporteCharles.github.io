@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-06T15:57:59+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">ttbar sliced in TruthMET</title><link href="/2017/12/06/ttbar-sliced-in-truthmet.html" rel="alternate" type="text/html" title="ttbar sliced in TruthMET" /><published>2017-12-06T00:00:00+01:00</published><updated>2017-12-06T00:00:00+01:00</updated><id>/2017/12/06/ttbar-sliced-in-truthmet</id><content type="html" xml:base="/2017/12/06/ttbar-sliced-in-truthmet.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-07T10:03:55+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">ttbar sliced in TruthMET</title><link href="/2017/12/06/ttbar-sliced-in-truthmet.html" rel="alternate" type="text/html" title="ttbar sliced in TruthMET" /><published>2017-12-06T00:00:00+01:00</published><updated>2017-12-06T00:00:00+01:00</updated><id>/2017/12/06/ttbar-sliced-in-truthmet</id><content type="html" xml:base="/2017/12/06/ttbar-sliced-in-truthmet.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 &lt;p&gt;SUSY will have filtered ttbar samples with TruthMET&amp;gt; 200 GeV
 –&amp;gt; Is it worth to propose a slicing for TruthMET &amp;lt; 200 ?
 )&lt;/p&gt;
@@ -31,16 +31,20 @@
 &lt;ul&gt;
   &lt;li&gt;MVA selection, applying SM VHbb Reader on EPS CxAODs
 )
-    &lt;h3 id=&quot;2-jets&quot;&gt;2 jets&lt;/h3&gt;
+    &lt;h3 id=&quot;2-tags-2-jets&quot;&gt;2 tags 2 jets&lt;/h3&gt;
     &lt;p&gt;&lt;img src=&quot;/images/q/DF0A9243CE1696F5ED9452BC1B00696A.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h3 id=&quot;3-jets&quot;&gt;3 jets&lt;/h3&gt;
+    &lt;h3 id=&quot;2-tags-3-jets&quot;&gt;2 tags 3 jets&lt;/h3&gt;
     &lt;p&gt;&lt;img src=&quot;/images/q/32BEA2849EF084B664C887306AAF03AB.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
     &lt;h2 id=&quot;slices-in-mva28&quot;&gt;Slices in mva28&lt;/h2&gt;
     &lt;p&gt;)&lt;/p&gt;
-    &lt;h3 id=&quot;2-jets-1&quot;&gt;2 jets&lt;/h3&gt;
+    &lt;h3 id=&quot;2-tags-2-jets-1&quot;&gt;2 tags 2 jets&lt;/h3&gt;
     &lt;p&gt;&lt;img src=&quot;/images/q/853D300053723F451049F21F5C8D4474.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h3 id=&quot;3-jets-1&quot;&gt;3 jets&lt;/h3&gt;
+    &lt;h3 id=&quot;2-tags-3-jets-1&quot;&gt;2 tags 3 jets&lt;/h3&gt;
     &lt;p&gt;&lt;img src=&quot;/images/q/C919BC0F60CEAF961A6B2BE6C196C9A4.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+    &lt;h2 id=&quot;slices-in-truthmet-2-tags-2-3-jets&quot;&gt;Slices in TruthMET (2 tags 2-3 jets)&lt;/h2&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/q/D8AB43B51A53F612955085F8D8BE6329.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+    &lt;h2 id=&quot;slices-in-truthmet-all-n-jets-all-n-tags-all-other-cuts-applied&quot;&gt;Slices in TruthMET all n-jets all n-tags (all other cuts applied)&lt;/h2&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/q/C07336A28C75E0FE9112CE915D2AFB1E.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 

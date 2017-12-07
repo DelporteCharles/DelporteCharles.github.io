@@ -67,16 +67,20 @@ SUSY will have filtered ttbar samples with TruthMET> 200 GeV
 ## Slices in mBB
 * MVA selection, applying SM VHbb Reader on EPS CxAODs
 )
-### 2 jets
+### 2 tags 2 jets
 ![IMAGE](/images/q/DF0A9243CE1696F5ED9452BC1B00696A.jpg)
-### 3 jets
+### 2 tags 3 jets
 ![IMAGE](/images/q/32BEA2849EF084B664C887306AAF03AB.jpg)
 ## Slices in mva28
 )
-### 2 jets
+### 2 tags 2 jets
 ![IMAGE](/images/q/853D300053723F451049F21F5C8D4474.jpg)
-### 3 jets
+### 2 tags 3 jets
 ![IMAGE](/images/q/C919BC0F60CEAF961A6B2BE6C196C9A4.jpg)
+## Slices in TruthMET (2 tags 2-3 jets)
+![IMAGE](/images/q/D8AB43B51A53F612955085F8D8BE6329.jpg)
+## Slices in TruthMET all n-jets all n-tags (all other cuts applied)
+![IMAGE](/images/q/C07336A28C75E0FE9112CE915D2AFB1E.jpg)
 {% highlight sh %}
 THStack *hs = new THStack("hs","mva in TruthMET slices")
 
