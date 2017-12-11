@@ -28,3 +28,35 @@ py8->Draw("text")
 he7->Draw("same text")
 {% endhighlight %}
 
+# All events
+https://bigpanda.cern.ch/task/12764998/
+https://bigpanda.cern.ch/task/12769510/
+
+Ordre des coupures :
+
+0) All
+1) 0-lepton
+2) 2 or 3 jets
+3) MET > 150 GeV
+4) dPhiMETMPT < pi/2
+5) mindPhiMETJets > 20 degrees
+6) SumpT > 120 (150) GeV
+7) pTB1 > 45 GeV
+8) dPhiBB < 140 degrees
+9) dPhiMETBB > 120 degrees
+)
+* Cutflows ratio py8/he7 in 2jets
+![IMAGE](/images/q/EB03516D528D8B31F259DCC3ECBBF6FC.jpg)
+* Cutflows ratio py8/he7 in 3jets
+![IMAGE](/images/q/7ABC944E69F5EBB6AE768DB99FFC0FC2.jpg)
+{% highlight sh %}
+root -l user.cdelport.mc15_13TeV.345056.PowhegPythia8EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.evgen.EVNT.e5706.VH_PwPy8_v0_EXT0/Rivet.root user.cdelport.mc15_13TeV.345573.PowhegHerwig7EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.evgen.EVNT.e5971.VH_PwHe7_v0_EXT0/Rivet.root
+
+py8 = (TH1F*)_file0->Get("MC_VH2BB_2015_Official/Cuts2j")
+he7 = (TH1F*)_file1->Get("MC_VH2BB_2015_Official/Cuts2j")
+py8->Scale(1./py8->GetBinContent(1))
+he7->Scale(1./he7->GetBinContent(1))
+py8->Divide(he7)
+py8->Draw("text")
+{% endhighlight %}
+

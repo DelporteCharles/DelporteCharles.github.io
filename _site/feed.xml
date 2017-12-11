@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-07T10:03:55+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">ttbar sliced in TruthMET</title><link href="/2017/12/06/ttbar-sliced-in-truthmet.html" rel="alternate" type="text/html" title="ttbar sliced in TruthMET" /><published>2017-12-06T00:00:00+01:00</published><updated>2017-12-06T00:00:00+01:00</updated><id>/2017/12/06/ttbar-sliced-in-truthmet</id><content type="html" xml:base="/2017/12/06/ttbar-sliced-in-truthmet.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-11T13:01:12+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">Systematics impact in SM VH(bb) 0-lepton</title><link href="/2017/12/11/systematics-impact-in-sm-vh(bb)-0-lepton.html" rel="alternate" type="text/html" title="Systematics impact in SM VH(bb) 0-lepton" /><published>2017-12-11T00:00:00+01:00</published><updated>2017-12-11T00:00:00+01:00</updated><id>/2017/12/11/systematics-impact-in-sm-vh(bb)-0-lepton</id><content type="html" xml:base="/2017/12/11/systematics-impact-in-sm-vh(bb)-0-lepton.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Reduce the impact of systematics in the cut-based analysis prioritarily&lt;/li&gt;
+  &lt;li&gt;Dominant systematics are b-Tagging and modelling ones
+    &lt;ul&gt;
+      &lt;li&gt;consist of a different weighting strategy to cover shape variations of relevant variables : pTV, mBB&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ranking of systematics in the SM VH(bb) 0-lepton only fit MVA (prefit and post-fit unconditional, p.179 of supporting note)
+&lt;img src=&quot;/images/q/ECDDF009C81122E936C23BED91A73A2D.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;zjets-ptv&quot;&gt;Zjets pTV&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;reweight events as a function of TruthMET computed from leptons/neutrinos
+    &lt;ul&gt;
+      &lt;li&gt;https://gitlab.cern.ch/CxAODFramework/CxAODReader_VHbb/blob/master/Root/AnalysisReader_VHbb.cxx#L393&lt;/li&gt;
+      &lt;li&gt;https://gitlab.cern.ch/CxAODFramework/CorrsAndSysts/blob/master/Root/CorrsAndSysts.cxx#L1444&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Do these plots as a function of TruthMET or MET ?&lt;/strong&gt;
+)&lt;/li&gt;
+  &lt;li&gt;Up variation, reweighting SF vs MET
+&lt;img src=&quot;/images/q/DA1AE92762CBE86C0F3D53D2AC647B96.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Down variation, reweighting SF vs MET
+&lt;img src=&quot;/images/q/9282B86588A50CF28751CBFD48B629DC.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Up/Down variations, reweighting SF vs MVA
+&lt;img src=&quot;/images/q/7773CD3F4B21AC5DC4212E8A153005F4.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Profiles
+&lt;img src=&quot;/images/q/2EDED551C4F4D8D052D8578F76FDD212.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;MVA vs MET
+&lt;img src=&quot;/images/q/6573E20A8A1AAA077A5E9DC1FFDE2A45.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+    &lt;h2 id=&quot;zjets-mbb-shape&quot;&gt;Zjets mBB shape&lt;/h2&gt;
+  &lt;/li&gt;
+  &lt;li&gt;reweight events as a function of the reco mBB
+    &lt;ul&gt;
+      &lt;li&gt;https://gitlab.cern.ch/CxAODFramework/CxAODReader_VHbb/blob/master/Root/AnalysisReader_VHbb0Lep.cxx#L607&lt;/li&gt;
+      &lt;li&gt;https://gitlab.cern.ch/CxAODFramework/CorrsAndSysts/blob/master/Root/CorrsAndSysts.cxx#L1459
+)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Up/down variation, reweighting SF vs mBB
+&lt;img src=&quot;/images/q/63EA67695E343272CA2DEA3A7035F429.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Up/down variation, reweighting SF vs mBB
+    &lt;ul&gt;
+      &lt;li&gt;SF is close to one, so it has a small impact in the prefit ranking&lt;/li&gt;
+      &lt;li&gt;this NP is largely pulled (almost 1 sigma up), so the impact of the down variation makes it highly ranked in the unconditionnal fit ?
+&lt;img src=&quot;/images/q/18AE93AEDA29C4A631FA2D82167E7298.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+        &lt;h2 id=&quot;single-top-wt-acceptance&quot;&gt;Single-top wt acceptance&lt;/h2&gt;
+        &lt;p&gt;In WSMaker, what is the difference between (src/systematiclistsbuilder_vhbbrun2.cpp) :&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;normFact (a priori : floatting normalisation)&lt;/li&gt;
+  &lt;li&gt;normSys ?&lt;/li&gt;
+  &lt;li&gt;sampleNormSys ?
+)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Purpose Reduce the impact of systematics in the cut-based analysis prioritarily Dominant systematics are b-Tagging and modelling ones consist of a different weighting strategy to cover shape variations of relevant variables : pTV, mBB</summary></entry><entry><title type="html">ttbar sliced in TruthMET</title><link href="/2017/12/06/ttbar-sliced-in-truthmet.html" rel="alternate" type="text/html" title="ttbar sliced in TruthMET" /><published>2017-12-06T00:00:00+01:00</published><updated>2017-12-06T00:00:00+01:00</updated><id>/2017/12/06/ttbar-sliced-in-truthmet</id><content type="html" xml:base="/2017/12/06/ttbar-sliced-in-truthmet.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 &lt;p&gt;SUSY will have filtered ttbar samples with TruthMET&amp;gt; 200 GeV
 –&amp;gt; Is it worth to propose a slicing for TruthMET &amp;lt; 200 ?
 )&lt;/p&gt;
@@ -616,55 +673,30 @@ Herwig7 in blue
 )
 &lt;img src=&quot;/images/q/98EB549EFF476B5608830BB2B808D056.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;TFile &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;_file0 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; TFile::Open&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PowhegPythia8EvtGen_345056/nominal.root&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TFile &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;_file1 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; TFile::Open&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PowhegHerwig7EvtGen_345573/central.root&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;.ls&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;py8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=(&lt;/span&gt;TH1F&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;_file0-&amp;gt;Get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;MC_VH2BB_2015_Official/Cuts3j&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt; TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;he7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=(&lt;/span&gt;TH1F&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;_file1-&amp;gt;Get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;MC_VH2BB_2015_Official/Cuts3j&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;he7-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;Scale&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;he7-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;/py8-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;SetLineColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kRed&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;he7-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;same text&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><summary type="html">https://cds.cern.ch/record/2235887/files/ATL-COM-PHYS-2016-1747.pdf ) 50k events in mc15_13TeV.345056.PowhegPythia8EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.evgen.EVNT.e5706 mc15_13TeV.345573.PowhegHerwig7EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.evgen.EVNT.e5971</summary></entry><entry><title type="html">EPS using bugged v30</title><link href="/2017/10/30/eps-using-bugged-v30.html" rel="alternate" type="text/html" title="EPS using bugged v30" /><published>2017-10-30T00:00:00+01:00</published><updated>2017-10-30T00:00:00+01:00</updated><id>/2017/10/30/eps-using-bugged-v30</id><content type="html" xml:base="/2017/10/30/eps-using-bugged-v30.html">&lt;h1 id=&quot;context&quot;&gt;Context&lt;/h1&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;TFile &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;_file0 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; TFile::Open&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PowhegPythia8EvtGen_345056/nominal.root&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TFile &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;_file1 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; TFile::Open&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PowhegHerwig7EvtGen_345573/central.root&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;.ls&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;py8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=(&lt;/span&gt;TH1F&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;_file0-&amp;gt;Get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;MC_VH2BB_2015_Official/Cuts3j&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt; TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;he7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=(&lt;/span&gt;TH1F&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;_file1-&amp;gt;Get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;MC_VH2BB_2015_Official/Cuts3j&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;he7-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;Scale&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;he7-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;/py8-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;SetLineColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kRed&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;he7-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;same text&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Andy B. and Changqiao have been using the bugged version of v30 0-lepton inputs for EPS, which has non-up-to-date diboson modelling systematics&lt;/p&gt;
+&lt;h1 id=&quot;all-events&quot;&gt;All events&lt;/h1&gt;
+&lt;p&gt;https://bigpanda.cern.ch/task/12764998/
+https://bigpanda.cern.ch/task/12769510/&lt;/p&gt;
 
-&lt;h1 id=&quot;candidate-commits-for-updated-shapes&quot;&gt;Candidate commits for updated shapes&lt;/h1&gt;
+&lt;p&gt;Ordre des coupures :&lt;/p&gt;
 
-&lt;p&gt;https://gitlab.cern.ch/CxAODFramework/CorrsAndSysts/commits/master/Root/CorrsAndSysts.cxx&lt;/p&gt;
-
-&lt;h2 id=&quot;vh-and-vv-psue-systematics-nicolas&quot;&gt;VH and VV PSUE systematics (Nicolas)&lt;/h2&gt;
-&lt;p&gt;https://gitlab.cern.ch/CxAODFramework/CorrsAndSysts/commit/b64aea4a3c8fcd0516e867c841216b0299131f6e&lt;/p&gt;
-
-&lt;h2 id=&quot;bug-fix-for-jets-multiplicities-nicolas&quot;&gt;Bug fix for jets multiplicities (Nicolas)&lt;/h2&gt;
-&lt;p&gt;https://gitlab.cern.ch/CxAODFramework/CorrsAndSysts/commit/d9d3943229addca837bc4cd0b33b3b3c17fc09e6&lt;/p&gt;
-
-&lt;h2 id=&quot;valerio&quot;&gt;(Valerio)&lt;/h2&gt;
-&lt;p&gt;https://gitlab.cern.ch/CxAODFramework/CorrsAndSysts/commit/cdeaa63d63ca4bc5a07cd3367ace9219b85e4e8c
-https://gitlab.cern.ch/CxAODFramework/CorrsAndSysts/blame/b64aea4a3c8fcd0516e867c841216b0299131f6e/Root/CorrsAndSysts.cxx
+&lt;p&gt;0) All
+1) 0-lepton
+2) 2 or 3 jets
+3) MET &amp;gt; 150 GeV
+4) dPhiMETMPT &amp;lt; pi/2
+5) mindPhiMETJets &amp;gt; 20 degrees
+6) SumpT &amp;gt; 120 (150) GeV
+7) pTB1 &amp;gt; 45 GeV
+8) dPhiBB &amp;lt; 140 degrees
+9) dPhiMETBB &amp;gt; 120 degrees
 )&lt;/p&gt;
-&lt;h1 id=&quot;shape-comparison-of-the-updated-syst&quot;&gt;Shape comparison of the updated syst&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Cutflows ratio py8/he7 in 2jets
+&lt;img src=&quot;/images/q/EB03516D528D8B31F259DCC3ECBBF6FC.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Cutflows ratio py8/he7 in 3jets
+&lt;img src=&quot;/images/q/7ABC944E69F5EBB6AE768DB99FFC0FC2.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/q/2FD0DC29E7FC6A050627EAAA6CD3321D.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;    TF1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;m_f_SysVVMbbME_WZlvqq &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TF1&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;mBB__WZlvqq_PS_Sherpa_fit&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;[0]+[7]*(x/1e3)*(x/1e3)+[1]*TMath::Exp(-(x/1e3)/[2])+[3]*((TMath::Gaus(((x/1e3)-[4])/[6])+1)/(TMath::Gaus(((x/1e3)-[5])/[6])+1))-1&quot;&lt;/span&gt;,25e3,500e3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    m_f_SysVVMbbME_WZlvqq-&amp;gt;SetParameter&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0,-31.3129&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    m_f_SysVVMbbME_WZlvqq-&amp;gt;SetParameter&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1,32.2119&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    m_f_SysVVMbbME_WZlvqq-&amp;gt;SetParameter&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2,15016.9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    m_f_SysVVMbbME_WZlvqq-&amp;gt;SetParameter&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;3,0.210291&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    m_f_SysVVMbbME_WZlvqq-&amp;gt;SetParameter&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;4,94.0918&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    m_f_SysVVMbbME_WZlvqq-&amp;gt;SetParameter&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;5,26.2236&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    m_f_SysVVMbbME_WZlvqq-&amp;gt;SetParameter&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;6,15&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    m_f_SysVVMbbME_WZlvqq-&amp;gt;SetParameter&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;7,3.91378e-06&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    m_f_SysVVMbbME_WZlvqq-&amp;gt;GetHistogram&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;-&amp;gt;SetTitle&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;SysVVMbbME_WZlvqq 2j&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    m_f_SysVVMbbME_WZlvqq-&amp;gt;SetLineColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kBlue&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    m_f_SysVVMbbME_WZlvqq-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    TF1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;m_f_SysVVMbbME_WZlvqq_new &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TF1&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;mBB__WZlvqq_PS_Sherpa_fit_new&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;[0]+[1]*tanh( (x/1e3-[2])/[3] )&quot;&lt;/span&gt;,25e3,500e3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    m_f_SysVVMbbME_WZlvqq_new-&amp;gt;SetParameter&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0,0.28196    &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    m_f_SysVVMbbME_WZlvqq_new-&amp;gt;SetParameter&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1, 4.30023e-01&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    m_f_SysVVMbbME_WZlvqq_new-&amp;gt;SetParameter&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2,1.01083e+02&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    m_f_SysVVMbbME_WZlvqq_new-&amp;gt;SetParameter&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;3,1.87708e+01&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    m_f_SysVVMbbME_WZlvqq_new-&amp;gt;SetLineColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kRed&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    m_f_SysVVMbbME_WZlvqq_new-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;same&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    TLegend &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;leg &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TLegend&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.7,0.7,0.9,0.9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;m_f_SysVVMbbME_WZlvqq, &lt;span class=&quot;s2&quot;&gt;&quot;Initial VVMbbME_WZlvqq&quot;&lt;/span&gt;, &lt;span class=&quot;s2&quot;&gt;&quot;l&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;m_f_SysVVMbbME_WZlvqq_new, &lt;span class=&quot;s2&quot;&gt;&quot;Updated VVMbbME_WZlvqq&quot;&lt;/span&gt;, &lt;span class=&quot;s2&quot;&gt;&quot;l&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    leg-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;same&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    c1-&amp;gt;SetGridx&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    c1-&amp;gt;SetGridy&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/047952A553BC6A1A6E03AE8D5ABACA7E.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-    TF1 &lt;em&gt;m_f_SysVVMbbME_ZZvvqq= new TF1(“mBB__ZZqqvv_PS_Sherpa_fit”,”[0]+[7]&lt;/em&gt;(x/1e3)&lt;em&gt;(x/1e3)+[1]&lt;/em&gt;TMath::Exp(-(x/1e3)/[2])+[3]*((TMath::Gaus(((x/1e3)-[4])/[6])+1)/(TMath::Gaus(((x/1e3)-[5])/[6])+1))-1”,25e3,500e3);
-    m_f_SysVVMbbME_ZZvvqq-&amp;gt;SetParameter(0,-9.82225);
-    m_f_SysVVMbbME_ZZvvqq-&amp;gt;SetParameter(1,10.7876);
-    m_f_SysVVMbbME_ZZvvqq-&amp;gt;SetParameter(2,4292.31);
-    m_f_SysVVMbbME_ZZvvqq-&amp;gt;SetParameter(3,0.180446);
-    m_f_SysVVMbbME_ZZvvqq-&amp;gt;SetParameter(4,96.0217);
-    m_f_SysVVMbbME_ZZvvqq-&amp;gt;SetParameter(5,64.1412);
-    m_f_SysVVMbbME_ZZvvqq-&amp;gt;SetParameter(6,12.0295);
-    m_f_SysVVMbbME_ZZvvqq-&amp;gt;SetParameter(7,5.22119e-06);&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;m_f_SysVVMbbME_ZZvvqq-&amp;gt;GetHistogram()-&amp;gt;SetTitle(&quot;SysVVMbbME_ZZvvqq 2j&quot;);
-
-m_f_SysVVMbbME_ZZvvqq-&amp;gt;SetLineColor(kBlue);
-m_f_SysVVMbbME_ZZvvqq-&amp;gt;Draw()
-   
-   
-TF1 *m_f_SysVVMbbME_ZZvvqq_new= new TF1(&quot;mBB__ZZqqvv_PS_Sherpa_fit_new&quot;,&quot;[0]+[1]*tanh( (x/1e3-[2])/[3] )&quot;,25e3,500e3);
-m_f_SysVVMbbME_ZZvvqq_new-&amp;gt;SetParameter(0,0.24918    );
-m_f_SysVVMbbME_ZZvvqq_new-&amp;gt;SetParameter(1,4.07409e-01);
-m_f_SysVVMbbME_ZZvvqq_new-&amp;gt;SetParameter(2,9.51575e+01);
-m_f_SysVVMbbME_ZZvvqq_new-&amp;gt;SetParameter(3,1.46196e+01);
-
-m_f_SysVVMbbME_ZZvvqq_new-&amp;gt;SetLineColor(kRed);
-m_f_SysVVMbbME_ZZvvqq_new-&amp;gt;Draw(&quot;same&quot;)
-
-TLegend *leg)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="bug" /><category term="VHbb" /><summary type="html">Context</summary></entry></feed>
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;root &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; user.cdelport.mc15_13TeV.345056.PowhegPythia8EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.evgen.EVNT.e5706.VH_PwPy8_v0_EXT0/Rivet.root user.cdelport.mc15_13TeV.345573.PowhegHerwig7EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.evgen.EVNT.e5971.VH_PwHe7_v0_EXT0/Rivet.root&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;TH1F&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;_file0-&amp;gt;Get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;MC_VH2BB_2015_Official/Cuts2j&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;he7 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;TH1F&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;_file1-&amp;gt;Get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;MC_VH2BB_2015_Official/Cuts2j&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;Scale&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1./py8-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;he7-&amp;gt;Scale&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1./he7-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;Divide&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;he7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><summary type="html">https://cds.cern.ch/record/2235887/files/ATL-COM-PHYS-2016-1747.pdf ) 50k events in mc15_13TeV.345056.PowhegPythia8EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.evgen.EVNT.e5706 mc15_13TeV.345573.PowhegHerwig7EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.evgen.EVNT.e5971</summary></entry></feed>
