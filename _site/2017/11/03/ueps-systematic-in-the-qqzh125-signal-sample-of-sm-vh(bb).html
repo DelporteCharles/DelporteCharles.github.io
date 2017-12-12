@@ -96,8 +96,10 @@ Herwig7 in blue
 <figure class="highlight"><pre><code class="language-sh" data-lang="sh">TFile <span class="k">*</span>_file0 <span class="o">=</span> TFile::Open<span class="o">(</span><span class="s2">"PowhegPythia8EvtGen_345056/nominal.root"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />TFile <span class="k">*</span>_file1 <span class="o">=</span> TFile::Open<span class="o">(</span><span class="s2">"PowhegHerwig7EvtGen_345573/central.root"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />.ls<br data-jekyll-commonmark-ghpages="" />TH1F <span class="k">*</span><span class="nv">py8</span><span class="o">=(</span>TH1F<span class="k">*</span><span class="o">)</span>_file0-&gt;Get<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/Cuts3j"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" /> TH1F <span class="k">*</span><span class="nv">he7</span><span class="o">=(</span>TH1F<span class="k">*</span><span class="o">)</span>_file1-&gt;Get<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/Cuts3j"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />py8-&gt;GetBinContent<span class="o">(</span>0<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />py8-&gt;GetBinContent<span class="o">(</span>1<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />he7-&gt;GetBinContent<span class="o">(</span>1<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />py8-&gt;Scale<span class="o">(</span>he7-&gt;GetBinContent<span class="o">(</span>1<span class="o">)</span>/py8-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><br data-jekyll-commonmark-ghpages="" />py8-&gt;SetLineColor<span class="o">(</span>kRed<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />py8-&gt;Draw<span class="o">(</span><span class="s2">"text"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />he7-&gt;Draw<span class="o">(</span><span class="s2">"same text"</span><span class="o">)</span></code></pre></figure>
 
 <h1 id="all-events">All events</h1>
-<p>https://bigpanda.cern.ch/task/12764998/
-https://bigpanda.cern.ch/task/12769510/</p>
+<ul>
+  <li>https://bigpanda.cern.ch/task/12764998/</li>
+  <li>https://bigpanda.cern.ch/task/12769510/</li>
+</ul>
 
 <p>Ordre des coupures :</p>
 
@@ -121,6 +123,14 @@ https://bigpanda.cern.ch/task/12769510/</p>
 
 <figure class="highlight"><pre><code class="language-sh" data-lang="sh">root <span class="nt">-l</span> user.cdelport.mc15_13TeV.345056.PowhegPythia8EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.evgen.EVNT.e5706.VH_PwPy8_v0_EXT0/Rivet.root user.cdelport.mc15_13TeV.345573.PowhegHerwig7EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.evgen.EVNT.e5971.VH_PwHe7_v0_EXT0/Rivet.root<br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />py8 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file0-&gt;Get<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/Cuts2j"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />he7 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file1-&gt;Get<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/Cuts2j"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />py8-&gt;Scale<span class="o">(</span>1./py8-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><br data-jekyll-commonmark-ghpages="" />he7-&gt;Scale<span class="o">(</span>1./he7-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><br data-jekyll-commonmark-ghpages="" />py8-&gt;Divide<span class="o">(</span>he7<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />py8-&gt;Draw<span class="o">(</span><span class="s2">"text"</span><span class="o">)</span></code></pre></figure>
 
+<h3 id="metadata">METADATA</h3>
+<ul>
+  <li>small difference in sumOfWeights from inner cross section ? (should not, job was normalized )
+    <ul>
+      <li>ratio)</li>
+    </ul>
+  </li>
+</ul>
 
   </div>
 

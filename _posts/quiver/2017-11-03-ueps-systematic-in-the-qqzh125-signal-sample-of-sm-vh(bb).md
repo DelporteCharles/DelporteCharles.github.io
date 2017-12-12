@@ -29,8 +29,8 @@ he7->Draw("same text")
 {% endhighlight %}
 
 # All events
-https://bigpanda.cern.ch/task/12764998/
-https://bigpanda.cern.ch/task/12769510/
+* https://bigpanda.cern.ch/task/12764998/
+* https://bigpanda.cern.ch/task/12769510/
 
 Ordre des coupures :
 
@@ -60,3 +60,6 @@ py8->Divide(he7)
 py8->Draw("text")
 {% endhighlight %}
 
+### METADATA
+* small difference in sumOfWeights from inner cross section ? (should not, job was normalized )
+  * ratio)

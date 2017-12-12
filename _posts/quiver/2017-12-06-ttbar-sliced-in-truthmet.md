@@ -177,3 +177,5 @@ leg->Draw("same")
   * Before selection, contributes to ~5% of the overall ttbar non all-had
   * After selection, contributes to ~15% of the overall ttbar non all-had
 )
+# NTruthWZJets
+![IMAGE](/images/q/3C5199FC4CD5910D102F62D792378059.jpg)
