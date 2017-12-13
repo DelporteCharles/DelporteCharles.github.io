@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-12T13:41:36+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">Systematics impact in SM VH(bb) 0-lepton</title><link href="/2017/12/11/systematics-impact-in-sm-vh(bb)-0-lepton.html" rel="alternate" type="text/html" title="Systematics impact in SM VH(bb) 0-lepton" /><published>2017-12-11T00:00:00+01:00</published><updated>2017-12-11T00:00:00+01:00</updated><id>/2017/12/11/systematics-impact-in-sm-vh(bb)-0-lepton</id><content type="html" xml:base="/2017/12/11/systematics-impact-in-sm-vh(bb)-0-lepton.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-13T11:09:06+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">Systematics impact in SM VH(bb) 0-lepton</title><link href="/2017/12/11/systematics-impact-in-sm-vh(bb)-0-lepton.html" rel="alternate" type="text/html" title="Systematics impact in SM VH(bb) 0-lepton" /><published>2017-12-11T00:00:00+01:00</published><updated>2017-12-11T00:00:00+01:00</updated><id>/2017/12/11/systematics-impact-in-sm-vh(bb)-0-lepton</id><content type="html" xml:base="/2017/12/11/systematics-impact-in-sm-vh(bb)-0-lepton.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;Reduce the impact of systematics in the cut-based analysis prioritarily&lt;/li&gt;
   &lt;li&gt;Dominant systematics are b-Tagging and modelling ones
@@ -45,11 +45,15 @@
     &lt;ul&gt;
       &lt;li&gt;SF is close to one, so it has a small impact in the prefit ranking&lt;/li&gt;
       &lt;li&gt;this NP is largely pulled (almost 1 sigma up), so the impact of the down variation makes it highly ranked in the unconditionnal fit ?
-&lt;img src=&quot;/images/q/18AE93AEDA29C4A631FA2D82167E7298.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-        &lt;h2 id=&quot;single-top-wt-acceptance&quot;&gt;Single-top wt acceptance&lt;/h2&gt;
-        &lt;p&gt;In WSMaker, what is the difference between (src/systematiclistsbuilder_vhbbrun2.cpp) :&lt;/p&gt;
-      &lt;/li&gt;
+&lt;img src=&quot;/images/q/18AE93AEDA29C4A631FA2D82167E7298.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
     &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;X-Profile
+&lt;img src=&quot;/images/q/41E1F3C5CDD1DC11B4B056EC32B3E429.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Y-Profile
+&lt;img src=&quot;/images/q/29F19AAA2109D031A4F80DB8F3A21AB5.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+    &lt;h2 id=&quot;single-top-wt-acceptance&quot;&gt;Single-top wt acceptance&lt;/h2&gt;
+    &lt;p&gt;In WSMaker, what is the difference between (src/systematiclistsbuilder_vhbbrun2.cpp) :&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;normFact (a priori : floatting normalisation)&lt;/li&gt;
   &lt;li&gt;normSys ?&lt;/li&gt;
@@ -219,7 +223,18 @@
 &lt;h3 id=&quot;rejection-against-all-processes&quot;&gt;Rejection against all processes&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/q/49E85104804F99DB3DF648773EC5A000.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;comparison-plot&quot;&gt;Comparison plot&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/q/68C189C8FE0553F7C3154FF3A5A95271.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="BDT" /><category term="VHbb" /><summary type="html">Purpose look for new discriminating variables from track jets</summary></entry><entry><title type="html">Events in last BDT bins</title><link href="/2017/11/24/events-in-last-bdt-bins.html" rel="alternate" type="text/html" title="Events in last BDT bins" /><published>2017-11-24T00:00:00+01:00</published><updated>2017-11-24T00:00:00+01:00</updated><id>/2017/11/24/events-in-last-bdt-bins</id><content type="html" xml:base="/2017/11/24/events-in-last-bdt-bins.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;/images/q/68C189C8FE0553F7C3154FF3A5A95271.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;correlation-plots&quot;&gt;Correlation plots&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;x-axis)
+    &lt;h2 id=&quot;signal-events&quot;&gt;Signal events&lt;/h2&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/q/5DFC05EF4FCDD64CA4985CC2C04B4B25.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+    &lt;h2 id=&quot;all-bkg-events&quot;&gt;All bkg events&lt;/h2&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/q/391A4167CC3BCF6516F66F3B3CC68E7F.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+    &lt;h2 id=&quot;ttbar-events&quot;&gt;ttbar events&lt;/h2&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/q/36FAADBE5B79049358AEDBA8EC6683BD.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="BDT" /><category term="VHbb" /><summary type="html">Purpose look for new discriminating variables from track jets</summary></entry><entry><title type="html">Events in last BDT bins</title><link href="/2017/11/24/events-in-last-bdt-bins.html" rel="alternate" type="text/html" title="Events in last BDT bins" /><published>2017-11-24T00:00:00+01:00</published><updated>2017-11-24T00:00:00+01:00</updated><id>/2017/11/24/events-in-last-bdt-bins</id><content type="html" xml:base="/2017/11/24/events-in-last-bdt-bins.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 &lt;p&gt;Pursue the analysis of the composition of the last BDT bins :
 &lt;a href=&quot;quiver-note-url/8C9F172A-0451-4C87-BEBB-8175956C29FD&quot;&gt;BDT composition per bin&lt;/a&gt;&lt;/p&gt;
 

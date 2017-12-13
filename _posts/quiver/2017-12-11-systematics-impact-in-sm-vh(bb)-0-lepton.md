@@ -37,6 +37,10 @@ Ranking of systematics in the SM VH(bb) 0-lepton only fit MVA (prefit and post-f
   * SF is close to one, so it has a small impact in the prefit ranking
   * this NP is largely pulled (almost 1 sigma up), so the impact of the down variation makes it highly ranked in the unconditionnal fit ?
 ![IMAGE](/images/q/18AE93AEDA29C4A631FA2D82167E7298.jpg)
+* X-Profile
+![IMAGE](/images/q/41E1F3C5CDD1DC11B4B056EC32B3E429.jpg)
+* Y-Profile
+![IMAGE](/images/q/29F19AAA2109D031A4F80DB8F3A21AB5.jpg)
 ## Single-top wt acceptance
 In WSMaker, what is the difference between (src/systematiclistsbuilder_vhbbrun2.cpp) :
 * normFact (a priori : floatting normalisation)

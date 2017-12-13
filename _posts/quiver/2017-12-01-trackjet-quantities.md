@@ -225,3 +225,11 @@ Combined sensitivity = 2.9045
 ![IMAGE](/images/q/49E85104804F99DB3DF648773EC5A000.jpg)
 ### Comparison plot
 ![IMAGE](/images/q/68C189C8FE0553F7C3154FF3A5A95271.jpg)
+# Correlation plots
+* x-axis)
+## Signal events
+![IMAGE](/images/q/5DFC05EF4FCDD64CA4985CC2C04B4B25.jpg)
+## All bkg events
+![IMAGE](/images/q/391A4167CC3BCF6516F66F3B3CC68E7F.jpg)
+## ttbar events
+![IMAGE](/images/q/36FAADBE5B79049358AEDBA8EC6683BD.jpg)
