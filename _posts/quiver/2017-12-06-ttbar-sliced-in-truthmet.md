@@ -166,6 +166,22 @@ hs->Draw("hist")
 leg->Draw("same")
 {% endhighlight %}
 
+# NTruthWZJets in DAODs
+* requirements should be :
+  * have at least one jet with reasonnable pT
+https://gitlab.cern.ch/atlas/athena/blob/21.2/PhysicsAnalysis/DerivationFramework/DerivationFrameworkHiggs/share/HIGG5D1.py
+--> count TruthWZJets with JetConstitScaleMomentum_pt > 20 GeV **--> is that the correct branch ??**
+)
+### NTruthWZJets20
+![IMAGE](/images/q/5A0BB2221F1097793785C1A225BA0A06.jpg)
+### NTruthWZJets30
+![IMAGE](/images/q/FFE9DFE857026230F6F265AF635999D5.jpg)
+# NTruthWZJets after full selection
+)
+### NTruthWZJets20
+![IMAGE](/images/q/3C5199FC4CD5910D102F62D792378059.jpg)
+### NTruthWZJets30
+![IMAGE](/images/q/531999D51FAF2AF20B7A4F369E2208B4.jpg)
 # Conclusion and notes
 * Low TruthMET :
   * Before selection, contributes to ~70% of the overall ttbar non all-had
@@ -176,6 +192,6 @@ leg->Draw("same")
 * High TruthMET :
   * Before selection, contributes to ~5% of the overall ttbar non all-had
   * After selection, contributes to ~15% of the overall ttbar non all-had
+* nTruthWZJets20 > 6 : ~30% of the DAOD stat. is lost
+* nTruthWZJets30 > 5 : ~30% of the DAOD stat. is lost
 )
-# NTruthWZJets
-![IMAGE](/images/q/3C5199FC4CD5910D102F62D792378059.jpg)

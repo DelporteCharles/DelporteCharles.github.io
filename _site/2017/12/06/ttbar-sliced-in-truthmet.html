@@ -154,8 +154,28 @@
 
 <figure class="highlight"><pre><code class="language-sh" data-lang="sh">TChain <span class="k">*</span>CollectionTree <span class="o">=</span> new TChain<span class="o">(</span><span class="s2">"CollectionTree"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />CollectionTree-&gt;Add<span class="o">(</span><span class="s2">"DAOD_HIGG5D1.1*"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />THStack <span class="k">*</span>hs <span class="o">=</span> new THStack<span class="o">(</span><span class="s2">"hs"</span>,<span class="s2">"mva in TruthMET slices"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />TH1F <span class="k">*</span>h100m <span class="o">=</span> new TH1F<span class="o">(</span><span class="s2">"h100m"</span>,<span class="s2">"h100m"</span>,100,0.,500.<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />TH1F <span class="k">*</span>h100p200m <span class="o">=</span> new TH1F<span class="o">(</span><span class="s2">"h100p200m"</span>,<span class="s2">"h100p200m"</span>,100,0.,500.<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />TH1F <span class="k">*</span>h200p <span class="o">=</span> new TH1F<span class="o">(</span><span class="s2">"h200p"</span>,<span class="s2">"h200p"</span>,100,0.,500.<span class="o">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />CollectionTree-&gt;Draw<span class="o">(</span><span class="s2">"sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&gt;&gt;h100p200m"</span>,<span class="s2">"EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&gt;100)*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&lt;=200)"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />CollectionTree-&gt;Draw<span class="o">(</span><span class="s2">"sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&gt;&gt;h100m"</span>,<span class="s2">"EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&lt;=100)"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />CollectionTree-&gt;Draw<span class="o">(</span><span class="s2">"sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&gt;&gt;h200p"</span>,<span class="s2">"EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&gt;200)"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />h200p-&gt;SetFillColor<span class="o">(</span>kAzure+10<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />h100p200m-&gt;SetFillColor<span class="o">(</span>kPink-9<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />h100m-&gt;SetFillColor<span class="o">(</span>kSpring+10<span class="o">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />hs-&gt;Add<span class="o">(</span>h100m<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />hs-&gt;Add<span class="o">(</span>h100p200m<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />hs-&gt;Add<span class="o">(</span>h200p<span class="o">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />TLegend <span class="k">*</span>leg <span class="o">=</span> new TLegend<span class="o">(</span>0.7,0.7,0.9,0.9<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />leg-&gt;AddEntry<span class="o">(</span>h100m,<span class="s2">"TruthMET&lt;100GeV"</span>,<span class="s2">"f"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />leg-&gt;AddEntry<span class="o">(</span>h100p200m,<span class="s2">"100&lt;TruthMET&lt;200GeV"</span>,<span class="s2">"f"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />leg-&gt;AddEntry<span class="o">(</span>h200p,<span class="s2">"TruthMET&gt;200GeV"</span>,<span class="s2">"f"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />hs-&gt;Draw<span class="o">(</span><span class="s2">"hist"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />leg-&gt;Draw<span class="o">(</span><span class="s2">"same"</span><span class="o">)</span></code></pre></figure>
 
-<h1 id="conclusion-and-notes">Conclusion and notes</h1>
+<h1 id="ntruthwzjets-in-daods">NTruthWZJets in DAODs</h1>
 <ul>
+  <li>requirements should be :
+    <ul>
+      <li>have at least one jet with reasonnable pT
+https://gitlab.cern.ch/atlas/athena/blob/21.2/PhysicsAnalysis/DerivationFramework/DerivationFrameworkHiggs/share/HIGG5D1.py
+–&gt; count TruthWZJets with JetConstitScaleMomentum_pt &gt; 20 GeV <strong>–&gt; is that the correct branch ??</strong>
+)
+        <h3 id="ntruthwzjets20">NTruthWZJets20</h3>
+        <p><img src="/images/q/5A0BB2221F1097793785C1A225BA0A06.jpg" alt="IMAGE" /></p>
+        <h3 id="ntruthwzjets30">NTruthWZJets30</h3>
+        <p><img src="/images/q/FFE9DFE857026230F6F265AF635999D5.jpg" alt="IMAGE" /></p>
+        <h1 id="ntruthwzjets-after-full-selection">NTruthWZJets after full selection</h1>
+        <p>)</p>
+        <h3 id="ntruthwzjets20-1">NTruthWZJets20</h3>
+        <p><img src="/images/q/3C5199FC4CD5910D102F62D792378059.jpg" alt="IMAGE" /></p>
+        <h3 id="ntruthwzjets30-1">NTruthWZJets30</h3>
+        <p><img src="/images/q/531999D51FAF2AF20B7A4F369E2208B4.jpg" alt="IMAGE" /></p>
+        <h1 id="conclusion-and-notes">Conclusion and notes</h1>
+      </li>
+    </ul>
+  </li>
   <li>Low TruthMET :
     <ul>
       <li>Before selection, contributes to ~70% of the overall ttbar non all-had</li>
@@ -171,13 +191,12 @@
   <li>High TruthMET :
     <ul>
       <li>Before selection, contributes to ~5% of the overall ttbar non all-had</li>
-      <li>After selection, contributes to ~15% of the overall ttbar non all-had
-)
-        <h1 id="ntruthwzjets">NTruthWZJets</h1>
-        <p><img src="/images/q/3C5199FC4CD5910D102F62D792378059.jpg" alt="IMAGE" /></p>
-      </li>
+      <li>After selection, contributes to ~15% of the overall ttbar non all-had</li>
     </ul>
   </li>
+  <li>nTruthWZJets20 &gt; 6 : ~30% of the DAOD stat. is lost</li>
+  <li>nTruthWZJets30 &gt; 5 : ~30% of the DAOD stat. is lost
+)</li>
 </ul>
 
   </div>
