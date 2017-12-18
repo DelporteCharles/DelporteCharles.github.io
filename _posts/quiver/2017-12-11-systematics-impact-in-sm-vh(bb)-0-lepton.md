@@ -41,9 +41,93 @@ Ranking of systematics in the SM VH(bb) 0-lepton only fit MVA (prefit and post-f
 ![IMAGE](/images/q/41E1F3C5CDD1DC11B4B056EC32B3E429.jpg)
 * Y-Profile
 ![IMAGE](/images/q/29F19AAA2109D031A4F80DB8F3A21AB5.jpg)
+* Variation with respect to nominal in 2jets
+![IMAGE](/images/q/C350E53809079A984D6FB9AAA5267844.jpg)
+{% highlight sh %}
+TH1F *hNo = new TH1F("hNo", "Nominal", 20, 0, 500);
+TH1F *hDo = new TH1F("hDo", "Down", 20, 0, 500);
+TH1F *hUp = new TH1F("hUp", "Up", 20, 0, 500);
+
+Nominal->Draw("mBB>>hNo","EventWeight*(nTags==2)*(nJ==2)*(mBB<500)");
+Nominal->Draw("mBB>>hDo","EventWeight*(nTags==2)*(nJ==2)*(mBB<500)*ZMbb__1down");
+Nominal->Draw("mBB>>hUp","EventWeight*(nTags==2)*(nJ==2)*(mBB<500)*ZMbb__1up");
+
+hDo->SetLineColor(kRed);
+hUp->SetLineColor(kGreen);
+
+TLegend *leg = new TLegend(0.7,0.7,0.9,0.9);
+leg->AddEntry(hNo, "Nominal", "l");
+leg->AddEntry(hDo, "Down", "l");
+leg->AddEntry(hUp, "Up", "l");
+
+hNo->DrawNormalized();
+hDo->DrawNormalized("same");
+hUp->DrawNormalized("same");
+
+leg->Draw("same");
+{% endhighlight %}
+
+![IMAGE](/images/q/48F94AB63FF897CEF87F22F4EF2BB5D3.jpg)
+{% highlight sh %}
+gStyle->SetOptStat(0);
+
+TH1F *hNo = new TH1F("hNo", "Nominal", 20, 0, 500);
+TH1F *hDo = new TH1F("hDo", "Down", 20, 0, 500);
+TH1F *hUp = new TH1F("hUp", "Up", 20, 0, 500);
+
+TH2F *wDo = new TH2F("wDo", "SF Down", 20, 0, 500, 50, 0.5, 1.5);
+TH2F *wUp = new TH2F("wUp", "SF Up", 20, 0, 500, 50, 0.5, 1.5);
+
+Nominal->Draw("mBB>>hNo","EventWeight*(nTags==2)*(nJ==2)*(mBB<500)");
+Nominal->Draw("mBB>>hDo","EventWeight*(nTags==2)*(nJ==2)*(mBB<500)*ZMbb__1down");
+Nominal->Draw("mBB>>hUp","EventWeight*(nTags==2)*(nJ==2)*(mBB<500)*ZMbb__1up");
+
+Nominal->Draw("ZMbb__1down:mBB>>wDo","EventWeight*(nTags==2)*(nJ==2)*(mBB<500)");
+Nominal->Draw("ZMbb__1up:mBB>>wUp","EventWeight*(nTags==2)*(nJ==2)*(mBB<500)");
+
+hDo->Divide(hNo);
+hUp->Divide(hNo);
+
+hDo->Scale(19./hDo->Integral());
+hUp->Scale(19./hUp->Integral());
+
+wDo->ProfileX("wDox");
+wUp->ProfileX("wUpx");
+
+hDo->SetLineColor(kRed);
+hUp->SetLineColor(kGreen);
+
+wDox->SetLineColor(kOrange);
+wUpx->SetLineColor(kCyan);
+
+TLegend *leg = new TLegend(0.7,0.7,0.9,0.9);
+// leg->AddEntry(hNo, "Nominal", "l");
+leg->AddEntry(hDo, "Down norm variation", "l");
+leg->AddEntry(hUp, "Up norm variation", "l");
+leg->AddEntry(wDox, "Down SF profile", "l")
+leg->AddEntry(wUpx, "Up SF profile", "l")
+
+hDo->Draw();
+hUp->Draw("same");
+wDox->Draw("same");
+wUpx->Draw("same");
+
+leg->Draw("same");
+{% endhighlight %}
+
 ## Single-top wt acceptance
+
+* Acceptance NP is computed from the difference with respect to alternative generators (Nominal is PwPy6, alternatives are PwPy6 low/high radiation, Diagram Substraction instead of Diagram Removal, PoHe++ and Ma5He++) (page 37 of modelling note) with sum in quadrature
+* Normalisation NP (constrained) has prior estimate based on muRmuF, alpha s and PDF uncertainties with sum in quadrature
+
+--> Important table in p. 42
+
 In WSMaker, what is the difference between (src/systematiclistsbuilder_vhbbrun2.cpp) :
-* normFact (a priori : floatting normalisation)
-* normSys ?
-* sampleNormSys ?
+--> https://gitlab.cern.ch/atlas-physics/higgs/hbb/WSMaker/blob/master/HowTo.md#how-to-control-systematics-
+
+* normFact : unconstrained normalisation factor
+* sampleNormSys : normalisation uncertainty delta for the background
+* normSys : additional uncertainties on processes chosen within the constructor of the SysConfig argument. This option can be used in order to decorrelate process normalisations between different channels to an extent defined by
+
+--> normSys is identical to sampleNormSys, just more convenient for decorrelating categories/channels, ...
 )
