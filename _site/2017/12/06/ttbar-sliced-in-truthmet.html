@@ -167,14 +167,16 @@ https://gitlab.cern.ch/atlas/athena/blob/21.2/PhysicsAnalysis/DerivationFramewor
         <h3 id="ntruthwzjets30">NTruthWZJets30</h3>
         <p><img src="/images/q/FFE9DFE857026230F6F265AF635999D5.jpg" alt="IMAGE" /></p>
         <h1 id="ntruthwzjets-after-full-selection">NTruthWZJets after full selection</h1>
-        <p>)</p>
-        <h3 id="ntruthwzjets20-1">NTruthWZJets20</h3>
-        <p><img src="/images/q/3C5199FC4CD5910D102F62D792378059.jpg" alt="IMAGE" /></p>
-        <h3 id="ntruthwzjets30-1">NTruthWZJets30</h3>
-        <p><img src="/images/q/531999D51FAF2AF20B7A4F369E2208B4.jpg" alt="IMAGE" /></p>
-        <h1 id="conclusion-and-notes">Conclusion and notes</h1>
       </li>
     </ul>
+  </li>
+  <li>MVA selection
+)
+    <h3 id="ntruthwzjets20-1">NTruthWZJets20</h3>
+    <p><img src="/images/q/3C5199FC4CD5910D102F62D792378059.jpg" alt="IMAGE" /></p>
+    <h3 id="ntruthwzjets30-1">NTruthWZJets30</h3>
+    <p><img src="/images/q/531999D51FAF2AF20B7A4F369E2208B4.jpg" alt="IMAGE" /></p>
+    <h1 id="conclusion-and-notes">Conclusion and notes</h1>
   </li>
   <li>Low TruthMET :
     <ul>
@@ -196,8 +198,23 @@ https://gitlab.cern.ch/atlas/athena/blob/21.2/PhysicsAnalysis/DerivationFramewor
   </li>
   <li>nTruthWZJets20 &gt; 6 : ~30% of the DAOD stat. is lost</li>
   <li>nTruthWZJets30 &gt; 5 : ~30% of the DAOD stat. is lost
-)</li>
+)
+    <h2 id="additional-points">Additional points</h2>
+    <p>)</p>
+  </li>
+  <li>would it be efficiento to filter on nTruthWZJets with tighter cut, e.g. nTruthWZJets30 &gt;= 4 ?
+    <ul>
+      <li>what BDT score to events with nTruthWZJets30 &gt;= 4 ?</li>
+      <li>quite tricky … same shape
+<img src="/images/q/2EE15B1BF9284C28377D731A10D67990.jpg" alt="IMAGE" /></li>
+    </ul>
+  </li>
+  <li>what BDT score to events with nTruthJets20 &gt;= 5 ?
+<img src="/images/q/E0F83786CF9C65F300432F12E9EF3E21.jpg" alt="IMAGE" /></li>
 </ul>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">TH1F <span class="k">*</span>h5p <span class="o">=</span> new TH1F<span class="o">(</span><span class="s2">"h5p"</span>,<span class="s2">"MVA"</span>,20, <span class="nt">-1</span>., 1.<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />TH1F <span class="k">*</span>h4m <span class="o">=</span> new TH1F<span class="o">(</span><span class="s2">"h4m"</span>,<span class="s2">"MVA"</span>,20, <span class="nt">-1</span>., 1.<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />Nominal-&gt;Draw<span class="o">(</span><span class="s2">"mva28&gt;&gt;h5p"</span>,<span class="s2">"EventWeight*(nTags==2)*(nJ&lt;4)*(NTruthWZJets20&gt;=5)"</span>,<span class="s2">"norm"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />Nominal-&gt;Draw<span class="o">(</span><span class="s2">"mva28&gt;&gt;h4m"</span>,<span class="s2">"EventWeight*(nTags==2)*(nJ&lt;4)*(NTruthWZJets20&lt;5)"</span>,<span class="s2">"norm"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />h5p-&gt;SetLineColor<span class="o">(</span>kRed<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />h5p-&gt;DrawNormalized<span class="o">()</span><br data-jekyll-commonmark-ghpages="" />h4m-&gt;DrawNormalized<span class="o">(</span><span class="s2">"same"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />TLegend <span class="k">*</span>leg <span class="o">=</span> new TLegend<span class="o">(</span>0.7,0.7,0.9,0.9<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />leg-&gt;AddEntry<span class="o">(</span>h5p, <span class="s2">"5 and more TruthWZJets 20"</span>, <span class="s2">"l"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />leg-&gt;AddEntry<span class="o">(</span>h4m, <span class="s2">"4 and less TruthWZJets 20"</span>, <span class="s2">"l"</span><span class="o">)</span><br data-jekyll-commonmark-ghpages="" />leg-&gt;Draw<span class="o">(</span><span class="s2">"same"</span><span class="o">)</span></code></pre></figure>
+
 
   </div>
 

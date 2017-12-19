@@ -177,6 +177,7 @@ https://gitlab.cern.ch/atlas/athena/blob/21.2/PhysicsAnalysis/DerivationFramewor
 ### NTruthWZJets30
 ![IMAGE](/images/q/FFE9DFE857026230F6F265AF635999D5.jpg)
 # NTruthWZJets after full selection
+* MVA selection
 )
 ### NTruthWZJets20
 ![IMAGE](/images/q/3C5199FC4CD5910D102F62D792378059.jpg)
@@ -195,3 +196,25 @@ https://gitlab.cern.ch/atlas/athena/blob/21.2/PhysicsAnalysis/DerivationFramewor
 * nTruthWZJets20 > 6 : ~30% of the DAOD stat. is lost
 * nTruthWZJets30 > 5 : ~30% of the DAOD stat. is lost
 )
+## Additional points
+)
+* would it be efficiento to filter on nTruthWZJets with tighter cut, e.g. nTruthWZJets30 >= 4 ?
+  * what BDT score to events with nTruthWZJets30 >= 4 ?
+  * quite tricky ... same shape
+![IMAGE](/images/q/2EE15B1BF9284C28377D731A10D67990.jpg)
+* what BDT score to events with nTruthJets20 >= 5 ?
+![IMAGE](/images/q/E0F83786CF9C65F300432F12E9EF3E21.jpg)
+{% highlight sh %}
+TH1F *h5p = new TH1F("h5p","MVA",20, -1., 1.)
+TH1F *h4m = new TH1F("h4m","MVA",20, -1., 1.)
+Nominal->Draw("mva28>>h5p","EventWeight*(nTags==2)*(nJ<4)*(NTruthWZJets20>=5)","norm")
+Nominal->Draw("mva28>>h4m","EventWeight*(nTags==2)*(nJ<4)*(NTruthWZJets20<5)","norm")
+h5p->SetLineColor(kRed)
+h5p->DrawNormalized()
+h4m->DrawNormalized("same")
+TLegend *leg = new TLegend(0.7,0.7,0.9,0.9)
+leg->AddEntry(h5p, "5 and more TruthWZJets 20", "l")
+leg->AddEntry(h4m, "4 and less TruthWZJets 20", "l")
+leg->Draw("same")
+{% endhighlight %}
+
