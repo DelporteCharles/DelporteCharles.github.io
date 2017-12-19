@@ -68,6 +68,9 @@ leg->Draw("same");
 {% endhighlight %}
 
 ![IMAGE](/images/q/48F94AB63FF897CEF87F22F4EF2BB5D3.jpg)
+* fixed normalization to 19 (number of non-empty bins)
+![IMAGE](/images/q/2937F16079DDFBD0E0C4D43E6443907E.jpg)
+* zoom around mBB)
 {% highlight sh %}
 gStyle->SetOptStat(0);
 
