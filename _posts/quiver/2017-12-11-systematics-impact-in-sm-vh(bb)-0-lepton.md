@@ -70,7 +70,8 @@ leg->Draw("same");
 ![IMAGE](/images/q/48F94AB63FF897CEF87F22F4EF2BB5D3.jpg)
 * fixed normalization to 19 (number of non-empty bins)
 ![IMAGE](/images/q/2937F16079DDFBD0E0C4D43E6443907E.jpg)
-* zoom around mBB)
+* zoom around mBB 125GeV and weight SF 1
+![IMAGE](/images/q/610EFB01B95FDCD6AD9AD6AF7FFF4787.jpg)
 {% highlight sh %}
 gStyle->SetOptStat(0);
 
