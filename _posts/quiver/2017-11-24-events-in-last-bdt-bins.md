@@ -102,7 +102,7 @@ root [6] Nominal->Scan("EventWeight:mva28:mBB:pTB1:pTB2:b1Flav:b2Flav:MV2c10B1:M
 
 ### 3 jets events
 * majority of bc events
-  * in half of the events, the other b is the 3rd jet is not even b labelled : one of the b is lost because of a very low transverse momentum
+  * in half of the events, the other b is the 3rd jet, otherwise 3rd jet is not even b labelled : one of the b is lost because of a very low transverse momentum
 * 1/3 events have a reconstructed tau
 )
 {% highlight sh %}
@@ -242,3 +242,6 @@ root [4] sqrt(0.213*0.213+0.432*0.432+0.213*0.213+0.363*0.363+0.218*0.218+0.307*
 ****************************************************************************************************
 {% endhighlight %}
 
+# TruthMET in last BDT bins (stack histogram)
+
+TH1F *h0)

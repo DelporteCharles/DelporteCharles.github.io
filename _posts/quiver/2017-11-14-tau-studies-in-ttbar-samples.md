@@ -35,6 +35,7 @@ Interest in extending the SM VH(bb) analyis to events with taus in an additionna
 # Fixed tau origin
 Conflicts Maker/PhPy8 with tau status for truthmatching
 * re-run with PwPy6
+![IMAGE](/images/q/78C9DC4D84B47133F275AF0C4535A9E6.jpg)
 ![IMAGE](/images/q/354699282E819CB6CA95CA82D4606F68.jpg)
 # DeltaPhi(MET, tau)
 )

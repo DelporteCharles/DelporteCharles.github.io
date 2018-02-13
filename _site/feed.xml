@@ -1,4 +1,314 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-19T15:03:20+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">Systematics impact in SM VH(bb) 0-lepton</title><link href="/2017/12/11/systematics-impact-in-sm-vh(bb)-0-lepton.html" rel="alternate" type="text/html" title="Systematics impact in SM VH(bb) 0-lepton" /><published>2017-12-11T00:00:00+01:00</published><updated>2017-12-11T00:00:00+01:00</updated><id>/2017/12/11/systematics-impact-in-sm-vh(bb)-0-lepton</id><content type="html" xml:base="/2017/12/11/systematics-impact-in-sm-vh(bb)-0-lepton.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-02-13T14:15:49+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">Slides JB</title><link href="/2018/01/30/slides-jb.html" rel="alternate" type="text/html" title="Slides JB" /><published>2018-01-30T00:00:00+01:00</published><updated>2018-01-30T00:00:00+01:00</updated><id>/2018/01/30/slides-jb</id><content type="html" xml:base="/2018/01/30/slides-jb.html">&lt;p&gt;Salut,&lt;/p&gt;
+
+&lt;p&gt;Qques commentaires sur la derniere version que j’ai vue (hier) :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[x] p3 (et ailleurs) 	MC stat, —&amp;gt; MC stat. (aussi p22)
+    &lt;ul&gt;
+      &lt;li&gt;a plein d’endroits en effet …&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[x] C’est quoi le tableau en fait ? J’ai l’impression que c’est ttbar + single top. Comment
+  je fais pour obtenir ces fractions, et comment est definie « Stat. error » ?
+    &lt;ul&gt;
+      &lt;li&gt;ce sont les fractions de yields et erreurs^2 de ttbar&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[x] p5 : un dileptonic taus avec les 2 taus en e/mu se retrouve dans la 3eme colonne ? 
+        un dileptonic taus avec un tau had et un tau lep se retrouve dans la 2eme ?
+    &lt;ul&gt;
+      &lt;li&gt;les taus sont pris comme leptons dans cette table, i.e. contrairement a Wqq&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;[x] p6 : 2eme bullet : peut-etre preciser que le pT sera dans TST s’il est dans l’acceptance 
+       de l’ID mais pas identifie, ou ne sera nulle part s’il n’est pas dans l’acceptance de l’ID&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[ ] pT ~ 28 GeV : n’est pas si bas (on definit VHLoose avec pT &amp;gt; 7 GeV, non ?)… peut-etre mettre plutot la MPV ?
+    &lt;ul&gt;
+      &lt;li&gt;supprimeé pour l’instant&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[x] p7 : « W propagation axis » est etrange…
+    &lt;ul&gt;
+      &lt;li&gt;W boson&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[ ] plot du bas : pourquoi l’histrogramme rouge commence a ~ 25 GeV
+    &lt;ul&gt;
+      &lt;li&gt;il doit y avoir une coupure … ?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[x] p8 : a priori, comme tu as dit « soft Wh)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Salut,</summary></entry><entry><title type="html">Chloe code</title><link href="/2018/01/10/chloe-code.html" rel="alternate" type="text/html" title="Chloe code" /><published>2018-01-10T00:00:00+01:00</published><updated>2018-01-10T00:00:00+01:00</updated><id>/2018/01/10/chloe-code</id><content type="html" xml:base="/2018/01/10/chloe-code.html">&lt;p&gt;XSection is that of the 1rst file&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;good magnitude order&lt;/li&gt;
+  &lt;li&gt;[ ] but != values in Herwig vs Pythia –&amp;gt; must not impact the acceptance !&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ratio is Herwig 7 / Pythia 8
+3 jets categories : 2,3 and 4 or 4p ? (last item to be checked)
+)&lt;/p&gt;</content><author><name></name></author><summary type="html">XSection is that of the 1rst file good magnitude order [ ] but != values in Herwig vs Pythia –&amp;gt; must not impact the acceptance !</summary></entry><entry><title type="html">FCNC code</title><link href="/2018/01/08/fcnc-code.html" rel="alternate" type="text/html" title="FCNC code" /><published>2018-01-08T00:00:00+01:00</published><updated>2018-01-08T00:00:00+01:00</updated><id>/2018/01/08/fcnc-code</id><content type="html" xml:base="/2018/01/08/fcnc-code.html">&lt;h1 id=&quot;discussion-avec-daniel&quot;&gt;discussion avec Daniel&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;les catégories loose et tight sont orthogonales !
+    &lt;ul&gt;
+      &lt;li&gt;si un evt ne passe pas la selection tight, on le test pour la categorie loose&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Categories de Daniel :
+    &lt;ul&gt;
+      &lt;li&gt;A)
+        &lt;h1 id=&quot;stat-macro&quot;&gt;stat macro&lt;/h1&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;cut to exclude mgg in 122-129 GeV because of blinding
+)
+    &lt;h1 id=&quot;lepton-selection&quot;&gt;lepton selection&lt;/h1&gt;
+    &lt;p&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[ ] Possible improvement at line 264 ? –&amp;gt; require 1lep &lt;strong&gt;+ 2 jets&lt;/strong&gt; ? (at presel surement)&lt;/li&gt;
+  &lt;li&gt;[ ] computation of the neutrino pz in FCNCTools.cxx line 317
+    &lt;ul&gt;
+      &lt;li&gt;pznu is the vector of 1-2 possibilities for neutrino pz, right ? –&amp;gt; different computation for &amp;gt;2 jets multiplicity ?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[ ] computation of mT&lt;/li&gt;
+  &lt;li&gt;[ ] jets properly ordered in seljets ?&lt;/li&gt;
+  &lt;li&gt;[ ] isGoodJ is just pT &amp;gt; 30 GeV ? (if no looser pT cut in central region, which is the default)&lt;/li&gt;
+  &lt;li&gt;[ ] pourquoi (combOK || 1) ligne 494 ?
+)
+selection leptonique&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;2 bons jets&lt;/p&gt;
+
+&lt;p&gt;combOK true si au moins mTop1
+m_ok)&lt;/p&gt;
+&lt;h1 id=&quot;hadron-selection&quot;&gt;hadron selection&lt;/h1&gt;
+&lt;p&gt;)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;[ ] miss a line           if (isB77l) nbTop2++; at https://gitlab.cern.ch/cdelport/FCNCAna/blob/master/Root/HGamFCNC.cxx#L650 ?
+)
+selection hadronique&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;4 bons jets&lt;/p&gt;
+
+&lt;p&gt;combOK true si au moins mTop1
+m_ok)&lt;/p&gt;
+&lt;h2 id=&quot;questions&quot;&gt;questions&lt;/h2&gt;
+
+&lt;p&gt;aucune coupure cinematique ? (dPhi, dR, …)
+)&lt;/p&gt;</content><author><name></name></author><summary type="html">discussion avec Daniel</summary></entry><entry><title type="html">FCNC ressources</title><link href="/2018/01/05/fcnc-ressources.html" rel="alternate" type="text/html" title="FCNC ressources" /><published>2018-01-05T00:00:00+01:00</published><updated>2018-01-05T00:00:00+01:00</updated><id>/2018/01/05/fcnc-ressources</id><content type="html" xml:base="/2018/01/05/fcnc-ressources.html">&lt;p&gt;Meetings utiles :&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;mardi 15h30 Haa&lt;/li&gt;
+  &lt;li&gt;jeudi Top properties
+)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Meetings utiles : mardi 15h30 Haa jeudi Top properties )</summary></entry><entry><title type="html">Truthtagging ttbar</title><link href="/2017/12/22/truthtagging-ttbar.html" rel="alternate" type="text/html" title="Truthtagging ttbar" /><published>2017-12-22T00:00:00+01:00</published><updated>2017-12-22T00:00:00+01:00</updated><id>/2017/12/22/truthtagging-ttbar</id><content type="html" xml:base="/2017/12/22/truthtagging-ttbar.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;large stat. error contribution from ttbar bc&lt;/li&gt;
+  &lt;li&gt;apply truth tagging to ttbar events with c-labelled jets&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;same procedure as V+jets&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;apply rebinning transformation (same bins as inclusive bkg)
+)
+    &lt;h1 id=&quot;results&quot;&gt;Results&lt;/h1&gt;
+    &lt;p&gt;)&lt;/p&gt;
+    &lt;h2 id=&quot;2-jets&quot;&gt;2 jets&lt;/h2&gt;
+    &lt;p&gt;)
+&lt;img src=&quot;/images/q/C06FB0373E1BD90CA63FCD3F0939B8A9.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;bin 0 has the lowest BDT score&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 0  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.65461  Error tt 0.311096 Ratio errtt2/errdt2 0.0353507&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 1  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 2.07171  Error tt 0.447781 Ratio errtt2/errdt2 0.0467165&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 2  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.86857  Error tt 0.552657 Ratio errtt2/errdt2 0.0874765&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 3  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.9129   Error tt 0.734446 Ratio errtt2/errdt2 0.147413&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 4  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.74179  Error tt 0.652893 Ratio errtt2/errdt2 0.140505&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 5  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.53244  Error tt 0.50419  Ratio errtt2/errdt2 0.108249&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 6  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.55775  Error tt 0.443466 Ratio errtt2/errdt2 0.0810445&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 7  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0.925072 Error tt 0.349941 Ratio errtt2/errdt2 0.143099&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 8  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.21748  Error tt 0.368998 Ratio errtt2/errdt2 0.0918592&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 9  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.47533  Error tt 0.347939 Ratio errtt2/errdt2 0.0556196&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 10 Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.41127  Error tt 0.365117 Ratio errtt2/errdt2 0.0669333&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 11 Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.26756  Error tt 0.309564 Ratio errtt2/errdt2 0.0596436&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 12 Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.21266  Error tt 0.331808 Ratio errtt2/errdt2 0.0748684&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 13 Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0.87143  Error tt 0.295633 Ratio errtt2/errdt2 0.11509&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 14 Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.2143   Error tt 0.26832  Ratio errtt2/errdt2 0.048826&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;3-jets&quot;&gt;3 jets&lt;/h2&gt;
+&lt;p&gt;)
+&lt;img src=&quot;/images/q/E6B15EB5499E1619B26FB2E8F33F6EE0.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Bin 0  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 3.41429 Error tt 1.4499 Ratio errtt2/errdt2 0.180334&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 1  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 3.7338  Error tt 1.45936 Ratio errtt2/errdt2 0.152764&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 2  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 4.72531 Error tt 2.05988 Ratio errtt2/errdt2 0.19003&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 3  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 6.00446 Error tt 1.75359 Ratio errtt2/errdt2 0.0852921&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 4  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 5.5028  Error tt 1.78034 Ratio errtt2/errdt2 0.104674&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 5  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 3.97525 Error tt 1.73559 Ratio errtt2/errdt2 0.190619&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 6  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 3.72263 Error tt 1.62704 Ratio errtt2/errdt2 0.191028&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 7  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 3.5347  Error tt 1.23123 Ratio errtt2/errdt2 0.121332&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 8  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 4.41351 Error tt 1.1724 Ratio errtt2/errdt2 0.0705634&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 9  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 4.54472 Error tt 1.08479 Ratio errtt2/errdt2 0.0569742&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 10 Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 3.85439 Error tt 1.09768 Ratio errtt2/errdt2 0.0811039&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 11 Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 2.63543 Error tt 0.946685 Ratio errtt2/errdt2 0.129035&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 12 Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 5.08874 Error tt 1.15969 Ratio errtt2/errdt2 0.0519359&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 13 Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.76021 Error tt 0.743735 Ratio errtt2/errdt2 0.178529&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 14 Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.59064 Error tt 0.717617 Ratio errtt2/errdt2 0.203535&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;root -l submitDir_ttbarFlav_DirectTagging/hist-ttbar_PwPy8EG.root submitDir_ttbarFlav_TruthTagging/hist-ttbar_PwPy8EG.root&lt;/p&gt;
+
+&lt;p&gt;Double_t xbins2j[16])&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;BDT  new binning in the statistical transformation :
+    &lt;ul&gt;
+      &lt;li&gt;2 jets : 1 45 115 229 367 476 547 597 638 678 712 740 765 792 818 1002
+        &lt;ul&gt;
+          &lt;li&gt;-1, -0.912, -0.772, -0.544, -0.268, -0.05, 0.092, 0.192, 0.274, 0.354, 0.422, 0.478, 0.528, 0.582, 0.634, 1.002&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;index&lt;/th&gt;
+      &lt;th&gt;Value&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;-1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;45&lt;/td&gt;
+      &lt;td&gt;-0.912&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;115&lt;/td&gt;
+      &lt;td&gt;-0.772&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;229&lt;/td&gt;
+      &lt;td&gt;-0.544&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;367&lt;/td&gt;
+      &lt;td&gt;-0.268&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;476&lt;/td&gt;
+      &lt;td&gt;-0.05&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;547&lt;/td&gt;
+      &lt;td&gt;0.092&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;597&lt;/td&gt;
+      &lt;td&gt;0.192&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;638&lt;/td&gt;
+      &lt;td&gt;0.274&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;678&lt;/td&gt;
+      &lt;td&gt;0.354&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;712&lt;/td&gt;
+      &lt;td&gt;0.422&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;740&lt;/td&gt;
+      &lt;td&gt;0.478&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;765&lt;/td&gt;
+      &lt;td&gt;0.528&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;792&lt;/td&gt;
+      &lt;td&gt;0.582&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;818&lt;/td&gt;
+      &lt;td&gt;0.634&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1002&lt;/td&gt;
+      &lt;td&gt;1.002&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;3 jets : 0 79 166 260 354 442 520 583 638 683 722 756 790 824 862 1002
+    &lt;ul&gt;
+      &lt;li&gt;-1.002, -0.844, -0.67, -0.482, -0.294, -0.118, 0.038, 0.164, 0.274, 0.364, 0.442, 0.51, 0.578, 0.646, 0.722, 1.002&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;| index| Value  |
+| —- | —— |
+| 0    | -1.002 |
+| 79   | -0.844 |
+| 166  | -0.67  | 
+| 260  | -0.482 |
+| 354  | -0.294 |
+| 442  | -0.118 |
+| 520  | 0.038  |
+| 583  | 0.164  |
+| 638  | 0.274  |
+| 683  | 0.364  |
+| 722  | 0.442  |
+| 756  | 0.51   |
+| 790  | 0.578  |
+| 824  | 0.646  |
+| 862  | 0.722  |
+| 1002 | 1.002  |
+)&lt;/p&gt;</content><author><name></name></author><summary type="html">Purpose large stat. error contribution from ttbar bc apply truth tagging to ttbar events with c-labelled jets same procedure as V+jets</summary></entry><entry><title type="html">Single Top Diagram Removal Substration uncertainty at EPS</title><link href="/2017/12/21/single-top-diagram-removal-substration-uncertainty-at-eps.html" rel="alternate" type="text/html" title="Single Top Diagram Removal Substration uncertainty at EPS" /><published>2017-12-21T00:00:00+01:00</published><updated>2017-12-21T00:00:00+01:00</updated><id>/2017/12/21/single-top-diagram-removal-substration-uncertainty-at-eps</id><content type="html" xml:base="/2017/12/21/single-top-diagram-removal-substration-uncertainty-at-eps.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;amongst modelling uncertainties which dominate the ranking plot, single top Wt acceptance has major role, and is dominated by the difference in acceptance between Diagram Removal vs Diagram Substration models&lt;/li&gt;
+  &lt;li&gt;computed on 1-lepton events (good acceptance), extrapolated to 0-lepton&lt;/li&gt;
+  &lt;li&gt;re-run in rivet
+)
+    &lt;h1 id=&quot;samples-and-jobs&quot;&gt;samples and jobs&lt;/h1&gt;
+  &lt;/li&gt;
+  &lt;li&gt;top
+    &lt;ul&gt;
+      &lt;li&gt;mc15_13TeV.410062.PowhegPythiaEvtGen_P2012_Wt_DS_inclusive_top.evgen.EVNT.e4132/ : https://bigpanda.cern.ch/task/12850367/&lt;/li&gt;
+      &lt;li&gt;mc15_13TeV.410013.PowhegPythiaEvtGen_P2012_Wt_inclusive_top.evgen.EVNT.e3753/ : https://bigpanda.cern.ch/task/12850353/&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;anti-top
+    &lt;ul&gt;
+      &lt;li&gt;mc15_13TeV.410063.PowhegPythiaEvtGen_P2012_Wt_DS_inclusive_antitop.evgen.EVNT.e4132 : https://bigpanda.cern.ch/task/12850378/&lt;/li&gt;
+      &lt;li&gt;mc15_13TeV.410014.PowhegPythiaEvtGen_P2012_Wt_inclusive_antitop.evgen.EVNT.e3753/ : https://bigpanda.cern.ch/task/12850362/
+)
+        &lt;h1 id=&quot;results&quot;&gt;Results&lt;/h1&gt;
+        &lt;p&gt;)&lt;/p&gt;
+        &lt;h2 id=&quot;2-jets&quot;&gt;2 jets&lt;/h2&gt;
+        &lt;p&gt;)&lt;/p&gt;
+        &lt;h3 id=&quot;top-dsdr&quot;&gt;Top DS/DR&lt;/h3&gt;
+        &lt;p&gt;&lt;img src=&quot;/images/q/580C4CD1B76AE4EDE2BF60BFFB729D3E.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+        &lt;h3 id=&quot;anti-top-dsdr&quot;&gt;Anti-top DS/DR&lt;/h3&gt;
+        &lt;p&gt;&lt;img src=&quot;/images/q/C88B89396DCA3A28565310241EF0FD9E.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+        &lt;h2 id=&quot;3-jets&quot;&gt;3 jets&lt;/h2&gt;
+        &lt;p&gt;)&lt;/p&gt;
+        &lt;h3 id=&quot;top-dsdr-1&quot;&gt;Top DS/DR&lt;/h3&gt;
+        &lt;p&gt;&lt;img src=&quot;/images/q/51E64B173D73800517B6D8466BE0EA03.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+        &lt;h3 id=&quot;anti-top-dsdr-1&quot;&gt;Anti-top DS/DR&lt;/h3&gt;
+        &lt;p&gt;&lt;img src=&quot;/images/q/BAE7B6B5E83C8E0CD8306228F5E7FCD9.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+        &lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;far from 28 % uncertainty on this systematic
+    &lt;ul&gt;
+      &lt;li&gt;2 jets
+        &lt;ul&gt;
+          &lt;li&gt;top : 7.7%&lt;/li&gt;
+          &lt;li&gt;atop : 9.5%&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;3 jets
+        &lt;ul&gt;
+          &lt;li&gt;top : 4.7 %&lt;/li&gt;
+          &lt;li&gt;atop : 3.7%&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;bias from non selecting b labelled jets ?&lt;/li&gt;
+  &lt;li&gt;[ ] wait for answer from Chloe/Valerio
+)
+ root -l Rivet_410013.root Rivet_410014.root Rivet_410062.root Rivet_410063.root&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;gStyle-&amp;gt;SetOptStat(0);&lt;/p&gt;
+
+&lt;p&gt;TString hname)&lt;/p&gt;</content><author><name></name></author><summary type="html">Purpose amongst modelling uncertainties which dominate the ranking plot, single top Wt acceptance has major role, and is dominated by the difference in acceptance between Diagram Removal vs Diagram Substration models computed on 1-lepton events (good acceptance), extrapolated to 0-lepton re-run in rivet ) samples and jobs</summary></entry><entry><title type="html">Systematics impact in SM VH(bb) 0-lepton</title><link href="/2017/12/11/systematics-impact-in-sm-vh(bb)-0-lepton.html" rel="alternate" type="text/html" title="Systematics impact in SM VH(bb) 0-lepton" /><published>2017-12-11T00:00:00+01:00</published><updated>2017-12-11T00:00:00+01:00</updated><id>/2017/12/11/systematics-impact-in-sm-vh(bb)-0-lepton</id><content type="html" xml:base="/2017/12/11/systematics-impact-in-sm-vh(bb)-0-lepton.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;Reduce the impact of systematics in the cut-based analysis prioritarily&lt;/li&gt;
   &lt;li&gt;Dominant systematics are b-Tagging and modelling ones
@@ -161,6 +471,29 @@
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;TChain &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;CollectionTree &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TChain&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;CollectionTree&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;CollectionTree-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;DAOD_HIGG5D1.1*&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;THStack &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;hs &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new THStack&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hs&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;mva in TruthMET slices&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h100m &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h100m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h100m&quot;&lt;/span&gt;,100,0.,500.&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h100p200m &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h100p200m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h100p200m&quot;&lt;/span&gt;,100,0.,500.&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h200p &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h200p&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h200p&quot;&lt;/span&gt;,100,0.,500.&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;CollectionTree-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&amp;gt;&amp;gt;h100p200m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&amp;gt;100)*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&amp;lt;=200)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;CollectionTree-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&amp;gt;&amp;gt;h100m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&amp;lt;=100)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;CollectionTree-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&amp;gt;&amp;gt;h200p&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])/1.e3&amp;gt;200)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h200p-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kAzure+10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h100p200m-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kPink-9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h100m-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kSpring+10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100m&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100p200m&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h200p&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TLegend &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;leg &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TLegend&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.7,0.7,0.9,0.9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100m,&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET&amp;lt;100GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100p200m,&lt;span class=&quot;s2&quot;&gt;&quot;100&amp;lt;TruthMET&amp;lt;200GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h200p,&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET&amp;gt;200GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hist&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;same&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
+&lt;h1 id=&quot;fix-with-daods-without-skimming-on-met-trigger-and-jets&quot;&gt;Fix with DAODs without skimming on MET trigger and jets&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/F5D84DC6C1A1663C729676F917848187.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;all-n-jets-all-n-tags-no-selection-higg5d1-daod-1&quot;&gt;all n-jets all n-tags (no selection, HIGG5D1 DAOD)&lt;/h3&gt;
+&lt;p&gt;)
+| Slice  | NEvents  | Yield            |
+| —— | ——– | —————- |
+| Low    | 6754277 | 4900736496 |
+| Medium | 1405841  | 1017577918 |
+| High   | 139746 | 99787690 |
+| All    | 8299864 | 6018102104 |
+)&lt;/p&gt;
+&lt;h3 id=&quot;fractions--all-n-jets-all-n-tags-no-selection-higg5d1-daod-1&quot;&gt;Fractions : all n-jets all n-tags (no selection, HIGG5D1 DAOD)&lt;/h3&gt;
+&lt;p&gt;)
+| Slice  | NEvents  | Yield  |
+| —— | ——– | —— |
+| Low    | 81.3     | 81.4   |
+| Medium | 17.0     | 16.9   |
+| High   | 1.7      | 1.7    |
+)&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;TChain &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;c &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TChain&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;CollectionTree&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;c-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;DAOD_HIGG5D1.v0_HIGG5D1_AOD*&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;THStack &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;hs &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new THStack&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hs&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET slices&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h100m &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h100m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h100m&quot;&lt;/span&gt;,50,0.,500.e3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h100p200m &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h100p200m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h100p200m&quot;&lt;/span&gt;,50,0.,500.e3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h200p &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h200p&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h200p&quot;&lt;/span&gt;,50,0.,500.e3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;c-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;gt;&amp;gt;h100m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;lt;100.e3)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;c-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;gt;&amp;gt;h100p200m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;lt;200.e3)*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;gt;100.e3)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;c-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;gt;&amp;gt;h200p&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;gt;200.e3)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h200p-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kAzure+10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h100p200m-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kPink-9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h100m-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kSpring+10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100m&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100p200m&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h200p&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TLegend &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;leg &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TLegend&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.7,0.7,0.9,0.9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100m,&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET&amp;lt;100GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100p200m,&lt;span class=&quot;s2&quot;&gt;&quot;100&amp;lt;TruthMET&amp;lt;200GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h200p,&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET&amp;gt;200GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hist&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;same&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
 &lt;h1 id=&quot;ntruthwzjets-in-daods&quot;&gt;NTruthWZJets in DAODs&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;requirements should be :
@@ -187,19 +520,19 @@ https://gitlab.cern.ch/atlas/athena/blob/21.2/PhysicsAnalysis/DerivationFramewor
   &lt;/li&gt;
   &lt;li&gt;Low TruthMET :
     &lt;ul&gt;
-      &lt;li&gt;Before selection, contributes to ~70% of the overall ttbar non all-had&lt;/li&gt;
+      &lt;li&gt;Before selection, contributes to ~&lt;del&gt;70%&lt;/del&gt; 81% of the overall ttbar non all-had&lt;/li&gt;
       &lt;li&gt;After selection, contributes to ~5% of the overall ttbar non all-had&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Medium TruthMET :
     &lt;ul&gt;
-      &lt;li&gt;Before selection, contributes to ~25% of the overall ttbar non all-had&lt;/li&gt;
+      &lt;li&gt;Before selection, contributes to ~&lt;del&gt;25%&lt;/del&gt; 17% of the overall ttbar non all-had&lt;/li&gt;
       &lt;li&gt;After selection, contributes to ~80% of the overall ttbar non all-had&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;High TruthMET :
     &lt;ul&gt;
-      &lt;li&gt;Before selection, contributes to ~5% of the overall ttbar non all-had&lt;/li&gt;
+      &lt;li&gt;Before selection, contributes to ~&lt;del&gt;5%&lt;/del&gt; 1.7% of the overall ttbar non all-had&lt;/li&gt;
       &lt;li&gt;After selection, contributes to ~15% of the overall ttbar non all-had&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -220,7 +553,81 @@ https://gitlab.cern.ch/atlas/athena/blob/21.2/PhysicsAnalysis/DerivationFramewor
 &lt;img src=&quot;/images/q/E0F83786CF9C65F300432F12E9EF3E21.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h5p &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h5p&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;MVA&quot;&lt;/span&gt;,20, &lt;span class=&quot;nt&quot;&gt;-1&lt;/span&gt;., 1.&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h4m &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h4m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;MVA&quot;&lt;/span&gt;,20, &lt;span class=&quot;nt&quot;&gt;-1&lt;/span&gt;., 1.&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Nominal-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;mva28&amp;gt;&amp;gt;h5p&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nTags==2)*(nJ&amp;lt;4)*(NTruthWZJets20&amp;gt;=5)&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;norm&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Nominal-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;mva28&amp;gt;&amp;gt;h4m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nTags==2)*(nJ&amp;lt;4)*(NTruthWZJets20&amp;lt;5)&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;norm&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h5p-&amp;gt;SetLineColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kRed&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h5p-&amp;gt;DrawNormalized&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h4m-&amp;gt;DrawNormalized&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;same&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TLegend &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;leg &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TLegend&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.7,0.7,0.9,0.9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h5p, &lt;span class=&quot;s2&quot;&gt;&quot;5 and more TruthWZJets 20&quot;&lt;/span&gt;, &lt;span class=&quot;s2&quot;&gt;&quot;l&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h4m, &lt;span class=&quot;s2&quot;&gt;&quot;4 and less TruthWZJets 20&quot;&lt;/span&gt;, &lt;span class=&quot;s2&quot;&gt;&quot;l&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;same&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="filter" /><category term="truth" /><category term="ttbar" /><category term="VHbb" /><summary type="html">Purpose SUSY will have filtered ttbar samples with TruthMET&amp;gt; 200 GeV –&amp;gt; Is it worth to propose a slicing for TruthMET &amp;lt; 200 ? ) Raw numbers of events and yields per slice a very basic slicing strategy might be : ) | Category | Slice ||----------|------------------------------|| Low | TruthMET &amp;lt; 100 GeV || Medium | 100 GeV &amp;lt; TruthMET &amp;lt; 200 GeV || High | TruthMET &amp;gt; 200 GeV |</summary></entry><entry><title type="html">TrackJet quantities</title><link href="/2017/12/01/trackjet-quantities.html" rel="alternate" type="text/html" title="TrackJet quantities" /><published>2017-12-01T00:00:00+01:00</published><updated>2017-12-01T00:00:00+01:00</updated><id>/2017/12/01/trackjet-quantities</id><content type="html" xml:base="/2017/12/01/trackjet-quantities.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h5p &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h5p&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;MVA&quot;&lt;/span&gt;,20, &lt;span class=&quot;nt&quot;&gt;-1&lt;/span&gt;., 1.&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h4m &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h4m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;MVA&quot;&lt;/span&gt;,20, &lt;span class=&quot;nt&quot;&gt;-1&lt;/span&gt;., 1.&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Nominal-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;mva28&amp;gt;&amp;gt;h5p&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nTags==2)*(nJ&amp;lt;4)*(NTruthWZJets20&amp;gt;=5)&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;norm&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Nominal-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;mva28&amp;gt;&amp;gt;h4m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nTags==2)*(nJ&amp;lt;4)*(NTruthWZJets20&amp;lt;5)&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;norm&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h5p-&amp;gt;SetLineColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kRed&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h5p-&amp;gt;DrawNormalized&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h4m-&amp;gt;DrawNormalized&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;same&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TLegend &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;leg &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TLegend&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.7,0.7,0.9,0.9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h5p, &lt;span class=&quot;s2&quot;&gt;&quot;5 and more TruthWZJets 20&quot;&lt;/span&gt;, &lt;span class=&quot;s2&quot;&gt;&quot;l&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h4m, &lt;span class=&quot;s2&quot;&gt;&quot;4 and less TruthWZJets 20&quot;&lt;/span&gt;, &lt;span class=&quot;s2&quot;&gt;&quot;l&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;same&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;truthmet-with-50-gev-slices&quot;&gt;TruthMET with 50 GeV slices&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/A49A26109F8E8D22BE1FBC0E0C315D0A.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;unskimmed-daod&quot;&gt;unskimmed DAOD&lt;/h2&gt;
+&lt;p&gt;)
+| Slice     | NEvents  | Yield      |
+| ——— | ——– | ———- |
+| h100m     | 6754277  | 4989593344 |
+| h100p150m | 1108701  | 803078592  |
+| h150p200m | 297140   | 213612512  |
+| h200p250m | 88798    | 63896276   |
+| h250p300m | 26560    | 19142764   |
+| h300p     | 24388    | 16748701   |
+| total     | 8299864  | 6106072189 |
+)
+| Slice     | NEvents  | Yield      |
+| ——— | ——– | ———- |
+| h100m     | 0.813782 | 0.817153   |
+| h100p150m | 0.133581 | 0.131521   |
+| h150p200m | 0.035801 | 0.034984   |
+| h200p250m | 0.010699 | 0.010464   |
+| h250p300m | 0.003200 | 0.003135   |
+| h300p     | 0.002938 | 0.002743   |
+)&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;TChain &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;c &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TChain&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;CollectionTree&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;c-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;DAOD_HIGG5D1.v0_HIGG5D1_AOD*&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;THStack &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;hs &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new THStack&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hs&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET slices&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h100m &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h100m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h100m&quot;&lt;/span&gt;,50,0.,500.e3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h100p150m &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h100p150m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h100p150m&quot;&lt;/span&gt;,50,0.,500.e3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h150p200m &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h150p200m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h150p200m&quot;&lt;/span&gt;,50,0.,500.e3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h200p250m &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h200p250m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h200p250m&quot;&lt;/span&gt;,50,0.,500.e3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h250p300m &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h250p300m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h250p300m&quot;&lt;/span&gt;,50,0.,500.e3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h300p &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h300p&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h300p&quot;&lt;/span&gt;,50,0.,500.e3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;c-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;gt;&amp;gt;h100m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;lt;100.e3)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;c-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;gt;&amp;gt;h100p150m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;lt;150.e3)*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;gt;100.e3)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;c-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;gt;&amp;gt;h150p200m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;lt;200.e3)*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;gt;150.e3)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;c-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;gt;&amp;gt;h200p250m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;lt;250.e3)*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;gt;200.e3)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;c-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;gt;&amp;gt;h250p300m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;lt;300.e3)*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;gt;250.e3)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;c-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;gt;&amp;gt;h300p&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])&amp;gt;300.e3)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h100m-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kAzure - 2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h100p150m-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kViolet&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h150p200m-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kPink&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h200p250m-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kOrange - 3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h250p300m-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kSpring + 10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h300p-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kTeal - 1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100m&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100p150m&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h150p200m&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h200p250m&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h250p300m&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h300p&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TLegend &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;leg &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TLegend&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.7,0.7,0.9,0.9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100m,&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET&amp;lt;100GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100p150m,&lt;span class=&quot;s2&quot;&gt;&quot;100&amp;lt;TruthMET&amp;lt;150GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h150p200m,&lt;span class=&quot;s2&quot;&gt;&quot;150&amp;lt;TruthMET&amp;lt;200GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h200p250m,&lt;span class=&quot;s2&quot;&gt;&quot;200&amp;lt;TruthMET&amp;lt;250GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h250p300m,&lt;span class=&quot;s2&quot;&gt;&quot;250&amp;lt;TruthMET&amp;lt;300GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h300p,&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET&amp;gt;300GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hist&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;same&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;after-selection&quot;&gt;after selection&lt;/h2&gt;
+&lt;p&gt;)&lt;/p&gt;
+&lt;h3 id=&quot;2-tags-2-jets-mva-selection&quot;&gt;2 tags 2 jets MVA selection&lt;/h3&gt;
+&lt;p&gt;)
+| Slice     | NEvents| Yield       |
+| ——— | —– | ———— |
+| h100m     | 87  | 26.591883  |
+| h100p150m | 647 | 202.491196 |
+| h150p200m | 633 | 184.121017 |
+| h200p250m | 139 | 45.553856  |
+| h250p300m | 35  | 11.718002  |
+| h300p     | 16  | 4.823153   |
+| total     | 1557 | 475.299107 |
+)
+| Slice     | NEvents| Yield       |
+| ——— | —– | ———— |
+| h100m     | 0.055877  | 0.055948  |
+| h100p150m | 0.415543 | 0.426029 |
+| h150p200m | 0.406551 | 0.387379 |
+| h200p250m | 0.089274 | 0.095843  |
+| h250p300m | 0.022479  | 0.024654  |
+| h300p     | 0.010276  | 0.010148   |
+)&lt;/p&gt;
+&lt;h3 id=&quot;2-tags-3-jets-mva&quot;&gt;2 tags 3 jets MVA&lt;/h3&gt;
+&lt;p&gt;| Slice     | NEvents| Yield       |
+| ——— | —– | ———— |
+| h100m     | 550   | 165.786694  |
+| h100p150m | 3925  | 1163.850708 |
+| h150p200m | 4984  | 1479.638184 |
+| h200p250m | 1446  | 428.751251  |
+| h250p300m | 358   | 109.889801  |
+| h300p     | 163   | 50.135752   |
+| total     | 11426 | 3398.052390 |
+)
+| Slice     | NEvents| Yield       |
+| ——— | —– | ———— |
+| h100m     | 0.048136   | 0.048789  |
+| h100p150m | 0.343515  | 0.342505 |
+| h150p200m | 0.436198  | 0.435437 |
+| h200p250m | 0.126553  | 0.126176  |
+| h250p300m | 0.031332   |0.032339  |
+| h300p     | 0.014266   | 0.014754   |&lt;/p&gt;
+
+&lt;p&gt;)&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;TTree &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;c &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;TTree&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;Nominal&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;THStack &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;hs &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new THStack&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hs&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET slices&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h100m &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h100m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h100m&quot;&lt;/span&gt;,50,0.,500&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h100p150m &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h100p150m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h100p150m&quot;&lt;/span&gt;,50,0.,500&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h150p200m &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h150p200m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h150p200m&quot;&lt;/span&gt;,50,0.,500&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h200p250m &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h200p250m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h200p250m&quot;&lt;/span&gt;,50,0.,500&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h250p300m &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h250p300m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h250p300m&quot;&lt;/span&gt;,50,0.,500&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;h300p &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TH1F&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;h300p&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;h300p&quot;&lt;/span&gt;,50,0.,500&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;c-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET&amp;gt;&amp;gt;h100m&quot;&lt;/span&gt;,    &lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nTags==2)*(nJ&amp;lt;4)*(TruthMET&amp;lt;100)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;c-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET&amp;gt;&amp;gt;h100p150m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nTags==2)*(nJ&amp;lt;4)*(TruthMET&amp;lt;150)*(TruthMET&amp;gt;100)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;c-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET&amp;gt;&amp;gt;h150p200m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nTags==2)*(nJ&amp;lt;4)*(TruthMET&amp;lt;200)*(TruthMET&amp;gt;150)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;c-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET&amp;gt;&amp;gt;h200p250m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nTags==2)*(nJ&amp;lt;4)*(TruthMET&amp;lt;250)*(TruthMET&amp;gt;200)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;c-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET&amp;gt;&amp;gt;h250p300m&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nTags==2)*(nJ&amp;lt;4)*(TruthMET&amp;lt;300)*(TruthMET&amp;gt;250)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;c-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET&amp;gt;&amp;gt;h300p&quot;&lt;/span&gt;,    &lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nTags==2)*(nJ&amp;lt;4)*(TruthMET&amp;gt;300)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h100m-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kAzure - 2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h100p150m-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kViolet&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h150p200m-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kPink&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h200p250m-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kOrange - 3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h250p300m-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kSpring + 10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;h300p-&amp;gt;SetFillColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kTeal - 1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100m&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100p150m&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h150p200m&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h200p250m&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h250p300m&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Add&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h300p&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TLegend &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;leg &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; new TLegend&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.7,0.7,0.9,0.9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100m,&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET&amp;lt;100GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h100p150m,&lt;span class=&quot;s2&quot;&gt;&quot;100&amp;lt;TruthMET&amp;lt;150GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h150p200m,&lt;span class=&quot;s2&quot;&gt;&quot;150&amp;lt;TruthMET&amp;lt;200GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h200p250m,&lt;span class=&quot;s2&quot;&gt;&quot;200&amp;lt;TruthMET&amp;lt;250GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h250p300m,&lt;span class=&quot;s2&quot;&gt;&quot;250&amp;lt;TruthMET&amp;lt;300GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;AddEntry&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h300p,&lt;span class=&quot;s2&quot;&gt;&quot;TruthMET&amp;gt;300GeV&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;hs-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hist&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;leg-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;same&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="filter" /><category term="truth" /><category term="ttbar" /><category term="VHbb" /><summary type="html">Purpose SUSY will have filtered ttbar samples with TruthMET&amp;gt; 200 GeV –&amp;gt; Is it worth to propose a slicing for TruthMET &amp;lt; 200 ? ) Raw numbers of events and yields per slice a very basic slicing strategy might be : ) | Category | Slice ||----------|------------------------------|| Low | TruthMET &amp;lt; 100 GeV || Medium | 100 GeV &amp;lt; TruthMET &amp;lt; 200 GeV || High | TruthMET &amp;gt; 200 GeV |</summary></entry><entry><title type="html">TrackJet quantities</title><link href="/2017/12/01/trackjet-quantities.html" rel="alternate" type="text/html" title="TrackJet quantities" /><published>2017-12-01T00:00:00+01:00</published><updated>2017-12-01T00:00:00+01:00</updated><id>/2017/12/01/trackjet-quantities</id><content type="html" xml:base="/2017/12/01/trackjet-quantities.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;look for new discriminating variables from track jets&lt;/p&gt;
@@ -373,7 +780,7 @@ https://gitlab.cern.ch/atlas/athena/blob/21.2/PhysicsAnalysis/DerivationFramewor
 &lt;ul&gt;
   &lt;li&gt;majority of bc events
     &lt;ul&gt;
-      &lt;li&gt;in half of the events, the other b is the 3rd jet is not even b labelled : one of the b is lost because of a very low transverse momentum&lt;/li&gt;
+      &lt;li&gt;in half of the events, the other b is the 3rd jet, otherwise 3rd jet is not even b labelled : one of the b is lost because of a very low transverse momentum&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;1/3 events have a reconstructed tau
@@ -450,367 +857,8 @@ https://gitlab.cern.ch/atlas/athena/blob/21.2/PhysicsAnalysis/DerivationFramewor
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;k&quot;&gt;****************************************************************************************************&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;    Row   &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Event &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; mva28 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   mBB &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;  pTB1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;  pTB2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; b1Fla &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; b2Fla &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; MV2c1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; MV2c1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; MV2c1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; MV2c1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;****************************************************************************************************&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;    16814 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.213 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.793 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   115 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   151 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   149 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.996 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.888 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;    19440 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.432 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.875 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   119 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   172 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   169 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     4 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.941 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;    41728 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.213 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.952 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   127 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   227 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   224 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.885 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.999 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;    48002 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.363 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.762 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   127 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   271 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;  70.7 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.974 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.999 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;    55299 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.218 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.759 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   119 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   219 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;  81.7 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.888 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;    56366 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.307 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.774 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   130 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   140 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   207 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     4 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.934 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.909 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;****************************************************************************************************&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><summary type="html">Purpose Pursue the analysis of the composition of the last BDT bins : BDT composition per bin</summary></entry><entry><title type="html">SingleTop Wt study</title><link href="/2017/11/21/singletop-wt-study.html" rel="alternate" type="text/html" title="SingleTop Wt study" /><published>2017-11-21T00:00:00+01:00</published><updated>2017-11-21T00:00:00+01:00</updated><id>/2017/11/21/singletop-wt-study</id><content type="html" xml:base="/2017/11/21/singletop-wt-study.html">&lt;h1 id=&quot;multiplicity-of-jets&quot;&gt;Multiplicity of jets&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;large jets multiplicity
-&lt;img src=&quot;/images/q/5BA43D224C1D0FD1D919002CD9B612BA.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-    &lt;h1 id=&quot;multiplicity-of-tags&quot;&gt;Multiplicity of tags&lt;/h1&gt;
-  &lt;/li&gt;
-  &lt;li&gt;low tags multiplicity
-&lt;img src=&quot;/images/q/7139CC1302A0C62B010B2C966AE1ED00.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-    &lt;h1 id=&quot;truth-flavour-of-jets&quot;&gt;Truth flavour of jets&lt;/h1&gt;
-  &lt;/li&gt;
-  &lt;li&gt;majority of bb events, but less than in ttbar events (85%) …&lt;/li&gt;
-  &lt;li&gt;important fraction of bc&lt;/li&gt;
-  &lt;li&gt;~ two times more cb events than bc
-)
-&lt;img src=&quot;/images/q/341556BE6422221ECA75DCA7005372F0.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/3B68A6A7D2513135E705D79603E5E5EC.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-    &lt;h1 id=&quot;number-of-leptonic-decays&quot;&gt;Number of leptonic decays&lt;/h1&gt;
-  &lt;/li&gt;
-  &lt;li&gt;majority of semi-leptonic decays, of the same order of ttbar events
-&lt;img src=&quot;/images/q/E75B788B041D1F06D1699E686BC1C2CC.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-    &lt;h2 id=&quot;semi-leptonic-decays&quot;&gt;Semi-leptonic decays&lt;/h2&gt;
-  &lt;/li&gt;
-  &lt;li&gt;if a +top (6) is produced, the lepton comes majoritarily (84%) from the prompt W-
-&lt;img src=&quot;/images/q/2876F2481E24BE46FC9C1C807719BDD8.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/CE1FA5825753D62955ECA744B57D33E3.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-    &lt;h3 id=&quot;semi-leptonic-decays-with-prompt-w--decaying-leptonically&quot;&gt;Semi-leptonic decays with prompt W- decaying leptonically&lt;/h3&gt;
-    &lt;p&gt;)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;majoritarily tau leptons
-&lt;img src=&quot;/images/q/C4454177082BFB1D1C5302327CCF58A2.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;in those events, there is no bc/cb asymetry
-&lt;img src=&quot;/images/q/FECC1F98176A3552DA7669A926B111FF.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-    &lt;h3 id=&quot;semi-leptonic-decays-with-non-prompt-w-decaying-leptonically&quot;&gt;Semi-leptonic decays with non-prompt W+ decaying leptonically&lt;/h3&gt;
-  &lt;/li&gt;
-  &lt;li&gt;majoritarily tau leptons, but more muons and electrons
-&lt;img src=&quot;/images/q/B5F9EAFF460E9266C69C1B976CF211FB.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;if the non-prompt W+ decays leptonically :
-    &lt;ul&gt;
-      &lt;li&gt;more cb events than bb events&lt;/li&gt;
-      &lt;li&gt;asymetry bc/cb enhanced
-&lt;img src=&quot;/images/q/19A33C11CC89CE9268165F34590F6A8A.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;in events with the non-prompt W+ decaying leptonically, bb events when the bbar has some pT
-&lt;img src=&quot;/images/q/AF4F022426E79558ABF976499D6D4FFC.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;in most cases, the bbar has low pT
-&lt;img src=&quot;/images/q/37D945FEE5EBA0F247B82D30CAD0FA9F.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-    &lt;h1 id=&quot;number-of-truth-vs-reco-tau-leptons&quot;&gt;Number of truth vs reco tau leptons&lt;/h1&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/AE7607A0962B2D6789278B90B14D46EF.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Multiplicity of jets large jets multiplicity Multiplicity of tags low tags multiplicity Truth flavour of jets majority of bb events, but less than in ttbar events (85%) … important fraction of bc ~ two times more cb events than bc ) Number of leptonic decays majority of semi-leptonic decays, of the same order of ttbar events Semi-leptonic decays if a +top (6) is produced, the lepton comes majoritarily (84%) from the prompt W- Semi-leptonic decays with prompt W- decaying leptonically ) majoritarily tau leptons in those events, there is no bc/cb asymetry Semi-leptonic decays with non-prompt W+ decaying leptonically majoritarily tau leptons, but more muons and electrons if the non-prompt W+ decays leptonically : more cb events than bb events asymetry bc/cb enhanced in events with the non-prompt W+ decaying leptonically, bb events when the bbar has some pT in most cases, the bbar has low pT Number of truth vs reco tau leptons</summary></entry><entry><title type="html">ttbar fully hadronic decay</title><link href="/2017/11/16/ttbar-fully-hadronic-decay.html" rel="alternate" type="text/html" title="ttbar fully hadronic decay" /><published>2017-11-16T00:00:00+01:00</published><updated>2017-11-16T00:00:00+01:00</updated><id>/2017/11/16/ttbar-fully-hadronic-decay</id><content type="html" xml:base="/2017/11/16/ttbar-fully-hadronic-decay.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;Check that no event from ttbar allhad samples contaminates the sensitive phase space of the 0-lepton channel&lt;/li&gt;
-&lt;/ul&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;k&quot;&gt;****************************************************************************************************&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;    Row   &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Event &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; mva28 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   mBB &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;  pTB1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;  pTB2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; b1Fla &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; b2Fla &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; MV2c1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; MV2c1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; MV2c1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; MV2c1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;****************************************************************************************************&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;    16814 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.213 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.793 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   115 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   151 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   149 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.996 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.888 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;    19440 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.432 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.875 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   119 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   172 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   169 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     4 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.941 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;    41728 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.213 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.952 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   127 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   227 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   224 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.885 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.999 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;    48002 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.363 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.762 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   127 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   271 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;  70.7 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.974 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.999 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;    55299 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.218 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.759 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   119 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   219 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;  81.7 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.888 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;    56366 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.307 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.774 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   130 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   140 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;   207 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     4 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.934 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0.909 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;     0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;****************************************************************************************************&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;h2 id=&quot;sample&quot;&gt;Sample&lt;/h2&gt;
-&lt;p&gt;mc15_13TeV.410007.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_allhad.merge.DAOD_HIGG5D1.e4135_s2608_s2183_r7725_r7676_p2949&lt;/p&gt;
+&lt;h1 id=&quot;truthmet-in-last-bdt-bins-stack-histogram&quot;&gt;TruthMET in last BDT bins (stack histogram)&lt;/h1&gt;
 
-&lt;h2 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Large rejection from MET and mindPhiMETJets cuts&lt;/li&gt;
-  &lt;li&gt;Contamination in the 4p jets categorie, 1 event in 3 jets 0 tag&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;cutflow&quot;&gt;Cutflow&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/images/q/360C16D4C40E1DBAD8CFA8CA5EDEAEFD.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Purpose Check that no event from ttbar allhad samples contaminates the sensitive phase space of the 0-lepton channel</summary></entry><entry><title type="html">MET in ttbar events</title><link href="/2017/11/15/met-in-ttbar-events.html" rel="alternate" type="text/html" title="MET in ttbar events" /><published>2017-11-15T00:00:00+01:00</published><updated>2017-11-15T00:00:00+01:00</updated><id>/2017/11/15/met-in-ttbar-events</id><content type="html" xml:base="/2017/11/15/met-in-ttbar-events.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;better understand the origin of recoMET &amp;gt; 150 in ttbar events&lt;/li&gt;
-  &lt;li&gt;most plots in 2-3j 2tags after full selection&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;https://svnweb.cern.ch/trac/atlasoff/browser/Generators/MC15JobOptions/trunk/share/DSID410xxx/MC15.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.py
-)&lt;/p&gt;
-&lt;h2 id=&quot;understanding-the-nonallhad&quot;&gt;Understanding the nonallhad&lt;/h2&gt;
-&lt;p&gt;)&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;root &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; ttbar_PwPy8EG/user.nwhallon.mc15_13TeV.410501.PwPy8EG_A14_ttbar_hdamp258p75_nonallhad.s2726.HIGG5D1.28-05_CxAOD.root/user.nwhallon.11149918._000001.CxAOD.root &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt; CollectionTree-&amp;gt;Scan&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;TruthParticles___NominalAuxDyn.pdgId:TruthParticles___NominalAuxDyn.status:TruthParticles___NominalAuxDyn.e&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;k&quot;&gt;***********************************************************&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;    Row   &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Instance &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; TruthPart &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; TruthPart &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; TruthPart &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;***********************************************************&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;         6 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        22 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 339215.53 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        &lt;span class=&quot;nt&quot;&gt;-6&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        22 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 443397.28 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        24 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        22 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 160723.54 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        3 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;         5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        23 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 172398.18 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        4 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;       &lt;span class=&quot;nt&quot;&gt;-24&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        22 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 366797.53 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        &lt;span class=&quot;nt&quot;&gt;-5&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        23 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 89583.546 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        6 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        &lt;span class=&quot;nt&quot;&gt;-1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        23 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;  118947.5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        7 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;         2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        23 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 41517.613 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        8 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        15 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        23 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 69350.429 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        9 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;       &lt;span class=&quot;nt&quot;&gt;-16&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        23 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 297447.09 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;       10 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        15 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;         2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 69350.421 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;       11 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;       &lt;span class=&quot;nt&quot;&gt;-16&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;         1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 297447.09 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; Event 0 has :&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  W+ -&amp;gt; dbar u   : 160723.54 - 118947.5 - 41517.613 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 258.427000&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  W- -&amp;gt; tau nutaubar : 366797 - 69350 - 297447 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;         6 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        22 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 946104.81 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        &lt;span class=&quot;nt&quot;&gt;-6&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        22 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 212530.70 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        24 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        22 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 574257.93 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        3 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;         5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        23 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 311078.93 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        4 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;       &lt;span class=&quot;nt&quot;&gt;-24&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        22 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 150873.62 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        &lt;span class=&quot;nt&quot;&gt;-5&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        23 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 65454.550 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        6 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;       &lt;span class=&quot;nt&quot;&gt;-15&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;         2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 545113.37 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        7 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        16 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;         1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 28801.480 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        8 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;         1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        23 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 27643.168 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        9 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        &lt;span class=&quot;nt&quot;&gt;-2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        23 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 121780.64 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; Event 1 has :&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  W+ -&amp;gt; taubar nutau : 574257.93 - 545113.37 - 28801.480 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 343.080000&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  W- -&amp;gt; d ubar   : 150873.62 - 27643.168 - 121780.64 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1449.812000&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;         6 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        22 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 327585.96 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        &lt;span class=&quot;nt&quot;&gt;-6&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        22 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 257544.12 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        24 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        22 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 249918.20 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        3 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;         5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        23 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 71037.335 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        4 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;       &lt;span class=&quot;nt&quot;&gt;-24&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        22 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 184664.37 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        5 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        &lt;span class=&quot;nt&quot;&gt;-5&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        23 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 84284.265 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        6 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        &lt;span class=&quot;nt&quot;&gt;-1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        23 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 118276.26 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        7 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;         2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        23 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 123962.85 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        8 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        11 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        23 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 58160.867 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        9 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;       &lt;span class=&quot;nt&quot;&gt;-12&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        23 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 125986.64 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;W+ -&amp;gt; dbar u : 249918.20 - 118276.26 - 123962.85 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 7679.090000&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;W- -&amp;gt; e nuebar : 184664.37 - 58160.867 - 125986.64 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 516.863000&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;number-of-neutrinos-per-event&quot;&gt;Number of neutrinos per event&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;very often 1 neutrino + 1 lepton in W dec, 72% of them 
-&lt;img src=&quot;/images/q/0962E0BDDD2FEFBF2A649992E167048C.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-    &lt;h2 id=&quot;leptons-flavour&quot;&gt;Leptons flavour&lt;/h2&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/625D3AF43CA19979DC52B58311C7D127.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/4B2534EBC437EAB6AE060660F7662CA7.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h1 id=&quot;single-lepton-events&quot;&gt;Single lepton events&lt;/h1&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/BC57C25FBF03BD4943945A58743791F8.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h2 id=&quot;pt-of-the-neutrino--lepton&quot;&gt;pT of the neutrino / lepton&lt;/h2&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/067B8674E1527574701AAE64A1B60D4E.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/7955725F12AC2F087FE70CD0407146DB.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h2 id=&quot;dr-of-the-neutrino--lepton-to-the-lepton-w&quot;&gt;dR of the neutrino / lepton to the lepton W&lt;/h2&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/F81DC01F4E247CD9197C1103E1B9F3A0.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/694869CFB0DAFE840AD4098ADE25A008.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h2 id=&quot;pt-of-the-leptonicallyhadronically-decaying-ws&quot;&gt;pT of the leptonically/hadronically decaying Ws&lt;/h2&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/23F3C0B882266483FDCBF75EF6F248BE.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/62E823E2896934FD4A2846ACD1E3C91B.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h2 id=&quot;dphi-top-b&quot;&gt;dPhi top b&lt;/h2&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/AABEAEA42798FD03A025F4D984EE4870.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h2 id=&quot;nj-as-a-function-of-the-hadronically-decaying-w&quot;&gt;nJ as a function of the hadronically decaying W&lt;/h2&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Average table :
-|  nJ | pT W   |
-| — | —— |
-| 2   | 70 GeV |
-| 3   | 91 GeV |
-&lt;img src=&quot;/images/q/CEEF1E052C633D54A41D6A9B22B28F0C.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h1 id=&quot;dilepton-events&quot;&gt;Dilepton events&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;/images/q/8063F7F9CA18E29E4CCC02C6C9F635BF.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;pt-of-individual-leptons--neutrinos&quot;&gt;pT of individual leptons / neutrinos&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;nu/lep in red, anu/alep in blue
-)
-&lt;img src=&quot;/images/q/B296B9BF45CEE9B591480A8DA43B8820.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/6C4C54DCAA699CD49DC8189ED79637B0.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/941E06D835FADDF451E0F17AEC72B2C5.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/15604859AE09984312A8C6E8D0CEB564.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/B77738D77331FD7E93CCE6589CDB3F1D.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-–&amp;gt; the neutrinos are quite little collinear, and this is not correlated to pTvv
-&lt;img src=&quot;/images/q/73D25F6C3F5106D2536FC39F8D2BE698.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/4BD62ADC4B17140E5BCE7356C3FABEAA.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/F82B64E640558AC610A43CF2B830D548.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-–&amp;gt; When pTv&amp;lt;100 and pTav&amp;lt; 100, it does not necessarily mean that they are collinear :
-&lt;img src=&quot;/images/q/3CD5F6E44E794AA18E385D789F6FFEBC.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/98B825DA763769EFF103CB1E721D9740.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/91223B79C56CDA13FEFB3A2BA9B1194F.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-–&amp;gt; When neutrinos don’t have sufficient pT/dR to produce MET&amp;gt;150, the MET-TruthMET difference is much larger (40 GeV instead of 10 GeV is one neutrino has very large pT) 
-)
-&lt;img src=&quot;/images/q/401091A9113BCFC00B560DEAC0246E5F.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-    &lt;h2 id=&quot;pt-of-the-ww-pair&quot;&gt;pT of the WW pair&lt;/h2&gt;
-  &lt;/li&gt;
-  &lt;li&gt;if 0-lepton reconstructed in a dilepton truthdecay, the truthMET consists of the vector sum of the pT of the Ws&lt;/li&gt;
-  &lt;li&gt;–&amp;gt; previous statement wrong, leptons accounted in the softtrk term of met
-&lt;img src=&quot;/images/q/2510D642AE6B055A0A8568E27EFFE96F.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-    &lt;h2 id=&quot;pt-of-the-top-in-singledilep-events&quot;&gt;pT of the top in single/dilep events&lt;/h2&gt;
-  &lt;/li&gt;
-  &lt;li&gt;single lep in red&lt;/li&gt;
-  &lt;li&gt;dilep in blue
-)
-&lt;img src=&quot;/images/q/21F47147C0D9BD1648384448A5D61525.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/25DFD6008713212C386CCFEC138EF10D.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-    &lt;h2 id=&quot;single-lepton-tau-vs-emu-pt&quot;&gt;single lepton tau vs e/mu pT&lt;/h2&gt;
-  &lt;/li&gt;
-  &lt;li&gt;taus are in blue
-&lt;img src=&quot;/images/q/9EDCE3521C3835DDBBAD22F7CA300168.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-    &lt;h2 id=&quot;number-of-taus-in-dilep-events&quot;&gt;number of taus in dilep events&lt;/h2&gt;
-  &lt;/li&gt;
-  &lt;li&gt;47% of events have 2 tau leptons –&amp;gt;should look at their respective decays in order to compute met …
-&lt;img src=&quot;/images/q/72CEA09AA7A0B702480871BBF09E8B16.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-    &lt;h1 id=&quot;shape-of-mbb-in-singlelep-vs-dilepton-events&quot;&gt;Shape of mBB in singleLep vs dilepton events&lt;/h1&gt;
-  &lt;/li&gt;
-  &lt;li&gt;check statement of Marumi, if I remember well : ttbar has a peak in single lep at mBB~100 GeV which is not in dilepton events
-    &lt;ul&gt;
-      &lt;li&gt;–&amp;gt; sharper in single lep, but not that much : mBB is not flat in dilepton events
-)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Single lepton events
-&lt;img src=&quot;/images/q/726F526FAA2EEEB84E0AB659E97F98B1.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;Dilepton events
-&lt;img src=&quot;/images/q/E205840E68401BC0EF456625692BEC83.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;2 jets
-    &lt;ul&gt;
-      &lt;li&gt;single lepton in red&lt;/li&gt;
-      &lt;li&gt;dilepton in blue
-&lt;img src=&quot;/images/q/9852BE41817CBEA60FB14AA8F4B81659.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;3 jets
-    &lt;ul&gt;
-      &lt;li&gt;single lepton in red&lt;/li&gt;
-      &lt;li&gt;dilepton in blue
-&lt;img src=&quot;/images/q/624867072F4F25C5F5415DD1C6501D61.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;)&lt;/p&gt;</content><author><name></name></author><summary type="html">Purpose better understand the origin of recoMET &amp;gt; 150 in ttbar events most plots in 2-3j 2tags after full selection</summary></entry><entry><title type="html">Tau studies in ttbar samples</title><link href="/2017/11/14/tau-studies-in-ttbar-samples.html" rel="alternate" type="text/html" title="Tau studies in ttbar samples" /><published>2017-11-14T00:00:00+01:00</published><updated>2017-11-14T00:00:00+01:00</updated><id>/2017/11/14/tau-studies-in-ttbar-samples</id><content type="html" xml:base="/2017/11/14/tau-studies-in-ttbar-samples.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
-
-&lt;p&gt;Interest in extending the SM VH(bb) analyis to events with taus in an additionnal category&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/A69FC298ED256E92D0DA48E92F87CAEA.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;tau-origin&quot;&gt;Tau origin&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Truth matching with truth tau or partons with a dR association with R=0.2&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/E350848D2D9AA6237AA8587AF5F8C1F3.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/BFFEF2C9DE1A76B09B0E0B7B8BD4C118.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-| Value   | Meaning                         |
-| ——- | ——————————- |
-| 1       | TruthTau Had.                   |
-| 2       | TruthTau Lept.                  |
-| - pdgID | parton pdgID if no match in 1-2 |
-| 0       | No truthmatch  at all           |
-)
-&lt;img src=&quot;/images/q/CEC21A94AD8D72367910559EB868C931.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;TruthMatch)
-&lt;img src=&quot;/images/q/1BF7C40A4CAD3DFACF61E92C7ECF6A7B.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-    &lt;h2 id=&quot;deltarmettau&quot;&gt;DeltaR(MET,Tau)&lt;/h2&gt;
-    &lt;p&gt;)&lt;/p&gt;
-    &lt;h3 id=&quot;ttbar&quot;&gt;ttbar&lt;/h3&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/4AFF5E025A1157B513C80DA9D03C5DB9.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h3 id=&quot;whbb&quot;&gt;WHbb&lt;/h3&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/149AE312603E214A54166D1B3747067B.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h3 id=&quot;2-tags&quot;&gt;2 tags&lt;/h3&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/06B217A77909BC935483ED2DCBFC8C8D.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h1 id=&quot;fixed-tau-origin&quot;&gt;Fixed tau origin&lt;/h1&gt;
-    &lt;p&gt;Conflicts Maker/PhPy8 with tau status for truthmatching&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;re-run with PwPy6
-&lt;img src=&quot;/images/q/354699282E819CB6CA95CA82D4606F68.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-    &lt;h1 id=&quot;deltaphimet-tau&quot;&gt;DeltaPhi(MET, tau)&lt;/h1&gt;
-    &lt;p&gt;)&lt;/p&gt;
-    &lt;h2 id=&quot;ttbar-1&quot;&gt;ttbar&lt;/h2&gt;
-    &lt;p&gt;)
-&lt;img src=&quot;/images/q/A1C3483DFF47DAA2D8E64AA5603B335B.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/FC1DA6A8EF4F1F97F5B427E142983AC8.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h3 id=&quot;ttbar-single-leptonic&quot;&gt;ttbar single leptonic&lt;/h3&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/5C8EC5B110C4D7E6C551760C7BA7958F.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h3 id=&quot;ttbar-dileptonic&quot;&gt;ttbar dileptonic&lt;/h3&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/DC2B114F60835062165A8FA86E79F35B.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h2 id=&quot;wh&quot;&gt;WH&lt;/h2&gt;
-    &lt;p&gt;)
-&lt;img src=&quot;/images/q/BF69F9032618E1D122828813F0CFD678.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/56F05E506CB5783759678C43E41464B5.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Nominal-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;TVector2::Phi_mpi_pi(tau1.Phi()-METp4.Phi())&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nJ&amp;lt;4)*(nTags==2)*(nTaus==1)*(nTruthLepW==1)&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><summary type="html">Purpose</summary></entry><entry><title type="html">Jets label in ttbar events</title><link href="/2017/11/14/jets-label-in-ttbar-events.html" rel="alternate" type="text/html" title="Jets label in ttbar events" /><published>2017-11-14T00:00:00+01:00</published><updated>2017-11-14T00:00:00+01:00</updated><id>/2017/11/14/jets-label-in-ttbar-events</id><content type="html" xml:base="/2017/11/14/jets-label-in-ttbar-events.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
-
-&lt;p&gt;Understand the ttbar composition in the view of designing a potential filter to increase the generation efficiency&lt;/p&gt;
-
-&lt;p&gt;https://indico.cern.ch/event/390200/contributions/2144797/attachments/1262002/1865790/ttbarCompositionStudies_private_04_2016.pdf&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Notes :
-    &lt;ul&gt;
-      &lt;li&gt;Identical selection, apart from :
-        &lt;ul&gt;
-          &lt;li&gt;Anti-QCD cut in 3 jets, mindPhiMETjet &amp;gt; 30 degrees instead of 20 degrees&lt;/li&gt;
-          &lt;li&gt;moved from MV2c20 to MV2c10 I think
-            &lt;ul&gt;
-              &lt;li&gt;important bTagging algorithm update : better rejection against charm, ~same performace against light&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;https://indico.cern.ch/event/530666/contributions/2165520/attachments/1271429/1884234/Zaidan_VHbb_2016_05_11.pdf
-&lt;img src=&quot;/images/q/CD80126D98BDEE6BB8395B395C143E2C.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;allsignal-jets&quot;&gt;AllSignal jets&lt;/h2&gt;
-
-&lt;h3 id=&quot;2-jets&quot;&gt;2 jets&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/q/6F4A3E630AB71CBE47066E0A7FA920C7.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Nominal-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;b2Flav:b1Flav&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nJ==2)*(nTags==2)&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;colz norm text&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;3-jets&quot;&gt;3 jets&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/q/ED336EDEE67AB184A2D90FF4271B1E0A.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-Nominal-&amp;gt;Draw(“b2Flav:b1Flav”,”EventWeight&lt;em&gt;(nJ==3)&lt;/em&gt;(nTags==2)”,”colz norm text”)
-Nominal-&amp;gt;Draw(“j3Flav:b1Flav”,”EventWeight&lt;em&gt;(nJ==3)&lt;/em&gt;(nTags==2)”,”colz norm text”)
-Nominal-&amp;gt;Draw(“j3Flav:b2Flav”,”EventWeight&lt;em&gt;(nJ==3)&lt;/em&gt;(nTags==2)”,”colz norm text”)
-)&lt;/p&gt;
-&lt;h2 id=&quot;evolution-with-met-in-all-signal-jets&quot;&gt;Evolution with MET in all signal jets&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;looks like at high MET, the fraction of bb events decreases especially in favor of bc events&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;2-jets-1&quot;&gt;2 jets&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/q/11F1D9BFCCF4DA935B59C7B3D7CE5577.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Nominal-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;b2Flav:b1Flav&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nJ==2)*(nTags==2)*(MET&amp;lt;200)&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;colz norm text&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Nominal-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;b2Flav:b1Flav&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nJ==2)*(nTags==2)*(MET&amp;gt;200)&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;colz norm text&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;3-jets-1&quot;&gt;3 jets&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/q/3B2BC8809C8E9A964F73FF3DF4764326.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-Nominal-&amp;gt;Draw(“b2Flav:b1Flav”,”EventWeight&lt;em&gt;(nJ==3)&lt;/em&gt;(nTags==2)&lt;em&gt;(MET&amp;lt;200)”,”colz norm text”)
-Nominal-&amp;gt;Draw(“b2Flav:b1Flav”,”EventWeight&lt;/em&gt;(nJ==3)&lt;em&gt;(nTags==2)&lt;/em&gt;(MET&amp;gt;200)”,”colz norm text”)
-)&lt;/p&gt;
-&lt;h2 id=&quot;leading2signal-jets&quot;&gt;Leading2Signal jets&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;normalised to unity&lt;/strong&gt;
-)
-    &lt;h3 id=&quot;3-jets-2&quot;&gt;3 jets&lt;/h3&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/EE7ABE74F789DBAE6D5555613D295B1F.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Nominal-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;b2Flav:b1Flav&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nJ==3)*(nTags==2)&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;colz norm text&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Nominal-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;j3Flav:b1Flav&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nJ==3)*(nTags==2)&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;colz norm text&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Nominal-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;j3Flav:b2Flav&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nJ==3)*(nTags==2)&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;colz norm text&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;evolution-with-met-in-leading2signal-jets&quot;&gt;Evolution with MET in Leading2Signal jets&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;same conclusion as all signal jets : looks like at high MET, the fraction of bb events decreases especially in favor of bc events&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;3-jets-3&quot;&gt;3 jets&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/q/D69CFBCD45C7227EC09F2973461F773C.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Nominal-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;b2Flav:b1Flav&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nJ==3)*(nTags==2)*(MET&amp;lt;200)&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;colz norm text&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Nominal-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;b2Flav:b1Flav&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;EventWeight*(nJ==3)*(nTags==2)*(MET&amp;gt;200)&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;colz norm text&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;)&lt;/p&gt;</content><author><name></name></author><summary type="html">Purpose</summary></entry><entry><title type="html">UEPS systematic in the qqZH125 signal sample of SM VH(bb)</title><link href="/2017/11/03/ueps-systematic-in-the-qqzh125-signal-sample-of-sm-vh(bb).html" rel="alternate" type="text/html" title="UEPS systematic in the qqZH125 signal sample of SM VH(bb)" /><published>2017-11-03T00:00:00+01:00</published><updated>2017-11-03T00:00:00+01:00</updated><id>/2017/11/03/ueps-systematic-in-the-qqzh125-signal-sample-of-sm-vh(bb)</id><content type="html" xml:base="/2017/11/03/ueps-systematic-in-the-qqzh125-signal-sample-of-sm-vh(bb).html">&lt;p&gt;https://cds.cern.ch/record/2235887/files/ATL-COM-PHYS-2016-1747.pdf
-)
-–&amp;gt; in the prefit ranking, but not in unconditionnal postfit ranking ?? 
-)
-50k events in&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;mc15_13TeV.345056.PowhegPythia8EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.evgen.EVNT.e5706&lt;/li&gt;
-  &lt;li&gt;mc15_13TeV.345573.PowhegHerwig7EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.evgen.EVNT.e5971&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Pythia8 in red
-Herwig7 in blue
-)
-&lt;img src=&quot;/images/q/98EB549EFF476B5608830BB2B808D056.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;TFile &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;_file0 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; TFile::Open&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PowhegPythia8EvtGen_345056/nominal.root&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TFile &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;_file1 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; TFile::Open&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PowhegHerwig7EvtGen_345573/central.root&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;.ls&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;py8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=(&lt;/span&gt;TH1F&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;_file0-&amp;gt;Get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;MC_VH2BB_2015_Official/Cuts3j&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt; TH1F &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;he7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=(&lt;/span&gt;TH1F&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;_file1-&amp;gt;Get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;MC_VH2BB_2015_Official/Cuts3j&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;he7-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;Scale&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;he7-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;/py8-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;SetLineColor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kRed&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;he7-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;same text&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h1 id=&quot;all-events&quot;&gt;All events&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;https://bigpanda.cern.ch/task/12764998/&lt;/li&gt;
-  &lt;li&gt;https://bigpanda.cern.ch/task/12769510/&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Ordre des coupures :&lt;/p&gt;
-
-&lt;p&gt;0) All
-1) 0-lepton
-2) 2 or 3 jets
-3) MET &amp;gt; 150 GeV
-4) dPhiMETMPT &amp;lt; pi/2
-5) mindPhiMETJets &amp;gt; 20 degrees
-6) SumpT &amp;gt; 120 (150) GeV
-7) pTB1 &amp;gt; 45 GeV
-8) dPhiBB &amp;lt; 140 degrees
-9) dPhiMETBB &amp;gt; 120 degrees
-)&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Cutflows ratio py8/he7 in 2jets
-&lt;img src=&quot;/images/q/EB03516D528D8B31F259DCC3ECBBF6FC.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;Cutflows ratio py8/he7 in 3jets
-&lt;img src=&quot;/images/q/7ABC944E69F5EBB6AE768DB99FFC0FC2.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;root &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; user.cdelport.mc15_13TeV.345056.PowhegPythia8EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.evgen.EVNT.e5706.VH_PwPy8_v0_EXT0/Rivet.root user.cdelport.mc15_13TeV.345573.PowhegHerwig7EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.evgen.EVNT.e5971.VH_PwHe7_v0_EXT0/Rivet.root&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;TH1F&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;_file0-&amp;gt;Get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;MC_VH2BB_2015_Official/Cuts2j&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;he7 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;TH1F&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;_file1-&amp;gt;Get&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;MC_VH2BB_2015_Official/Cuts2j&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;Scale&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1./py8-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;he7-&amp;gt;Scale&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1./he7-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;Divide&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;he7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;py8-&amp;gt;Draw&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;metadata&quot;&gt;METADATA&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;small difference in sumOfWeights from inner cross section ? (should not, job was normalized )
-    &lt;ul&gt;
-      &lt;li&gt;ratio)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">https://cds.cern.ch/record/2235887/files/ATL-COM-PHYS-2016-1747.pdf ) –&amp;gt; in the prefit ranking, but not in unconditionnal postfit ranking ?? ) 50k events in mc15_13TeV.345056.PowhegPythia8EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.evgen.EVNT.e5706 mc15_13TeV.345573.PowhegHerwig7EvtGen_NNPDF3_AZNLO_ZH125J_MINLO_vvbb_VpT.evgen.EVNT.e5971</summary></entry></feed>
+&lt;p&gt;TH1F *h0)&lt;/p&gt;</content><author><name></name></author><summary type="html">Purpose Pursue the analysis of the composition of the last BDT bins : BDT composition per bin</summary></entry></feed>

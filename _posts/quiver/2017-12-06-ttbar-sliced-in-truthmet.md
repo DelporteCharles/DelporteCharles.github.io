@@ -166,6 +166,57 @@ hs->Draw("hist")
 leg->Draw("same")
 {% endhighlight %}
 
+# Fix with DAODs without skimming on MET trigger and jets
+
+![IMAGE](/images/q/F5D84DC6C1A1663C729676F917848187.jpg)
+### all n-jets all n-tags (no selection, HIGG5D1 DAOD)
+)
+| Slice  | NEvents  | Yield            |
+| ------ | -------- | ---------------- |
+| Low    | 6754277 | 4900736496 |
+| Medium | 1405841  | 1017577918 |
+| High   | 139746 | 99787690 |
+| All    | 8299864 | 6018102104 |
+)
+### Fractions : all n-jets all n-tags (no selection, HIGG5D1 DAOD)
+)
+| Slice  | NEvents  | Yield  |
+| ------ | -------- | ------ |
+| Low    | 81.3     | 81.4   |
+| Medium | 17.0     | 16.9   |
+| High   | 1.7      | 1.7    |
+)
+{% highlight sh %}
+TChain *c = new TChain("CollectionTree")
+c->Add("DAOD_HIGG5D1.v0_HIGG5D1_AOD*")
+
+THStack *hs = new THStack("hs","TruthMET slices")
+
+TH1F *h100m = new TH1F("h100m","h100m",50,0.,500.e3)
+TH1F *h100p200m = new TH1F("h100p200m","h100p200m",50,0.,500.e3)
+TH1F *h200p = new TH1F("h200p","h200p",50,0.,500.e3)
+
+c->Draw("sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])>>h100m","EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])<100.e3)")
+c->Draw("sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])>>h100p200m","EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])<200.e3)*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])>100.e3)")
+c->Draw("sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])>>h200p","EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])>200.e3)")
+
+h200p->SetFillColor(kAzure+10)
+h100p200m->SetFillColor(kPink-9)
+h100m->SetFillColor(kSpring+10)
+
+hs->Add(h100m)
+hs->Add(h100p200m)
+hs->Add(h200p)
+
+TLegend *leg = new TLegend(0.7,0.7,0.9,0.9)
+leg->AddEntry(h100m,"TruthMET<100GeV","f")
+leg->AddEntry(h100p200m,"100<TruthMET<200GeV","f")
+leg->AddEntry(h200p,"TruthMET>200GeV","f")
+
+hs->Draw("hist")
+leg->Draw("same")
+{% endhighlight %}
+
 # NTruthWZJets in DAODs
 * requirements should be :
   * have at least one jet with reasonnable pT
@@ -185,13 +236,13 @@ https://gitlab.cern.ch/atlas/athena/blob/21.2/PhysicsAnalysis/DerivationFramewor
 ![IMAGE](/images/q/531999D51FAF2AF20B7A4F369E2208B4.jpg)
 # Conclusion and notes
 * Low TruthMET :
-  * Before selection, contributes to ~70% of the overall ttbar non all-had
+  * Before selection, contributes to ~~~70%~~ 81% of the overall ttbar non all-had
   * After selection, contributes to ~5% of the overall ttbar non all-had
 * Medium TruthMET :
-  * Before selection, contributes to ~25% of the overall ttbar non all-had
+  * Before selection, contributes to ~~~25%~~ 17% of the overall ttbar non all-had
   * After selection, contributes to ~80% of the overall ttbar non all-had
 * High TruthMET :
-  * Before selection, contributes to ~5% of the overall ttbar non all-had
+  * Before selection, contributes to ~~~5%~~ 1.7% of the overall ttbar non all-had
   * After selection, contributes to ~15% of the overall ttbar non all-had
 * nTruthWZJets20 > 6 : ~30% of the DAOD stat. is lost
 * nTruthWZJets30 > 5 : ~30% of the DAOD stat. is lost
@@ -215,6 +266,167 @@ h4m->DrawNormalized("same")
 TLegend *leg = new TLegend(0.7,0.7,0.9,0.9)
 leg->AddEntry(h5p, "5 and more TruthWZJets 20", "l")
 leg->AddEntry(h4m, "4 and less TruthWZJets 20", "l")
+leg->Draw("same")
+{% endhighlight %}
+
+# TruthMET with 50 GeV slices
+
+![IMAGE](/images/q/A49A26109F8E8D22BE1FBC0E0C315D0A.jpg)
+## unskimmed DAOD
+)
+| Slice     | NEvents  | Yield      |
+| --------- | -------- | ---------- |
+| h100m     | 6754277  | 4989593344 |
+| h100p150m | 1108701  | 803078592  |
+| h150p200m | 297140   | 213612512  |
+| h200p250m | 88798    | 63896276   |
+| h250p300m | 26560    | 19142764   |
+| h300p     | 24388    | 16748701   |
+| total     | 8299864  | 6106072189 |
+)
+| Slice     | NEvents  | Yield      |
+| --------- | -------- | ---------- |
+| h100m     | 0.813782 | 0.817153   |
+| h100p150m | 0.133581 | 0.131521   |
+| h150p200m | 0.035801 | 0.034984   |
+| h200p250m | 0.010699 | 0.010464   |
+| h250p300m | 0.003200 | 0.003135   |
+| h300p     | 0.002938 | 0.002743   |
+)
+{% highlight sh %}
+TChain *c = new TChain("CollectionTree")
+c->Add("DAOD_HIGG5D1.v0_HIGG5D1_AOD*")
+
+THStack *hs = new THStack("hs","TruthMET slices")
+
+TH1F *h100m = new TH1F("h100m","h100m",50,0.,500.e3)
+TH1F *h100p150m = new TH1F("h100p150m","h100p150m",50,0.,500.e3)
+TH1F *h150p200m = new TH1F("h150p200m","h150p200m",50,0.,500.e3)
+TH1F *h200p250m = new TH1F("h200p250m","h200p250m",50,0.,500.e3)
+TH1F *h250p300m = new TH1F("h250p300m","h250p300m",50,0.,500.e3)
+TH1F *h300p = new TH1F("h300p","h300p",50,0.,500.e3)
+
+c->Draw("sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])>>h100m","EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])<100.e3)")
+c->Draw("sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])>>h100p150m","EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])<150.e3)*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])>100.e3)")
+c->Draw("sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])>>h150p200m","EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])<200.e3)*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])>150.e3)")
+c->Draw("sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])>>h200p250m","EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])<250.e3)*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])>200.e3)")
+c->Draw("sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])>>h250p300m","EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])<300.e3)*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])>250.e3)")
+c->Draw("sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])>>h300p","EventInfoAuxDyn.mcEventWeights*(sqrt(MET_TruthAuxDyn.mpx[0]*MET_TruthAuxDyn.mpx[0]+MET_TruthAuxDyn.mpy[0]*MET_TruthAuxDyn.mpy[0])>300.e3)")
+
+h100m->SetFillColor(kAzure - 2)
+h100p150m->SetFillColor(kViolet)
+h150p200m->SetFillColor(kPink)
+h200p250m->SetFillColor(kOrange - 3)
+h250p300m->SetFillColor(kSpring + 10)
+h300p->SetFillColor(kTeal - 1)
+
+hs->Add(h100m)
+hs->Add(h100p150m)
+hs->Add(h150p200m)
+hs->Add(h200p250m)
+hs->Add(h250p300m)
+hs->Add(h300p)
+
+
+TLegend *leg = new TLegend(0.7,0.7,0.9,0.9)
+leg->AddEntry(h100m,"TruthMET<100GeV","f")
+leg->AddEntry(h100p150m,"100<TruthMET<150GeV","f")
+leg->AddEntry(h150p200m,"150<TruthMET<200GeV","f")
+leg->AddEntry(h200p250m,"200<TruthMET<250GeV","f")
+leg->AddEntry(h250p300m,"250<TruthMET<300GeV","f")
+leg->AddEntry(h300p,"TruthMET>300GeV","f")
+
+hs->Draw("hist")
+leg->Draw("same")
+{% endhighlight %}
+
+## after selection
+)
+### 2 tags 2 jets MVA selection
+)
+| Slice     | NEvents| Yield       |
+| --------- | ----- | ------------ |
+| h100m     | 87  | 26.591883  |
+| h100p150m | 647 | 202.491196 |
+| h150p200m | 633 | 184.121017 |
+| h200p250m | 139 | 45.553856  |
+| h250p300m | 35  | 11.718002  |
+| h300p     | 16  | 4.823153   |
+| total     | 1557 | 475.299107 |
+)
+| Slice     | NEvents| Yield       |
+| --------- | ----- | ------------ |
+| h100m     | 0.055877  | 0.055948  |
+| h100p150m | 0.415543 | 0.426029 |
+| h150p200m | 0.406551 | 0.387379 |
+| h200p250m | 0.089274 | 0.095843  |
+| h250p300m | 0.022479  | 0.024654  |
+| h300p     | 0.010276  | 0.010148   |
+)
+### 2 tags 3 jets MVA
+| Slice     | NEvents| Yield       |
+| --------- | ----- | ------------ |
+| h100m     | 550   | 165.786694  |
+| h100p150m | 3925  | 1163.850708 |
+| h150p200m | 4984  | 1479.638184 |
+| h200p250m | 1446  | 428.751251  |
+| h250p300m | 358   | 109.889801  |
+| h300p     | 163   | 50.135752   |
+| total     | 11426 | 3398.052390 |
+)
+| Slice     | NEvents| Yield       |
+| --------- | ----- | ------------ |
+| h100m     | 0.048136   | 0.048789  |
+| h100p150m | 0.343515  | 0.342505 |
+| h150p200m | 0.436198  | 0.435437 |
+| h200p250m | 0.126553  | 0.126176  |
+| h250p300m | 0.031332   |0.032339  |
+| h300p     | 0.014266   | 0.014754   |
+
+)
+{% highlight sh %}
+TTree *c = (TTree*)Nominal
+
+THStack *hs = new THStack("hs","TruthMET slices")
+
+TH1F *h100m = new TH1F("h100m","h100m",50,0.,500)
+TH1F *h100p150m = new TH1F("h100p150m","h100p150m",50,0.,500)
+TH1F *h150p200m = new TH1F("h150p200m","h150p200m",50,0.,500)
+TH1F *h200p250m = new TH1F("h200p250m","h200p250m",50,0.,500)
+TH1F *h250p300m = new TH1F("h250p300m","h250p300m",50,0.,500)
+TH1F *h300p = new TH1F("h300p","h300p",50,0.,500)
+
+c->Draw("TruthMET>>h100m",    "EventWeight*(nTags==2)*(nJ<4)*(TruthMET<100)")
+c->Draw("TruthMET>>h100p150m","EventWeight*(nTags==2)*(nJ<4)*(TruthMET<150)*(TruthMET>100)")
+c->Draw("TruthMET>>h150p200m","EventWeight*(nTags==2)*(nJ<4)*(TruthMET<200)*(TruthMET>150)")
+c->Draw("TruthMET>>h200p250m","EventWeight*(nTags==2)*(nJ<4)*(TruthMET<250)*(TruthMET>200)")
+c->Draw("TruthMET>>h250p300m","EventWeight*(nTags==2)*(nJ<4)*(TruthMET<300)*(TruthMET>250)")
+c->Draw("TruthMET>>h300p",    "EventWeight*(nTags==2)*(nJ<4)*(TruthMET>300)")
+
+h100m->SetFillColor(kAzure - 2)
+h100p150m->SetFillColor(kViolet)
+h150p200m->SetFillColor(kPink)
+h200p250m->SetFillColor(kOrange - 3)
+h250p300m->SetFillColor(kSpring + 10)
+h300p->SetFillColor(kTeal - 1)
+
+hs->Add(h100m)
+hs->Add(h100p150m)
+hs->Add(h150p200m)
+hs->Add(h200p250m)
+hs->Add(h250p300m)
+hs->Add(h300p)
+
+
+TLegend *leg = new TLegend(0.7,0.7,0.9,0.9)
+leg->AddEntry(h100m,"TruthMET<100GeV","f")
+leg->AddEntry(h100p150m,"100<TruthMET<150GeV","f")
+leg->AddEntry(h150p200m,"150<TruthMET<200GeV","f")
+leg->AddEntry(h200p250m,"200<TruthMET<250GeV","f")
+leg->AddEntry(h250p300m,"250<TruthMET<300GeV","f")
+leg->AddEntry(h300p,"TruthMET>300GeV","f")
+
+hs->Draw("hist")
 leg->Draw("same")
 {% endhighlight %}
 
