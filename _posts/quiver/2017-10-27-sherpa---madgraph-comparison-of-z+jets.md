@@ -34,22 +34,16 @@ Ordre des bins/coupures :
 * Sherpa est en rouge
 * Madgraph est en bleu
 * les ratios représentent Sherpa/Madgraph
-* plots avec la meme somme des poids initiale
+* plots avec un rescaling a la meme somme des poids initiale
 )
 # Cutflows inclusifs sur la saveur des jets (cutflows bb plus bas)
 )
 ## 2 jets
 
-![IMAGE](/images/q/7EF755F9ABAAC4C1557FB85DAD8F8817.jpg)
-## 2 jets exclusif
-
-![IMAGE](/images/q/B773988136BC5F7AB5E2B2A6912A339C.jpg)
+![IMAGE](/images/q/0E14073D9461F40C01070D7615DE22A0.jpg)
 ## 3 jets
 
-![IMAGE](/images/q/0DC83D06BAF3F1B761975BA4FC5DE11A.jpg)
-##3 jets exclusif
-
-![IMAGE](/images/q/C83B501DF3939017242160DD1D3ED3DF.jpg)
+![IMAGE](/images/q/CC386D71D045649B26CDFA54907BFF7E.jpg)
 ## Observations sur les cutflows
 
 * bin 0 : difference initiale sur les sections efficaces (pas dans les plots) --> Sherpa NLO et Madgraph LO ?
@@ -70,10 +64,10 @@ Ordre des bins/coupures :
 )
 ### 2 jets
 
-![IMAGE](/images/q/1BA593F843657FBE5FFA117268038CFF.jpg)
+![IMAGE](/images/q/DBA4B290C64A0CCA98DC58074C93E3DA.jpg)
 ### 3 jets
 
-![IMAGE](/images/q/6C88B5B68424909AE51EEA16435F236C.jpg)
+![IMAGE](/images/q/574F3E8ADB0A76B986BB3924513A82FF.jpg)
 ## Coupures sur les leptons et les jets dans RIVET
 
 )
