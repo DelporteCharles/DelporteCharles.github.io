@@ -106,7 +106,6 @@ Ordre des bins/coupures :
 {% highlight sh %}
 | Sample | DSID   | Dataset                                                                         | Job                                             | XSection    | genFilterEff |
 | ------ | ----   | ------------------------------------------------------------------------------- | ------------------------------------------------| ----------- | ------------ |
-| Sherpa | 364150 | mc15_13TeV.364150.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV140_280_BFilter.evgen.EVNT.e5308 | https://bigpanda.cern.ch/task/12723363/ | 0.22237 nb  | 0.15813      |
 | MG_NP0 | 361515 | mc15_13TeV.361515.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np0.evgen.EVNT.e3898 | https://bigpanda.cern.ch/task/12851571/         | 8 nb        | 1            |
 | MG_NP1 | 361516 | mc15_13TeV.361516.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np1.evgen.EVNT.e3898 | https://bigpanda.cern.ch/task/12851603/         | 1.2 nb      | 1            |
 | MG_NP2 | 361517 | mc15_13TeV.361517.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np2.evgen.EVNT.e3898 | https://bigpanda.cern.ch/task/12851620/         | 0.38718 nb  | 1            |
