@@ -15,9 +15,6 @@ tags:
 (1.0700E+04*0.9728*8.2160E-01 + 1.0702E+04*0.9728*1.1123E-01 + 1.0709E+04*0.9728*6.6175E-02 + 6.0323E+02*0.9728*6.8924E-01 + 6.0815E+02*0.9728*1.8243E-01 + 6.0332E+02*0.9728*0.1283  + 2.2228E+02*0.9728*6.0735E-01 + 2.2188E+02*0.9728*2.2527E-01 + 2.2247E+02*0.9728*1.5185E-01 + 4.7375E+01*0.9728*5.5887E-01 + 4.7397E+01*0.9728*2.6201E-01 + 4.7476E+01*0.9728*1.7514E-01 + 9.9099*0.9728*1.0000E+00 + 8.1809E-01*0.9728*1.0000E+00 ) / ( 8. + 1.2 + 0.38718 + 0.1 + 0.043472 ) / 1.e3
 {% endhighlight %}
 
-* at the beginning of the cutflow, 26% difference (Sherpa > Madgraph)
-* after MET cut, 14% difference (Madgraph > Sherpa)
-)
 # Cutflows
 
 Ordre des bins/coupures :
@@ -32,37 +29,72 @@ Ordre des bins/coupures :
 * 8 : dPhi BB < 140 degrees
 * 9 : dPhi MET/BB > 120
 )
+### Precisions
+
 * Sherpa est en rouge
 * Madgraph est en bleu
 * les ratios représentent Sherpa/Madgraph
 * plots avec la meme somme des poids initiale
 )
-2 jets
+## 2 jets
+
 ![IMAGE](/images/q/7EF755F9ABAAC4C1557FB85DAD8F8817.jpg)
-2 jets exclusif
+## 2 jets exclusif
+
 ![IMAGE](/images/q/B773988136BC5F7AB5E2B2A6912A339C.jpg)
-3 jets
+## 3 jets
+
 ![IMAGE](/images/q/0DC83D06BAF3F1B761975BA4FC5DE11A.jpg)
-3 jets exclusif
+##3 jets exclusif
+
 ![IMAGE](/images/q/C83B501DF3939017242160DD1D3ED3DF.jpg)
 ## Observations sur les cutflows
 
-* bin 0 : difference initiale sur les sections efficaces --> Sherpa NLO et Madgraph LO ?
+* bin 0 : difference initiale sur les sections efficaces (pas dans les plots) --> Sherpa NLO et Madgraph LO ?
 * bin 1 : difference sur la multiplicite des leptons lie au modelling de pT eta des leptons ?
 * bin 2 : Il y a plus d'evenements a passer 2 jets en Madgraph qu'en Sherpa, ce qui corrige un peu la difference due a la coupure 0-leptons. Par contre en 3 jets, la difference augmente.
 * bin 3 : modelling different de la MET, avec un turn-on vers 40 (60) GeV en 2 (3) jets ... au dela de 150 GeV, Sherpa est systematiquement en dessous de Madgraph
 )
-### quelques distributions de met avant toute coupure
-)
-MET 2 jets
+## MET 2 jets avant coupure
+
 ![IMAGE](/images/q/B0AB7C3E5DEB2F98A6696F82CFD93B86.jpg)
-MET 3 jets
+## MET 3 jets avant coupure
+
 ![IMAGE](/images/q/77739C3A166D08F94523F26E8388DD0E.jpg)
+## Coupures sur les leptons et les jets dans RIVET
+
+)
+{% highlight sh %}
       // Definition of all the cuts applied
       // to electrons
-      const double e_pt_cut_loose)
-root [3] 1.26/0.86
-(double) 1.465116
+      const double e_pt_cut_loose = 7*GeV;
+      const double e_eta_cut_loose = 2.47;
+      const double e_iso_track_cut_loose = 0.1;
+      const double e_pt_cut_medium = 25*GeV;
+      const double e_eta_cut_medium = 2.47;
+      const double e_iso_track_cut_tight = 0.04;
+      const double e_iso_calo_cut_tight = 0.04;
+      // to muons
+      const double m_pt_cut_loose = 7*GeV;
+      const double m_eta_cut_loose = 2.7;
+      const double m_iso_track_cut_loose = 0.1;
+      const double m_pt_cut_medium = 25*GeV;
+      const double m_eta_cut_medium = 2.5;
+      const double m_iso_track_cut_tight = 0.04;
+      const double m_iso_calo_cut_tight = 0.04;
+            
+            
+            
+      // to central jets
+      const double centraljet_pt_cut = 20*GeV;
+      const double centraljet_eta_cut = 2.5;
+      // to forward jets
+      const double additional_jet_pt_cut = 30*GeV;
+      const double additional_jet_eta_cut = 4.5;
+      
+{% endhighlight %}
+
+## Samples
 )
 | Sample | DSID | Dataset | Job | XSection | genFilterEff |
 | ------ | ---- | ------- | --- | -------- | ------------ |
