@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sherpa - Madgraph comparison of Z+jets</title>
+  <meta name="description" content="Purpose">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2017/10/27/sherpa-madgraph-comparison-of-z+jets.html">
+  <link rel="alternate" type="application/rss+xml" title="My PhD notes" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">My PhD notes</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Sherpa - Madgraph comparison of Z+jets</h1>
+    <p class="post-meta">
+      <time datetime="2017-10-27T00:00:00+02:00" itemprop="datePublished">
+        
+        Oct 27, 2017
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="purpose">Purpose</h1>
+
+<ul>
+  <li>
+    <p>discrepancy</p>
+  </li>
+  <li>
+    <p>the ratio of cross sections shows 15% difference (Sherpa &gt; Madgraph)
+)</p>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="o">(</span>1.0700E+04<span class="k">*</span>0.9728<span class="k">*</span>8.2160E-01 + 1.0702E+04<span class="k">*</span>0.9728<span class="k">*</span>1.1123E-01 + 1.0709E+04<span class="k">*</span>0.9728<span class="k">*</span>6.6175E-02 + 6.0323E+02<span class="k">*</span>0.9728<span class="k">*</span>6.8924E-01 + 6.0815E+02<span class="k">*</span>0.9728<span class="k">*</span>1.8243E-01 + 6.0332E+02<span class="k">*</span>0.9728<span class="k">*</span>0.1283  + 2.2228E+02<span class="k">*</span>0.9728<span class="k">*</span>6.0735E-01 + 2.2188E+02<span class="k">*</span>0.9728<span class="k">*</span>2.2527E-01 + 2.2247E+02<span class="k">*</span>0.9728<span class="k">*</span>1.5185E-01 + 4.7375E+01<span class="k">*</span>0.9728<span class="k">*</span>5.5887E-01 + 4.7397E+01<span class="k">*</span>0.9728<span class="k">*</span>2.6201E-01 + 4.7476E+01<span class="k">*</span>0.9728<span class="k">*</span>1.7514E-01 + 9.9099<span class="k">*</span>0.9728<span class="k">*</span>1.0000E+00 + 8.1809E-01<span class="k">*</span>0.9728<span class="k">*</span>1.0000E+00 <span class="o">)</span> / <span class="o">(</span> 8. + 1.2 + 0.38718 + 0.1 + 0.043472 <span class="o">)</span> / 1.e3</code></pre></figure>
+
+<ul>
+  <li>at the beginning of the cutflow, 26% difference (Sherpa &gt; Madgraph)</li>
+  <li>after MET cut, 14% difference (Madgraph &gt; Sherpa)
+)
+    <h1 id="cutflows">Cutflows</h1>
+  </li>
+</ul>
+
+<p>Ordre des bins/coupures :</p>
+<ul>
+  <li>0 : all events (fill 0. )</li>
+  <li>1 : 0 leptons</li>
+  <li>2 : 2 ou 3 jets</li>
+  <li>3 : MET &gt;= 150 GeV</li>
+  <li>4 : dPhi MET/MPT &lt; pi/2</li>
+  <li>5 : min dPhi MET/jets &lt; 20 degrees</li>
+  <li>6 : SumPt &gt; 120 (150) GeV en 2 (3) jets</li>
+  <li>7 : pTB1 &gt; 45 GeV</li>
+  <li>8 : dPhi BB &lt; 140 degrees</li>
+  <li>9 : dPhi MET/BB &gt; 120
+)</li>
+  <li>Sherpa est en rouge</li>
+  <li>Madgraph est en bleu</li>
+  <li>les ratios représentent Sherpa/Madgraph</li>
+  <li>plots avec la meme somme des poids initiale
+)
+2 jets
+<img src="/images/q/7EF755F9ABAAC4C1557FB85DAD8F8817.jpg" alt="IMAGE" />
+2 jets exclusif
+<img src="/images/q/B773988136BC5F7AB5E2B2A6912A339C.jpg" alt="IMAGE" />
+3 jets
+<img src="/images/q/0DC83D06BAF3F1B761975BA4FC5DE11A.jpg" alt="IMAGE" />
+3 jets exclusif
+<img src="/images/q/C83B501DF3939017242160DD1D3ED3DF.jpg" alt="IMAGE" />
+    <h2 id="observations-sur-les-cutflows">Observations sur les cutflows</h2>
+  </li>
+  <li>bin 0 : difference initiale sur les sections efficaces –&gt; Sherpa NLO et Madgraph LO ?</li>
+  <li>bin 1 : difference sur la multiplicite des leptons lie au modelling de pT eta des leptons ?</li>
+  <li>bin 2 : Il y a plus d’evenements a passer 2 jets en Madgraph qu’en Sherpa, ce qui corrige un peu la difference due a la coupure 0-leptons. Par contre en 3 jets, la difference augmente.</li>
+  <li>bin 3 : modelling different de la MET, avec un turn-on vers 40 (60) GeV en 2 (3) jets … au dela de 150 GeV, Sherpa est systematiquement en dessous de Madgraph
+)
+    <h3 id="quelques-distributions-de-met-avant-toute-coupure">quelques distributions de met avant toute coupure</h3>
+    <p>)
+MET 2 jets
+<img src="/images/q/B0AB7C3E5DEB2F98A6696F82CFD93B86.jpg" alt="IMAGE" />
+MET 3 jets
+<img src="/images/q/77739C3A166D08F94523F26E8388DD0E.jpg" alt="IMAGE" />
+    // Definition of all the cuts applied
+    // to electrons
+    const double e_pt_cut_loose)
+root [3] 1.26/0.86
+(double) 1.465116
+)
+| Sample | DSID | Dataset | Job | XSection | genFilterEff |
+| —— | —- | ——- | — | ——– | ———— |
+| Sherpa | 364150 | mc15_13TeV.364150.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV140_280_BFilter.evgen.EVNT.e5308 | https://bigpanda.cern.ch/task/12723363/ | 0.22237 nb | 0.15813 |
+| MG_NP0 | 361515 | mc15_13TeV.361515.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np0.evgen.EVNT.e3898 | https://bigpanda.cern.ch/task/12851571/ | 8 nb | 1 |
+| MG_NP1 | 361516 | mc15_13TeV.361516.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np1.evgen.EVNT.e3898 | https://bigpanda.cern.ch/task/12851603/ | 1.2 nb | 1 |
+| MG_NP2 | 361517 | mc15_13TeV.361517.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np2.evgen.EVNT.e3898 | https://bigpanda.cern.ch/task/12851620/ | 0.38718 nb | 1 |
+| MG_NP3 | 361518 | mc15_13TeV.361518.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np3.evgen.EVNT.e3898 | https://bigpanda.cern.ch/task/12851635/ | 0.1 nb | 1 |
+| MG_NP4 | 361519 | mc15_13TeV.361519.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np4.evgen.EVNT.e3898 | https://bigpanda.cern.ch/task/12851650/ | 0.043472 nb | 1 |
+)
+364142      1.0700E+04       0.9728       8.2160E-01      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV0_70_CVetoBVeto
+364143      1.0702E+04       0.9728       1.1123E-01      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV0_70_CFilterBVeto
+364144      1.0709E+04       0.9728       6.6175E-02      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV0_70_BFilter
+364145      6.0323E+02       0.9728       6.8924E-01      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV70_140_CVetoBVeto
+364146      6.0815E+02       0.9728       1.8243E-01      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV70_140_CFilterBVeto
+364147      6.0332E+02       0.9728       0.1283          Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV70_140_BFilter
+364148      2.2228E+02       0.9728       6.0735E-01      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV140_280_CVetoBVeto
+364149      2.2188E+02       0.9728       2.2527E-01      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV140_280_CFilterBVeto
+364150      2.2247E+02       0.9728       1.5185E-01      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV140_280_BFilter
+364151      4.7375E+01       0.9728       5.5887E-01      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV280_500_CVetoBVeto
+364152      4.7397E+01       0.9728       2.6201E-01      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV280_500_CFilterBVeto
+364153      4.7476E+01       0.9728       1.7514E-01      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV280_500_BFilter
+364154      9.9099           0.9728       1.0000E+00      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV500_1000
+364155      8.1809E-01       0.9728       1.0000E+00      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV1000_E_CMS
+)</p>
+    <h2 id="comparison-macro">Comparison macro</h2>
+    <p>)</p>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">root <span class="nt">-l</span> Rivet_364142.root Rivet_364143.root Rivet_364144.root Rivet_364145.root Rivet_364146.root Rivet_364147.root Rivet_364148.root Rivet_364149.root Rivet_364150.root Rivet_364151.root Rivet_364152.root Rivet_364153.root Rivet_364154.root Rivet_364155.root Rivet_361515.root Rivet_361516.root Rivet_361517.root Rivet_361518.root Rivet_361519.root<br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />gStyle-&gt;SetOptStat<span class="o">(</span>0<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />// TString histName <span class="o">=</span> <span class="s2">"Lep0_bb_Cuts3j"</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />// TString histName <span class="o">=</span> <span class="s2">"Lep0_Cuts3j"</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />TString histName <span class="o">=</span> <span class="s2">"SAMPLEl_0lepton_0ptag2jet_vpt150_MET_cut0"</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />h_Sherpa42 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file0-&gt;Get<span class="o">(</span>TString::Format<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/%s"</span>, histName.Data<span class="o">()))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa43 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file1-&gt;Get<span class="o">(</span>TString::Format<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/%s"</span>, histName.Data<span class="o">()))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa44 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file2-&gt;Get<span class="o">(</span>TString::Format<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/%s"</span>, histName.Data<span class="o">()))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa45 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file3-&gt;Get<span class="o">(</span>TString::Format<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/%s"</span>, histName.Data<span class="o">()))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa46 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file4-&gt;Get<span class="o">(</span>TString::Format<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/%s"</span>, histName.Data<span class="o">()))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa47 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file5-&gt;Get<span class="o">(</span>TString::Format<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/%s"</span>, histName.Data<span class="o">()))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa48 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file6-&gt;Get<span class="o">(</span>TString::Format<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/%s"</span>, histName.Data<span class="o">()))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa49 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file7-&gt;Get<span class="o">(</span>TString::Format<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/%s"</span>, histName.Data<span class="o">()))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa50 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file8-&gt;Get<span class="o">(</span>TString::Format<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/%s"</span>, histName.Data<span class="o">()))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa51 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file9-&gt;Get<span class="o">(</span>TString::Format<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/%s"</span>, histName.Data<span class="o">()))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />h_Sherpa52 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file10-&gt;Get<span class="o">(</span>TString::Format<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/%s"</span>, histName.Data<span class="o">()))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />h_Sherpa53 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file11-&gt;Get<span class="o">(</span>TString::Format<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/%s"</span>, histName.Data<span class="o">()))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />h_Sherpa54 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file12-&gt;Get<span class="o">(</span>TString::Format<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/%s"</span>, histName.Data<span class="o">()))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />h_Sherpa55 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file13-&gt;Get<span class="o">(</span>TString::Format<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/%s"</span>, histName.Data<span class="o">()))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />h_MG_NP0 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file14-&gt;Get<span class="o">(</span>TString::Format<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/%s"</span>, histName.Data<span class="o">()))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_MG_NP1 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file15-&gt;Get<span class="o">(</span>TString::Format<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/%s"</span>, histName.Data<span class="o">()))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_MG_NP2 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file16-&gt;Get<span class="o">(</span>TString::Format<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/%s"</span>, histName.Data<span class="o">()))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_MG_NP3 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file17-&gt;Get<span class="o">(</span>TString::Format<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/%s"</span>, histName.Data<span class="o">()))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_MG_NP4 <span class="o">=</span> <span class="o">(</span>TH1F<span class="k">*</span><span class="o">)</span>_file18-&gt;Get<span class="o">(</span>TString::Format<span class="o">(</span><span class="s2">"MC_VH2BB_2015_Official/%s"</span>, histName.Data<span class="o">()))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />h_Sherpa42-&gt;Scale<span class="o">(</span>1.0700E+04<span class="k">*</span>0.9728<span class="k">*</span>8.2160E-01/h_Sherpa42-&gt;Integral<span class="o">())</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa43-&gt;Scale<span class="o">(</span>1.0702E+04<span class="k">*</span>0.9728<span class="k">*</span>1.1123E-01/h_Sherpa42-&gt;Integral<span class="o">())</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa44-&gt;Scale<span class="o">(</span>1.0709E+04<span class="k">*</span>0.9728<span class="k">*</span>6.6175E-02/h_Sherpa42-&gt;Integral<span class="o">())</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa45-&gt;Scale<span class="o">(</span>6.0323E+02<span class="k">*</span>0.9728<span class="k">*</span>6.8924E-01/h_Sherpa45-&gt;Integral<span class="o">())</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa46-&gt;Scale<span class="o">(</span>6.0815E+02<span class="k">*</span>0.9728<span class="k">*</span>1.8243E-01/h_Sherpa46-&gt;Integral<span class="o">())</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa47-&gt;Scale<span class="o">(</span>6.0332E+02<span class="k">*</span>0.9728<span class="k">*</span>0.1283/h_Sherpa47-&gt;Integral<span class="o">())</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa48-&gt;Scale<span class="o">(</span>2.2228E+02<span class="k">*</span>0.9728<span class="k">*</span>6.0735E-01/h_Sherpa48-&gt;Integral<span class="o">())</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa49-&gt;Scale<span class="o">(</span>2.2188E+02<span class="k">*</span>0.9728<span class="k">*</span>2.2527E-01/h_Sherpa49-&gt;Integral<span class="o">())</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa50-&gt;Scale<span class="o">(</span>2.2247E+02<span class="k">*</span>0.9728<span class="k">*</span>1.5185E-01/h_Sherpa50-&gt;Integral<span class="o">())</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa51-&gt;Scale<span class="o">(</span>4.7375E+01<span class="k">*</span>0.9728<span class="k">*</span>5.5887E-01/h_Sherpa51-&gt;Integral<span class="o">())</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa52-&gt;Scale<span class="o">(</span>4.7397E+01<span class="k">*</span>0.9728<span class="k">*</span>2.6201E-01/h_Sherpa52-&gt;Integral<span class="o">())</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa53-&gt;Scale<span class="o">(</span>4.7476E+01<span class="k">*</span>0.9728<span class="k">*</span>1.7514E-01/h_Sherpa53-&gt;Integral<span class="o">())</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa54-&gt;Scale<span class="o">(</span>9.9099<span class="k">*</span>0.9728<span class="k">*</span>1.0000E+00/h_Sherpa54-&gt;Integral<span class="o">())</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sherpa55-&gt;Scale<span class="o">(</span>8.1809E-01<span class="k">*</span>0.9728<span class="k">*</span>1.0000E+00/h_Sherpa55-&gt;Integral<span class="o">())</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />// h_Sherpa42-&gt;Scale<span class="o">(</span>1.0700E+04<span class="k">*</span>0.9728<span class="k">*</span>8.2160E-01/h_Sherpa42-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />// h_Sherpa43-&gt;Scale<span class="o">(</span>1.0702E+04<span class="k">*</span>0.9728<span class="k">*</span>1.1123E-01/h_Sherpa42-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />// h_Sherpa44-&gt;Scale<span class="o">(</span>1.0709E+04<span class="k">*</span>0.9728<span class="k">*</span>6.6175E-02/h_Sherpa42-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />// h_Sherpa45-&gt;Scale<span class="o">(</span>6.0323E+02<span class="k">*</span>0.9728<span class="k">*</span>6.8924E-01/h_Sherpa45-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />// h_Sherpa46-&gt;Scale<span class="o">(</span>6.0815E+02<span class="k">*</span>0.9728<span class="k">*</span>1.8243E-01/h_Sherpa46-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />// h_Sherpa47-&gt;Scale<span class="o">(</span>6.0332E+02<span class="k">*</span>0.9728<span class="k">*</span>0.1283/h_Sherpa47-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />// h_Sherpa48-&gt;Scale<span class="o">(</span>2.2228E+02<span class="k">*</span>0.9728<span class="k">*</span>6.0735E-01/h_Sherpa48-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />// h_Sherpa49-&gt;Scale<span class="o">(</span>2.2188E+02<span class="k">*</span>0.9728<span class="k">*</span>2.2527E-01/h_Sherpa49-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />// h_Sherpa50-&gt;Scale<span class="o">(</span>2.2247E+02<span class="k">*</span>0.9728<span class="k">*</span>1.5185E-01/h_Sherpa50-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />// h_Sherpa51-&gt;Scale<span class="o">(</span>4.7375E+01<span class="k">*</span>0.9728<span class="k">*</span>5.5887E-01/h_Sherpa51-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />// h_Sherpa52-&gt;Scale<span class="o">(</span>4.7397E+01<span class="k">*</span>0.9728<span class="k">*</span>2.6201E-01/h_Sherpa52-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />// h_Sherpa53-&gt;Scale<span class="o">(</span>4.7476E+01<span class="k">*</span>0.9728<span class="k">*</span>1.7514E-01/h_Sherpa53-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />// h_Sherpa54-&gt;Scale<span class="o">(</span>9.9099<span class="k">*</span>0.9728<span class="k">*</span>1.0000E+00/h_Sherpa54-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />// h_Sherpa55-&gt;Scale<span class="o">(</span>8.1809E-01<span class="k">*</span>0.9728<span class="k">*</span>1.0000E+00/h_Sherpa55-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />TH1F<span class="k">*</span> h_Sh <span class="o">=</span> new TH1F<span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>h_Sh <span class="o">=</span> <span class="k">*</span>h_Sherpa42<span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sh-&gt;Add<span class="o">(</span>h_Sherpa43<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sh-&gt;Add<span class="o">(</span>h_Sherpa44<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sh-&gt;Add<span class="o">(</span>h_Sherpa45<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sh-&gt;Add<span class="o">(</span>h_Sherpa46<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sh-&gt;Add<span class="o">(</span>h_Sherpa47<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sh-&gt;Add<span class="o">(</span>h_Sherpa48<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sh-&gt;Add<span class="o">(</span>h_Sherpa49<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sh-&gt;Add<span class="o">(</span>h_Sherpa50<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sh-&gt;Add<span class="o">(</span>h_Sherpa51<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sh-&gt;Add<span class="o">(</span>h_Sherpa52<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sh-&gt;Add<span class="o">(</span>h_Sherpa53<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sh-&gt;Add<span class="o">(</span>h_Sherpa54<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_Sh-&gt;Add<span class="o">(</span>h_Sherpa55<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />h_Sh-&gt;Scale<span class="o">(</span>1./h_Sh-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />// h_MG_NP0-&gt;Scale<span class="o">(</span>8./h_MG_NP0-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />// h_MG_NP1-&gt;Scale<span class="o">(</span>1.2/h_MG_NP1-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />// h_MG_NP2-&gt;Scale<span class="o">(</span>0.38718/h_MG_NP2-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />// h_MG_NP3-&gt;Scale<span class="o">(</span>0.1/h_MG_NP3-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />// h_MG_NP4-&gt;Scale<span class="o">(</span>0.043472/h_MG_NP4-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />h_MG_NP0-&gt;Scale<span class="o">(</span>8./h_MG_NP0-&gt;Integral<span class="o">())</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_MG_NP1-&gt;Scale<span class="o">(</span>1.2/h_MG_NP1-&gt;Integral<span class="o">())</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_MG_NP2-&gt;Scale<span class="o">(</span>0.38718/h_MG_NP2-&gt;Integral<span class="o">())</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_MG_NP3-&gt;Scale<span class="o">(</span>0.1/h_MG_NP3-&gt;Integral<span class="o">())</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_MG_NP4-&gt;Scale<span class="o">(</span>0.043472/h_MG_NP4-&gt;Integral<span class="o">())</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />TH1F<span class="k">*</span> h_MG <span class="o">=</span> new TH1F<span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span>h_MG <span class="o">=</span> <span class="k">*</span>h_MG_NP0<span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_MG-&gt;Add<span class="o">(</span>h_MG_NP1<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_MG-&gt;Add<span class="o">(</span>h_MG_NP2<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_MG-&gt;Add<span class="o">(</span>h_MG_NP3<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />h_MG-&gt;Add<span class="o">(</span>h_MG_NP4<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />h_MG-&gt;Scale<span class="o">(</span>1./h_MG-&gt;GetBinContent<span class="o">(</span>1<span class="o">))</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />auto c1 <span class="o">=</span> new TCanvas<span class="o">(</span><span class="s2">"c1"</span>, <span class="s2">"A ratio Sherpa/Madgraph Zjet"</span><span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />auto rp <span class="o">=</span> new TRatioPlot<span class="o">(</span>h_Sh, h_MG<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />c1-&gt;SetTicks<span class="o">(</span>0, 1<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />rp-&gt;Draw<span class="o">()</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />c1-&gt;Update<span class="o">()</span><span class="p">;</span></code></pre></figure>
+
+<h1 id="evtgen-datasets-for-rivet">EVTGen Datasets for Rivet</h1>
+<p>)</p>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="c"># DAOD list from https://gitlab.cern.ch/CxAODFramework/FrameworkSub/blob/master/In/CxAOD28/list_sample_grid.mc15c_13TeV_25ns_bg_nominal_HIGG5D1.txt</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="c">#mc15_13TeV.364142.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV0_70_CVetoBVeto.merge.DAOD_HIGG5D1.e5308_s2726_r7772_r7676_p2949</span><br data-jekyll-commonmark-ghpages="" /><span class="c">#mc15_13TeV.364143.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV0_70_CFilterBVeto.merge.DAOD_HIGG5D1.e5308_s2726_r7772_r7676_p2949</span><br data-jekyll-commonmark-ghpages="" />mc15_13TeV.364144.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV0_70_BFilter.merge.DAOD_HIGG5D1.e5308_s2726_r7772_r7676_p2949<br data-jekyll-commonmark-ghpages="" /><span class="c">#mc15_13TeV.364145.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV70_140_CVetoBVeto.merge.DAOD_HIGG5D1.e5308_s2726_r7772_r7676_p2949</span><br data-jekyll-commonmark-ghpages="" /><span class="c">#mc15_13TeV.364146.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV70_140_CFilterBVeto.merge.DAOD_HIGG5D1.e5308_s2726_r7772_r7676_p2949</span><br data-jekyll-commonmark-ghpages="" />mc15_13TeV.364147.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV70_140_BFilter.merge.DAOD_HIGG5D1.e5308_s2726_r7772_r7676_p2949<br data-jekyll-commonmark-ghpages="" /><span class="c">#mc15_13TeV.364148.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV140_280_CVetoBVeto.merge.DAOD_HIGG5D1.e5308_s2726_r7772_r7676_p2949</span><br data-jekyll-commonmark-ghpages="" /><span class="c">#mc15_13TeV.364149.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV140_280_CFilterBVeto.merge.DAOD_HIGG5D1.e5308_s2726_r7772_r7676_p2949</span><br data-jekyll-commonmark-ghpages="" />mc15_13TeV.364150.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV140_280_BFilter.merge.DAOD_HIGG5D1.e5308_s2726_r7772_r7676_p2949<br data-jekyll-commonmark-ghpages="" /><span class="c">#mc15_13TeV.364151.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV280_500_CVetoBVeto.merge.DAOD_HIGG5D1.e5308_s2726_r7772_r7676_p2949</span><br data-jekyll-commonmark-ghpages="" /><span class="c">#mc15_13TeV.364152.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV280_500_CFilterBVeto.merge.DAOD_HIGG5D1.e5308_s2726_r7772_r7676_p2949</span><br data-jekyll-commonmark-ghpages="" />mc15_13TeV.364153.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV280_500_BFilter.merge.DAOD_HIGG5D1.e5308_s2726_r7772_r7676_p2949<br data-jekyll-commonmark-ghpages="" />mc15_13TeV.364154.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV500_1000.merge.DAOD_HIGG5D1.e5308_s2726_r7772_r7676_p2949<br data-jekyll-commonmark-ghpages="" />mc15_13TeV.364155.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV1000_E_CMS.merge.DAOD_HIGG5D1.e5308_s2726_r7772_r7676_p2949</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="c"># EVGen :</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="c"># BFilter</span><br data-jekyll-commonmark-ghpages="" />mc15_13TeV.364144.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV0_70_BFilter.evgen.EVNT.e5308<br data-jekyll-commonmark-ghpages="" />mc15_13TeV.364147.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV70_140_BFilter.evgen.EVNT.e5308<br data-jekyll-commonmark-ghpages="" />mc15_13TeV.364150.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV140_280_BFilter.evgen.EVNT.e5308<br data-jekyll-commonmark-ghpages="" />mc15_13TeV.364153.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV280_500_BFilter.evgen.EVNT.e5308<br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="c"># CFilterBVeto</span><br data-jekyll-commonmark-ghpages="" />mc15_13TeV.364143.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV0_70_CFilterBVeto.evgen.EVNT.e5308<br data-jekyll-commonmark-ghpages="" />mc15_13TeV.364146.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV70_140_CFilterBVeto.evgen.EVNT.e5308<br data-jekyll-commonmark-ghpages="" />mc15_13TeV.364149.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV140_280_CFilterBVeto.evgen.EVNT.e5308<br data-jekyll-commonmark-ghpages="" />mc15_13TeV.364152.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV280_500_CFilterBVeto.evgen.EVNT.e5308<br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="c"># CVetoBVeto</span><br data-jekyll-commonmark-ghpages="" />mc15_13TeV.364142.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV0_70_CVetoBVeto.evgen.EVNT.e5308<br data-jekyll-commonmark-ghpages="" />mc15_13TeV.364145.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV70_140_CVetoBVeto.evgen.EVNT.e5308<br data-jekyll-commonmark-ghpages="" />mc15_13TeV.364148.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV140_280_CVetoBVeto.evgen.EVNT.e5308<br data-jekyll-commonmark-ghpages="" />mc15_13TeV.364151.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV280_500_CVetoBVeto.evgen.EVNT.e5308<br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="c"># Unfiltered slices</span><br data-jekyll-commonmark-ghpages="" />mc15_13TeV.364154.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV500_1000.evgen.EVNT.e5308<br data-jekyll-commonmark-ghpages="" />mc15_13TeV.364155.Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV1000_E_CMS.evgen.EVNT.e5308</code></pre></figure>
+
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">My PhD notes</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              My PhD notes
+            
+            </li>
+            
+            <li><a href="mailto:charles.delporte@cern.ch">charles.delporte@cern.ch</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>My personal notes from Quiver</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
