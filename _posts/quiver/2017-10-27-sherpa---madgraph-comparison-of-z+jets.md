@@ -36,6 +36,8 @@ Ordre des bins/coupures :
 * les ratios représentent Sherpa/Madgraph
 * plots avec la meme somme des poids initiale
 )
+# Cutflows inclusifs sur la saveur des jets (cutflows bb plus bas)
+)
 ## 2 jets
 
 ![IMAGE](/images/q/7EF755F9ABAAC4C1557FB85DAD8F8817.jpg)
@@ -61,6 +63,17 @@ Ordre des bins/coupures :
 ## MET 3 jets avant coupure
 
 ![IMAGE](/images/q/77739C3A166D08F94523F26E8388DD0E.jpg)
+# Cutflows bb
+
+* variations opposées en 2 et 3 jets, mais la coupure sur la MET rétablit Sherpa/MG < 1. dans les deux cas
+* (le ratio n'est pas 1 dans le bin all surement a cause d'une composition different des saveurs de jets par rapport aux evenements inclusifs (qui eux ont la meme normalisation))
+)
+### 2 jets
+
+![IMAGE](/images/q/1BA593F843657FBE5FFA117268038CFF.jpg)
+### 3 jets
+
+![IMAGE](/images/q/6C88B5B68424909AE51EEA16435F236C.jpg)
 ## Coupures sur les leptons et les jets dans RIVET
 
 )
