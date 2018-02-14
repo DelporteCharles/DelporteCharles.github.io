@@ -59,13 +59,6 @@ Ordre des bins/coupures :
 ## 3 jets
 
 ![IMAGE](/images/q/56E605602024577E431A0219A6CC7985.jpg)
-## Observations sur les cutflows
-
-* bin 0 : difference initiale sur les sections efficaces (pas dans les plots) --> Sherpa NLO et Madgraph LO ?
-* bin 1 : difference sur la multiplicite des leptons lie au modelling de pT eta des leptons ?
-* bin 2 : Il y a plus d'evenements a passer 2 jets en Madgraph qu'en Sherpa, ce qui corrige un peu la difference due a la coupure 0-leptons. Par contre en 3 jets, la difference augmente.
-* bin 3 : modelling different de la MET, avec un turn-on vers 40 (60) GeV en 2 (3) jets ... au dela de 150 GeV, Sherpa est systematiquement en dessous de Madgraph
-)
 # distributions presque sans coupures
 
 * avant coupure)
@@ -99,9 +92,6 @@ Ordre des bins/coupures :
 # Cutflows bb
 
 * attention : le bin all est rempli apres la coupure nsignaljets > 1, a l'inverse des cutflows inclusifs en saveur
-
-* variations opposées en 2 et 3 jets, mais la coupure sur la MET rétablit Sherpa/MG < 1. dans les deux cas
-* (le ratio n'est pas 1 dans le bin all surement a cause d'une composition different des saveurs de jets par rapport aux evenements inclusifs (qui eux ont la meme normalisation))
 )
 ### 2 jets
 
