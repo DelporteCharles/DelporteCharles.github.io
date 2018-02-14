@@ -8,18 +8,15 @@ tags:
 # Purpose
 
 - discrepancy
-
-* the ratio of cross sections shows 15% difference (Sherpa > Madgraph)
 )
-{% highlight sh %}
-(1.0700E+04*0.9728*8.2160E-01 + 1.0702E+04*0.9728*1.1123E-01 + 1.0709E+04*0.9728*6.6175E-02 + 6.0323E+02*0.9728*6.8924E-01 + 6.0815E+02*0.9728*1.8243E-01 + 6.0332E+02*0.9728*0.1283  + 2.2228E+02*0.9728*6.0735E-01 + 2.2188E+02*0.9728*2.2527E-01 + 2.2247E+02*0.9728*1.5185E-01 + 4.7375E+01*0.9728*5.5887E-01 + 4.7397E+01*0.9728*2.6201E-01 + 4.7476E+01*0.9728*1.7514E-01 + 9.9099*0.9728*1.0000E+00 + 8.1809E-01*0.9728*1.0000E+00 ) / ( 8. + 1.2 + 0.38718 + 0.1 + 0.043472 ) / 1.e3
-{% endhighlight %}
+# Conclusions
 
+* pas de difference sur les XSections (Sh/MG)
 # Cutflows
 
 Ordre des bins/coupures :
 * 0 : all events (fill 0. )
-* 1 : 0 leptons
+* 1 : 0 leptons (coupures plus bas) + au moins 2 signal-jets (pT > 20 GeV et abseta < 2.5)
 * 2 : 2 ou 3 jets
 * 3 : MET >= 150 GeV
 * 4 : dPhi MET/MPT < pi/2
@@ -40,10 +37,10 @@ Ordre des bins/coupures :
 )
 ## 2 jets
 
-![IMAGE](/images/q/0E14073D9461F40C01070D7615DE22A0.jpg)
+![IMAGE](/images/q/F063AB3764BD42BDB8887061A8F37D28.jpg)
 ## 3 jets
 
-![IMAGE](/images/q/CC386D71D045649B26CDFA54907BFF7E.jpg)
+![IMAGE](/images/q/56E605602024577E431A0219A6CC7985.jpg)
 ## Observations sur les cutflows
 
 * bin 0 : difference initiale sur les sections efficaces (pas dans les plots) --> Sherpa NLO et Madgraph LO ?
@@ -51,23 +48,49 @@ Ordre des bins/coupures :
 * bin 2 : Il y a plus d'evenements a passer 2 jets en Madgraph qu'en Sherpa, ce qui corrige un peu la difference due a la coupure 0-leptons. Par contre en 3 jets, la difference augmente.
 * bin 3 : modelling different de la MET, avec un turn-on vers 40 (60) GeV en 2 (3) jets ... au dela de 150 GeV, Sherpa est systematiquement en dessous de Madgraph
 )
+# distributions presque sans coupures
+
+* avant coupure)
 ## MET 2 jets avant coupure
 
-![IMAGE](/images/q/B0AB7C3E5DEB2F98A6696F82CFD93B86.jpg)
+![IMAGE](/images/q/22DA11DE45A4B9326E4E39A733EE94E5.jpg)
 ## MET 3 jets avant coupure
 
-![IMAGE](/images/q/77739C3A166D08F94523F26E8388DD0E.jpg)
+![IMAGE](/images/q/EAB22033578CDED04296949A0F57AB9A.jpg)
+## pTV 2 jets avant coupure
+
+![IMAGE](/images/q/07B5628A03ACB2708BFE2F7B5C79AEDF.jpg)
+## pTV 3 jets avant coupure
+
+![IMAGE](/images/q/983E681085C4B0A4FE06E2A085DF37D1.jpg)
+# Comparaison à la modelling note d'EPS
+
+* page 37 de la modelling note
+  * systematique evaluee sur les data 2-lepton : il y a une trend le long de pTV de 0 a 600 GeV
+  * est-ce que ca induit un changement de normalisation dans 0-lepton au dessus de 150 GeV (le turn-on dans 2-leptons est vers 60 GeV)
+    * normalement oui d'apres Nicolas
+)
+![IMAGE](/images/q/0ED3FAF94C55EB9406C80C5EE708920C.jpg)
+* page 177 de la supporting note
+  * pas de pull du NP ZPTV dans le fit 0-lepton seul
+  * d'apres Nicolas, completement degenere avec le NP de normalisation flottante pour Zbb, donc il va augmenter beaucoup de SF et peu tirer sur ZPTV
+)
+![IMAGE](/images/q/01B297101530A30FA39D62199A7DF176.jpg)
+* dans le fit combine, il n'y a pas de gros pull non plus de ce NP
+![IMAGE](/images/q/7BDA22AC2A90495AB1A5A8230250B910.jpg)
 # Cutflows bb
+
+* attention : le bin all est rempli apres la coupure nsignaljets > 1, a l'inverse des cutflows inclusifs en saveur
 
 * variations opposées en 2 et 3 jets, mais la coupure sur la MET rétablit Sherpa/MG < 1. dans les deux cas
 * (le ratio n'est pas 1 dans le bin all surement a cause d'une composition different des saveurs de jets par rapport aux evenements inclusifs (qui eux ont la meme normalisation))
 )
 ### 2 jets
 
-![IMAGE](/images/q/DBA4B290C64A0CCA98DC58074C93E3DA.jpg)
+![IMAGE](/images/q/F1BFB00B7F80B3B44480D7D92D6C2B3B.jpg)
 ### 3 jets
 
-![IMAGE](/images/q/574F3E8ADB0A76B986BB3924513A82FF.jpg)
+![IMAGE](/images/q/99E431A2EBCC8628E5A65222314698E0.jpg)
 ## Coupures sur les leptons et les jets dans RIVET
 
 )
@@ -104,13 +127,11 @@ Ordre des bins/coupures :
 ## Samples
 )
 {% highlight sh %}
-| Sample | DSID   | Dataset                                                                         | Job                                             | XSection    | genFilterEff |
-| ------ | ----   | ------------------------------------------------------------------------------- | ------------------------------------------------| ----------- | ------------ |
-| MG_NP0 | 361515 | mc15_13TeV.361515.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np0.evgen.EVNT.e3898 | https://bigpanda.cern.ch/task/12851571/         | 8 nb        | 1            |
-| MG_NP1 | 361516 | mc15_13TeV.361516.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np1.evgen.EVNT.e3898 | https://bigpanda.cern.ch/task/12851603/         | 1.2 nb      | 1            |
-| MG_NP2 | 361517 | mc15_13TeV.361517.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np2.evgen.EVNT.e3898 | https://bigpanda.cern.ch/task/12851620/         | 0.38718 nb  | 1            |
-| MG_NP3 | 361518 | mc15_13TeV.361518.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np3.evgen.EVNT.e3898 | https://bigpanda.cern.ch/task/12851635/         | 0.1 nb      | 1            |
-| MG_NP4 | 361519 | mc15_13TeV.361519.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np4.evgen.EVNT.e3898 | https://bigpanda.cern.ch/task/12851650/         | 0.043472 nb | 1            |
+361515   7518.4             1.2283         1.0            MadZnunu                 mc15_13TeV.361515.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np0
+361516   1200.1             1.2283         1.0            MadZnunu                 mc15_13TeV.361516.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np1
+361517   387.16             1.2283         1.0            MadZnunu                 mc15_13TeV.361517.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np2
+361518   110.08             1.2283         1.0            MadZnunu                 mc15_13TeV.361518.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np3
+361519   43.389             1.2283         1.0            MadZnunu                 mc15_13TeV.361519.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np4
 {% endhighlight %}
 
 {% highlight sh %}
@@ -130,6 +151,14 @@ Ordre des bins/coupures :
 364155      8.1809E-01       0.9728       1.0000E+00      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV1000_E_CMS
 {% endhighlight %}
 
+# Investigation on the 10% efficiency on the 0-lepton cut
+)
+## B Filter cutflow (364150)
+![IMAGE](/images/q/835E1EED944B91BB5ADC8B513F08F0FE.jpg)
+## C Filter B Veto cutflow (364149)
+![IMAGE](/images/q/97FA84EF0FDB46E0DC08C0CDB9E9C46C.jpg)
+## C Veto B Veto cutflow (364148)
+![IMAGE](/images/q/325B67F2065A2CB584DCC9E76B31B9C3.jpg)
 ## Comparison macro
 )
 {% highlight sh %}

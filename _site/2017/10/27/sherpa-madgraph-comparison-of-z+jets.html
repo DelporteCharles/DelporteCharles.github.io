@@ -83,23 +83,19 @@
     <h1 id="purpose">Purpose</h1>
 
 <ul>
-  <li>
-    <p>discrepancy</p>
+  <li>discrepancy
+)
+    <h1 id="conclusions">Conclusions</h1>
   </li>
-  <li>
-    <p>the ratio of cross sections shows 15% difference (Sherpa &gt; Madgraph)
-)</p>
+  <li>pas de difference sur les XSections (Sh/MG)
+    <h1 id="cutflows">Cutflows</h1>
   </li>
 </ul>
-
-<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="o">(</span>1.0700E+04<span class="k">*</span>0.9728<span class="k">*</span>8.2160E-01 + 1.0702E+04<span class="k">*</span>0.9728<span class="k">*</span>1.1123E-01 + 1.0709E+04<span class="k">*</span>0.9728<span class="k">*</span>6.6175E-02 + 6.0323E+02<span class="k">*</span>0.9728<span class="k">*</span>6.8924E-01 + 6.0815E+02<span class="k">*</span>0.9728<span class="k">*</span>1.8243E-01 + 6.0332E+02<span class="k">*</span>0.9728<span class="k">*</span>0.1283  + 2.2228E+02<span class="k">*</span>0.9728<span class="k">*</span>6.0735E-01 + 2.2188E+02<span class="k">*</span>0.9728<span class="k">*</span>2.2527E-01 + 2.2247E+02<span class="k">*</span>0.9728<span class="k">*</span>1.5185E-01 + 4.7375E+01<span class="k">*</span>0.9728<span class="k">*</span>5.5887E-01 + 4.7397E+01<span class="k">*</span>0.9728<span class="k">*</span>2.6201E-01 + 4.7476E+01<span class="k">*</span>0.9728<span class="k">*</span>1.7514E-01 + 9.9099<span class="k">*</span>0.9728<span class="k">*</span>1.0000E+00 + 8.1809E-01<span class="k">*</span>0.9728<span class="k">*</span>1.0000E+00 <span class="o">)</span> / <span class="o">(</span> 8. + 1.2 + 0.38718 + 0.1 + 0.043472 <span class="o">)</span> / 1.e3</code></pre></figure>
-
-<h1 id="cutflows">Cutflows</h1>
 
 <p>Ordre des bins/coupures :</p>
 <ul>
   <li>0 : all events (fill 0. )</li>
-  <li>1 : 0 leptons</li>
+  <li>1 : 0 leptons (coupures plus bas) + au moins 2 signal-jets (pT &gt; 20 GeV et abseta &lt; 2.5)</li>
   <li>2 : 2 ou 3 jets</li>
   <li>3 : MET &gt;= 150 GeV</li>
   <li>4 : dPhi MET/MPT &lt; pi/2</li>
@@ -122,10 +118,10 @@
   </li>
 </ul>
 
-<p><img src="/images/q/0E14073D9461F40C01070D7615DE22A0.jpg" alt="IMAGE" /></p>
+<p><img src="/images/q/F063AB3764BD42BDB8887061A8F37D28.jpg" alt="IMAGE" /></p>
 <h2 id="3-jets">3 jets</h2>
 
-<p><img src="/images/q/CC386D71D045649B26CDFA54907BFF7E.jpg" alt="IMAGE" /></p>
+<p><img src="/images/q/56E605602024577E431A0219A6CC7985.jpg" alt="IMAGE" /></p>
 <h2 id="observations-sur-les-cutflows">Observations sur les cutflows</h2>
 
 <ul>
@@ -134,17 +130,53 @@
   <li>bin 2 : Il y a plus d’evenements a passer 2 jets en Madgraph qu’en Sherpa, ce qui corrige un peu la difference due a la coupure 0-leptons. Par contre en 3 jets, la difference augmente.</li>
   <li>bin 3 : modelling different de la MET, avec un turn-on vers 40 (60) GeV en 2 (3) jets … au dela de 150 GeV, Sherpa est systematiquement en dessous de Madgraph
 )
+    <h1 id="distributions-presque-sans-coupures">distributions presque sans coupures</h1>
+  </li>
+  <li>avant coupure)
     <h2 id="met-2-jets-avant-coupure">MET 2 jets avant coupure</h2>
   </li>
 </ul>
 
-<p><img src="/images/q/B0AB7C3E5DEB2F98A6696F82CFD93B86.jpg" alt="IMAGE" /></p>
+<p><img src="/images/q/22DA11DE45A4B9326E4E39A733EE94E5.jpg" alt="IMAGE" /></p>
 <h2 id="met-3-jets-avant-coupure">MET 3 jets avant coupure</h2>
 
-<p><img src="/images/q/77739C3A166D08F94523F26E8388DD0E.jpg" alt="IMAGE" /></p>
-<h1 id="cutflows-bb">Cutflows bb</h1>
+<p><img src="/images/q/EAB22033578CDED04296949A0F57AB9A.jpg" alt="IMAGE" /></p>
+<h2 id="ptv-2-jets-avant-coupure">pTV 2 jets avant coupure</h2>
+
+<p><img src="/images/q/07B5628A03ACB2708BFE2F7B5C79AEDF.jpg" alt="IMAGE" /></p>
+<h2 id="ptv-3-jets-avant-coupure">pTV 3 jets avant coupure</h2>
+
+<p><img src="/images/q/983E681085C4B0A4FE06E2A085DF37D1.jpg" alt="IMAGE" /></p>
+<h1 id="comparaison-à-la-modelling-note-deps">Comparaison à la modelling note d’EPS</h1>
 
 <ul>
+  <li>page 37 de la modelling note
+    <ul>
+      <li>systematique evaluee sur les data 2-lepton : il y a une trend le long de pTV de 0 a 600 GeV</li>
+      <li>est-ce que ca induit un changement de normalisation dans 0-lepton au dessus de 150 GeV (le turn-on dans 2-leptons est vers 60 GeV)
+        <ul>
+          <li>normalement oui d’apres Nicolas
+)
+<img src="/images/q/0ED3FAF94C55EB9406C80C5EE708920C.jpg" alt="IMAGE" /></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>page 177 de la supporting note
+    <ul>
+      <li>pas de pull du NP ZPTV dans le fit 0-lepton seul</li>
+      <li>d’apres Nicolas, completement degenere avec le NP de normalisation flottante pour Zbb, donc il va augmenter beaucoup de SF et peu tirer sur ZPTV
+)
+<img src="/images/q/01B297101530A30FA39D62199A7DF176.jpg" alt="IMAGE" /></li>
+    </ul>
+  </li>
+  <li>dans le fit combine, il n’y a pas de gros pull non plus de ce NP
+<img src="/images/q/7BDA22AC2A90495AB1A5A8230250B910.jpg" alt="IMAGE" />
+    <h1 id="cutflows-bb">Cutflows bb</h1>
+  </li>
+  <li>
+    <p>attention : le bin all est rempli apres la coupure nsignaljets &gt; 1, a l’inverse des cutflows inclusifs en saveur</p>
+  </li>
   <li>variations opposées en 2 et 3 jets, mais la coupure sur la MET rétablit Sherpa/MG &lt; 1. dans les deux cas</li>
   <li>(le ratio n’est pas 1 dans le bin all surement a cause d’une composition different des saveurs de jets par rapport aux evenements inclusifs (qui eux ont la meme normalisation))
 )
@@ -152,10 +184,10 @@
   </li>
 </ul>
 
-<p><img src="/images/q/DBA4B290C64A0CCA98DC58074C93E3DA.jpg" alt="IMAGE" /></p>
+<p><img src="/images/q/F1BFB00B7F80B3B44480D7D92D6C2B3B.jpg" alt="IMAGE" /></p>
 <h3 id="3-jets-1">3 jets</h3>
 
-<p><img src="/images/q/574F3E8ADB0A76B986BB3924513A82FF.jpg" alt="IMAGE" /></p>
+<p><img src="/images/q/99E431A2EBCC8628E5A65222314698E0.jpg" alt="IMAGE" /></p>
 <h2 id="coupures-sur-les-leptons-et-les-jets-dans-rivet">Coupures sur les leptons et les jets dans RIVET</h2>
 
 <p>)</p>
@@ -165,10 +197,18 @@
 <h2 id="samples">Samples</h2>
 <p>)</p>
 
-<figure class="highlight"><pre><code class="language-sh" data-lang="sh">| Sample | DSID   | Dataset                                                                         | Job                                             | XSection    | genFilterEff |<br data-jekyll-commonmark-ghpages="" />| <span class="nt">------</span> | <span class="nt">----</span>   | <span class="nt">-------------------------------------------------------------------------------</span> | <span class="nt">------------------------------------------------</span>| <span class="nt">-----------</span> | <span class="nt">------------</span> |<br data-jekyll-commonmark-ghpages="" />| MG_NP0 | 361515 | mc15_13TeV.361515.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np0.evgen.EVNT.e3898 | https://bigpanda.cern.ch/task/12851571/         | 8 nb        | 1            |<br data-jekyll-commonmark-ghpages="" />| MG_NP1 | 361516 | mc15_13TeV.361516.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np1.evgen.EVNT.e3898 | https://bigpanda.cern.ch/task/12851603/         | 1.2 nb      | 1            |<br data-jekyll-commonmark-ghpages="" />| MG_NP2 | 361517 | mc15_13TeV.361517.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np2.evgen.EVNT.e3898 | https://bigpanda.cern.ch/task/12851620/         | 0.38718 nb  | 1            |<br data-jekyll-commonmark-ghpages="" />| MG_NP3 | 361518 | mc15_13TeV.361518.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np3.evgen.EVNT.e3898 | https://bigpanda.cern.ch/task/12851635/         | 0.1 nb      | 1            |<br data-jekyll-commonmark-ghpages="" />| MG_NP4 | 361519 | mc15_13TeV.361519.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np4.evgen.EVNT.e3898 | https://bigpanda.cern.ch/task/12851650/         | 0.043472 nb | 1            |</code></pre></figure>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">361515   7518.4             1.2283         1.0            MadZnunu                 mc15_13TeV.361515.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np0<br data-jekyll-commonmark-ghpages="" />361516   1200.1             1.2283         1.0            MadZnunu                 mc15_13TeV.361516.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np1<br data-jekyll-commonmark-ghpages="" />361517   387.16             1.2283         1.0            MadZnunu                 mc15_13TeV.361517.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np2<br data-jekyll-commonmark-ghpages="" />361518   110.08             1.2283         1.0            MadZnunu                 mc15_13TeV.361518.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np3<br data-jekyll-commonmark-ghpages="" />361519   43.389             1.2283         1.0            MadZnunu                 mc15_13TeV.361519.MadGraphPythia8EvtGen_A14NNPDF23LO_Znunu_Np4</code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-sh" data-lang="sh">364142      1.0700E+04       0.9728       8.2160E-01      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV0_70_CVetoBVeto<br data-jekyll-commonmark-ghpages="" />364143      1.0702E+04       0.9728       1.1123E-01      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV0_70_CFilterBVeto<br data-jekyll-commonmark-ghpages="" />364144      1.0709E+04       0.9728       6.6175E-02      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV0_70_BFilter<br data-jekyll-commonmark-ghpages="" />364145      6.0323E+02       0.9728       6.8924E-01      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV70_140_CVetoBVeto<br data-jekyll-commonmark-ghpages="" />364146      6.0815E+02       0.9728       1.8243E-01      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV70_140_CFilterBVeto<br data-jekyll-commonmark-ghpages="" />364147      6.0332E+02       0.9728       0.1283          Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV70_140_BFilter<br data-jekyll-commonmark-ghpages="" />364148      2.2228E+02       0.9728       6.0735E-01      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV140_280_CVetoBVeto<br data-jekyll-commonmark-ghpages="" />364149      2.2188E+02       0.9728       2.2527E-01      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV140_280_CFilterBVeto<br data-jekyll-commonmark-ghpages="" />364150      2.2247E+02       0.9728       1.5185E-01      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV140_280_BFilter<br data-jekyll-commonmark-ghpages="" />364151      4.7375E+01       0.9728       5.5887E-01      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV280_500_CVetoBVeto<br data-jekyll-commonmark-ghpages="" />364152      4.7397E+01       0.9728       2.6201E-01      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV280_500_CFilterBVeto<br data-jekyll-commonmark-ghpages="" />364153      4.7476E+01       0.9728       1.7514E-01      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV280_500_BFilter<br data-jekyll-commonmark-ghpages="" />364154      9.9099           0.9728       1.0000E+00      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV500_1000<br data-jekyll-commonmark-ghpages="" />364155      8.1809E-01       0.9728       1.0000E+00      Z            Sherpa_221_NNPDF30NNLO_Znunu_MAXHTPTV1000_E_CMS</code></pre></figure>
 
+<h1 id="investigation-on-the-10-efficiency-on-the-0-lepton-cut">Investigation on the 10% efficiency on the 0-lepton cut</h1>
+<p>)</p>
+<h2 id="b-filter-cutflow-364150">B Filter cutflow (364150)</h2>
+<p><img src="/images/q/835E1EED944B91BB5ADC8B513F08F0FE.jpg" alt="IMAGE" /></p>
+<h2 id="c-filter-b-veto-cutflow-364149">C Filter B Veto cutflow (364149)</h2>
+<p><img src="/images/q/97FA84EF0FDB46E0DC08C0CDB9E9C46C.jpg" alt="IMAGE" /></p>
+<h2 id="c-veto-b-veto-cutflow-364148">C Veto B Veto cutflow (364148)</h2>
+<p><img src="/images/q/325B67F2065A2CB584DCC9E76B31B9C3.jpg" alt="IMAGE" /></p>
 <h2 id="comparison-macro">Comparison macro</h2>
 <p>)</p>
 
