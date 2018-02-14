@@ -87,8 +87,44 @@
 )
     <h1 id="conclusions">Conclusions</h1>
   </li>
-  <li>pas de difference sur les XSections (Sh/MG)
-    <h1 id="cutflows">Cutflows</h1>
+  <li>pas de difference sur les XSections (Sh/MG ~ 0.989) –&gt; pas de rescaling dans les nombres ci-dessous</li>
+  <li>Difference sur le modelling de nJets (plots degeneres avec la coupure 0-lepton, mais on peut supposer que nJets est la plus grosse source de mismodelling)
+    <ul>
+      <li>en 2 jets : Sh/MG ~ 1.039 (lights) – 1.047 (bl) – 0.74 (bb)</li>
+      <li>en 3 jets : Sh/MG ~ 1.114 (lights) – 1.261 (bl) – 0.98 (bb)
+        <ul>
+          <li>ces variations vont dans le sens contraire au ratio des yields apres toutes les coupures (Sh/MG &lt; 1 a la fin)</li>
+          <li>dependance sur la composition en saveur des jets, notamment bb 2 jets …</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Difference de modelling importante de pT(Z) qui colle bien avec la distribution de MET egalement
+    <ul>
+      <li>en 2 jets : turn-on vers 40 GeV –&gt; MG » Sh pour PT(Z) &gt; 150 GeV</li>
+      <li>en 3 jets : turn-on vers 60 GeV –&gt; MG » Sh pour PT(Z) &gt; 150 GeV</li>
+      <li>renverse les valeurs de ratio Sh/MG
+        <ul>
+          <li>en 2 jets : Sh/MG ~ 0.81 (toutes saveurs de jets) (0.76 sur les evenements bb)</li>
+          <li>en 3 jets : Sh/MG ~ 0.86 (toutes saveurs de jets) (0.85 sur les evenements bb)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Dans la note modelling, la systematique de shape ZPTV est estimee par comparaison data/MC en 2-leptons
+    <ul>
+      <li>trend similaire a ce que je vois dans le ratio Sh/MG des distribution de pTZ et MET
+        <ul>
+          <li>en 2-lepton, la shape commence à 0 GeV –&gt; turn-on vers 50 GeV</li>
+          <li>en 0-lepton, la SR commence à 150 GeV –&gt; impact sur la normalisation qui devrait se faire correctement d’apres Nicolas</li>
+          <li>sauf que dans un fit 0-lepton seul (et fit combine egalement), il n’y a pas de pull du NP de la shape ZPTV (tres peu dans le fit 0-1-2)</li>
+          <li>en fait c’est surement le NP de normalisation flottante qui absorbe tout pour les deux
+)
+            <h1 id="cutflows">Cutflows</h1>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </li>
 </ul>
 

@@ -11,7 +11,25 @@ tags:
 )
 # Conclusions
 
-* pas de difference sur les XSections (Sh/MG)
+* pas de difference sur les XSections (Sh/MG ~ 0.989) --> pas de rescaling dans les nombres ci-dessous
+* Difference sur le modelling de nJets (plots degeneres avec la coupure 0-lepton, mais on peut supposer que nJets est la plus grosse source de mismodelling)
+  * en 2 jets : Sh/MG ~ 1.039 (lights) -- 1.047 (bl) -- 0.74 (bb)
+  * en 3 jets : Sh/MG ~ 1.114 (lights) -- 1.261 (bl) -- 0.98 (bb)
+    * ces variations vont dans le sens contraire au ratio des yields apres toutes les coupures (Sh/MG < 1 a la fin)
+    * dependance sur la composition en saveur des jets, notamment bb 2 jets ...
+* Difference de modelling importante de pT(Z) qui colle bien avec la distribution de MET egalement
+  * en 2 jets : turn-on vers 40 GeV --> MG >> Sh pour PT(Z) > 150 GeV
+  * en 3 jets : turn-on vers 60 GeV --> MG >> Sh pour PT(Z) > 150 GeV
+  * renverse les valeurs de ratio Sh/MG
+    * en 2 jets : Sh/MG ~ 0.81 (toutes saveurs de jets) (0.76 sur les evenements bb)
+    * en 3 jets : Sh/MG ~ 0.86 (toutes saveurs de jets) (0.85 sur les evenements bb)
+* Dans la note modelling, la systematique de shape ZPTV est estimee par comparaison data/MC en 2-leptons
+  * trend similaire a ce que je vois dans le ratio Sh/MG des distribution de pTZ et MET
+    * en 2-lepton, la shape commence à 0 GeV --> turn-on vers 50 GeV
+    * en 0-lepton, la SR commence à 150 GeV --> impact sur la normalisation qui devrait se faire correctement d'apres Nicolas
+    * sauf que dans un fit 0-lepton seul (et fit combine egalement), il n'y a pas de pull du NP de la shape ZPTV (tres peu dans le fit 0-1-2)
+    * en fait c'est surement le NP de normalisation flottante qui absorbe tout pour les deux
+)
 # Cutflows
 
 Ordre des bins/coupures :
