@@ -430,3 +430,43 @@ hs->Draw("hist")
 leg->Draw("same")
 {% endhighlight %}
 
+# Optimisation des fractions de stat entre 100 GeV et 200 GeV de TruthMET
+
+* si on fait deux slices de TruthMET entre 100 GeV et 200 GeV, quelles fractions d'evenements donner a chacune pour servir au mieux VHbb 0-lep ?
+)
+# Procedure 
+
+* Scan de fractions de stat a repartir entre 100 GeV et 200 GeV
+)
+{% highlight sh %}
+  MCStatSlices.emplace(0,    50*million);
+  MCStatSlices.emplace(100,  50*frac*million);
+  MCStatSlices.emplace(150,  50*(1-frac)*million);
+  MCStatSlices.emplace(200,  10*million);
+  MCStatSlices.emplace(300,  3*million);
+  MCStatSlices.emplace(400,  2*million);
+  MCStatSlices.emplace(1000, 1*million);
+  MCStatSlices.emplace(10000, 0);
+{% endhighlight %}
+
+## 2 jets
+
+![IMAGE](/images/q/545BCC1E766BD417F428F3B92240DF4F.jpg)
+![IMAGE](/images/q/668BCC981FABB3A79A29E75AF0467297.jpg)
+## 3 jets
+
+![IMAGE](/images/q/6DD6F1706F1EEA0223C556380C618B67.jpg)
+![IMAGE](/images/q/5068BB760B6643638BDB2A01EC298ADE.jpg)
+# With Marumi's significance
+
+* Z)
+## 2 jets
+
+* 65% of stat in 100-150 GeV is the best value
+* Gain)
+![IMAGE](/images/q/99CFA8CE8ED23A07E9A6FD459BA20624.jpg)
+## 3 jets
+
+* 72% of stat in 100-150 GeV is the best value
+* Gain= 1.50994/1.50965)
+![IMAGE](/images/q/51D0D150A45C6780BD5FB97BD749B8E6.jpg)
