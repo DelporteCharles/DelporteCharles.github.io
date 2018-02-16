@@ -470,3 +470,12 @@ leg->Draw("same")
 * 72% of stat in 100-150 GeV is the best value
 * Gain= 1.50994/1.50965)
 ![IMAGE](/images/q/51D0D150A45C6780BD5FB97BD749B8E6.jpg)
+# Interet du slice 100-200 GeV demande par Valerio
+
+* pas de slice (ni 100-200 ni SUSY)
+  * 2j : 2.2765
+  * 3j : 1.39995
+* pas de slice 100-200 + Slices SUSY
+  * 2j : 2.31572
+  * 3j : 1.43197
+  * Gain)
