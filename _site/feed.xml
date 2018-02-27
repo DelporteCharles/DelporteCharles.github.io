@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-02-27T15:33:49+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">FCNC TruthMatching</title><link href="/2018/02/27/fcnc-truthmatching.html" rel="alternate" type="text/html" title="FCNC TruthMatching" /><published>2018-02-27T00:00:00+01:00</published><updated>2018-02-27T00:00:00+01:00</updated><id>/2018/02/27/fcnc-truthmatching</id><content type="html" xml:base="/2018/02/27/fcnc-truthmatching.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-02-27T17:47:50+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">FCNC TruthMatching</title><link href="/2018/02/27/fcnc-truthmatching.html" rel="alternate" type="text/html" title="FCNC TruthMatching" /><published>2018-02-27T00:00:00+01:00</published><updated>2018-02-27T00:00:00+01:00</updated><id>/2018/02/27/fcnc-truthmatching</id><content type="html" xml:base="/2018/02/27/fcnc-truthmatching.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Voir quelle proportion des objets reco utilises dans l’analyse nous viennent des TruthParticles visées
@@ -70,7 +70,37 @@
 &lt;p&gt;&lt;img src=&quot;/images/q/7C7CC1A741FD9E90C875E45DA6569291.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
 &lt;h1 id=&quot;loose-c&quot;&gt;Loose C&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/q/E5630FE54118508908B2795546F25637.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Purpose</summary></entry><entry><title type="html">FCNC ToDo</title><link href="/2018/02/21/fcnc-todo.html" rel="alternate" type="text/html" title="FCNC ToDo" /><published>2018-02-21T00:00:00+01:00</published><updated>2018-02-21T00:00:00+01:00</updated><id>/2018/02/21/fcnc-todo</id><content type="html" xml:base="/2018/02/21/fcnc-todo.html">&lt;ul&gt;
+&lt;p&gt;&lt;img src=&quot;/images/q/E5630FE54118508908B2795546F25637.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;distributions&quot;&gt;Distributions&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;toutes categories (Tight, Loose, ABC) confondues … mais chaque evenements est accepte au moins dans l’une des categories
+)
+&lt;img src=&quot;/images/q/0E6588E8ED275C75E7F09AF4B1C22B81.png&quot; alt=&quot;at leading q eta(j) (leading q best match).png&quot; /&gt;
+&lt;img src=&quot;/images/q/232A7628536062AC87EB35F2838F9ABE.png&quot; alt=&quot;at leading q pT(j) (leading q best match).png&quot; /&gt;
+&lt;img src=&quot;/images/q/92AE025C4F43C355CD1BBDC7B78D9CD6.png&quot; alt=&quot;at subleading q eta(j) (leading q best match).png&quot; /&gt;
+&lt;img src=&quot;/images/q/10DC571389912BAEF22D1B115B892F92.png&quot; alt=&quot;at subleading q pT(j) (leading q best match).png&quot; /&gt;
+&lt;img src=&quot;/images/q/FF8C219BE807865C355F70C2DBB8C43C.png&quot; alt=&quot;eta(bjet).png&quot; /&gt;
+&lt;img src=&quot;/images/q/A6C925C27DF700A1F2663D32E5D5B4F0.png&quot; alt=&quot;eta(bquark).png&quot; /&gt;
+&lt;img src=&quot;/images/q/0A54B9AE5BFB9A148CE1EB5259C1D6F0.png&quot; alt=&quot;eta(cjet).png&quot; /&gt;
+&lt;img src=&quot;/images/q/08E93B03CAB2A9F190577F7C39CEC6BB.png&quot; alt=&quot;eta(cquark).png&quot; /&gt;
+&lt;img src=&quot;/images/q/D2A33B231D0CFEA30C496027299BA6B2.png&quot; alt=&quot;eta(leading q) (leading q best match).png&quot; /&gt;
+&lt;img src=&quot;/images/q/5C3945B30181727B867E3C3DD203D1ED.png&quot; alt=&quot;eta(subleading q) (leading q best match).png&quot; /&gt;
+&lt;img src=&quot;/images/q/8DD3F36B4CCAA30D2278ED35916CE51A.png&quot; alt=&quot;pT(bjet).png&quot; /&gt;
+&lt;img src=&quot;/images/q/6EE310098EFF2189C5CCF7805F71E9C3.png&quot; alt=&quot;pT(bquark).png&quot; /&gt;
+&lt;img src=&quot;/images/q/5D6F1D678BF378BEE3009E30E1194E0E.png&quot; alt=&quot;pT(cjet).png&quot; /&gt;
+&lt;img src=&quot;/images/q/742E1E70DAFCB2AA485FF6F5CBA57702.png&quot; alt=&quot;pT(cquark).png&quot; /&gt;
+&lt;img src=&quot;/images/q/0B02C74DF302F83048C8EC8E600ED5A6.png&quot; alt=&quot;pT(leading q) (leading q best match).png&quot; /&gt;
+&lt;img src=&quot;/images/q/3EFAE310ABDB42067CBDB0B083EE62FC.png&quot; alt=&quot;pT(subleading q) (leading q best match).png&quot; /&gt;
+&lt;img src=&quot;/images/q/233A67296CE0B082F74598564AB08062.png&quot; alt=&quot;ratio pT(bquark,bjet).png&quot; /&gt;
+&lt;img src=&quot;/images/q/0E2EC18BA1911741C056AFA8A3F8A3E8.png&quot; alt=&quot;ratio pT(cquark,cjet).png&quot; /&gt;
+&lt;img src=&quot;/images/q/475402682A588EC38CCF77717DDA2C5D.png&quot; alt=&quot;ratio pT(leading q,j) (leading q best match).png&quot; /&gt;
+&lt;img src=&quot;/images/q/F9BF66EEA8204715FC77A68B26471329.png&quot; alt=&quot;ratio pT(subleading q,j) (leading q best match).png&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;)&lt;/p&gt;
+
+&lt;p&gt;)&lt;/p&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Purpose</summary></entry><entry><title type="html">FCNC ToDo</title><link href="/2018/02/21/fcnc-todo.html" rel="alternate" type="text/html" title="FCNC ToDo" /><published>2018-02-21T00:00:00+01:00</published><updated>2018-02-21T00:00:00+01:00</updated><id>/2018/02/21/fcnc-todo</id><content type="html" xml:base="/2018/02/21/fcnc-todo.html">&lt;ul&gt;
   &lt;li&gt;Regarder sans coupure les matchings truth/reco (quarks/jets) dans le signal
     &lt;ul&gt;
       &lt;li&gt;en variant les selections sur les jets

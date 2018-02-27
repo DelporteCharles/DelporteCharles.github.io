@@ -66,3 +66,31 @@ tags:
 # Loose C
 
 ![IMAGE](/images/q/E5630FE54118508908B2795546F25637.jpg)
+# Distributions
+
+* toutes categories (Tight, Loose, ABC) confondues ... mais chaque evenements est accepte au moins dans l'une des categories
+)
+![at leading q eta(j) (leading q best match).png](/images/q/0E6588E8ED275C75E7F09AF4B1C22B81.png)
+![at leading q pT(j) (leading q best match).png](/images/q/232A7628536062AC87EB35F2838F9ABE.png)
+![at subleading q eta(j) (leading q best match).png](/images/q/92AE025C4F43C355CD1BBDC7B78D9CD6.png)
+![at subleading q pT(j) (leading q best match).png](/images/q/10DC571389912BAEF22D1B115B892F92.png)
+![eta(bjet).png](/images/q/FF8C219BE807865C355F70C2DBB8C43C.png)
+![eta(bquark).png](/images/q/A6C925C27DF700A1F2663D32E5D5B4F0.png)
+![eta(cjet).png](/images/q/0A54B9AE5BFB9A148CE1EB5259C1D6F0.png)
+![eta(cquark).png](/images/q/08E93B03CAB2A9F190577F7C39CEC6BB.png)
+![eta(leading q) (leading q best match).png](/images/q/D2A33B231D0CFEA30C496027299BA6B2.png)
+![eta(subleading q) (leading q best match).png](/images/q/5C3945B30181727B867E3C3DD203D1ED.png)
+![pT(bjet).png](/images/q/8DD3F36B4CCAA30D2278ED35916CE51A.png)
+![pT(bquark).png](/images/q/6EE310098EFF2189C5CCF7805F71E9C3.png)
+![pT(cjet).png](/images/q/5D6F1D678BF378BEE3009E30E1194E0E.png)
+![pT(cquark).png](/images/q/742E1E70DAFCB2AA485FF6F5CBA57702.png)
+![pT(leading q) (leading q best match).png](/images/q/0B02C74DF302F83048C8EC8E600ED5A6.png)
+![pT(subleading q) (leading q best match).png](/images/q/3EFAE310ABDB42067CBDB0B083EE62FC.png)
+![ratio pT(bquark,bjet).png](/images/q/233A67296CE0B082F74598564AB08062.png)
+![ratio pT(cquark,cjet).png](/images/q/0E2EC18BA1911741C056AFA8A3F8A3E8.png)
+![ratio pT(leading q,j) (leading q best match).png](/images/q/475402682A588EC38CCF77717DDA2C5D.png)
+![ratio pT(subleading q,j) (leading q best match).png](/images/q/F9BF66EEA8204715FC77A68B26471329.png)
+
+)
+
+)
