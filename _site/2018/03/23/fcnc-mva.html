@@ -97,7 +97,32 @@
       <li>Sherpa yy</li>
     </ul>
   </li>
-  <li>BDT with configuration)
+  <li>BDT with configuration that of VHbb paper
+    <ul>
+      <li>200 Trees</li>
+      <li>maxDepth 4</li>
+      <li>nCuts 100</li>
+    </ul>
+  </li>
+  <li>Variables d’entrainement du BDT : presque toutes les variables dont j’ai montre les plots, sauf les variables sur chaque photon individuellement ou sur le systeme diphoton seul (je test avec pTyy et etayy seuls a la fin de la page) … par contre, dPhicH est autorise par exemple
+    <ul>
+      <li>pour se faire une idee (desole pour la mise en forme), les variables sont : pTj0:etaj0:pTj1:etaj1:pTb:etab:dRbW:dPhibW:dEtabW:mW:mTopSM:mindRbj:mindPhibj:MefftopSM:pTratiobjj0j1:pTratioj0j1:pTtt:ytt:mtt:HTcjy0y1bjj0j1:HT4jets:HTjets:dRcH:dPhicH:dEtacH:mTopEx:MefftopEx:maxdRcy:mindRcy:maxdPhicy:mindPhicy:costhetastary</li>
+      <li>je vais supprimer la plupart des variables, c’est juste pour faire un premier test ou on peut voir le gain maximal</li>
+    </ul>
+  </li>
+  <li>traitement des poids : les poids sont tous mis a 1.
+    <ul>
+      <li>c’est pas optimal, mais j’hesite entre ca et ignorer les evenements a poid negatif … au pire, ca rend le BDT pas optimal, on pourra le verifier apres</li>
+    </ul>
+  </li>
+  <li>selection
+    <ul>
+      <li>4 jets : paper selection</li>
+      <li>5 jets : same as paper selection up to 5 leading pT jets, to increase stat</li>
+    </ul>
+  </li>
+  <li>no attempt for tagging categories yet : categories A + B have lower stat than the standard paper categories
+)
     <h1 id="roc-curves-4-5-jets">ROC Curves 4-5 jets</h1>
   </li>
 </ul>

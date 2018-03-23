@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-03-23T16:57:43+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">FCNC MVA</title><link href="/2018/03/23/fcnc-mva.html" rel="alternate" type="text/html" title="FCNC MVA" /><published>2018-03-23T00:00:00+01:00</published><updated>2018-03-23T00:00:00+01:00</updated><id>/2018/03/23/fcnc-mva</id><content type="html" xml:base="/2018/03/23/fcnc-mva.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-03-23T17:01:01+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">FCNC MVA</title><link href="/2018/03/23/fcnc-mva.html" rel="alternate" type="text/html" title="FCNC MVA" /><published>2018-03-23T00:00:00+01:00</published><updated>2018-03-23T00:00:00+01:00</updated><id>/2018/03/23/fcnc-mva</id><content type="html" xml:base="/2018/03/23/fcnc-mva.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Improve sensitivity using MVA methods
@@ -15,7 +15,32 @@
       &lt;li&gt;Sherpa yy&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;BDT with configuration)
+  &lt;li&gt;BDT with configuration that of VHbb paper
+    &lt;ul&gt;
+      &lt;li&gt;200 Trees&lt;/li&gt;
+      &lt;li&gt;maxDepth 4&lt;/li&gt;
+      &lt;li&gt;nCuts 100&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Variables d’entrainement du BDT : presque toutes les variables dont j’ai montre les plots, sauf les variables sur chaque photon individuellement ou sur le systeme diphoton seul (je test avec pTyy et etayy seuls a la fin de la page) … par contre, dPhicH est autorise par exemple
+    &lt;ul&gt;
+      &lt;li&gt;pour se faire une idee (desole pour la mise en forme), les variables sont : pTj0:etaj0:pTj1:etaj1:pTb:etab:dRbW:dPhibW:dEtabW:mW:mTopSM:mindRbj:mindPhibj:MefftopSM:pTratiobjj0j1:pTratioj0j1:pTtt:ytt:mtt:HTcjy0y1bjj0j1:HT4jets:HTjets:dRcH:dPhicH:dEtacH:mTopEx:MefftopEx:maxdRcy:mindRcy:maxdPhicy:mindPhicy:costhetastary&lt;/li&gt;
+      &lt;li&gt;je vais supprimer la plupart des variables, c’est juste pour faire un premier test ou on peut voir le gain maximal&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;traitement des poids : les poids sont tous mis a 1.
+    &lt;ul&gt;
+      &lt;li&gt;c’est pas optimal, mais j’hesite entre ca et ignorer les evenements a poid negatif … au pire, ca rend le BDT pas optimal, on pourra le verifier apres&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;selection
+    &lt;ul&gt;
+      &lt;li&gt;4 jets : paper selection&lt;/li&gt;
+      &lt;li&gt;5 jets : same as paper selection up to 5 leading pT jets, to increase stat&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;no attempt for tagging categories yet : categories A + B have lower stat than the standard paper categories
+)
     &lt;h1 id=&quot;roc-curves-4-5-jets&quot;&gt;ROC Curves 4-5 jets&lt;/h1&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -64,7 +89,7 @@
   &lt;li&gt;profile du BDT en fonction de myy : moins correle a myy, mais c’est aussi parce qu’il n’y a pas beaucoup de discrimination de facon generale&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/q/ED959015E60F14ACAD5D3AB198D4E53E.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Purpose</summary></entry><entry><title type="html">Slides FCNC</title><link href="/2018/03/05/slides-fcnc.html" rel="alternate" type="text/html" title="Slides FCNC" /><published>2018-03-05T00:00:00+01:00</published><updated>2018-03-05T00:00:00+01:00</updated><id>/2018/03/05/slides-fcnc</id><content type="html" xml:base="/2018/03/05/slides-fcnc.html">&lt;p&gt;Daniel&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/q/ED959015E60F14ACAD5D3AB198D4E53E.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="bdt" /><category term="fcnc" /><summary type="html">Purpose</summary></entry><entry><title type="html">Slides FCNC</title><link href="/2018/03/05/slides-fcnc.html" rel="alternate" type="text/html" title="Slides FCNC" /><published>2018-03-05T00:00:00+01:00</published><updated>2018-03-05T00:00:00+01:00</updated><id>/2018/03/05/slides-fcnc</id><content type="html" xml:base="/2018/03/05/slides-fcnc.html">&lt;p&gt;Daniel&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
