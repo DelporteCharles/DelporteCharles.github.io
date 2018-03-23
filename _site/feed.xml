@@ -1,4 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-02-27T17:47:50+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">FCNC TruthMatching</title><link href="/2018/02/27/fcnc-truthmatching.html" rel="alternate" type="text/html" title="FCNC TruthMatching" /><published>2018-02-27T00:00:00+01:00</published><updated>2018-02-27T00:00:00+01:00</updated><id>/2018/02/27/fcnc-truthmatching</id><content type="html" xml:base="/2018/02/27/fcnc-truthmatching.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-03-23T16:57:43+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">FCNC MVA</title><link href="/2018/03/23/fcnc-mva.html" rel="alternate" type="text/html" title="FCNC MVA" /><published>2018-03-23T00:00:00+01:00</published><updated>2018-03-23T00:00:00+01:00</updated><id>/2018/03/23/fcnc-mva</id><content type="html" xml:base="/2018/03/23/fcnc-mva.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Improve sensitivity using MVA methods
+)
+    &lt;h1 id=&quot;procedure&quot;&gt;Procedure&lt;/h1&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Samples :
+    &lt;ul&gt;
+      &lt;li&gt;Wmqq
+        &lt;ul&gt;
+          &lt;li&gt;je rajouterai Wpqq a la prochaine iteration&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Sherpa yy&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;BDT with configuration)
+    &lt;h1 id=&quot;roc-curves-4-5-jets&quot;&gt;ROC Curves 4-5 jets&lt;/h1&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/7799083FE8B86961F9FA330D22679501.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;4-jets&quot;&gt;4 jets&lt;/h1&gt;
+&lt;p&gt;)
+&lt;img src=&quot;/images/q/F7FEC4A07DE069CC213F5D35EC0A88AA.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Correlation entre le BDT et myy pour le bruit de fond et le signal&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/540E44DC0620B48D1AEF9D9FA9D5EE2A.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;en faisant le profil, on voit qu’il y a potentiellement une correlation pour le bruit de fond, mais qu’elle ne concerne que la region bas BDT : dans le plot de gauche c’est inclusif sur le BDT, a droite pour BDT &amp;gt; 0&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/F914518D38B0965D9F3A6B1406E8544E.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;5-jets&quot;&gt;5 jets&lt;/h1&gt;
+&lt;p&gt;)
+&lt;img src=&quot;/images/q/2E04ADF787215E3EB3E209DE9634CAE9.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Correlation entre le BDT et myy pour le bruit de fond et le signal&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/DBD5144E46B7765F7E0B6C93367C6E43.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;en faisant le profil, on voit qu’il y a potentiellement une correlation pour le bruit de fond, mais qu’elle ne concerne que la region bas BDT : dans le plot de gauche c’est inclusif sur le BDT, a droite pour BDT &amp;gt; 0&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/ADD6D20D29C8310C305AACADEA53120D.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;bdt-avec-ptyy-et-etayy-seulement&quot;&gt;BDT avec pTyy et etayy seulement&lt;/h1&gt;
+&lt;p&gt;)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;la separation est beaucoup plus difficile, comme attendu&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/984D52D922F523CC9282FEA44226438B.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+&lt;img src=&quot;/images/q/A698B546499254583DCC70E2A4596F2F.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;correlation entre BDT et myy&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/5AC69EF3F01A9301FF23748EC358FCB6.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;profile du BDT en fonction de myy : moins correle a myy, mais c’est aussi parce qu’il n’y a pas beaucoup de discrimination de facon generale&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/ED959015E60F14ACAD5D3AB198D4E53E.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Purpose</summary></entry><entry><title type="html">Slides FCNC</title><link href="/2018/03/05/slides-fcnc.html" rel="alternate" type="text/html" title="Slides FCNC" /><published>2018-03-05T00:00:00+01:00</published><updated>2018-03-05T00:00:00+01:00</updated><id>/2018/03/05/slides-fcnc</id><content type="html" xml:base="/2018/03/05/slides-fcnc.html">&lt;p&gt;Daniel&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;[x] presentation generale est plutôt bonne. Rajouter le nom de nous trois sur la slide-1&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[ ] slide 5,leptonic il faudrait aussi les nombres pour les categories 1 et 2 (loose/tight) les autres etant
+  définies plus tard&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;[x] slide 6 expliciter la coupure ctag faite de 1coupure &amp;gt; et une coupure &amp;lt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;[x] slide 7 la definition “and no c-tagged jet” peut prêter à confusion: simplement on ne demande “rien” &lt;br /&gt;
+ de special au jet associé aux 2 phostons; idem pour b-tag&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;[x] slide 9: indiquer que tu vas aussi comparer à Sherpa (et la stat en hadronique sera bien meilleure)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;[x] slide 7-8-9 (aussi souligné par Jean-Baptiste) un point important est qu’on ne se limite plus aux 4 (2 pour mode leptonique) jets de plus haut PT-&amp;gt; introduit la nomenclature “4-jets”et 5-jets&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;[x] slide 9 : Est-ce que le Deltaphi c/H n’est pas aussi discriminant? (autant ou plus que b/W)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[x] slide 11: utilisation de Powheg devrait etre en tete des prochains steps, il me semble.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;JB&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[x] p1 : je remplacerais “t —&amp;gt; cH(gamgam)” par « search for the t-q-H coupling using the H —&amp;gt; yy decay »
+(t —&amp;gt; cH est trop restrictif, on regarde q)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Daniel</summary></entry><entry><title type="html">FCNC TruthMatching</title><link href="/2018/02/27/fcnc-truthmatching.html" rel="alternate" type="text/html" title="FCNC TruthMatching" /><published>2018-02-27T00:00:00+01:00</published><updated>2018-02-27T00:00:00+01:00</updated><id>/2018/02/27/fcnc-truthmatching</id><content type="html" xml:base="/2018/02/27/fcnc-truthmatching.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Voir quelle proportion des objets reco utilises dans l’analyse nous viennent des TruthParticles visées
@@ -101,9 +201,88 @@
 &lt;p&gt;)&lt;/p&gt;
 
 &lt;p&gt;)&lt;/p&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Purpose</summary></entry><entry><title type="html">FCNC ToDo</title><link href="/2018/02/21/fcnc-todo.html" rel="alternate" type="text/html" title="FCNC ToDo" /><published>2018-02-21T00:00:00+01:00</published><updated>2018-02-21T00:00:00+01:00</updated><id>/2018/02/21/fcnc-todo</id><content type="html" xml:base="/2018/02/21/fcnc-todo.html">&lt;ul&gt;
-  &lt;li&gt;Regarder sans coupure les matchings truth/reco (quarks/jets) dans le signal
+  &lt;li&gt;faire les MxAODs tH en priorité
     &lt;ul&gt;
-      &lt;li&gt;en variant les selections sur les jets
+      &lt;li&gt;[ ] ceux qui sont finis&lt;/li&gt;
+      &lt;li&gt;[ ] ceux qui ne sont pas finis&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[ ] tourner sur ttbar gamma
+    &lt;ul&gt;
+      &lt;li&gt;prendre le plus gros fichier&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ponderer les data selon les pdfs de signal et bkg MC de etaH et ptH en esperant que ca ne deforme pas myy&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;[ ] implementer c-tagging sf et systs writing dans la production des MxAODs&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;verifier les normalisations absolues&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;systematiques de c-tagging :
+    &lt;ul&gt;
+      &lt;li&gt;A union B est independant du c-tagging : les systematiques de c-tagging entraineront des migrations entre A et B&lt;/li&gt;
+      &lt;li&gt;test de systematiques : appliquer les SF avec variations +- 1 sigma&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;surveiller prod des lots Wgam et Wgamgam&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Sherpa diphoton
+    &lt;ul&gt;
+      &lt;li&gt;2x moins de stat en h017 vs h015d pour Sherpa yy jet (pas 2DP20)
+        &lt;ul&gt;
+          &lt;li&gt;NLO&lt;/li&gt;
+          &lt;li&gt;slices differents en myy&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Copier les DSIS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;https://prodtask-dev.cern.ch/prodtask/inputlist_with_request/15880/&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[x] rucio download mc16_13TeV.394879.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_150p0_22p0_all.deriv.DAOD_HIGG1D1.e6523_e5984_a875_r10201_r10210_p3418&lt;/li&gt;
+  &lt;li&gt;[x] rucio download mc16_13TeV.394880.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_400p0_272p0_all.deriv.DAOD_HIGG1D1.e6523_e5984_a875_r10201_r10210_p3418&lt;/li&gt;
+  &lt;li&gt;[x] rucio download mc16_13TeV.394864.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_150p0_0p0_all.deriv.DAOD_HIGG1D1.e6523_e5984_a875_r10201_r10210_p3418&lt;/li&gt;
+  &lt;li&gt;[x] rucio download mc16_13TeV.394868.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_500p0_0p0_all.deriv.DAOD_HIGG1D1.e6523_e5984_a875_r10201_r10210_p3418&lt;/li&gt;
+  &lt;li&gt;[x] rucio download mc16_13TeV.410755.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_tcphiQHgamgambWqq.deriv.DAOD_HIGG1D1.e6546_e5984_a875_r9364_r9315_p3418&lt;/li&gt;
+  &lt;li&gt;[x] rucio download mc16_13TeV.394866.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_300p0_0p0_all.deriv.DAOD_HIGG1D1.e6523_e5984_a875_r10201_r10210_p3418&lt;/li&gt;
+  &lt;li&gt;[x] rucio download mc16_13TeV.410759.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_ctphiQHgamgambWqq.deriv.DAOD_HIGG1D1.e6546_e5984_a875_r9364_r9315_p3418&lt;/li&gt;
+  &lt;li&gt;[x] rucio download mc16_13TeV.394865.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_200p0_0p0_all.deriv.DAOD_HIGG1D1.e6523_e5984_a875_r10201_r10210_p3418&lt;/li&gt;
+  &lt;li&gt;[x] rucio download mc16_13TeV.394870.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_300p0_100p0_all.deriv.DAOD_HIGG1D1.e6523_e5984_a875_r10201_r10210_p3418&lt;/li&gt;
+  &lt;li&gt;[x] rucio download mc16_13TeV.394867.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_400p0_0p0_all.deriv.DAOD_HIGG1D1.e6523_e5984_a875_r10201_r10210_p3418&lt;/li&gt;
+  &lt;li&gt;[x] rucio download mc16_13TeV.410757.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_uphiQHgamgambWqq.deriv.DAOD_HIGG1D1.e6546_e5984_a875_r9364_r9315_p3418&lt;/li&gt;
+  &lt;li&gt;[x] rucio download mc16_13TeV.410753.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_tphiQHgamgambWqq.deriv.DAOD_HIGG1D1.e6546_e5984_a875_r9364_r9315_p3418&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;[x] rucio download mc16_13TeV.394869.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_600p0_0p0_all.deriv.DAOD_HIGG1D1.e6523_e5984_a875_r10201_r10210_p3418&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[ ] mc16_13TeV:mc16_13TeV.394879.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_150p0_22p0_all.merge.AOD.e6523_e5984_a875_r10201_r10210&lt;/li&gt;
+  &lt;li&gt;mc16_13TeV:mc16_13TeV.410752.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_tphiQHgamgambWln.merge.AOD.e6546_e5984_a875_r9364_r9315&lt;/li&gt;
+  &lt;li&gt;[ ] mc16_13TeV:mc16_13TeV.394880.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_400p0_272p0_all.merge.AOD.e6523_e5984_a875_r10201_r10210&lt;/li&gt;
+  &lt;li&gt;[ ] mc16_13TeV:mc16_13TeV.394864.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_150p0_0p0_all.merge.AOD.e6523_e5984_a875_r10201_r10210&lt;/li&gt;
+  &lt;li&gt;[ ] mc16_13TeV:mc16_13TeV.394868.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_500p0_0p0_all.merge.AOD.e6523_e5984_a875_r10201_r10210&lt;/li&gt;
+  &lt;li&gt;[ ] mc16_13TeV:mc16_13TeV.410755.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_tcphiQHgamgambWqq.merge.AOD.e6546_e5984_a875_r9364_r9315&lt;/li&gt;
+  &lt;li&gt;[ ] mc16_13TeV:mc16_13TeV.394866.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_300p0_0p0_all.merge.AOD.e6523_e5984_a875_r10201_r10210&lt;/li&gt;
+  &lt;li&gt;[ ] mc16_13TeV:mc16_13TeV.410759.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_ctphiQHgamgambWqq.merge.AOD.e6546_e5984_a875_r9364_r9315&lt;/li&gt;
+  &lt;li&gt;[ ] mc16_13TeV:mc16_13TeV.394865.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_200p0_0p0_all.merge.AOD.e6523_e5984_a875_r10201_r10210&lt;/li&gt;
+  &lt;li&gt;mc16_13TeV:mc16_13TeV.410754.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_tcphiQHgamgambWln.merge.AOD.e6546_e5984_a875_r9364_r9315&lt;/li&gt;
+  &lt;li&gt;mc16_13TeV:mc16_13TeV.410758.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_ctphiQHgamgambWln.merge.AOD.e6546_e5984_a875_r9364_r9315&lt;/li&gt;
+  &lt;li&gt;[ ] mc16_13TeV:mc16_13TeV.394870.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_300p0_100p0_all.merge.AOD.e6523_e5984_a875_r10201_r10210&lt;/li&gt;
+  &lt;li&gt;mc16_13TeV:mc16_13TeV.410756.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_uphiQHgamgambWln.merge.AOD.e6546_e5984_a875_r9364_r9315&lt;/li&gt;
+  &lt;li&gt;[ ] mc16_13TeV:mc16_13TeV.394867.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_400p0_0p0_all.merge.AOD.e6523_e5984_a875_r10201_r10210&lt;/li&gt;
+  &lt;li&gt;[ ] mc16_13TeV:mc16_13TeV.410757.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_uphiQHgamgambWqq.merge.AOD.e6546_e5984_a875_r9364_r9315&lt;/li&gt;
+  &lt;li&gt;[ ] mc16_13TeV:mc16_13TeV.410753.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_tphiQHgamgambWqq.merge.AOD.e6546_e5984_a875_r9364_r9315&lt;/li&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;--mc16_13tevmc16_13tev394869madgraphpythia8evtgen_a14n23lo_c1n2_wh_hgg_600p0_0p0_allmergeaode6523_e5984_a875_r10201_r10210&quot;&gt;[ ] mc16_13TeV:mc16_13TeV.394869.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_600p0_0p0_all.merge.AOD.e6523_e5984_a875_r10201_r10210&lt;/h2&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[x] Regarder sans coupure les matchings truth/reco (quarks/jets) dans le signal
+    &lt;ul&gt;
+      &lt;li&gt;[x] en variant les selections sur les jets
         &lt;ul&gt;
           &lt;li&gt;25 GeV eta 2.5&lt;/li&gt;
           &lt;li&gt;30 GeV tout eta&lt;/li&gt;
@@ -111,26 +290,17 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;descendre threshold des jets a 25 GeV eta&amp;lt;2.5 (au lieu de 30 tout eta)
-    &lt;ul&gt;
-      &lt;li&gt;comparer les significances relatives&lt;/li&gt;
-    &lt;/ul&gt;
+  &lt;li&gt;[x] Prendre les poids pour Sherpa diphoton / seulement generateur&lt;/li&gt;
+  &lt;li&gt;[x] coupure forward jvt&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;[x] var discriminante dans la categorie loose ? (HT, … nbtag, …)&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Prendre les poids pour Sherpa diphoton / seulement generateur
-coupure forward jvt
-var discriminante dans la categorie loose ? (HT, … nbtag, …)&lt;/p&gt;
-
-&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;correlations btag - ctag (systematiques) ?&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;HGamRel21.config avec id des photons plus recentes que 2015 (decembre 2017)
-)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Regarder sans coupure les matchings truth/reco (quarks/jets) dans le signal en variant les selections sur les jets 25 GeV eta 2.5 30 GeV tout eta</summary></entry><entry><title type="html">FCNC MC yields</title><link href="/2018/02/15/fcnc-mc-yields.html" rel="alternate" type="text/html" title="FCNC MC yields" /><published>2018-02-15T00:00:00+01:00</published><updated>2018-02-15T00:00:00+01:00</updated><id>/2018/02/15/fcnc-mc-yields</id><content type="html" xml:base="/2018/02/15/fcnc-mc-yields.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+  &lt;li&gt;HGamRel21.config avec id des photons plus recentes que 2015 (decembre 2017)
+)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">faire les MxAODs tH en priorité [ ] ceux qui sont finis [ ] ceux qui ne sont pas finis</summary></entry><entry><title type="html">FCNC MC yields</title><link href="/2018/02/15/fcnc-mc-yields.html" rel="alternate" type="text/html" title="FCNC MC yields" /><published>2018-02-15T00:00:00+01:00</published><updated>2018-02-15T00:00:00+01:00</updated><id>/2018/02/15/fcnc-mc-yields</id><content type="html" xml:base="/2018/02/15/fcnc-mc-yields.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 
 &lt;p&gt;Comparison with Daniel and JB
 )&lt;/p&gt;
@@ -417,150 +587,4 @@ m_ok)&lt;/p&gt;
 &lt;h2 id=&quot;questions&quot;&gt;questions&lt;/h2&gt;
 
 &lt;p&gt;aucune coupure cinematique ? (dPhi, dR, …)
-)&lt;/p&gt;</content><author><name></name></author><summary type="html">discussion avec Daniel</summary></entry><entry><title type="html">FCNC ressources</title><link href="/2018/01/05/fcnc-ressources.html" rel="alternate" type="text/html" title="FCNC ressources" /><published>2018-01-05T00:00:00+01:00</published><updated>2018-01-05T00:00:00+01:00</updated><id>/2018/01/05/fcnc-ressources</id><content type="html" xml:base="/2018/01/05/fcnc-ressources.html">&lt;p&gt;Meetings utiles :&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;mardi 15h30 Haa&lt;/li&gt;
-  &lt;li&gt;jeudi Top properties
-)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Meetings utiles : mardi 15h30 Haa jeudi Top properties )</summary></entry><entry><title type="html">Truthtagging ttbar</title><link href="/2017/12/22/truthtagging-ttbar.html" rel="alternate" type="text/html" title="Truthtagging ttbar" /><published>2017-12-22T00:00:00+01:00</published><updated>2017-12-22T00:00:00+01:00</updated><id>/2017/12/22/truthtagging-ttbar</id><content type="html" xml:base="/2017/12/22/truthtagging-ttbar.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;large stat. error contribution from ttbar bc&lt;/li&gt;
-  &lt;li&gt;apply truth tagging to ttbar events with c-labelled jets&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;same procedure as V+jets&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;apply rebinning transformation (same bins as inclusive bkg)
-)
-    &lt;h1 id=&quot;results&quot;&gt;Results&lt;/h1&gt;
-    &lt;p&gt;)&lt;/p&gt;
-    &lt;h2 id=&quot;2-jets&quot;&gt;2 jets&lt;/h2&gt;
-    &lt;p&gt;)
-&lt;img src=&quot;/images/q/C06FB0373E1BD90CA63FCD3F0939B8A9.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;bin 0 has the lowest BDT score&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 0  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.65461  Error tt 0.311096 Ratio errtt2/errdt2 0.0353507&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 1  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 2.07171  Error tt 0.447781 Ratio errtt2/errdt2 0.0467165&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 2  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.86857  Error tt 0.552657 Ratio errtt2/errdt2 0.0874765&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 3  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.9129   Error tt 0.734446 Ratio errtt2/errdt2 0.147413&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 4  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.74179  Error tt 0.652893 Ratio errtt2/errdt2 0.140505&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 5  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.53244  Error tt 0.50419  Ratio errtt2/errdt2 0.108249&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 6  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.55775  Error tt 0.443466 Ratio errtt2/errdt2 0.0810445&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 7  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0.925072 Error tt 0.349941 Ratio errtt2/errdt2 0.143099&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 8  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.21748  Error tt 0.368998 Ratio errtt2/errdt2 0.0918592&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 9  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.47533  Error tt 0.347939 Ratio errtt2/errdt2 0.0556196&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 10 Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.41127  Error tt 0.365117 Ratio errtt2/errdt2 0.0669333&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 11 Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.26756  Error tt 0.309564 Ratio errtt2/errdt2 0.0596436&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 12 Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.21266  Error tt 0.331808 Ratio errtt2/errdt2 0.0748684&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 13 Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0.87143  Error tt 0.295633 Ratio errtt2/errdt2 0.11509&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 14 Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.2143   Error tt 0.26832  Ratio errtt2/errdt2 0.048826&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;3-jets&quot;&gt;3 jets&lt;/h2&gt;
-&lt;p&gt;)
-&lt;img src=&quot;/images/q/E6B15EB5499E1619B26FB2E8F33F6EE0.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Bin 0  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 3.41429 Error tt 1.4499 Ratio errtt2/errdt2 0.180334&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 1  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 3.7338  Error tt 1.45936 Ratio errtt2/errdt2 0.152764&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 2  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 4.72531 Error tt 2.05988 Ratio errtt2/errdt2 0.19003&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 3  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 6.00446 Error tt 1.75359 Ratio errtt2/errdt2 0.0852921&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 4  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 5.5028  Error tt 1.78034 Ratio errtt2/errdt2 0.104674&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 5  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 3.97525 Error tt 1.73559 Ratio errtt2/errdt2 0.190619&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 6  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 3.72263 Error tt 1.62704 Ratio errtt2/errdt2 0.191028&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 7  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 3.5347  Error tt 1.23123 Ratio errtt2/errdt2 0.121332&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 8  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 4.41351 Error tt 1.1724 Ratio errtt2/errdt2 0.0705634&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 9  Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 4.54472 Error tt 1.08479 Ratio errtt2/errdt2 0.0569742&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 10 Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 3.85439 Error tt 1.09768 Ratio errtt2/errdt2 0.0811039&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 11 Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 2.63543 Error tt 0.946685 Ratio errtt2/errdt2 0.129035&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 12 Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 5.08874 Error tt 1.15969 Ratio errtt2/errdt2 0.0519359&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 13 Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.76021 Error tt 0.743735 Ratio errtt2/errdt2 0.178529&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Bin 14 Error dt &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.59064 Error tt 0.717617 Ratio errtt2/errdt2 0.203535&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;root -l submitDir_ttbarFlav_DirectTagging/hist-ttbar_PwPy8EG.root submitDir_ttbarFlav_TruthTagging/hist-ttbar_PwPy8EG.root&lt;/p&gt;
-
-&lt;p&gt;Double_t xbins2j[16])&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;BDT  new binning in the statistical transformation :
-    &lt;ul&gt;
-      &lt;li&gt;2 jets : 1 45 115 229 367 476 547 597 638 678 712 740 765 792 818 1002
-        &lt;ul&gt;
-          &lt;li&gt;-1, -0.912, -0.772, -0.544, -0.268, -0.05, 0.092, 0.192, 0.274, 0.354, 0.422, 0.478, 0.528, 0.582, 0.634, 1.002&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;index&lt;/th&gt;
-      &lt;th&gt;Value&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;-1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;45&lt;/td&gt;
-      &lt;td&gt;-0.912&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;115&lt;/td&gt;
-      &lt;td&gt;-0.772&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;229&lt;/td&gt;
-      &lt;td&gt;-0.544&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;367&lt;/td&gt;
-      &lt;td&gt;-0.268&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;476&lt;/td&gt;
-      &lt;td&gt;-0.05&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;547&lt;/td&gt;
-      &lt;td&gt;0.092&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;597&lt;/td&gt;
-      &lt;td&gt;0.192&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;638&lt;/td&gt;
-      &lt;td&gt;0.274&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;678&lt;/td&gt;
-      &lt;td&gt;0.354&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;712&lt;/td&gt;
-      &lt;td&gt;0.422&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;740&lt;/td&gt;
-      &lt;td&gt;0.478&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;765&lt;/td&gt;
-      &lt;td&gt;0.528&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;792&lt;/td&gt;
-      &lt;td&gt;0.582&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;818&lt;/td&gt;
-      &lt;td&gt;0.634&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1002&lt;/td&gt;
-      &lt;td&gt;1.002&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;3 jets : 0 79 166 260 354 442 520 583 638 683 722 756 790 824 862 1002
-    &lt;ul&gt;
-      &lt;li&gt;-1.002, -0.844, -0.67, -0.482, -0.294, -0.118, 0.038, 0.164, 0.274, 0.364, 0.442, 0.51, 0.578, 0.646, 0.722, 1.002&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;| index| Value  |
-| —- | —— |
-| 0    | -1.002 |
-| 79   | -0.844 |
-| 166  | -0.67  | 
-| 260  | -0.482 |
-| 354  | -0.294 |
-| 442  | -0.118 |
-| 520  | 0.038  |
-| 583  | 0.164  |
-| 638  | 0.274  |
-| 683  | 0.364  |
-| 722  | 0.442  |
-| 756  | 0.51   |
-| 790  | 0.578  |
-| 824  | 0.646  |
-| 862  | 0.722  |
-| 1002 | 1.002  |
-)&lt;/p&gt;</content><author><name></name></author><summary type="html">Purpose large stat. error contribution from ttbar bc apply truth tagging to ttbar events with c-labelled jets same procedure as V+jets</summary></entry></feed>
+)&lt;/p&gt;</content><author><name></name></author><summary type="html">discussion avec Daniel</summary></entry></feed>

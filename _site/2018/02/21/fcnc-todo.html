@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>FCNC ToDo</title>
-  <meta name="description" content="Regarder sans coupure les matchings truth/reco (quarks/jets) dans le signal en variant les selections sur les jets 25 GeV eta 2.5 30 GeV tout eta">
+  <meta name="description" content="faire les MxAODs tH en priorité [ ] ceux qui sont finis [ ] ceux qui ne sont pas finis">
 
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="canonical" href="/2018/02/21/fcnc-todo.html">
@@ -81,9 +81,88 @@
 
   <div class="post-content" itemprop="articleBody">
     <ul>
-  <li>Regarder sans coupure les matchings truth/reco (quarks/jets) dans le signal
+  <li>faire les MxAODs tH en priorité
     <ul>
-      <li>en variant les selections sur les jets
+      <li>[ ] ceux qui sont finis</li>
+      <li>[ ] ceux qui ne sont pas finis</li>
+    </ul>
+  </li>
+  <li>[ ] tourner sur ttbar gamma
+    <ul>
+      <li>prendre le plus gros fichier</li>
+    </ul>
+  </li>
+  <li>
+    <p>ponderer les data selon les pdfs de signal et bkg MC de etaH et ptH en esperant que ca ne deforme pas myy</p>
+  </li>
+  <li>
+    <p>[ ] implementer c-tagging sf et systs writing dans la production des MxAODs</p>
+  </li>
+  <li>
+    <p>verifier les normalisations absolues</p>
+  </li>
+  <li>systematiques de c-tagging :
+    <ul>
+      <li>A union B est independant du c-tagging : les systematiques de c-tagging entraineront des migrations entre A et B</li>
+      <li>test de systematiques : appliquer les SF avec variations +- 1 sigma</li>
+    </ul>
+  </li>
+  <li>
+    <p>surveiller prod des lots Wgam et Wgamgam</p>
+  </li>
+  <li>Sherpa diphoton
+    <ul>
+      <li>2x moins de stat en h017 vs h015d pour Sherpa yy jet (pas 2DP20)
+        <ul>
+          <li>NLO</li>
+          <li>slices differents en myy</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Copier les DSIS</li>
+</ul>
+
+<p>https://prodtask-dev.cern.ch/prodtask/inputlist_with_request/15880/</p>
+
+<ul>
+  <li>[x] rucio download mc16_13TeV.394879.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_150p0_22p0_all.deriv.DAOD_HIGG1D1.e6523_e5984_a875_r10201_r10210_p3418</li>
+  <li>[x] rucio download mc16_13TeV.394880.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_400p0_272p0_all.deriv.DAOD_HIGG1D1.e6523_e5984_a875_r10201_r10210_p3418</li>
+  <li>[x] rucio download mc16_13TeV.394864.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_150p0_0p0_all.deriv.DAOD_HIGG1D1.e6523_e5984_a875_r10201_r10210_p3418</li>
+  <li>[x] rucio download mc16_13TeV.394868.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_500p0_0p0_all.deriv.DAOD_HIGG1D1.e6523_e5984_a875_r10201_r10210_p3418</li>
+  <li>[x] rucio download mc16_13TeV.410755.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_tcphiQHgamgambWqq.deriv.DAOD_HIGG1D1.e6546_e5984_a875_r9364_r9315_p3418</li>
+  <li>[x] rucio download mc16_13TeV.394866.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_300p0_0p0_all.deriv.DAOD_HIGG1D1.e6523_e5984_a875_r10201_r10210_p3418</li>
+  <li>[x] rucio download mc16_13TeV.410759.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_ctphiQHgamgambWqq.deriv.DAOD_HIGG1D1.e6546_e5984_a875_r9364_r9315_p3418</li>
+  <li>[x] rucio download mc16_13TeV.394865.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_200p0_0p0_all.deriv.DAOD_HIGG1D1.e6523_e5984_a875_r10201_r10210_p3418</li>
+  <li>[x] rucio download mc16_13TeV.394870.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_300p0_100p0_all.deriv.DAOD_HIGG1D1.e6523_e5984_a875_r10201_r10210_p3418</li>
+  <li>[x] rucio download mc16_13TeV.394867.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_400p0_0p0_all.deriv.DAOD_HIGG1D1.e6523_e5984_a875_r10201_r10210_p3418</li>
+  <li>[x] rucio download mc16_13TeV.410757.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_uphiQHgamgambWqq.deriv.DAOD_HIGG1D1.e6546_e5984_a875_r9364_r9315_p3418</li>
+  <li>[x] rucio download mc16_13TeV.410753.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_tphiQHgamgambWqq.deriv.DAOD_HIGG1D1.e6546_e5984_a875_r9364_r9315_p3418</li>
+  <li>
+    <p>[x] rucio download mc16_13TeV.394869.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_600p0_0p0_all.deriv.DAOD_HIGG1D1.e6523_e5984_a875_r10201_r10210_p3418</p>
+  </li>
+  <li>[ ] mc16_13TeV:mc16_13TeV.394879.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_150p0_22p0_all.merge.AOD.e6523_e5984_a875_r10201_r10210</li>
+  <li>mc16_13TeV:mc16_13TeV.410752.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_tphiQHgamgambWln.merge.AOD.e6546_e5984_a875_r9364_r9315</li>
+  <li>[ ] mc16_13TeV:mc16_13TeV.394880.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_400p0_272p0_all.merge.AOD.e6523_e5984_a875_r10201_r10210</li>
+  <li>[ ] mc16_13TeV:mc16_13TeV.394864.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_150p0_0p0_all.merge.AOD.e6523_e5984_a875_r10201_r10210</li>
+  <li>[ ] mc16_13TeV:mc16_13TeV.394868.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_500p0_0p0_all.merge.AOD.e6523_e5984_a875_r10201_r10210</li>
+  <li>[ ] mc16_13TeV:mc16_13TeV.410755.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_tcphiQHgamgambWqq.merge.AOD.e6546_e5984_a875_r9364_r9315</li>
+  <li>[ ] mc16_13TeV:mc16_13TeV.394866.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_300p0_0p0_all.merge.AOD.e6523_e5984_a875_r10201_r10210</li>
+  <li>[ ] mc16_13TeV:mc16_13TeV.410759.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_ctphiQHgamgambWqq.merge.AOD.e6546_e5984_a875_r9364_r9315</li>
+  <li>[ ] mc16_13TeV:mc16_13TeV.394865.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_200p0_0p0_all.merge.AOD.e6523_e5984_a875_r10201_r10210</li>
+  <li>mc16_13TeV:mc16_13TeV.410754.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_tcphiQHgamgambWln.merge.AOD.e6546_e5984_a875_r9364_r9315</li>
+  <li>mc16_13TeV:mc16_13TeV.410758.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_ctphiQHgamgambWln.merge.AOD.e6546_e5984_a875_r9364_r9315</li>
+  <li>[ ] mc16_13TeV:mc16_13TeV.394870.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_300p0_100p0_all.merge.AOD.e6523_e5984_a875_r10201_r10210</li>
+  <li>mc16_13TeV:mc16_13TeV.410756.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_uphiQHgamgambWln.merge.AOD.e6546_e5984_a875_r9364_r9315</li>
+  <li>[ ] mc16_13TeV:mc16_13TeV.394867.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_400p0_0p0_all.merge.AOD.e6523_e5984_a875_r10201_r10210</li>
+  <li>[ ] mc16_13TeV:mc16_13TeV.410757.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_uphiQHgamgambWqq.merge.AOD.e6546_e5984_a875_r9364_r9315</li>
+  <li>[ ] mc16_13TeV:mc16_13TeV.410753.aMcAtNloPythia8EvtGen_NNPDF30ME_A14_tphiQHgamgambWqq.merge.AOD.e6546_e5984_a875_r9364_r9315</li>
+  <li>
+    <h2 id="--mc16_13tevmc16_13tev394869madgraphpythia8evtgen_a14n23lo_c1n2_wh_hgg_600p0_0p0_allmergeaode6523_e5984_a875_r10201_r10210">[ ] mc16_13TeV:mc16_13TeV.394869.MadGraphPythia8EvtGen_A14N23LO_C1N2_Wh_hgg_600p0_0p0_all.merge.AOD.e6523_e5984_a875_r10201_r10210</h2>
+  </li>
+  <li>[x] Regarder sans coupure les matchings truth/reco (quarks/jets) dans le signal
+    <ul>
+      <li>[x] en variant les selections sur les jets
         <ul>
           <li>25 GeV eta 2.5</li>
           <li>30 GeV tout eta</li>
@@ -91,25 +170,16 @@
       </li>
     </ul>
   </li>
-  <li>descendre threshold des jets a 25 GeV eta&lt;2.5 (au lieu de 30 tout eta)
-    <ul>
-      <li>comparer les significances relatives</li>
-    </ul>
+  <li>[x] Prendre les poids pour Sherpa diphoton / seulement generateur</li>
+  <li>[x] coupure forward jvt</li>
+  <li>
+    <p>[x] var discriminante dans la categorie loose ? (HT, … nbtag, …)</p>
   </li>
-</ul>
-
-<p>Prendre les poids pour Sherpa diphoton / seulement generateur
-coupure forward jvt
-var discriminante dans la categorie loose ? (HT, … nbtag, …)</p>
-
-<ul>
   <li>
     <p>correlations btag - ctag (systematiques) ?</p>
   </li>
-  <li>
-    <p>HGamRel21.config avec id des photons plus recentes que 2015 (decembre 2017)
-)</p>
-  </li>
+  <li>HGamRel21.config avec id des photons plus recentes que 2015 (decembre 2017)
+)</li>
 </ul>
 
   </div>
