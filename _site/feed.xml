@@ -1,4 +1,92 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-03-23T17:01:01+01:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">FCNC MVA</title><link href="/2018/03/23/fcnc-mva.html" rel="alternate" type="text/html" title="FCNC MVA" /><published>2018-03-23T00:00:00+01:00</published><updated>2018-03-23T00:00:00+01:00</updated><id>/2018/03/23/fcnc-mva</id><content type="html" xml:base="/2018/03/23/fcnc-mva.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-03-28T11:49:05+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">FCNC impact of combinatoric</title><link href="/2018/03/28/fcnc-impact-of-combinatoric.html" rel="alternate" type="text/html" title="FCNC impact of combinatoric" /><published>2018-03-28T00:00:00+02:00</published><updated>2018-03-28T00:00:00+02:00</updated><id>/2018/03/28/fcnc-impact-of-combinatoric</id><content type="html" xml:base="/2018/03/28/fcnc-impact-of-combinatoric.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+
+&lt;p&gt;how many combinations per event will pass the selection ?&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;is it correct to train the BDT on the 1rst combination ?
+)
+    &lt;h1 id=&quot;procedure&quot;&gt;Procedure&lt;/h1&gt;
+  &lt;/li&gt;
+  &lt;li&gt;sample is FCNC signal Wmqq&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;usual selection, w/wo b-Tagging&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;if the event enters the tight category, fill how many combinations pass the tight selection&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;if the event enters the loose category (and not tight), fill how many combinations pass the loose selection&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;same for tagging categories, with priority A &amp;gt; B &amp;gt; C
+)
+    &lt;h1 id=&quot;observations-principales&quot;&gt;Observations principales&lt;/h1&gt;
+  &lt;/li&gt;
+  &lt;li&gt;dans la selection sans tagging, environ 75% des evts ont une seule combinaison qui passe la selection&lt;/li&gt;
+  &lt;li&gt;avec le bTagging et 4 jets, on a moins d’acceptance dans les categories A+B ce qui se verifie avec tres souvent une seule combinaison qui passe&lt;/li&gt;
+  &lt;li&gt;si on utilise 5 jets, on a un plus de combinaisons comme attendu:
+    &lt;ul&gt;
+      &lt;li&gt;en tight, encore environ 70% des evts ont une seule combinaison&lt;/li&gt;
+      &lt;li&gt;en loose, seuls 50% des evts ont une seule bonne combinaison, et les 50% restant ont 3 ou 4 combinaisons selon la categorie de tagging
+)
+        &lt;h1 id=&quot;paper-selection&quot;&gt;Paper selection&lt;/h1&gt;
+        &lt;p&gt;)&lt;/p&gt;
+        &lt;h2 id=&quot;tight&quot;&gt;Tight&lt;/h2&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/609D5F73A9855393CAA7D96C9B5F7226.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;loose&quot;&gt;Loose&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/236179DCC8B572512B12948E3148CE71.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;tagging-categories-4-jets&quot;&gt;Tagging categories 4 jets&lt;/h1&gt;
+&lt;p&gt;)&lt;/p&gt;
+&lt;h2 id=&quot;tight-1&quot;&gt;Tight&lt;/h2&gt;
+&lt;p&gt;)&lt;/p&gt;
+&lt;h3 id=&quot;a&quot;&gt;A&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/112F890090560081819B51C168821347.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;b&quot;&gt;B&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/56A1085857FA37777AC464DF51725FEC.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;c&quot;&gt;C&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/1B4C1C782C6849523A70688B5815D310.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;loose-1&quot;&gt;Loose&lt;/h2&gt;
+&lt;p&gt;)&lt;/p&gt;
+&lt;h3 id=&quot;a-1&quot;&gt;A&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/94AD8FE7BF24FC81A2F318BC0DE31305.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;b-1&quot;&gt;B&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/FB92A90EEA919E18626316A28232DE09.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;c-1&quot;&gt;C&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/17D745FADCA56793BD604C9E913E9E72.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;tagging-categories-5-jets&quot;&gt;Tagging categories 5 jets&lt;/h1&gt;
+&lt;p&gt;)&lt;/p&gt;
+&lt;h2 id=&quot;tight-2&quot;&gt;Tight&lt;/h2&gt;
+&lt;p&gt;)&lt;/p&gt;
+&lt;h3 id=&quot;a-2&quot;&gt;A&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/BC122D2330CE2AC40C4777F721803155.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;b-2&quot;&gt;B&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/B622C54C9146DDAF8AB298E7047A2CB6.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;c-2&quot;&gt;C&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/950FE96A13938E440B1B7DB5A9F62C7E.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;loose-2&quot;&gt;Loose&lt;/h2&gt;
+&lt;p&gt;)&lt;/p&gt;
+&lt;h3 id=&quot;a-3&quot;&gt;A&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/96D6898C0B99E666899D0F790D7BADA3.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;b-3&quot;&gt;B&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/86E46C7AE0E3E903AC1007AD7808A256.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;c-3&quot;&gt;C&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/58F5511FBDBF5997457685186FD6520F.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;)&lt;/p&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Purpose</summary></entry><entry><title type="html">FCNC MVA</title><link href="/2018/03/23/fcnc-mva.html" rel="alternate" type="text/html" title="FCNC MVA" /><published>2018-03-23T00:00:00+01:00</published><updated>2018-03-23T00:00:00+01:00</updated><id>/2018/03/23/fcnc-mva</id><content type="html" xml:base="/2018/03/23/fcnc-mva.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Improve sensitivity using MVA methods
@@ -89,7 +177,9 @@
   &lt;li&gt;profile du BDT en fonction de myy : moins correle a myy, mais c’est aussi parce qu’il n’y a pas beaucoup de discrimination de facon generale&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/q/ED959015E60F14ACAD5D3AB198D4E53E.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="bdt" /><category term="fcnc" /><summary type="html">Purpose</summary></entry><entry><title type="html">Slides FCNC</title><link href="/2018/03/05/slides-fcnc.html" rel="alternate" type="text/html" title="Slides FCNC" /><published>2018-03-05T00:00:00+01:00</published><updated>2018-03-05T00:00:00+01:00</updated><id>/2018/03/05/slides-fcnc</id><content type="html" xml:base="/2018/03/05/slides-fcnc.html">&lt;p&gt;Daniel&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/q/ED959015E60F14ACAD5D3AB198D4E53E.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;TMVAClassification &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; BDTTree_FCNCttWmqq_v1_4jets BDTTree_FCNCttShergg_allVariables_v1_4jets pTj0:etaj0:pTj1:etaj1:pTb:etab:dRbW:dPhibW:dEtabW:mW:mTopSM:mindR_bj:mindPhi_bj:Meff_topSM:pTratio_bj_j0j1:pTratio_j0_j1:pT_tt:y_tt:m_tt:HT_cj_y0_y1_bj_j0_j1:HT4jets:HTjets:dR_cH:dPhi_cH:dEta_cH:m_TopEx:Meff_topEx:maxdR_cy:mindR_cy:maxdPhi_cy:mindPhi_cy:costhetastar_y &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="bdt" /><category term="fcnc" /><summary type="html">Purpose</summary></entry><entry><title type="html">Slides FCNC</title><link href="/2018/03/05/slides-fcnc.html" rel="alternate" type="text/html" title="Slides FCNC" /><published>2018-03-05T00:00:00+01:00</published><updated>2018-03-05T00:00:00+01:00</updated><id>/2018/03/05/slides-fcnc</id><content type="html" xml:base="/2018/03/05/slides-fcnc.html">&lt;p&gt;Daniel&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -559,57 +649,4 @@
 
 &lt;p&gt;ratio is Herwig 7 / Pythia 8
 3 jets categories : 2,3 and 4 or 4p ? (last item to be checked)
-)&lt;/p&gt;</content><author><name></name></author><summary type="html">XSection is that of the 1rst file good magnitude order [ ] but != values in Herwig vs Pythia –&amp;gt; must not impact the acceptance !</summary></entry><entry><title type="html">FCNC code</title><link href="/2018/01/08/fcnc-code.html" rel="alternate" type="text/html" title="FCNC code" /><published>2018-01-08T00:00:00+01:00</published><updated>2018-01-08T00:00:00+01:00</updated><id>/2018/01/08/fcnc-code</id><content type="html" xml:base="/2018/01/08/fcnc-code.html">&lt;h1 id=&quot;discussion-avec-daniel&quot;&gt;discussion avec Daniel&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;les catégories loose et tight sont orthogonales !
-    &lt;ul&gt;
-      &lt;li&gt;si un evt ne passe pas la selection tight, on le test pour la categorie loose&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Categories de Daniel :
-    &lt;ul&gt;
-      &lt;li&gt;A)
-        &lt;h1 id=&quot;stat-macro&quot;&gt;stat macro&lt;/h1&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;cut to exclude mgg in 122-129 GeV because of blinding
-)
-    &lt;h1 id=&quot;lepton-selection&quot;&gt;lepton selection&lt;/h1&gt;
-    &lt;p&gt;)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;[ ] Possible improvement at line 264 ? –&amp;gt; require 1lep &lt;strong&gt;+ 2 jets&lt;/strong&gt; ? (at presel surement)&lt;/li&gt;
-  &lt;li&gt;[ ] computation of the neutrino pz in FCNCTools.cxx line 317
-    &lt;ul&gt;
-      &lt;li&gt;pznu is the vector of 1-2 possibilities for neutrino pz, right ? –&amp;gt; different computation for &amp;gt;2 jets multiplicity ?&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;[ ] computation of mT&lt;/li&gt;
-  &lt;li&gt;[ ] jets properly ordered in seljets ?&lt;/li&gt;
-  &lt;li&gt;[ ] isGoodJ is just pT &amp;gt; 30 GeV ? (if no looser pT cut in central region, which is the default)&lt;/li&gt;
-  &lt;li&gt;[ ] pourquoi (combOK || 1) ligne 494 ?
-)
-selection leptonique&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;2 bons jets&lt;/p&gt;
-
-&lt;p&gt;combOK true si au moins mTop1
-m_ok)&lt;/p&gt;
-&lt;h1 id=&quot;hadron-selection&quot;&gt;hadron selection&lt;/h1&gt;
-&lt;p&gt;)&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;[ ] miss a line           if (isB77l) nbTop2++; at https://gitlab.cern.ch/cdelport/FCNCAna/blob/master/Root/HGamFCNC.cxx#L650 ?
-)
-selection hadronique&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;4 bons jets&lt;/p&gt;
-
-&lt;p&gt;combOK true si au moins mTop1
-m_ok)&lt;/p&gt;
-&lt;h2 id=&quot;questions&quot;&gt;questions&lt;/h2&gt;
-
-&lt;p&gt;aucune coupure cinematique ? (dPhi, dR, …)
-)&lt;/p&gt;</content><author><name></name></author><summary type="html">discussion avec Daniel</summary></entry></feed>
+)&lt;/p&gt;</content><author><name></name></author><summary type="html">XSection is that of the 1rst file good magnitude order [ ] but != values in Herwig vs Pythia –&amp;gt; must not impact the acceptance !</summary></entry></feed>
