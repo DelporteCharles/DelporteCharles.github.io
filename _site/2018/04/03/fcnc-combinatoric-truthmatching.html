@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>FCNC Combinatoric TruthMatching</title>
+  <meta name="description" content="Purpose">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2018/04/03/fcnc-combinatoric-truthmatching.html">
+  <link rel="alternate" type="application/rss+xml" title="My PhD notes" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">My PhD notes</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">FCNC Combinatoric TruthMatching</h1>
+    <p class="post-meta">
+      <time datetime="2018-04-03T00:00:00+02:00" itemprop="datePublished">
+        
+        Apr 3, 2018
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="purpose">Purpose</h1>
+
+<ul>
+  <li>optimiser la selection des jets parmis les differents combinaisons qui passent les coupures
+)
+    <h1 id="sample">Sample</h1>
+  </li>
+  <li>Signal h017 Wmqq
+)
+    <h1 id="procedure">Procedure</h1>
+  </li>
+  <li>Analyse nominale sur les 5 leading pT jets avec categories en bTagging</li>
+  <li>Les evenements sont classes selon les categories habituelles (selon les priorites 1 puis 2 pour mTop SM, A puis B puis C pour le tagging)
+    <ul>
+      <li>si un evenement vit dans sa categorie avec une seule combinaison, je regarde s’il est ‘matched’ :
+        <ul>
+          <li>dR(c quark, jet de mTop1) &lt; 0.4</li>
+          <li>dR(b quark, jet bTagged de mTop2) &lt; 0.4</li>
+          <li>dR(leading pT light quark, jet light le plus proche de mTop2) &lt; 0.4</li>
+          <li>dR(light quark restant, jet light restant de mTop2) &lt; 0.4</li>
+        </ul>
+      </li>
+      <li>si plusieurs combinaisons passent la selection pour la même categorie (mais aucune ne passe une ‘meilleure’ categorie), j’essaie 3 strategies pour trouver la strategie qui donnera des ‘matched’ le plus souvent :
+        <ul>
+          <li>firstCombLeadingPt (le default actuel) : la premiere combinaison qui passe les coupures avec les jets ordonnes en pT</li>
+          <li>mTop1Matched : la combinaison selectionnee est celle qui donne abs(mTop1-173) le plus proche de 0</li>
+          <li>mTop2Matched : la combinaison selectionnee est celle qui donne abs(mTop2-173) le plus proche de 0</li>
+          <li>mTop12Matched : la combinaison selectionnee est celle qui donne abs(mTop1-173)+abs(mTop2-173) le plus proche de 0</li>
+        </ul>
+      </li>
+      <li>puis je regarder si la combinaison selectionnee est ‘matched’ selon le meme critere que precedement (dR &lt; 0.4 pour chaque association quark-jet)</li>
+      <li>pour mesure a quel point on pourrait encore faire mieux, je regarder aussi la combinaison qui minimise la somme des dR cites au-dessus (deltaRMatched) : ca utilise la truth mais c’est juste pour se faire une idee des pertes potentielles (meme si certains de ces matchings en dR sont surement fortuits avec des jets de pile-up)
+)
+        <h1 id="observations-principales">Observations principales</h1>
+      </li>
+    </ul>
+  </li>
+  <li>en categorie 1 (tight) : peu de differences entre les differentes strategies reco, mais matcher avec mTop2 (ou par extension mTop1+mTop2) semble faire gagner le plus, et ca fait plus de sens que la strategie actuelle (firstCombLeadingPt).
+    <ul>
+      <li>le truth-matching en dR semble montrer qu’on prend la meilleure combinaison a peine une fois sur 2, et les strategies que j’ai essayees (mTop1, mTop2, mTop12) ameliorent a peine : vu que firstCombLeadingPt donne moins de 50% de bons matchings parmis ceux possibles (si on considere que le max serait la valeur pour deltaRMatched) peut-etre qu’il faudrait prendre la combinaison avec HT plus faible ou quelque chose comme ca ? le plus petit jet de pt ?</li>
+    </ul>
+  </li>
+  <li>en categorie 2 (loose) : il n’y a que tres peu (1%) de bon matching possible, mais une nouvelle fois mTop2 semble donner le meilleur gain, surtout en 2-A et 2-B
+)
+    <h1 id="nombres-pour-les-evenements-ayant-plusieurs-combinaisons-possibles">Nombres pour les evenements ayant plusieurs combinaisons possibles</h1>
+    <p>)</p>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="k">*</span> hadM2tightA<br data-jekyll-commonmark-ghpages="" />Matching strategy    | Matched     | Total     | Fraction<br data-jekyll-commonmark-ghpages="" /><span class="nt">--------------------</span> | <span class="nt">-----------</span> | <span class="nt">---------</span> | <span class="nt">--------</span><br data-jekyll-commonmark-ghpages="" />  firstCombLeadingPt |         108 |      484 |     22.3 %<br data-jekyll-commonmark-ghpages="" />        mTop1Matched |         112 |      484 |     23.1 %<br data-jekyll-commonmark-ghpages="" />        mTop2Matched |         128 |      484 |     26.4 %<br data-jekyll-commonmark-ghpages="" />       mTop12Matched |         129 |      484 |     26.7 %<br data-jekyll-commonmark-ghpages="" />       deltaRMatched |         225 |      484 |     46.5 %<br data-jekyll-commonmark-ghpages="" /><span class="nt">---------------------------------------------------------</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span> hadM2tightB<br data-jekyll-commonmark-ghpages="" />Matching strategy    | Matched     | Total     | Fraction<br data-jekyll-commonmark-ghpages="" /><span class="nt">--------------------</span> | <span class="nt">-----------</span> | <span class="nt">---------</span> | <span class="nt">--------</span><br data-jekyll-commonmark-ghpages="" />  firstCombLeadingPt |         252 |     1446 |     17.4 %<br data-jekyll-commonmark-ghpages="" />        mTop1Matched |         262 |     1446 |     18.1 %<br data-jekyll-commonmark-ghpages="" />        mTop2Matched |         260 |     1446 |       18 %<br data-jekyll-commonmark-ghpages="" />       mTop12Matched |         276 |     1446 |     19.1 %<br data-jekyll-commonmark-ghpages="" />       deltaRMatched |         493 |     1446 |     34.1 %<br data-jekyll-commonmark-ghpages="" /><span class="nt">---------------------------------------------------------</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span> hadM2tightC<br data-jekyll-commonmark-ghpages="" />Matching strategy    | Matched     | Total     | Fraction<br data-jekyll-commonmark-ghpages="" /><span class="nt">--------------------</span> | <span class="nt">-----------</span> | <span class="nt">---------</span> | <span class="nt">--------</span><br data-jekyll-commonmark-ghpages="" />  firstCombLeadingPt |          10 |      240 |     4.17 %<br data-jekyll-commonmark-ghpages="" />        mTop1Matched |          11 |      240 |     4.58 %<br data-jekyll-commonmark-ghpages="" />        mTop2Matched |          11 |      240 |     4.58 %<br data-jekyll-commonmark-ghpages="" />       mTop12Matched |          11 |      240 |     4.58 %<br data-jekyll-commonmark-ghpages="" />       deltaRMatched |          22 |      240 |     9.17 %<br data-jekyll-commonmark-ghpages="" /><span class="nt">---------------------------------------------------------</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span> hadM1looseA<br data-jekyll-commonmark-ghpages="" />Matching strategy    | Matched     | Total     | Fraction<br data-jekyll-commonmark-ghpages="" /><span class="nt">--------------------</span> | <span class="nt">-----------</span> | <span class="nt">---------</span> | <span class="nt">--------</span><br data-jekyll-commonmark-ghpages="" />  firstCombLeadingPt |           1 |      565 |    0.177 %<br data-jekyll-commonmark-ghpages="" />        mTop1Matched |           1 |      565 |    0.177 %<br data-jekyll-commonmark-ghpages="" />        mTop2Matched |           8 |      565 |     1.42 %<br data-jekyll-commonmark-ghpages="" />       mTop12Matched |           8 |      565 |     1.42 %<br data-jekyll-commonmark-ghpages="" />       deltaRMatched |           9 |      565 |     1.59 %<br data-jekyll-commonmark-ghpages="" /><span class="nt">---------------------------------------------------------</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span> hadM1looseB<br data-jekyll-commonmark-ghpages="" />Matching strategy    | Matched     | Total     | Fraction<br data-jekyll-commonmark-ghpages="" /><span class="nt">--------------------</span> | <span class="nt">-----------</span> | <span class="nt">---------</span> | <span class="nt">--------</span><br data-jekyll-commonmark-ghpages="" />  firstCombLeadingPt |           8 |     1363 |    0.587 %<br data-jekyll-commonmark-ghpages="" />        mTop1Matched |           8 |     1363 |    0.587 %<br data-jekyll-commonmark-ghpages="" />        mTop2Matched |          24 |     1363 |     1.76 %<br data-jekyll-commonmark-ghpages="" />       mTop12Matched |          25 |     1363 |     1.83 %<br data-jekyll-commonmark-ghpages="" />       deltaRMatched |          29 |     1363 |     2.13 %<br data-jekyll-commonmark-ghpages="" /><span class="nt">---------------------------------------------------------</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span> hadM1looseC<br data-jekyll-commonmark-ghpages="" />Matching strategy    | Matched     | Total     | Fraction<br data-jekyll-commonmark-ghpages="" /><span class="nt">--------------------</span> | <span class="nt">-----------</span> | <span class="nt">---------</span> | <span class="nt">--------</span><br data-jekyll-commonmark-ghpages="" />  firstCombLeadingPt |           3 |      443 |    0.677 %<br data-jekyll-commonmark-ghpages="" />        mTop1Matched |           3 |      443 |    0.677 %<br data-jekyll-commonmark-ghpages="" />        mTop2Matched |           3 |      443 |    0.677 %<br data-jekyll-commonmark-ghpages="" />       mTop12Matched |           3 |      443 |    0.677 %<br data-jekyll-commonmark-ghpages="" />       deltaRMatched |           4 |      443 |    0.903 %<br data-jekyll-commonmark-ghpages="" /><span class="nt">---------------------------------------------------------</span></code></pre></figure>
+
+<h1 id="nombres-inclusifs-une-combinaison--plusieurs-combinaisons-possibles">Nombres inclusifs (une combinaison + plusieurs combinaisons possibles)</h1>
+<p>)</p>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="k">*</span> hadM2tightA<br data-jekyll-commonmark-ghpages="" />Matching strategy    | Matched     | Total     | Fraction<br data-jekyll-commonmark-ghpages="" /><span class="nt">--------------------</span> | <span class="nt">-----------</span> | <span class="nt">---------</span> | <span class="nt">--------</span><br data-jekyll-commonmark-ghpages="" />  firstCombLeadingPt |         633 |     1807 |       35 %<br data-jekyll-commonmark-ghpages="" />        mTop1Matched |         637 |     1807 |     35.3 %<br data-jekyll-commonmark-ghpages="" />        mTop2Matched |         653 |     1807 |     36.1 %<br data-jekyll-commonmark-ghpages="" />       mTop12Matched |         654 |     1807 |     36.2 %<br data-jekyll-commonmark-ghpages="" />       deltaRMatched |         750 |     1807 |     41.5 %<br data-jekyll-commonmark-ghpages="" /><span class="nt">---------------------------------------------------------</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span> hadM2tightB<br data-jekyll-commonmark-ghpages="" />Matching strategy    | Matched     | Total     | Fraction<br data-jekyll-commonmark-ghpages="" /><span class="nt">--------------------</span> | <span class="nt">-----------</span> | <span class="nt">---------</span> | <span class="nt">--------</span><br data-jekyll-commonmark-ghpages="" />  firstCombLeadingPt |         881 |     3551 |     24.8 %<br data-jekyll-commonmark-ghpages="" />        mTop1Matched |         891 |     3551 |     25.1 %<br data-jekyll-commonmark-ghpages="" />        mTop2Matched |         889 |     3551 |       25 %<br data-jekyll-commonmark-ghpages="" />       mTop12Matched |         905 |     3551 |     25.5 %<br data-jekyll-commonmark-ghpages="" />       deltaRMatched |    1.12e+03 |     3551 |     31.6 %<br data-jekyll-commonmark-ghpages="" /><span class="nt">---------------------------------------------------------</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span> hadM2tightC<br data-jekyll-commonmark-ghpages="" />Matching strategy    | Matched     | Total     | Fraction<br data-jekyll-commonmark-ghpages="" /><span class="nt">--------------------</span> | <span class="nt">-----------</span> | <span class="nt">---------</span> | <span class="nt">--------</span><br data-jekyll-commonmark-ghpages="" />  firstCombLeadingPt |          77 |      877 |     8.78 %<br data-jekyll-commonmark-ghpages="" />        mTop1Matched |          78 |      877 |     8.89 %<br data-jekyll-commonmark-ghpages="" />        mTop2Matched |          78 |      877 |     8.89 %<br data-jekyll-commonmark-ghpages="" />       mTop12Matched |          78 |      877 |     8.89 %<br data-jekyll-commonmark-ghpages="" />       deltaRMatched |          89 |      877 |     10.1 %<br data-jekyll-commonmark-ghpages="" /><span class="nt">---------------------------------------------------------</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span> hadM1looseA<br data-jekyll-commonmark-ghpages="" />Matching strategy    | Matched     | Total     | Fraction<br data-jekyll-commonmark-ghpages="" /><span class="nt">--------------------</span> | <span class="nt">-----------</span> | <span class="nt">---------</span> | <span class="nt">--------</span><br data-jekyll-commonmark-ghpages="" />  firstCombLeadingPt |          13 |     1182 |      1.1 %<br data-jekyll-commonmark-ghpages="" />        mTop1Matched |          13 |     1182 |      1.1 %<br data-jekyll-commonmark-ghpages="" />        mTop2Matched |          20 |     1182 |     1.69 %<br data-jekyll-commonmark-ghpages="" />       mTop12Matched |          20 |     1182 |     1.69 %<br data-jekyll-commonmark-ghpages="" />       deltaRMatched |          21 |     1182 |     1.78 %<br data-jekyll-commonmark-ghpages="" /><span class="nt">---------------------------------------------------------</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span> hadM1looseB<br data-jekyll-commonmark-ghpages="" />Matching strategy    | Matched     | Total     | Fraction<br data-jekyll-commonmark-ghpages="" /><span class="nt">--------------------</span> | <span class="nt">-----------</span> | <span class="nt">---------</span> | <span class="nt">--------</span><br data-jekyll-commonmark-ghpages="" />  firstCombLeadingPt |          17 |     2506 |    0.678 %<br data-jekyll-commonmark-ghpages="" />        mTop1Matched |          17 |     2506 |    0.678 %<br data-jekyll-commonmark-ghpages="" />        mTop2Matched |          33 |     2506 |     1.32 %<br data-jekyll-commonmark-ghpages="" />       mTop12Matched |          34 |     2506 |     1.36 %<br data-jekyll-commonmark-ghpages="" />       deltaRMatched |          38 |     2506 |     1.52 %<br data-jekyll-commonmark-ghpages="" /><span class="nt">---------------------------------------------------------</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /><span class="k">*</span> hadM1looseC<br data-jekyll-commonmark-ghpages="" />Matching strategy    | Matched     | Total     | Fraction<br data-jekyll-commonmark-ghpages="" /><span class="nt">--------------------</span> | <span class="nt">-----------</span> | <span class="nt">---------</span> | <span class="nt">--------</span><br data-jekyll-commonmark-ghpages="" />  firstCombLeadingPt |           4 |      985 |    0.406 %<br data-jekyll-commonmark-ghpages="" />        mTop1Matched |           4 |      985 |    0.406 %<br data-jekyll-commonmark-ghpages="" />        mTop2Matched |           4 |      985 |    0.406 %<br data-jekyll-commonmark-ghpages="" />       mTop12Matched |           4 |      985 |    0.406 %<br data-jekyll-commonmark-ghpages="" />       deltaRMatched |           5 |      985 |    0.508 %<br data-jekyll-commonmark-ghpages="" /><span class="nt">---------------------------------------------------------</span></code></pre></figure>
+
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">My PhD notes</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              My PhD notes
+            
+            </li>
+            
+            <li><a href="mailto:charles.delporte@cern.ch">charles.delporte@cern.ch</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>My personal notes from Quiver</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

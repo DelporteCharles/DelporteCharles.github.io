@@ -6,7 +6,7 @@ tags:
 ---
 # Purpose
 
-how many combinations per event will pass the selection ?
+* how many combinations per event will pass the selection ?
 * is it correct to train the BDT on the 1rst combination ?
 )
 # Procedure
