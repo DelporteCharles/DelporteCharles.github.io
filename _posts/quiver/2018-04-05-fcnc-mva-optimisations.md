@@ -6,15 +6,27 @@ tags:
 ---
 # Purpose
 
-* Trouver le meilleur set de variables
+* Trouver le meilleur set de variables pour le BDT (pas forcement celui avec les meilleures performances, sinon on a qu'a prendre toutes les variables, mais celui avec un nombre raisonnable de variables sans grosse perte de discrimination)
+)
+# Samples
 
-* Je separe les variables en 3 categories pour que ce soir plus clair :
-  * pT/eta
-  * dR/dEta/DPhi
-  * Meff/Ht
-*Dans chacune de ces cateégories, je garderai les 3-4 meilleures variables, et je ferai une nouvelles selection de variables parmi celles ci
+* h019
+  * FCNC W +- qq
+  * Sherpa yy + jets
+)
+# Selection
+
+* Selection 5 jets
+* Categories de tagging A et B uniquement, avec un BDT individuel dans chaque categorie (1-A, 1-B, 2-A, 2-B)
+* Si plusieurs combinaisons sont possibles, je prends celle qui donne mTop2 le plus proche de 173 
 )
 # Procedure
+
+* Je separe les variables en 3 categories pour faire un premier tri :
+  * pT/eta/m
+  * dR/dEta/DPhi
+  * Meff/Ht
+* Dans chacune de ces catégories, je garderai les 3-4 meilleures variables, et je fais une nouvelles selection de variables parmi celles-ci a la fin
 
 * BDT entraines avec le setup VHbb
 * Poids negatifs pris en compte
@@ -25,7 +37,7 @@ tags:
   3. le BDT qui donne la meilleure significance indique la variable la moins utile : elle ne sera pas utilisee dans les prochaines iterations
   4. je reprends au point b. et à chaque iteration j'enleve une nouvelle variable
 )
-* la significance est evaluee sur les distributions de BDT (rebinnees comme dans VHbb, de facon a reduire l'erreur stat dans chaque bin a une valeur raisonnable) en calculant :
+* la significance est evaluee sur les distributions de BDT (rebinnees comme dans VHbb, de facon a reduire l'erreur stat dans chaque bin a une valeur raisonnable) en calculant dans chaque categorie (combinees ensuite en quadrature) :
 )
 {% highlight sh %}
   Float_t sensitivity = 0.;
@@ -54,18 +66,6 @@ tags:
   m_sensitivity = sqrt(sensitivity);
 {% endhighlight %}
 
-# Samples
-
-* h019
-  * FCNC W +- qq
-  * Sherpa yy + jets
-)
-# Selection
-
-* Selection 5 jets
-* Categories de tagging A et B uniquement
-* Si plusieurs combinaisons sont possibles, je prends celle qui donne mTop2 le plus proche de 173 
-)
 # Plots de ranking
 
 * chaque bin en x correspond à un BDT entrainé, où on a retiré des variables d'entrainement la variable indiquee en label du bin. Dans chaque bloc, la premiere variable retiree correspond au BDT qui donne la meilleure significance, ce qui montre que cette variable est la moins importante de toutes celles testees. Pour l'iteration suivante, elle est donc definitivement supprimee, et on cherche a retirer une variable de plus du BDT a chaque iteration.

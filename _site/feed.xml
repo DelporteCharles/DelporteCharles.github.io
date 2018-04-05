@@ -1,19 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-04-05T15:44:10+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">FCNC MVA Optimisations</title><link href="/2018/04/05/fcnc-mva-optimisations.html" rel="alternate" type="text/html" title="FCNC MVA Optimisations" /><published>2018-04-05T00:00:00+02:00</published><updated>2018-04-05T00:00:00+02:00</updated><id>/2018/04/05/fcnc-mva-optimisations</id><content type="html" xml:base="/2018/04/05/fcnc-mva-optimisations.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-04-05T15:59:10+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">FCNC MVA Optimisations</title><link href="/2018/04/05/fcnc-mva-optimisations.html" rel="alternate" type="text/html" title="FCNC MVA Optimisations" /><published>2018-04-05T00:00:00+02:00</published><updated>2018-04-05T00:00:00+02:00</updated><id>/2018/04/05/fcnc-mva-optimisations</id><content type="html" xml:base="/2018/04/05/fcnc-mva-optimisations.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Trouver le meilleur set de variables&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Je separe les variables en 3 categories pour que ce soir plus clair :
-    &lt;ul&gt;
-      &lt;li&gt;pT/eta&lt;/li&gt;
-      &lt;li&gt;dR/dEta/DPhi&lt;/li&gt;
-      &lt;li&gt;Meff/Ht
-*Dans chacune de ces cateégories, je garderai les 3-4 meilleures variables, et je ferai une nouvelles selection de variables parmi celles ci
+  &lt;li&gt;Trouver le meilleur set de variables pour le BDT (pas forcement celui avec les meilleures performances, sinon on a qu’a prendre toutes les variables, mais celui avec un nombre raisonnable de variables sans grosse perte de discrimination)
 )
-        &lt;h1 id=&quot;procedure&quot;&gt;Procedure&lt;/h1&gt;
+    &lt;h1 id=&quot;samples&quot;&gt;Samples&lt;/h1&gt;
+  &lt;/li&gt;
+  &lt;li&gt;h019
+    &lt;ul&gt;
+      &lt;li&gt;FCNC W +- qq&lt;/li&gt;
+      &lt;li&gt;Sherpa yy + jets
+)
+        &lt;h1 id=&quot;selection&quot;&gt;Selection&lt;/h1&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Selection 5 jets&lt;/li&gt;
+  &lt;li&gt;Categories de tagging A et B uniquement, avec un BDT individuel dans chaque categorie (1-A, 1-B, 2-A, 2-B)&lt;/li&gt;
+  &lt;li&gt;Si plusieurs combinaisons sont possibles, je prends celle qui donne mTop2 le plus proche de 173 
+)
+    &lt;h1 id=&quot;procedure&quot;&gt;Procedure&lt;/h1&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Je separe les variables en 3 categories pour faire un premier tri :
+    &lt;ul&gt;
+      &lt;li&gt;pT/eta/m&lt;/li&gt;
+      &lt;li&gt;dR/dEta/DPhi&lt;/li&gt;
+      &lt;li&gt;Meff/Ht&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Dans chacune de ces catégories, je garderai les 3-4 meilleures variables, et je fais une nouvelles selection de variables parmi celles-ci a la fin&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;BDT entraines avec le setup VHbb&lt;/li&gt;
   &lt;li&gt;
@@ -28,30 +43,15 @@
 )&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
-  &lt;li&gt;la significance est evaluee sur les distributions de BDT (rebinnees comme dans VHbb, de facon a reduire l’erreur stat dans chaque bin a une valeur raisonnable) en calculant :
+  &lt;li&gt;la significance est evaluee sur les distributions de BDT (rebinnees comme dans VHbb, de facon a reduire l’erreur stat dans chaque bin a une valeur raisonnable) en calculant dans chaque categorie (combinees ensuite en quadrature) :
 )&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;  Float_t sensitivity &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0.&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  Float_t uncertainty &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0.&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  Int_t nBins &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; m_mvaHistSig-&amp;gt;GetNbinsX&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Int_t &lt;span class=&quot;nv&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; i&amp;lt;nBins&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; i++&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double iS &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; m_mvaHistSig-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;i+1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double iB &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; m_mvaHistBkg-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;i+1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double idS &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; m_mvaHistSig-&amp;gt;GetBinError&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;i+1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double idB &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; m_mvaHistBkg-&amp;gt;GetBinError&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;i+1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;iS&amp;lt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0 or iB&amp;lt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        &lt;span class=&quot;k&quot;&gt;continue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double iLSB &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; log&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1+iS/iB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double s &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 2&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;iS+iB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;iLSB-iS&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double u &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; iLSB &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; iLSB &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; idS &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; idS + &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;iLSB - iS/iB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;iLSB - iS/iB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; idB &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; idB&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      sensitivity +&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; s&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      uncertainty +&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; u&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  m_sensitivity &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; sqrt&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;sensitivity&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;h1 id=&quot;samples&quot;&gt;Samples&lt;/h1&gt;
+&lt;h1 id=&quot;plots-de-ranking&quot;&gt;Plots de ranking&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;h019
-    &lt;ul&gt;
-      &lt;li&gt;FCNC W +- qq&lt;/li&gt;
-      &lt;li&gt;Sherpa yy + jets
-)
-        &lt;h1 id=&quot;selection&quot;&gt;Selection&lt;/h1&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Selection 5 jets&lt;/li&gt;
-  &lt;li&gt;Categories de tagging A et B uniquement&lt;/li&gt;
-  &lt;li&gt;Si plusieurs combinaisons sont possibles, je prends celle qui donne mTop2 le plus proche de 173 
-)
-    &lt;h1 id=&quot;plots-de-ranking&quot;&gt;Plots de ranking&lt;/h1&gt;
-  &lt;/li&gt;
   &lt;li&gt;chaque bin en x correspond à un BDT entrainé, où on a retiré des variables d’entrainement la variable indiquee en label du bin. Dans chaque bloc, la premiere variable retiree correspond au BDT qui donne la meilleure significance, ce qui montre que cette variable est la moins importante de toutes celles testees. Pour l’iteration suivante, elle est donc definitivement supprimee, et on cherche a retirer une variable de plus du BDT a chaque iteration.&lt;/li&gt;
   &lt;li&gt;je pense que l’on sait que l’on atteint un seuil critique dans les variables enlevees lorsque, quelle que soit variable retiree, la significance diminue significativement par rapports aux BDT du bloc d’avant …
 )

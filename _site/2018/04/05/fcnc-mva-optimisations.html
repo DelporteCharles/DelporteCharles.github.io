@@ -83,19 +83,34 @@
     <h1 id="purpose">Purpose</h1>
 
 <ul>
-  <li>
-    <p>Trouver le meilleur set de variables</p>
-  </li>
-  <li>Je separe les variables en 3 categories pour que ce soir plus clair :
-    <ul>
-      <li>pT/eta</li>
-      <li>dR/dEta/DPhi</li>
-      <li>Meff/Ht
-*Dans chacune de ces cateégories, je garderai les 3-4 meilleures variables, et je ferai une nouvelles selection de variables parmi celles ci
+  <li>Trouver le meilleur set de variables pour le BDT (pas forcement celui avec les meilleures performances, sinon on a qu’a prendre toutes les variables, mais celui avec un nombre raisonnable de variables sans grosse perte de discrimination)
 )
-        <h1 id="procedure">Procedure</h1>
+    <h1 id="samples">Samples</h1>
+  </li>
+  <li>h019
+    <ul>
+      <li>FCNC W +- qq</li>
+      <li>Sherpa yy + jets
+)
+        <h1 id="selection">Selection</h1>
       </li>
     </ul>
+  </li>
+  <li>Selection 5 jets</li>
+  <li>Categories de tagging A et B uniquement, avec un BDT individuel dans chaque categorie (1-A, 1-B, 2-A, 2-B)</li>
+  <li>Si plusieurs combinaisons sont possibles, je prends celle qui donne mTop2 le plus proche de 173 
+)
+    <h1 id="procedure">Procedure</h1>
+  </li>
+  <li>Je separe les variables en 3 categories pour faire un premier tri :
+    <ul>
+      <li>pT/eta/m</li>
+      <li>dR/dEta/DPhi</li>
+      <li>Meff/Ht</li>
+    </ul>
+  </li>
+  <li>
+    <p>Dans chacune de ces catégories, je garderai les 3-4 meilleures variables, et je fais une nouvelles selection de variables parmi celles-ci a la fin</p>
   </li>
   <li>BDT entraines avec le setup VHbb</li>
   <li>
@@ -110,30 +125,15 @@
 )</li>
     </ol>
   </li>
-  <li>la significance est evaluee sur les distributions de BDT (rebinnees comme dans VHbb, de facon a reduire l’erreur stat dans chaque bin a une valeur raisonnable) en calculant :
+  <li>la significance est evaluee sur les distributions de BDT (rebinnees comme dans VHbb, de facon a reduire l’erreur stat dans chaque bin a une valeur raisonnable) en calculant dans chaque categorie (combinees ensuite en quadrature) :
 )</li>
 </ul>
 
 <figure class="highlight"><pre><code class="language-sh" data-lang="sh">  Float_t sensitivity <span class="o">=</span> 0.<span class="p">;</span><br data-jekyll-commonmark-ghpages="" />  Float_t uncertainty <span class="o">=</span> 0.<span class="p">;</span><br data-jekyll-commonmark-ghpages="" />  <br data-jekyll-commonmark-ghpages="" />  Int_t nBins <span class="o">=</span> m_mvaHistSig-&gt;GetNbinsX<span class="o">()</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />  <span class="k">for</span><span class="o">(</span>Int_t <span class="nv">i</span><span class="o">=</span>0<span class="p">;</span> i&lt;nBins<span class="p">;</span> i++<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />    <span class="o">{</span><br data-jekyll-commonmark-ghpages="" />      double iS <span class="o">=</span> m_mvaHistSig-&gt;GetBinContent<span class="o">(</span>i+1<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />      double iB <span class="o">=</span> m_mvaHistBkg-&gt;GetBinContent<span class="o">(</span>i+1<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />      <br data-jekyll-commonmark-ghpages="" />      double idS <span class="o">=</span> m_mvaHistSig-&gt;GetBinError<span class="o">(</span>i+1<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />      double idB <span class="o">=</span> m_mvaHistBkg-&gt;GetBinError<span class="o">(</span>i+1<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />      <span class="k">if</span><span class="o">(</span>iS&lt;<span class="o">=</span>0 or iB&lt;<span class="o">=</span>0<span class="o">)</span><br data-jekyll-commonmark-ghpages="" />        <span class="k">continue</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />      <br data-jekyll-commonmark-ghpages="" />      double iLSB <span class="o">=</span> log<span class="o">(</span>1+iS/iB<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />      double s <span class="o">=</span> 2<span class="k">*</span><span class="o">((</span>iS+iB<span class="o">)</span><span class="k">*</span>iLSB-iS<span class="o">)</span><span class="p">;</span><br data-jekyll-commonmark-ghpages="" />      double u <span class="o">=</span> iLSB <span class="k">*</span> iLSB <span class="k">*</span> idS <span class="k">*</span> idS + <span class="o">(</span>iLSB - iS/iB<span class="o">)</span> <span class="k">*</span> <span class="o">(</span>iLSB - iS/iB<span class="o">)</span> <span class="k">*</span> idB <span class="k">*</span> idB<span class="p">;</span><br data-jekyll-commonmark-ghpages="" />      <br data-jekyll-commonmark-ghpages="" />      sensitivity +<span class="o">=</span> s<span class="p">;</span><br data-jekyll-commonmark-ghpages="" />      uncertainty +<span class="o">=</span> u<span class="p">;</span><br data-jekyll-commonmark-ghpages="" />    <span class="o">}</span><br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />  m_sensitivity <span class="o">=</span> sqrt<span class="o">(</span>sensitivity<span class="o">)</span><span class="p">;</span></code></pre></figure>
 
-<h1 id="samples">Samples</h1>
+<h1 id="plots-de-ranking">Plots de ranking</h1>
 
 <ul>
-  <li>h019
-    <ul>
-      <li>FCNC W +- qq</li>
-      <li>Sherpa yy + jets
-)
-        <h1 id="selection">Selection</h1>
-      </li>
-    </ul>
-  </li>
-  <li>Selection 5 jets</li>
-  <li>Categories de tagging A et B uniquement</li>
-  <li>Si plusieurs combinaisons sont possibles, je prends celle qui donne mTop2 le plus proche de 173 
-)
-    <h1 id="plots-de-ranking">Plots de ranking</h1>
-  </li>
   <li>chaque bin en x correspond à un BDT entrainé, où on a retiré des variables d’entrainement la variable indiquee en label du bin. Dans chaque bloc, la premiere variable retiree correspond au BDT qui donne la meilleure significance, ce qui montre que cette variable est la moins importante de toutes celles testees. Pour l’iteration suivante, elle est donc definitivement supprimee, et on cherche a retirer une variable de plus du BDT a chaque iteration.</li>
   <li>je pense que l’on sait que l’on atteint un seuil critique dans les variables enlevees lorsque, quelle que soit variable retiree, la significance diminue significativement par rapports aux BDT du bloc d’avant …
 )
