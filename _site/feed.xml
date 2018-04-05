@@ -1,4 +1,228 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-04-03T17:03:49+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">FCNC Combinatoric TruthMatching</title><link href="/2018/04/03/fcnc-combinatoric-truthmatching.html" rel="alternate" type="text/html" title="FCNC Combinatoric TruthMatching" /><published>2018-04-03T00:00:00+02:00</published><updated>2018-04-03T00:00:00+02:00</updated><id>/2018/04/03/fcnc-combinatoric-truthmatching</id><content type="html" xml:base="/2018/04/03/fcnc-combinatoric-truthmatching.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-04-05T15:44:10+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">FCNC MVA Optimisations</title><link href="/2018/04/05/fcnc-mva-optimisations.html" rel="alternate" type="text/html" title="FCNC MVA Optimisations" /><published>2018-04-05T00:00:00+02:00</published><updated>2018-04-05T00:00:00+02:00</updated><id>/2018/04/05/fcnc-mva-optimisations</id><content type="html" xml:base="/2018/04/05/fcnc-mva-optimisations.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Trouver le meilleur set de variables&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Je separe les variables en 3 categories pour que ce soir plus clair :
+    &lt;ul&gt;
+      &lt;li&gt;pT/eta&lt;/li&gt;
+      &lt;li&gt;dR/dEta/DPhi&lt;/li&gt;
+      &lt;li&gt;Meff/Ht
+*Dans chacune de ces cateégories, je garderai les 3-4 meilleures variables, et je ferai une nouvelles selection de variables parmi celles ci
+)
+        &lt;h1 id=&quot;procedure&quot;&gt;Procedure&lt;/h1&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;BDT entraines avec le setup VHbb&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Poids negatifs pris en compte&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Procedure iterative :
+    &lt;ol&gt;
+      &lt;li&gt;je demarre avec toutes les variables&lt;/li&gt;
+      &lt;li&gt;pour chaque variable (restante), j’entraine un nouveau BDT sans la variable en question&lt;/li&gt;
+      &lt;li&gt;le BDT qui donne la meilleure significance indique la variable la moins utile : elle ne sera pas utilisee dans les prochaines iterations&lt;/li&gt;
+      &lt;li&gt;je reprends au point b. et à chaque iteration j’enleve une nouvelle variable
+)&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;la significance est evaluee sur les distributions de BDT (rebinnees comme dans VHbb, de facon a reduire l’erreur stat dans chaque bin a une valeur raisonnable) en calculant :
+)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;  Float_t sensitivity &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0.&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  Float_t uncertainty &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0.&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  Int_t nBins &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; m_mvaHistSig-&amp;gt;GetNbinsX&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Int_t &lt;span class=&quot;nv&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; i&amp;lt;nBins&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; i++&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double iS &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; m_mvaHistSig-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;i+1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double iB &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; m_mvaHistBkg-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;i+1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double idS &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; m_mvaHistSig-&amp;gt;GetBinError&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;i+1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double idB &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; m_mvaHistBkg-&amp;gt;GetBinError&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;i+1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;iS&amp;lt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0 or iB&amp;lt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        &lt;span class=&quot;k&quot;&gt;continue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double iLSB &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; log&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1+iS/iB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double s &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 2&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;iS+iB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;iLSB-iS&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double u &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; iLSB &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; iLSB &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; idS &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; idS + &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;iLSB - iS/iB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;iLSB - iS/iB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; idB &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; idB&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      sensitivity +&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; s&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      uncertainty +&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; u&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  m_sensitivity &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; sqrt&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;sensitivity&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;samples&quot;&gt;Samples&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;h019
+    &lt;ul&gt;
+      &lt;li&gt;FCNC W +- qq&lt;/li&gt;
+      &lt;li&gt;Sherpa yy + jets
+)
+        &lt;h1 id=&quot;selection&quot;&gt;Selection&lt;/h1&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Selection 5 jets&lt;/li&gt;
+  &lt;li&gt;Categories de tagging A et B uniquement&lt;/li&gt;
+  &lt;li&gt;Si plusieurs combinaisons sont possibles, je prends celle qui donne mTop2 le plus proche de 173 
+)
+    &lt;h1 id=&quot;plots-de-ranking&quot;&gt;Plots de ranking&lt;/h1&gt;
+  &lt;/li&gt;
+  &lt;li&gt;chaque bin en x correspond à un BDT entrainé, où on a retiré des variables d’entrainement la variable indiquee en label du bin. Dans chaque bloc, la premiere variable retiree correspond au BDT qui donne la meilleure significance, ce qui montre que cette variable est la moins importante de toutes celles testees. Pour l’iteration suivante, elle est donc definitivement supprimee, et on cherche a retirer une variable de plus du BDT a chaque iteration.&lt;/li&gt;
+  &lt;li&gt;je pense que l’on sait que l’on atteint un seuil critique dans les variables enlevees lorsque, quelle que soit variable retiree, la significance diminue significativement par rapports aux BDT du bloc d’avant …
+)
+    &lt;h1 id=&quot;pt--eta--m&quot;&gt;pT / eta / m&lt;/h1&gt;
+    &lt;p&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Ordre d’importance des variables (importance decroissante)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;pTyy&lt;/li&gt;
+  &lt;li&gt;mW&lt;/li&gt;
+  &lt;li&gt;mtt&lt;/li&gt;
+  &lt;li&gt;pTj1&lt;/li&gt;
+  &lt;li&gt;pTb&lt;/li&gt;
+  &lt;li&gt;etayy&lt;/li&gt;
+  &lt;li&gt;etab&lt;/li&gt;
+  &lt;li&gt;pTtt&lt;/li&gt;
+  &lt;li&gt;etaj0&lt;/li&gt;
+  &lt;li&gt;pTratiobjj0j1&lt;/li&gt;
+  &lt;li&gt;etaj1&lt;/li&gt;
+  &lt;li&gt;pTratioj0j1&lt;/li&gt;
+  &lt;li&gt;ytt&lt;/li&gt;
+  &lt;li&gt;pTj0&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;6% de difference en significance entre le meilleure entrainement avec 13 variables et le moins bon à 2 variables
+)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Proposition de variables a conserver :&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;pTyy&lt;/li&gt;
+  &lt;li&gt;mW&lt;/li&gt;
+  &lt;li&gt;mtt&lt;/li&gt;
+  &lt;li&gt;pTj1&lt;/li&gt;
+  &lt;li&gt;pTb&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/E99C96AB7336869E39E7544981F3797B.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;variablesOptimizationLocal rootFiles/h019/ BDTTree_FCNCttWpqq_v0_5jets_tagging:BDTTree_FCNCttWmqq_v0_5jets_tagging BDTTree_FCNCttShergg_allVariables_v1_5jets_tagging pTj0:etaj0:pTj1:etaj1:pTb:etab:mW:pTratiobjj0j1:pTratioj0j1:pTtt:ytt:mtt:pTyy:etayy kinematic_v0&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;dr--dphi--deta&quot;&gt;dR / dPhi / dEta&lt;/h1&gt;
+&lt;p&gt;)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ordre d’importance des variables (importance decroissante)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;maxdRcy&lt;/li&gt;
+  &lt;li&gt;mindRbj&lt;/li&gt;
+  &lt;li&gt;dEtacH&lt;/li&gt;
+  &lt;li&gt;mindRcy&lt;/li&gt;
+  &lt;li&gt;dRbW&lt;/li&gt;
+  &lt;li&gt;maxdPhicy&lt;/li&gt;
+  &lt;li&gt;dPhibW&lt;/li&gt;
+  &lt;li&gt;mindPhicy&lt;/li&gt;
+  &lt;li&gt;mindPhibj&lt;/li&gt;
+  &lt;li&gt;dRcH&lt;/li&gt;
+  &lt;li&gt;dEtabW&lt;/li&gt;
+  &lt;li&gt;dPhicH&lt;/li&gt;
+  &lt;li&gt;costhetastary&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;3% de difference en significance entre le meilleure entrainement avec 12 variables et le moins bon à variables
+)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Proposition de variables a conserver :&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;maxdRcy&lt;/li&gt;
+  &lt;li&gt;mindRbj&lt;/li&gt;
+  &lt;li&gt;dEtacH&lt;/li&gt;
+  &lt;li&gt;mindRcy&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/E509F703A03DD58CB9A31E254544D270.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;variablesOptimizationLocal rootFiles/h019/ BDTTree_FCNCttWpqq_v0_5jets_tagging:BDTTree_FCNCttWmqq_v0_5jets_tagging BDTTree_FCNCttShergg_allVariables_v1_5jets_tagging dRbW:dPhibW:dEtabW:mindRbj:mindPhibj:dRcH:dPhicH:dEtacH:maxdRcy:mindRcy:maxdPhicy:mindPhicy:costhetastary distances_v0&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;meff--ht&quot;&gt;Meff / HT&lt;/h1&gt;
+&lt;p&gt;)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ordre d’importance des variables (importance decroissante)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;HTcjy0y1bjj0j1&lt;/li&gt;
+  &lt;li&gt;HT4jets&lt;/li&gt;
+  &lt;li&gt;MefftopSM&lt;/li&gt;
+  &lt;li&gt;MefftopEx&lt;/li&gt;
+  &lt;li&gt;HTjets&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;2.5% de difference en significance entre le meilleure entrainement avec 12 variables et le moins bon à 2 variables
+)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Proposition de variables a conserver :&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;HTcjy0y1bjj0j1&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;–&amp;gt; retirer les autres variables n’impact quasiment pas, et dans la mesure où toutes ces variables sont tres correlees entre elles, pas la peine d’en donner plusieurs au BDT, il s’agissait surtout de trouver la meilleure d’entre elles&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/46C59B0779D07B13D95476B916F4FD8B.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;variablesOptimizationLocal rootFiles/h019/ BDTTree_FCNCttWpqq_v0_5jets_tagging:BDTTree_FCNCttWmqq_v0_5jets_tagging BDTTree_FCNCttShergg_allVariables_v1_5jets_tagging MefftopSM:HTcjy0y1bjj0j1:HT4jets:HTjets:MefftopEx meffht_v0&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;optimisation-finale&quot;&gt;Optimisation finale&lt;/h1&gt;
+&lt;p&gt;)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;je rajoute costhetastary pour verifier la significance avec toutes les variables selectionnees precedemment (BDT temoins disons … je re-coderai ce BDT temoins plus proprement une autre fois) … costhetastary devrait etre eliminee assez rapidement, et permettra peut-etre de supprimer certaines variables qui rankent bien grace a des fluctuations statistiques
+)&lt;/li&gt;
+  &lt;li&gt;Ordre d’importance des variables (importance decroissante)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;HTcjy0y1bjj0j1&lt;/li&gt;
+  &lt;li&gt;mindRbj&lt;/li&gt;
+  &lt;li&gt;maxdRcy&lt;/li&gt;
+  &lt;li&gt;mtt&lt;/li&gt;
+  &lt;li&gt;pTb&lt;/li&gt;
+  &lt;li&gt;mW&lt;/li&gt;
+  &lt;li&gt;pTyy&lt;/li&gt;
+  &lt;li&gt;pTj1&lt;/li&gt;
+  &lt;li&gt;costhetastary&lt;/li&gt;
+  &lt;li&gt;mindRcy&lt;/li&gt;
+  &lt;li&gt;dEtacH&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;4.9% de difference en significance entre le meilleure entrainement avec 12 variables et le moins bon à 2 variables
+)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Proposition finale de variables a conserver (TRAIN__Thu_Apr__5&lt;em&gt;14_28_01_2018&lt;/em&gt;) :&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;HTcjy0y1bjj0j1&lt;/li&gt;
+  &lt;li&gt;mindRbj&lt;/li&gt;
+  &lt;li&gt;maxdRcy&lt;/li&gt;
+  &lt;li&gt;mtt&lt;/li&gt;
+  &lt;li&gt;pTb&lt;/li&gt;
+  &lt;li&gt;mW&lt;/li&gt;
+  &lt;li&gt;pTyy&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;–&amp;gt; significance de 1821.26 (voire 1er bin du bloc precedent la suppression de pTyy) avec seulement 7 variables
+–&amp;gt; significance de 1852.59 dans un BDT avec toutes les variables testees dans cette note (32 variables)
+==&amp;gt; 1.7% de perte en significance en passant de 32 variables aux 7 meilleures&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/556BF85876FD5D6614822CEDA2F2F017.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+&lt;img src=&quot;/images/q/D9967B6AC96215730D70DE9BBF4E1921.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+&lt;img src=&quot;/images/q/99A167FC0DBBBE52B47EA867FDC3D4EE.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+&lt;img src=&quot;/images/q/A21B35015024A831C542E0F74F8EB9BE.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;correlation de ce BDT a myy : profile BDT:myy pour le bruit de fond&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/4C764DDC74FCBD62CACB71BCE3DE9E1C.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;variablesOptimizationLocal rootFiles/h019/ BDTTree_FCNCttWpqq_v0_5jets_tagging:BDTTree_FCNCttWmqq_v0_5jets_tagging BDTTree_FCNCttShergg_allVariables_v1_5jets_tagging pTyy:mW:mtt:pTj1:pTb:maxdRcy:mindRbj:dEtacH:mindRcy:HTcjy0y1bjj0j1:costhetastary final_v0&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;for-record--all-variables&quot;&gt;for record : all variables&lt;/h3&gt;
+&lt;p&gt;)&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;variablesOptimizationLocal rootFiles/h019/ BDTTree_FCNCttWpqq_v0_5jets_tagging:BDTTree_FCNCttWmqq_v0_5jets_tagging BDTTree_FCNCttShergg_allVariables_v1_5jets_tagging pTj0:etaj0:pTj1:etaj1:pTb:etab:dRbW:dPhibW:dEtabW:mW:mindRbj:mindPhibj:MefftopSM:pTratiobjj0j1:pTratioj0j1:pTtt:ytt:mtt:HTcjy0y1bjj0j1:HT4jets:HTjets:dRcH:dPhicH:dEtacH:mTopEx:MefftopEx:maxdRcy:mindRcy:maxdPhicy:mindPhicy:costhetastary:ptyy:etayy allVars&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Purpose</summary></entry><entry><title type="html">FCNC Combinatoric TruthMatching</title><link href="/2018/04/03/fcnc-combinatoric-truthmatching.html" rel="alternate" type="text/html" title="FCNC Combinatoric TruthMatching" /><published>2018-04-03T00:00:00+02:00</published><updated>2018-04-03T00:00:00+02:00</updated><id>/2018/04/03/fcnc-combinatoric-truthmatching</id><content type="html" xml:base="/2018/04/03/fcnc-combinatoric-truthmatching.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;optimiser la selection des jets parmis les differents combinaisons qui passent les coupures
@@ -233,7 +457,10 @@
 
 &lt;p&gt;&lt;img src=&quot;/images/q/ED959015E60F14ACAD5D3AB198D4E53E.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;TMVAClassification &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; BDTTree_FCNCttWmqq_v1_4jets BDTTree_FCNCttShergg_allVariables_v1_4jets pTj0:etaj0:pTj1:etaj1:pTb:etab:dRbW:dPhibW:dEtabW:mW:mTopSM:mindR_bj:mindPhi_bj:Meff_topSM:pTratio_bj_j0j1:pTratio_j0_j1:pT_tt:y_tt:m_tt:HT_cj_y0_y1_bj_j0_j1:HT4jets:HTjets:dR_cH:dPhi_cH:dEta_cH:m_TopEx:Meff_topEx:maxdR_cy:mindR_cy:maxdPhi_cy:mindPhi_cy:costhetastar_y &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="bdt" /><category term="fcnc" /><summary type="html">Purpose</summary></entry><entry><title type="html">Slides FCNC</title><link href="/2018/03/05/slides-fcnc.html" rel="alternate" type="text/html" title="Slides FCNC" /><published>2018-03-05T00:00:00+01:00</published><updated>2018-03-05T00:00:00+01:00</updated><id>/2018/03/05/slides-fcnc</id><content type="html" xml:base="/2018/03/05/slides-fcnc.html">&lt;p&gt;Daniel&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;TMVAClassification &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; BDTTree_FCNCttWmqq_v1_4jets BDTTree_FCNCttShergg_allVariables_v1_4jets pTj0:etaj0:pTj1:etaj1:pTb:etab:dRbW:dPhibW:dEtabW:mW:mTopSM:mindR_bj:mindPhi_bj:Meff_topSM:pTratio_bj_j0j1:pTratio_j0_j1:pT_tt:y_tt:m_tt:HT_cj_y0_y1_bj_j0_j1:HT4jets:HTjets:dR_cH:dPhi_cH:dEta_cH:m_TopEx:Meff_topEx:maxdR_cy:mindR_cy:maxdPhi_cy:mindPhi_cy:costhetastar_y &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;variablesOptimizationLocal rootFiles/h019/ BDTTree_FCNCttWpqq_v0_4jets_tagging:BDTTree_FCNCttWmqq_v0_4jets_tagging BDTTree_FCNCttShergg_allVariables_v1_4jets_tagging pTj0:pTj1:pTb:dRbW test0
+)&lt;/p&gt;</content><author><name></name></author><category term="bdt" /><category term="fcnc" /><summary type="html">Purpose</summary></entry><entry><title type="html">Slides FCNC</title><link href="/2018/03/05/slides-fcnc.html" rel="alternate" type="text/html" title="Slides FCNC" /><published>2018-03-05T00:00:00+01:00</published><updated>2018-03-05T00:00:00+01:00</updated><id>/2018/03/05/slides-fcnc</id><content type="html" xml:base="/2018/03/05/slides-fcnc.html">&lt;p&gt;Daniel&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -595,12 +822,4 @@
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;[x] p8 : a priori, comme tu as dit « soft Wh)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Salut,</summary></entry><entry><title type="html">Chloe code</title><link href="/2018/01/10/chloe-code.html" rel="alternate" type="text/html" title="Chloe code" /><published>2018-01-10T00:00:00+01:00</published><updated>2018-01-10T00:00:00+01:00</updated><id>/2018/01/10/chloe-code</id><content type="html" xml:base="/2018/01/10/chloe-code.html">&lt;p&gt;XSection is that of the 1rst file&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;good magnitude order&lt;/li&gt;
-  &lt;li&gt;[ ] but != values in Herwig vs Pythia –&amp;gt; must not impact the acceptance !&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;ratio is Herwig 7 / Pythia 8
-3 jets categories : 2,3 and 4 or 4p ? (last item to be checked)
-)&lt;/p&gt;</content><author><name></name></author><summary type="html">XSection is that of the 1rst file good magnitude order [ ] but != values in Herwig vs Pythia –&amp;gt; must not impact the acceptance !</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Salut,</summary></entry></feed>
