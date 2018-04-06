@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-04-06T14:41:18+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">MVA with separate plot per category</title><link href="/2018/04/06/mva-with-separate-plot-per-category.html" rel="alternate" type="text/html" title="MVA with separate plot per category" /><published>2018-04-06T00:00:00+02:00</published><updated>2018-04-06T00:00:00+02:00</updated><id>/2018/04/06/mva-with-separate-plot-per-category</id><content type="html" xml:base="/2018/04/06/mva-with-separate-plot-per-category.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-04-06T14:44:06+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">MVA with separate plot per category</title><link href="/2018/04/06/mva-with-separate-plot-per-category.html" rel="alternate" type="text/html" title="MVA with separate plot per category" /><published>2018-04-06T00:00:00+02:00</published><updated>2018-04-06T00:00:00+02:00</updated><id>/2018/04/06/mva-with-separate-plot-per-category</id><content type="html" xml:base="/2018/04/06/mva-with-separate-plot-per-category.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;verifier la forme du BDT separement pour chaque categorie&lt;/li&gt;
@@ -49,28 +49,9 @@ Categories sur le screenshot avec 4 plots :
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1-A&lt;/td&gt;
-      &lt;td&gt;1-B&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;1-A      |      1-B&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;2-A      |      2-B&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;)&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;2-A&lt;/td&gt;
-      &lt;td&gt;2-B&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;)
-&lt;img src=&quot;/images/q/61EFAE6D42BC81AF429CC1B78F9A84DD.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/q/61EFAE6D42BC81AF429CC1B78F9A84DD.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
 &lt;h1 id=&quot;categorie-1-a&quot;&gt;Categorie 1-A&lt;/h1&gt;
 &lt;p&gt;)
 &lt;img src=&quot;/images/q/58A641622733F7743417593E5CC43659.jpg&quot; alt=&quot;IMAGE&quot; /&gt;

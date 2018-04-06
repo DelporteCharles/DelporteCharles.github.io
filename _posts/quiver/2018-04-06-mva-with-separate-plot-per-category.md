@@ -39,18 +39,11 @@ tags:
 )
 Categories sur le screenshot avec 4 plots :
 )
-
-
+{% highlight sh %}
 1-A      |      1-B
-
-
-)
-
-
 2-A      |      2-B
+{% endhighlight %}
 
-
-)
 ![IMAGE](/images/q/61EFAE6D42BC81AF429CC1B78F9A84DD.jpg)
 # Categorie 1-A
 )
