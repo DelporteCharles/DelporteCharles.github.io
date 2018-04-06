@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-04-06T14:27:41+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">MVA with separate plot per category</title><link href="/2018/04/06/mva-with-separate-plot-per-category.html" rel="alternate" type="text/html" title="MVA with separate plot per category" /><published>2018-04-06T00:00:00+02:00</published><updated>2018-04-06T00:00:00+02:00</updated><id>/2018/04/06/mva-with-separate-plot-per-category</id><content type="html" xml:base="/2018/04/06/mva-with-separate-plot-per-category.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-04-06T14:37:42+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">MVA with separate plot per category</title><link href="/2018/04/06/mva-with-separate-plot-per-category.html" rel="alternate" type="text/html" title="MVA with separate plot per category" /><published>2018-04-06T00:00:00+02:00</published><updated>2018-04-06T00:00:00+02:00</updated><id>/2018/04/06/mva-with-separate-plot-per-category</id><content type="html" xml:base="/2018/04/06/mva-with-separate-plot-per-category.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;verifier la forme du BDT separement pour chaque categorie&lt;/li&gt;
@@ -44,49 +44,39 @@
 )
     &lt;h1 id=&quot;plot-de-comparaison-des-bdt-par-categorie-plus-de-plots-en-dessous&quot;&gt;Plot de comparaison des BDT par categorie (plus de plots en dessous)&lt;/h1&gt;
     &lt;p&gt;)
-Categories sur le screenshot avec 4 plots :&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1-A&lt;/td&gt;
-      &lt;td&gt;1-B&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;2-A      |      2-B
+Categories sur le screenshot avec 4 plots :
+)
+1-A      |      1-B
+)
+2-A      |      2-B
 )
 &lt;img src=&quot;/images/q/61EFAE6D42BC81AF429CC1B78F9A84DD.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h1 id=&quot;categorie-1-a&quot;&gt;Categorie 1-A&lt;/h1&gt;
-&lt;p&gt;)
+    &lt;h1 id=&quot;categorie-1-a&quot;&gt;Categorie 1-A&lt;/h1&gt;
+    &lt;p&gt;)
 &lt;img src=&quot;/images/q/58A641622733F7743417593E5CC43659.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
 &lt;img src=&quot;/images/q/F3FF2FAC83DF8EDAE60191A0D1F62BFD.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
 &lt;img src=&quot;/images/q/8FC0473EB7BC40673CEFD0B9A139193A.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
 &lt;img src=&quot;/images/q/F1110CD2760D064885357B570B22B898.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h1 id=&quot;categorie-1-b&quot;&gt;Categorie 1-B&lt;/h1&gt;
-&lt;p&gt;)
+    &lt;h1 id=&quot;categorie-1-b&quot;&gt;Categorie 1-B&lt;/h1&gt;
+    &lt;p&gt;)
 &lt;img src=&quot;/images/q/234C83DBBE074BF53D307739195C2662.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
 &lt;img src=&quot;/images/q/D7524232FECE11C31E9D8B1E043FCEB4.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
 &lt;img src=&quot;/images/q/73DC9036A09A86725F70442BE4BCDA36.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
 &lt;img src=&quot;/images/q/DD9F424B996802F3B19BFD4ADF9F2031.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h1 id=&quot;categorie-2-a&quot;&gt;Categorie 2-A&lt;/h1&gt;
-&lt;p&gt;)
+    &lt;h1 id=&quot;categorie-2-a&quot;&gt;Categorie 2-A&lt;/h1&gt;
+    &lt;p&gt;)
 &lt;img src=&quot;/images/q/C20C9B3C6D26E1DB05DB85E088CB1214.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
 &lt;img src=&quot;/images/q/4E769A6317A9A5D862972FC8B4D8F248.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
 &lt;img src=&quot;/images/q/04F54AC9FC94B6EA5E838B49B5199B77.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
 &lt;img src=&quot;/images/q/8D75BFD7D669527BA3C4482A27400865.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h1 id=&quot;categorie-2-b&quot;&gt;Categorie 2-B&lt;/h1&gt;
-&lt;p&gt;)
+    &lt;h1 id=&quot;categorie-2-b&quot;&gt;Categorie 2-B&lt;/h1&gt;
+    &lt;p&gt;)
 &lt;img src=&quot;/images/q/9172142E3B42812F177EA5D95D77806D.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
 &lt;img src=&quot;/images/q/59EE94353D4C9C420495BD12A06EC773.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
 &lt;img src=&quot;/images/q/030DC6E326B30250B6B1061D51FD47BD.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
 &lt;img src=&quot;/images/q/79041CBA776AD07CCDCB243B12258C80.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;correspondance-de-categories-dans-le-fichier-root-et-lanalyse&quot;&gt;Correspondance de categories dans le fichier root et l’analyse&lt;/h2&gt;
-
-&lt;ul&gt;
+    &lt;h2 id=&quot;correspondance-de-categories-dans-le-fichier-root-et-lanalyse&quot;&gt;Correspondance de categories dans le fichier root et l’analyse&lt;/h2&gt;
+  &lt;/li&gt;
   &lt;li&gt;cat1A fold1o2)&lt;/li&gt;
 &lt;/ul&gt;
 
