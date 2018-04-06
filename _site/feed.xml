@@ -1,4 +1,90 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-04-05T15:59:10+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">FCNC MVA Optimisations</title><link href="/2018/04/05/fcnc-mva-optimisations.html" rel="alternate" type="text/html" title="FCNC MVA Optimisations" /><published>2018-04-05T00:00:00+02:00</published><updated>2018-04-05T00:00:00+02:00</updated><id>/2018/04/05/fcnc-mva-optimisations</id><content type="html" xml:base="/2018/04/05/fcnc-mva-optimisations.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-04-06T13:21:10+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">MVA with separate plot per category</title><link href="/2018/04/06/mva-with-separate-plot-per-category.html" rel="alternate" type="text/html" title="MVA with separate plot per category" /><published>2018-04-06T00:00:00+02:00</published><updated>2018-04-06T00:00:00+02:00</updated><id>/2018/04/06/mva-with-separate-plot-per-category</id><content type="html" xml:base="/2018/04/06/mva-with-separate-plot-per-category.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;verifier la forme du BDT separement pour chaque categorie&lt;/li&gt;
+  &lt;li&gt;et aussi celle des variables du top SM, pour lequel on a de bons matchings en categorie 1, mais pas en categorie 2
+    &lt;ul&gt;
+      &lt;li&gt;comment se comportent les variables du top SM lorsqu’on a des mauvais jets dans la combinaison ?
+        &lt;ul&gt;
+          &lt;li&gt;mindRbj&lt;/li&gt;
+          &lt;li&gt;mW&lt;/li&gt;
+          &lt;li&gt;mtt&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;question sous-jacente : utiliser la combinaison la plus proche de mTop2=173 pour la categorie 2 ?
+)
+        &lt;h1 id=&quot;bdt-à-létude&quot;&gt;BDT à l’étude&lt;/h1&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;BDT proposé comme baseline, a partir des optimisations sur MG:Sherpa h019&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Liste des variables :&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;HTcjy0y1bjj0j1&lt;/li&gt;
+  &lt;li&gt;mindRbj&lt;/li&gt;
+  &lt;li&gt;maxdRcy&lt;/li&gt;
+  &lt;li&gt;mtt&lt;/li&gt;
+  &lt;li&gt;pTb&lt;/li&gt;
+  &lt;li&gt;mW&lt;/li&gt;
+  &lt;li&gt;pTyy
+)
+    &lt;h1 id=&quot;observations-principales&quot;&gt;Observations principales&lt;/h1&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;faible stat dans les categories 1-A et 2-A ce qui ne permet un tres bon accord training/testing …&lt;/li&gt;
+  &lt;li&gt;bon accord training/testing en 1-B et 2-B&lt;/li&gt;
+  &lt;li&gt;comme Jean-Baptiste l’avais intuité, certaines variables (mW et mtt) ont moins de sens dans la catégorie 2 dans la mesure ou l’un des 2 jets non-b-tagged vient surement d’un ISR/FSR/PW et n’apporte donc pas d’information pour discriminer le signal du bruit de fond : peut-etre faut-il en effet prendre un jeu de variables different pour les categories 1 et 2 …&lt;/li&gt;
+  &lt;li&gt;par contre pour mindRbj, la discrimination est presque plus importante en categorie 2 que categorie 1 (pas discriminante du tout en 1-B)
+)
+    &lt;h1 id=&quot;plot-de-comparaison-des-bdt-par-categorie-plus-de-plots-en-dessous&quot;&gt;Plot de comparaison des BDT par categorie (plus de plots en dessous)&lt;/h1&gt;
+    &lt;p&gt;)
+Categories sur le screenshot avec 4 plots :&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;|   |   |
+|—|—|
+|1-A|1-B|
+|2-A|2-B|
+)
+&lt;img src=&quot;/images/q/61EFAE6D42BC81AF429CC1B78F9A84DD.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;categorie-1-a&quot;&gt;Categorie 1-A&lt;/h1&gt;
+&lt;p&gt;)
+&lt;img src=&quot;/images/q/58A641622733F7743417593E5CC43659.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+&lt;img src=&quot;/images/q/F3FF2FAC83DF8EDAE60191A0D1F62BFD.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+&lt;img src=&quot;/images/q/8FC0473EB7BC40673CEFD0B9A139193A.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+&lt;img src=&quot;/images/q/F1110CD2760D064885357B570B22B898.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;categorie-1-b&quot;&gt;Categorie 1-B&lt;/h1&gt;
+&lt;p&gt;)
+&lt;img src=&quot;/images/q/234C83DBBE074BF53D307739195C2662.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+&lt;img src=&quot;/images/q/D7524232FECE11C31E9D8B1E043FCEB4.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+&lt;img src=&quot;/images/q/73DC9036A09A86725F70442BE4BCDA36.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+&lt;img src=&quot;/images/q/DD9F424B996802F3B19BFD4ADF9F2031.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;categorie-2-a&quot;&gt;Categorie 2-A&lt;/h1&gt;
+&lt;p&gt;)
+&lt;img src=&quot;/images/q/C20C9B3C6D26E1DB05DB85E088CB1214.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+&lt;img src=&quot;/images/q/4E769A6317A9A5D862972FC8B4D8F248.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+&lt;img src=&quot;/images/q/04F54AC9FC94B6EA5E838B49B5199B77.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+&lt;img src=&quot;/images/q/8D75BFD7D669527BA3C4482A27400865.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;categorie-2-b&quot;&gt;Categorie 2-B&lt;/h1&gt;
+&lt;p&gt;)
+&lt;img src=&quot;/images/q/9172142E3B42812F177EA5D95D77806D.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+&lt;img src=&quot;/images/q/59EE94353D4C9C420495BD12A06EC773.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+&lt;img src=&quot;/images/q/030DC6E326B30250B6B1061D51FD47BD.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+&lt;img src=&quot;/images/q/79041CBA776AD07CCDCB243B12258C80.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;correspondance-de-categories-dans-le-fichier-root-et-lanalyse&quot;&gt;Correspondance de categories dans le fichier root et l’analyse&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;cat1A fold1o2)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_1o2_tagcat_1_sel_1&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;-0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;0.5))&amp;amp;amp;&amp;amp;amp;(tagcat==1))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;gt;=120&amp;amp;amp;&amp;amp;amp;mTopSM&amp;amp;lt;=220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_1o2_tagcat_1_sel_2&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;-0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;0.5))&amp;amp;amp;&amp;amp;amp;(tagcat==1))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;lt;120||mTopSM&amp;amp;gt;220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_2o2_tagcat_1_sel_1&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;1.5))&amp;amp;amp;&amp;amp;amp;(tagcat==1))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;gt;=120&amp;amp;amp;&amp;amp;amp;mTopSM&amp;amp;lt;=220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;3&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_2o2_tagcat_1_sel_2&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;1.5))&amp;amp;amp;&amp;amp;amp;(tagcat==1))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;lt;120||mTopSM&amp;amp;gt;220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;4&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_1o2_tagcat_2_sel_1&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;-0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;0.5))&amp;amp;amp;&amp;amp;amp;(tagcat==2))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;gt;=120&amp;amp;amp;&amp;amp;amp;mTopSM&amp;amp;lt;=220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;5&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_1o2_tagcat_2_sel_2&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;-0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;0.5))&amp;amp;amp;&amp;amp;amp;(tagcat==2))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;lt;120||mTopSM&amp;amp;gt;220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;6&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_2o2_tagcat_2_sel_1&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;1.5))&amp;amp;amp;&amp;amp;amp;(tagcat==2))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;gt;=120&amp;amp;amp;&amp;amp;amp;mTopSM&amp;amp;lt;=220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;7&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_2o2_tagcat_2_sel_2&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;1.5))&amp;amp;amp;&amp;amp;amp;(tagcat==2))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;lt;120||mTopSM&amp;amp;gt;220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Purpose</summary></entry><entry><title type="html">FCNC MVA Optimisations</title><link href="/2018/04/05/fcnc-mva-optimisations.html" rel="alternate" type="text/html" title="FCNC MVA Optimisations" /><published>2018-04-05T00:00:00+02:00</published><updated>2018-04-05T00:00:00+02:00</updated><id>/2018/04/05/fcnc-mva-optimisations</id><content type="html" xml:base="/2018/04/05/fcnc-mva-optimisations.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Trouver le meilleur set de variables pour le BDT (pas forcement celui avec les meilleures performances, sinon on a qu’a prendre toutes les variables, mais celui avec un nombre raisonnable de variables sans grosse perte de discrimination)
@@ -780,46 +866,4 @@
     &lt;h2 id=&quot;dphib-w&quot;&gt;dPhi(b, W)&lt;/h2&gt;
     &lt;p&gt;&lt;img src=&quot;/images/q/922BF8F5E21478F06ED31B9BD84B4754.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Purpose</summary></entry><entry><title type="html">Slides JB</title><link href="/2018/01/30/slides-jb.html" rel="alternate" type="text/html" title="Slides JB" /><published>2018-01-30T00:00:00+01:00</published><updated>2018-01-30T00:00:00+01:00</updated><id>/2018/01/30/slides-jb</id><content type="html" xml:base="/2018/01/30/slides-jb.html">&lt;p&gt;Salut,&lt;/p&gt;
-
-&lt;p&gt;Qques commentaires sur la derniere version que j’ai vue (hier) :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;[x] p3 (et ailleurs) 	MC stat, —&amp;gt; MC stat. (aussi p22)
-    &lt;ul&gt;
-      &lt;li&gt;a plein d’endroits en effet …&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;[x] C’est quoi le tableau en fait ? J’ai l’impression que c’est ttbar + single top. Comment
-  je fais pour obtenir ces fractions, et comment est definie « Stat. error » ?
-    &lt;ul&gt;
-      &lt;li&gt;ce sont les fractions de yields et erreurs^2 de ttbar&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;[x] p5 : un dileptonic taus avec les 2 taus en e/mu se retrouve dans la 3eme colonne ? 
-        un dileptonic taus avec un tau had et un tau lep se retrouve dans la 2eme ?
-    &lt;ul&gt;
-      &lt;li&gt;les taus sont pris comme leptons dans cette table, i.e. contrairement a Wqq&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;[x] p6 : 2eme bullet : peut-etre preciser que le pT sera dans TST s’il est dans l’acceptance 
-       de l’ID mais pas identifie, ou ne sera nulle part s’il n’est pas dans l’acceptance de l’ID&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;[ ] pT ~ 28 GeV : n’est pas si bas (on definit VHLoose avec pT &amp;gt; 7 GeV, non ?)… peut-etre mettre plutot la MPV ?
-    &lt;ul&gt;
-      &lt;li&gt;supprimeé pour l’instant&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;[x] p7 : « W propagation axis » est etrange…
-    &lt;ul&gt;
-      &lt;li&gt;W boson&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;[ ] plot du bas : pourquoi l’histrogramme rouge commence a ~ 25 GeV
-    &lt;ul&gt;
-      &lt;li&gt;il doit y avoir une coupure … ?&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;[x] p8 : a priori, comme tu as dit « soft Wh)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Salut,</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Purpose</summary></entry></feed>
