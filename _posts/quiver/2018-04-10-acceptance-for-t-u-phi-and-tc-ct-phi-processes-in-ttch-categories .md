@@ -48,8 +48,14 @@ devrais prendre les sections efficaces 806.3 fb et 116.6 fb pour les lots tH si 
 normalises le lot ttbar a Br = 0.1%. 
 {% endhighlight %}
 
+{% highlight sh %}
 * dans le fichier de configuration, j'avais pour sections efficaces :
-   * tphi 410753  : 246.46  --> XSection *= 365.2/246.46)
+   * tphi 410753  : 246.46  --> XSection *= 365.2/246.46 = 1.482
+   * uphi 410757  : 247.49  --> XSection *= 365.2/247.49 = 1.476
+   * tcphi 410755 : 35.6    --> XSection *= 52.8/35.6    = 1.483
+   * ctphi 410759 : 35.7    --> XSection *= 52.8/35.7    = 1.478
+{% endhighlight %}
+
 {% highlight sh %}
 Processing root file FCNCttWmqq_v0_5jets_tagging.root
 Categorie       NEvt  SumW
