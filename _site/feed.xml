@@ -1,4 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-04-06T15:09:36+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">MVA with separate plot per category</title><link href="/2018/04/06/mva-with-separate-plot-per-category.html" rel="alternate" type="text/html" title="MVA with separate plot per category" /><published>2018-04-06T00:00:00+02:00</published><updated>2018-04-06T00:00:00+02:00</updated><id>/2018/04/06/mva-with-separate-plot-per-category</id><content type="html" xml:base="/2018/04/06/mva-with-separate-plot-per-category.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-04-10T13:39:59+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">Acceptance for t-u-phi and tc-ct-phi processes in ttcH categories </title><link href="/2018/04/10/acceptance-for-t-u-phi-and-tc-ct-phi-processes-in-ttch-categories.html" rel="alternate" type="text/html" title="Acceptance for t-u-phi and tc-ct-phi processes in ttcH categories " /><published>2018-04-10T00:00:00+02:00</published><updated>2018-04-10T00:00:00+02:00</updated><id>/2018/04/10/acceptance-for-t-u-phi-and-tc-ct-phi-processes-in-ttch-categories%20</id><content type="html" xml:base="/2018/04/10/acceptance-for-t-u-phi-and-tc-ct-phi-processes-in-ttch-categories.html">&lt;h1 id=&quot;motivation&quot;&gt;Motivation&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;mesure de l’acceptance des processus t/u-phi et tc/ct-phi dans les categories actuelles (1-A/B et 2-A/B)&lt;/li&gt;
+  &lt;li&gt;design de categories dediees dans une autre note
+)
+    &lt;h1 id=&quot;samples&quot;&gt;Samples&lt;/h1&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ttWmqq 410806&lt;/li&gt;
+  &lt;li&gt;ttWpqq 410807&lt;/li&gt;
+  &lt;li&gt;tphi 410753  h019 reprocessé avec le tag officiel&lt;/li&gt;
+  &lt;li&gt;uphi 410757  h019 reprocessé avec le tag officiel&lt;/li&gt;
+  &lt;li&gt;tcphi 410755 h019 reprocessé avec le tag officiel&lt;/li&gt;
+  &lt;li&gt;ctphi 410759 h019 reprocessé avec le tag officiel
+)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;/sps/atlas/d/devivie/FCNC/ANA/ANAR21OFF/run/MxAODrun410806e5483_e5984_a875_r9364_r9315_p3472v0&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;/sps/atlas/d/devivie/FCNC/ANA/ANAR21OFF/run/MxAODrun410807e5483_e5984_a875_r9364_r9315_p3472v0&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;/sps/atlas/d/delporte/FCNC/run/prodMxAOD/tphiQHgamgambWqq_410753__v1&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;/sps/atlas/d/delporte/FCNC/run/prodMxAOD/tcphiQHgamgambWqq_410755_v1&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;/sps/atlas/d/delporte/FCNC/run/prodMxAOD/uphiQHgamgambWqq_410757_v1&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;/sps/atlas/d/delporte/FCNC/run/prodMxAOD/ctphiQHgamgambWqq_410759__v1&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;observations-principales&quot;&gt;Observations principales&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Contributions au signal W+-qq (avec rescaling C*C pour Br(tqH)=0.1%)
+    &lt;ul&gt;
+      &lt;li&gt;1A : 7.5e-4&lt;/li&gt;
+      &lt;li&gt;1B : 2.7e-3&lt;/li&gt;
+      &lt;li&gt;2A : 1.2e-3&lt;/li&gt;
+      &lt;li&gt;2B : 3.3e-3&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;pour la suite : essais de coupures/cutflows pour construire une categorie dediee
+)
+    &lt;h1 id=&quot;mes-yields-avec-et-sans-la-correction-pour-le-coefficient-c-à-brtqh&quot;&gt;Mes yields (avec et sans la correction pour le coefficient C à Br(tqH))&lt;/h1&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;JB : Pour un coefficient d’operateur valant C &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1, les sections efficaces &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;avant BR de W et de H&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;pour les lots tphi,uphi sont 365.2 fb et pour les lots tcphi,ctphi 52.8 fb. &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt; Pour un Br &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;t —&amp;gt; qH&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0.1%, en supposant qu’un seul operateur contribue, cela&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;donne un coefficient C &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 1.486 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;papier de Maltoni et Zhang&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; Donc finalement tu &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;devrais prendre les sections efficaces 806.3 fb et 116.6 fb pour les lots tH si tu &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;normalises le lot ttbar a Br &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0.1%. &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;dans le fichier de configuration, j’avais pour sections efficaces :
+    &lt;ul&gt;
+      &lt;li&gt;tphi 410753  : 246.46  –&amp;gt; XSection *= 365.2/246.46)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Processing root file FCNCttWmqq_v0_5jets_tagging.root&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Categorie       NEvt  SumW&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M2tight:A : 1829 	55628.8   &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M2tight:B : 3573 	102304&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M1loose:A : 1185 	29248.5&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M1loose:B : 2501 	65911.6&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Processing root file FCNCttWpqq_v0_5jets_tagging.root&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Categorie       NEvt  SumW&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M2tight:A : 1811 	52375.4&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M2tight:B : 3316 	90351.3&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M1loose:A : 1211 	31921.7&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M1loose:B : 2453 	65202.8&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Processing root file FCNCtphiQHgamgambWqq_v0_5jets_tagging.root&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Categorie       NEvt  SumW      SumW&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;C&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;C  Fraction de SumW par rapport à Wmqq+Wpqq&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M2tight:A : 81    21.7551   32.24     3e-4&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M2tight:B : 593   141.22    209.28    1.1e-3&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M1loose:A : 65 	  18.0704   26.78     4.4e-4&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M1loose:B : 507   126.477   187.43    1.4e-3&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Processing root file FCNCuphiQHgamgambWqq_v0_5jets_tagging.root&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Categorie       NEvt  SumW      SumW&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;C&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;C  Fraction par rapport à Wmqq+Wpqq&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M2tight:A : 72 	  17.7015   26.13     2.4e-4&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M2tight:B : 560   130.567   192.71    1e-3&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M1loose:A : 74    21.393    31.58     5.16e-4&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M1loose:B : 489   116.162   171.46    1.3e-3&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Processing root file FCNCtcphiQHgamgambWqq_v0_5jets_tagging.root&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Categorie       NEvt  SumW      SumW&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;C&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;C  Fraction par rapport à Wmqq+Wpqq&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M2tight:A : 254 	8.76254   13.00     1.2e-4&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M2tight:B : 1151 	37.2123   55.19     2.9e-4&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M1loose:A : 141 	5.22598   7.75      1.3e-4&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M1loose:B : 852 	28.8234   42.75     3.3e-4&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Processing root file FCNCctphiQHgamgambWqq_v0_5jets_tagging.root&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Categorie       NEvt  SumW      SumW&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;C&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;C  Fraction par rapport à Wmqq+Wpqq&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M2tight:A : 233 	7.02204   10.38     9.6e-5&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M2tight:B : 1122 	36.2246   53.54     2.8e-4&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M1loose:A : 165 	6.17848   9.13      1.5e-4&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;had:M1loose:B : 793 	28.0391   41.44     3.16e-4&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;nombres-de-daniel&quot;&gt;Nombres de Daniel&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;la difference est comprise
+    &lt;ul&gt;
+      &lt;li&gt;Daniel etait resté sur les essais de selection sur les jets : pT &amp;gt; 30 GeV et |eta| &amp;lt; 2.5
+)
+&lt;img src=&quot;/images/q/3583BE7543F8A8680CE0FFD9BBC7F857.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Motivation</summary></entry><entry><title type="html">MVA with separate plot per category</title><link href="/2018/04/06/mva-with-separate-plot-per-category.html" rel="alternate" type="text/html" title="MVA with separate plot per category" /><published>2018-04-06T00:00:00+02:00</published><updated>2018-04-06T00:00:00+02:00</updated><id>/2018/04/06/mva-with-separate-plot-per-category</id><content type="html" xml:base="/2018/04/06/mva-with-separate-plot-per-category.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;verifier la forme du BDT separement pour chaque categorie&lt;/li&gt;
@@ -789,94 +857,4 @@ Categories sur le screenshot avec 4 plots :
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;IsAFII.410804: YES                                                                                                          &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;IsAFII.410805: YES&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;IsAFII.410806: YES&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;IsAFII.410807: YES &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;)&lt;/p&gt;</content><author><name></name></author><category term="data" /><category term="fcnc" /><summary type="html">Purpose</summary></entry><entry><title type="html">FCNC TruthLevel discriminating variables</title><link href="/2018/02/13/fcnc-truthlevel-discriminating-variables.html" rel="alternate" type="text/html" title="FCNC TruthLevel discriminating variables" /><published>2018-02-13T00:00:00+01:00</published><updated>2018-02-13T00:00:00+01:00</updated><id>/2018/02/13/fcnc-truthlevel-discriminating-variables</id><content type="html" xml:base="/2018/02/13/fcnc-truthlevel-discriminating-variables.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;find discriminating variables from the truth event with particles at ‘Matrix Element’ level&lt;/li&gt;
-  &lt;li&gt;available for signal sample, but not for backgrounds (no relevant MC) : still, can give some ideas
-)
-    &lt;h1 id=&quot;samples&quot;&gt;Samples&lt;/h1&gt;
-  &lt;/li&gt;
-  &lt;li&gt;ttWmqq only for now (v0)
-)
-    &lt;h1 id=&quot;selection&quot;&gt;Selection&lt;/h1&gt;
-  &lt;/li&gt;
-  &lt;li&gt;apply the pre-selection at reco level on events
-    &lt;ul&gt;
-      &lt;li&gt;1 lepton et &amp;gt;= 2 jets (pas encore de plots)&lt;/li&gt;
-      &lt;li&gt;0 lepton et &amp;gt;= 4 jets&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;look at some distributions of the event at truth level
-    &lt;ul&gt;
-      &lt;li&gt;not the full reco selection is applied, just requiring at least on b-Tagged reco jet in my macro&lt;/li&gt;
-      &lt;li&gt;dans les prochaines iterations, peut-etre plus utile de faire ces plots pour les evenements passant la selection reco, qui est deja plutot loose
-)
-        &lt;h1 id=&quot;commentaires&quot;&gt;Commentaires&lt;/h1&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Quelques variables pourraient montrer une bonne discrimination d’apres les shapes (pas trop smoothed), mais a confirmer en comparaison au bruit de fond :&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;dR(gam, gam) mais qui sera surement tres correle a la coupure sur m(gam, gam), donc ca piquera surement aussi dans le bruit de fond&lt;/li&gt;
-  &lt;li&gt;pT leading gamma&lt;/li&gt;
-  &lt;li&gt;pT b-jet&lt;/li&gt;
-  &lt;li&gt;min dR(b-jet, jet additionnels)&lt;/li&gt;
-  &lt;li&gt;coupure superieure sur le pT du subleading quark du W SM ? je testerai les associations en delta R entre ce quark et le subleading jet au niveau reco, voir si ca peut vraiment motiver une coupure 
-)
-    &lt;h1 id=&quot;top-exotic-tch&quot;&gt;top Exotic (tcH)&lt;/h1&gt;
-    &lt;p&gt;)&lt;/p&gt;
-    &lt;h2 id=&quot;drch&quot;&gt;dR(c,H)&lt;/h2&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/D60621B4670E27BC7D7D6CEBDA5612B7.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h2 id=&quot;dphich&quot;&gt;dPhi(c,H)&lt;/h2&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/1472906913DB15BED95B21007475881A.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h3 id=&quot;drgam-gam&quot;&gt;dR(gam, gam)&lt;/h3&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/E732CC871C4F554F048B79DF0A3C92A1.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h2 id=&quot;dphigam-gam&quot;&gt;dPhi(gam, gam)&lt;/h2&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/539D6ABE157EB72684925EE6F8FF6A97.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h3 id=&quot;pth&quot;&gt;pT(H)&lt;/h3&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/B99A8F16E822E12A295F6CB03F156B62.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h3 id=&quot;etah&quot;&gt;eta(H)&lt;/h3&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/83FE0B5F72B797946971313B07E20D99.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h3 id=&quot;ptc&quot;&gt;pT(c)&lt;/h3&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/DB527907D1EF5ABEDEF0C1BB7EA783AF.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h3 id=&quot;etac&quot;&gt;eta(c)&lt;/h3&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/36D3806E020598E8AEE756B7D687FB53.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h3 id=&quot;ptleading-gam&quot;&gt;pT(leading gam)&lt;/h3&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/A8DCF74F6CB96758EB43A63C370F11E3.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h3 id=&quot;ptsubleading-gam&quot;&gt;pT(subleading gam)&lt;/h3&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/230DCF7218822FB5C2DE5D434596E71E.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h3 id=&quot;etaleading-gam&quot;&gt;eta(leading gam)&lt;/h3&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/5DD6487E7BFBD58B458BFB2C645E85BC.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h3 id=&quot;etasubleading-gam&quot;&gt;eta(subleading gam)&lt;/h3&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/CE5DBE97ADDD53E0DEBDD4B6DC1A8D9B.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h3 id=&quot;min-drc-gam&quot;&gt;min dR(c, gam)&lt;/h3&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/8F33F39B037231EAE82AE393586EC63C.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h3 id=&quot;min-dphic-gam&quot;&gt;min dPhi(c, gam)&lt;/h3&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/AE3BB7CA678E1317AD068CB93DCFE1AE.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h1 id=&quot;top-sm&quot;&gt;top SM&lt;/h1&gt;
-    &lt;p&gt;)&lt;/p&gt;
-    &lt;h2 id=&quot;pt-b&quot;&gt;pT (b)&lt;/h2&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/A23197B3CDE3AED6DFE0FA3751FC34F1.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h2 id=&quot;eta-b&quot;&gt;eta (b)&lt;/h2&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/736A7E2FA9489C6AF663D584FBA77860.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h2 id=&quot;pt-leading-quark-from-the-w&quot;&gt;pT (leading quark from the W)&lt;/h2&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/09BFCDDDE3BC96474BABECC55B3C8B9B.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h2 id=&quot;eta-leading-quark-from-the-w&quot;&gt;eta (leading quark from the W)&lt;/h2&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/37A56B0876D39EE895F068B14D3A8D92.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h2 id=&quot;pt-subleading-quark-from-the-w&quot;&gt;pT (subleading quark from the W)&lt;/h2&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/D3A22AC1770A5674AFE69CB2127B8EBC.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h2 id=&quot;eta-subleading-quark-from-the-w&quot;&gt;eta (subleading quark from the W)&lt;/h2&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/A783B6936FC5FD35DBC226391AA07DF3.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h2 id=&quot;min-drb-quark-from-the-w&quot;&gt;min dR(b, quark from the W)&lt;/h2&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/5CF7D3CCC383848F0F40BBBA3F421CF1.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h2 id=&quot;min-dphib-quark-from-the-w&quot;&gt;min dPhi(b, quark from the W)&lt;/h2&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/0F0E152117AF66747FC14BF639C616EC.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h2 id=&quot;drb-w&quot;&gt;dR(b, W)&lt;/h2&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/86ED2D5EE60BD446B3D525333A9A4D5D.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-    &lt;h2 id=&quot;dphib-w&quot;&gt;dPhi(b, W)&lt;/h2&gt;
-    &lt;p&gt;&lt;img src=&quot;/images/q/922BF8F5E21478F06ED31B9BD84B4754.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Purpose</summary></entry></feed>
+&lt;p&gt;)&lt;/p&gt;</content><author><name></name></author><category term="data" /><category term="fcnc" /><summary type="html">Purpose</summary></entry></feed>
