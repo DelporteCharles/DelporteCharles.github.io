@@ -40,10 +40,10 @@ normalises le lot ttbar a Br = 0.1%.
 
 {% highlight sh %}
 * dans le fichier de configuration, j avais pour sections efficaces :
-   * tphi 410753  : 246.46  --> XSection *= 365.2/246.46 = 1.482
-   * uphi 410757  : 247.49  --> XSection *= 365.2/247.49 = 1.476
-   * tcphi 410755 : 35.6    --> XSection *= 52.8/35.6    = 1.483
-   * ctphi 410759 : 35.7    --> XSection *= 52.8/35.7    = 1.478
+   * tphi 410753  : 246.46  --> XSection *= 806.3/246.46 = 3.27
+   * uphi 410757  : 247.49  --> XSection *= 806.3/247.49 = 3.26
+   * tcphi 410755 : 35.6    --> XSection *= 116.6/35.6   = 3.28
+   * ctphi 410759 : 35.7    --> XSection *= 116.6/35.7   = 3.27
 {% endhighlight %}
 
 {% highlight sh %}
@@ -67,37 +67,37 @@ had:M1loose:B : 2453 	65202.8
 {% highlight sh %}
 Processing root file FCNCtphiQHgamgambWqq_v0_5jets_tagging.root
 Categorie       NEvt  SumW      SumW*C*C  Fraction de SumW par rapport à Wmqq+Wpqq
-had:M2tight:A : 81    21.7551   32.24     3e-4
-had:M2tight:B : 593   141.22    209.28    1.1e-3
-had:M1loose:A : 65 	  18.0704   26.78     4.4e-4
-had:M1loose:B : 507   126.477   187.43    1.4e-3
+had:M2tight:A : 81    21.7551   71.1
+had:M2tight:B : 593   141.22    460.4
+had:M1loose:A : 65 	  18.0704   59.3
+had:M1loose:B : 507   126.477   413.6
 {% endhighlight %}
 
 {% highlight sh %}
 Processing root file FCNCuphiQHgamgambWqq_v0_5jets_tagging.root
 Categorie       NEvt  SumW      SumW*C*C  Fraction par rapport à Wmqq+Wpqq
-had:M2tight:A : 72 	  17.7015   26.13     2.4e-4
-had:M2tight:B : 560   130.567   192.71    1e-3
-had:M1loose:A : 74    21.393    31.58     5.16e-4
-had:M1loose:B : 489   116.162   171.46    1.3e-3
+had:M2tight:A : 72 	  17.7015   57.9
+had:M2tight:B : 560   130.567   425.6
+had:M1loose:A : 74    21.393    70.2
+had:M1loose:B : 489   116.162   379.8
 {% endhighlight %}
 
 {% highlight sh %}
 Processing root file FCNCtcphiQHgamgambWqq_v0_5jets_tagging.root
 Categorie       NEvt  SumW      SumW*C*C  Fraction par rapport à Wmqq+Wpqq
-had:M2tight:A : 254 	8.76254   13.00     1.2e-4
-had:M2tight:B : 1151 	37.2123   55.19     2.9e-4
-had:M1loose:A : 141 	5.22598   7.75      1.3e-4
-had:M1loose:B : 852 	28.8234   42.75     3.3e-4
+had:M2tight:A : 254 	8.76254   28.7
+had:M2tight:B : 1151 	37.2123   121.3
+had:M1loose:A : 141 	5.22598   17.1
+had:M1loose:B : 852 	28.8234   94.3
 {% endhighlight %}
 
 {% highlight sh %}
 Processing root file FCNCctphiQHgamgambWqq_v0_5jets_tagging.root
 Categorie       NEvt  SumW      SumW*C*C  Fraction par rapport à Wmqq+Wpqq
-had:M2tight:A : 233 	7.02204   10.38     9.6e-5
-had:M2tight:B : 1122 	36.2246   53.54     2.8e-4
-had:M1loose:A : 165 	6.17848   9.13      1.5e-4
-had:M1loose:B : 793 	28.0391   41.44     3.16e-4
+had:M2tight:A : 233 	7.02204   23.0
+had:M2tight:B : 1122 	36.2246   118.1
+had:M1loose:A : 165 	6.17848   20.3
+had:M1loose:B : 793 	28.0391   91.7
 {% endhighlight %}
 
 # Nombres de Daniel
