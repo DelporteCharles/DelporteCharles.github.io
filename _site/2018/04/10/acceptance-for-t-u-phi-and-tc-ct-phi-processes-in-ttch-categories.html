@@ -99,26 +99,11 @@
 
 <figure class="highlight"><pre><code class="language-sh" data-lang="sh">/sps/atlas/d/devivie/FCNC/ANA/ANAR21OFF/run/MxAODrun410806e5483_e5984_a875_r9364_r9315_p3472v0<br data-jekyll-commonmark-ghpages="" />/sps/atlas/d/devivie/FCNC/ANA/ANAR21OFF/run/MxAODrun410807e5483_e5984_a875_r9364_r9315_p3472v0<br data-jekyll-commonmark-ghpages="" />/sps/atlas/d/delporte/FCNC/run/prodMxAOD/tphiQHgamgambWqq_410753__v1<br data-jekyll-commonmark-ghpages="" />/sps/atlas/d/delporte/FCNC/run/prodMxAOD/tcphiQHgamgambWqq_410755_v1<br data-jekyll-commonmark-ghpages="" />/sps/atlas/d/delporte/FCNC/run/prodMxAOD/uphiQHgamgambWqq_410757_v1<br data-jekyll-commonmark-ghpages="" />/sps/atlas/d/delporte/FCNC/run/prodMxAOD/ctphiQHgamgambWqq_410759__v1</code></pre></figure>
 
-<h1 id="observations-principales">Observations principales</h1>
-
-<ul>
-  <li>Contributions au signal W+-qq (avec rescaling C*C pour Br(tqH)=0.1%)
-    <ul>
-      <li>1A : 7.5e-4</li>
-      <li>1B : 2.7e-3</li>
-      <li>2A : 1.2e-3</li>
-      <li>2B : 3.3e-3</li>
-    </ul>
-  </li>
-  <li>pour la suite : essais de coupures/cutflows pour construire une categorie dediee
-)
-    <h1 id="mes-yields-avec-et-sans-la-correction-pour-le-coefficient-c-à-brtqh">Mes yields (avec et sans la correction pour le coefficient C à Br(tqH))</h1>
-  </li>
-</ul>
+<h1 id="mes-yields-avec-et-sans-la-correction-pour-le-coefficient-c-à-brtqh">Mes yields (avec et sans la correction pour le coefficient C à Br(tqH))</h1>
 
 <figure class="highlight"><pre><code class="language-sh" data-lang="sh">JB : Pour un coefficient d’operateur valant C <span class="o">=</span> 1, les sections efficaces <span class="o">(</span>avant BR de W et de H<span class="o">)</span> <br data-jekyll-commonmark-ghpages="" />pour les lots tphi,uphi sont 365.2 fb et pour les lots tcphi,ctphi 52.8 fb. <br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /> Pour un Br <span class="o">(</span>t —&gt; qH<span class="o">)</span> <span class="o">=</span> 0.1%, en supposant qu’un seul operateur contribue, cela<br data-jekyll-commonmark-ghpages="" />donne un coefficient C <span class="o">=</span> 1.486 <span class="o">(</span>papier de Maltoni et Zhang<span class="o">)</span><span class="nb">.</span> Donc finalement tu <br data-jekyll-commonmark-ghpages="" />devrais prendre les sections efficaces 806.3 fb et 116.6 fb pour les lots tH si tu <br data-jekyll-commonmark-ghpages="" />normalises le lot ttbar a Br <span class="o">=</span> 0.1%. </code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="k">*</span> dans le fichier de configuration, j<span class="s1">'avais pour sections efficaces :<br data-jekyll-commonmark-ghpages="" />   * tphi 410753  : 246.46  --&gt; XSection *= 365.2/246.46 = 1.482<br data-jekyll-commonmark-ghpages="" />   * uphi 410757  : 247.49  --&gt; XSection *= 365.2/247.49 = 1.476<br data-jekyll-commonmark-ghpages="" />   * tcphi 410755 : 35.6    --&gt; XSection *= 52.8/35.6    = 1.483<br data-jekyll-commonmark-ghpages="" />   * ctphi 410759 : 35.7    --&gt; XSection *= 52.8/35.7    = 1.478</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="k">*</span> dans le fichier de configuration, j avais pour sections efficaces :<br data-jekyll-commonmark-ghpages="" />   <span class="k">*</span> tphi 410753  : 246.46  <span class="nt">--</span><span class="o">&gt;</span> XSection <span class="k">*</span><span class="o">=</span> 365.2/246.46 <span class="o">=</span> 1.482<br data-jekyll-commonmark-ghpages="" />   <span class="k">*</span> uphi 410757  : 247.49  <span class="nt">--</span><span class="o">&gt;</span> XSection <span class="k">*</span><span class="o">=</span> 365.2/247.49 <span class="o">=</span> 1.476<br data-jekyll-commonmark-ghpages="" />   <span class="k">*</span> tcphi 410755 : 35.6    <span class="nt">--</span><span class="o">&gt;</span> XSection <span class="k">*</span><span class="o">=</span> 52.8/35.6    <span class="o">=</span> 1.483<br data-jekyll-commonmark-ghpages="" />   <span class="k">*</span> ctphi 410759 : 35.7    <span class="nt">--</span><span class="o">&gt;</span> XSection <span class="k">*</span><span class="o">=</span> 52.8/35.7    <span class="o">=</span> 1.478</code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-sh" data-lang="sh">Processing root file FCNCttWmqq_v0_5jets_tagging.root<br data-jekyll-commonmark-ghpages="" />Categorie       NEvt  SumW<br data-jekyll-commonmark-ghpages="" />had:M2tight:A : 1829 	55628.8   <br data-jekyll-commonmark-ghpages="" />had:M2tight:B : 3573 	102304<br data-jekyll-commonmark-ghpages="" />had:M1loose:A : 1185 	29248.5<br data-jekyll-commonmark-ghpages="" />had:M1loose:B : 2501 	65911.6</code></pre></figure>
 

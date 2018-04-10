@@ -27,16 +27,6 @@ tags:
 /sps/atlas/d/delporte/FCNC/run/prodMxAOD/ctphiQHgamgambWqq_410759__v1
 {% endhighlight %}
 
-# Observations principales
-
-* Contributions au signal W+-qq (avec rescaling C*C pour Br(tqH)=0.1%)
-  * 1A : 7.5e-4
-  * 1B : 2.7e-3
-  * 2A : 1.2e-3
-  * 2B : 3.3e-3
-  
-* pour la suite : essais de coupures/cutflows pour construire une categorie dediee
-)
 # Mes yields (avec et sans la correction pour le coefficient C à Br(tqH))
 {% highlight sh %}
 JB : Pour un coefficient d’operateur valant C = 1, les sections efficaces (avant BR de W et de H) 
@@ -49,7 +39,7 @@ normalises le lot ttbar a Br = 0.1%.
 {% endhighlight %}
 
 {% highlight sh %}
-* dans le fichier de configuration, j'avais pour sections efficaces :
+* dans le fichier de configuration, j avais pour sections efficaces :
    * tphi 410753  : 246.46  --> XSection *= 365.2/246.46 = 1.482
    * uphi 410757  : 247.49  --> XSection *= 365.2/247.49 = 1.476
    * tcphi 410755 : 35.6    --> XSection *= 52.8/35.6    = 1.483
