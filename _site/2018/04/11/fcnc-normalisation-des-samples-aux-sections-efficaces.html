@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>FCNC normalisation des samples aux sections efficaces</title>
+  <meta name="description" content="Motivation ) * avoir les poids d evenements corrects en tenant compte de : * MC Weight * XSection * Lumi = 36.1 fb-1">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2018/04/11/fcnc-normalisation-des-samples-aux-sections-efficaces.html">
+  <link rel="alternate" type="application/rss+xml" title="My PhD notes" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">My PhD notes</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">FCNC normalisation des samples aux sections efficaces</h1>
+    <p class="post-meta">
+      <time datetime="2018-04-11T00:00:00+02:00" itemprop="datePublished">
+        
+        Apr 11, 2018
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="motivation">Motivation</h1>
+<p>)</p>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="k">*</span> avoir les poids d evenements corrects en tenant compte de :<br data-jekyll-commonmark-ghpages="" />  <span class="k">*</span> MC Weight<br data-jekyll-commonmark-ghpages="" />  <span class="k">*</span> XSection<br data-jekyll-commonmark-ghpages="" />  <span class="k">*</span> Lumi <span class="o">=</span> 36.1 fb-1</code></pre></figure>
+
+<h1 id="sections-efficaces">Sections efficaces</h1>
+
+<ul>
+  <li>pour Br)</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">JB : Pour un coefficient d’operateur valant C <span class="o">=</span> 1, les sections efficaces <span class="o">(</span>avant BR de W et de H<span class="o">)</span> <br data-jekyll-commonmark-ghpages="" />pour les lots tphi,uphi sont 365.2 fb et pour les lots tcphi,ctphi 52.8 fb. <br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" /> Pour un Br <span class="o">(</span>t —&gt; qH<span class="o">)</span> <span class="o">=</span> 0.1%, en supposant qu’un seul operateur contribue, cela<br data-jekyll-commonmark-ghpages="" />donne un coefficient C <span class="o">=</span> 1.486 <span class="o">(</span>papier de Maltoni et Zhang<span class="o">)</span><span class="nb">.</span> Donc finalement tu <br data-jekyll-commonmark-ghpages="" />devrais prendre les sections efficaces 806.3 fb et 116.6 fb pour les lots tH si tu <br data-jekyll-commonmark-ghpages="" />normalises le lot ttbar a Br <span class="o">=</span> 0.1%. </code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="k">*</span> d apres mes calculs :<br data-jekyll-commonmark-ghpages="" />  <span class="k">*</span> ttcHyyWmln 410804 : 0,617 fb<br data-jekyll-commonmark-ghpages="" />  <span class="k">*</span> ttcHyyWpln 410805 : 0,617 fb<br data-jekyll-commonmark-ghpages="" />  <span class="k">*</span> ttcHyyWmqq 410806 : 1.264 fb<br data-jekyll-commonmark-ghpages="" />  <span class="k">*</span> ttcHyyWpqq 410807 : 1.264 fb<br data-jekyll-commonmark-ghpages="" />  <span class="k">*</span> tphi<span class="o">(</span>qqyy<span class="o">)</span> 410753 : 1.227 fb<br data-jekyll-commonmark-ghpages="" />  <span class="k">*</span> uphi<span class="o">(</span>qqyy<span class="o">)</span> 410757 : 1.227 fb<br data-jekyll-commonmark-ghpages="" />  <span class="k">*</span> tcphi<span class="o">(</span>qqyy<span class="o">)</span> 410755  : 0.60 fb<br data-jekyll-commonmark-ghpages="" />  <span class="k">*</span> ctphi<span class="o">(</span>qqyy<span class="o">)</span> 410759  : 0.60 fb</code></pre></figure>
+
+<h1 id="yields-selection-papier">Yields selection papier</h1>
+
+<ul>
+  <li>yields attendus dans le papier (pour Br(tqH))</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">Expected number of events tt pour Br <span class="o">=</span> 0.1%<br data-jekyll-commonmark-ghpages="" /><br data-jekyll-commonmark-ghpages="" />Categorie     SumW<br data-jekyll-commonmark-ghpages="" />had:M2tight : 3.67<br data-jekyll-commonmark-ghpages="" />had:M1loose : 5.45<br data-jekyll-commonmark-ghpages="" />lep:M2tight : 2.14<br data-jekyll-commonmark-ghpages="" />lep:M1loose : 0.31</code></pre></figure>
+
+<h3 id="detail-par-sample-selection-papier">detail par sample (selection papier)</h3>
+<p>)</p>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">Processing root file FCNCttWmln_v1_4jets.root<br data-jekyll-commonmark-ghpages="" />Categorie     NEvt  SumW<br data-jekyll-commonmark-ghpages="" />had:M2tight : 617 	0.108168<br data-jekyll-commonmark-ghpages="" />had:M1loose : 1986 	0.415323<br data-jekyll-commonmark-ghpages="" />lep:M2tight : 4475 	1.05583<br data-jekyll-commonmark-ghpages="" />lep:M1loose : 621 	0.152549</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">Processing root file FCNCttWpln_v1_4jets.root<br data-jekyll-commonmark-ghpages="" />Categorie     NEvt  SumW<br data-jekyll-commonmark-ghpages="" />had:M2tight : 612 	0.138154<br data-jekyll-commonmark-ghpages="" />had:M1loose : 2135 	0.444799<br data-jekyll-commonmark-ghpages="" />lep:M2tight : 4512 	1.08692<br data-jekyll-commonmark-ghpages="" />lep:M1loose : 570 	0.151948</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">Processing root file FCNCttWmqq_v1_4jets.root<br data-jekyll-commonmark-ghpages="" />Categorie     NEvt  SumW<br data-jekyll-commonmark-ghpages="" />had:M2tight : 3276 	1.80115<br data-jekyll-commonmark-ghpages="" />had:M1loose : 5013 	2.27904<br data-jekyll-commonmark-ghpages="" />lep:M2tight : 5 	0.00305398<br data-jekyll-commonmark-ghpages="" />lep:M1loose : 0 	0</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">Processing root file FCNCttWpqq_v1_4jets.root<br data-jekyll-commonmark-ghpages="" />Categorie     NEvt  SumW<br data-jekyll-commonmark-ghpages="" />had:M2tight : 3245 	1.62555<br data-jekyll-commonmark-ghpages="" />had:M1loose : 4883 	2.30968<br data-jekyll-commonmark-ghpages="" />lep:M2tight : 1 	<span class="nt">-0</span>.00105561<br data-jekyll-commonmark-ghpages="" />lep:M1loose : 1 	0.000778055</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">Processing root file FCNCctphiQHgamgambWqq_v1_4jets.root<br data-jekyll-commonmark-ghpages="" />Categorie     NEvt  SumW<br data-jekyll-commonmark-ghpages="" />had:M2tight : 1070 	0.379653<br data-jekyll-commonmark-ghpages="" />had:M1loose : 1248 	0.469196<br data-jekyll-commonmark-ghpages="" />lep:M2tight : 0 	0<br data-jekyll-commonmark-ghpages="" />lep:M1loose : 1 	0.000193842</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">Processing root file FCNCuphiQHgamgambWqq_v1_4jets.root<br data-jekyll-commonmark-ghpages="" />Categorie     NEvt  SumW<br data-jekyll-commonmark-ghpages="" />had:M2tight : 508 	0.400913<br data-jekyll-commonmark-ghpages="" />had:M1loose : 708 	0.562371<br data-jekyll-commonmark-ghpages="" />lep:M2tight : 0 	0<br data-jekyll-commonmark-ghpages="" />lep:M1loose : 0 	0</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">Processing root file FCNCtcphiQHgamgambWqq_v1_4jets.root<br data-jekyll-commonmark-ghpages="" />Categorie     NEvt  SumW<br data-jekyll-commonmark-ghpages="" />had:M2tight : 1112 	0.41011<br data-jekyll-commonmark-ghpages="" />had:M1loose : 1295 	0.477442<br data-jekyll-commonmark-ghpages="" />lep:M2tight : 3 	0.00191544<br data-jekyll-commonmark-ghpages="" />lep:M1loose : 0 	0</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">Processing root file FCNCtphiQHgamgambWqq_v1_4jets.root<br data-jekyll-commonmark-ghpages="" />Categorie     NEvt  SumW<br data-jekyll-commonmark-ghpages="" />had:M2tight : 530 	0.402993<br data-jekyll-commonmark-ghpages="" />had:M1loose : 700 	0.563817<br data-jekyll-commonmark-ghpages="" />lep:M2tight : 0 	0<br data-jekyll-commonmark-ghpages="" />lep:M1loose : 0 	0</code></pre></figure>
+
+<p>)</p>
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">My PhD notes</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              My PhD notes
+            
+            </li>
+            
+            <li><a href="mailto:charles.delporte@cern.ch">charles.delporte@cern.ch</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>My personal notes from Quiver</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

@@ -29,23 +29,97 @@ tags:
 
 # Mes yields (avec et sans la correction pour le coefficient C à Br(tqH))
 {% highlight sh %}
-JB : Pour un coefficient d’operateur valant C = 1, les sections efficaces (avant BR de W et de H) 
-pour les lots tphi,uphi sont 365.2 fb et pour les lots tcphi,ctphi 52.8 fb. 
+* dans le fichier de configuration, j ai pris pour sections efficaces :
+  * ttcHyyWmln 410804 : 0,617 fb
+  * ttcHyyWpln 410805 : 0,617 fb
+  * ttcHyyWmqq 410806 : 1.264 fb
+  * ttcHyyWpqq 410807 : 1.264 fb
+  * tphi(qqyy) 410753 : 1.227 fb
+  * uphi(qqyy) 410757 : 1.227 fb
+  * tcphi(qqyy) 410755  : 0.60 fb
+  * ctphi(qqyy) 410759  : 0.60 fb
+{% endhighlight %}
 
- Pour un Br (t —> qH) = 0.1%, en supposant qu’un seul operateur contribue, cela
-donne un coefficient C = 1.486 (papier de Maltoni et Zhang). Donc finalement tu 
-devrais prendre les sections efficaces 806.3 fb et 116.6 fb pour les lots tH si tu 
-normalises le lot ttbar a Br = 0.1%. 
+# Avec la normalisation MCWeight x XSection x lumi
+
+* Selection hadronique 5 jets avec les nouvelles categories
+)
+{% highlight sh %}
+Processing root file FCNCttWpln_v1_5jets_tagging.root
+Using 5 leading jets in combinatoric
+had:M2tight:A : 332 	0.0787313
+had:M2tight:B : 604 	0.123346
+had:M1loose:A : 667 	0.134404
+had:M1loose:B : 1255 	0.247878
 {% endhighlight %}
 
 {% highlight sh %}
-* dans le fichier de configuration, j avais pour sections efficaces :
-   * tphi 410753  : 246.46  --> XSection *= 806.3/246.46 = 3.27
-   * uphi 410757  : 247.49  --> XSection *= 806.3/247.49 = 3.26
-   * tcphi 410755 : 35.6    --> XSection *= 116.6/35.6   = 3.28
-   * ctphi 410759 : 35.7    --> XSection *= 116.6/35.7   = 3.27
+Processing root file FCNCttWmln_v1_5jets_tagging.root
+Using 5 leading jets in combinatoric
+had:M2tight:A : 355 	0.0570334
+had:M2tight:B : 624 	0.0978305
+had:M1loose:A : 600 	0.11878
+had:M1loose:B : 1127 	0.25968
 {% endhighlight %}
 
+{% highlight sh %}
+Processing root file FCNCttWpqq_v1_5jets_tagging.root
+Using 5 leading jets in combinatoric
+had:M2tight:A : 1811 	0.904229
+had:M2tight:B : 3316 	1.5587
+had:M1loose:A : 1211 	0.579124
+had:M1loose:B : 2453 	1.13612
+{% endhighlight %}
+
+{% highlight sh %}
+Processing root file FCNCttWmqq_v1_5jets_tagging.root
+Using 5 leading jets in combinatoric
+had:M2tight:A : 1829 	0.955565
+had:M2tight:B : 3573 	1.75565
+had:M1loose:A : 1185 	0.519523
+had:M1loose:B : 2501 	1.12547
+{% endhighlight %}
+
+{% highlight sh %}
+Processing root file FCNCctphiQHgamgambWqq_v1_5jets_tagging.root
+Using 5 leading jets in combinatoric
+had:M2tight:A : 233 	0.0719167
+had:M2tight:B : 1122 	0.388507
+had:M1loose:A : 165 	0.0650322
+had:M1loose:B : 793 	0.302794
+{% endhighlight %}
+
+{% highlight sh %}
+Processing root file FCNCuphiQHgamgambWqq_v1_5jets_tagging.root
+Using 5 leading jets in combinatoric
+had:M2tight:A : 72 	0.0578883
+had:M2tight:B : 560 	0.397342
+had:M1loose:A : 74 	0.0700264
+had:M1loose:B : 489 	0.366217
+{% endhighlight %}
+
+{% highlight sh %}
+Processing root file FCNCtcphiQHgamgambWqq_v1_5jets_tagging.root
+Using 5 leading jets in combinatoric
+had:M2tight:A : 254 	0.0923442
+had:M2tight:B : 1151 	0.402025
+had:M1loose:A : 141 	0.0561969
+had:M1loose:B : 852 	0.304061
+{% endhighlight %}
+
+{% highlight sh %}
+Processing root file FCNCtphiQHgamgambWqq_v1_5jets_tagging.root
+Using 5 leading jets in combinatoric
+had:M2tight:A : 81 	0.0613579
+had:M2tight:B : 593 	0.445457
+had:M1loose:A : 65 	0.0550036
+had:M1loose:B : 507 	0.403232
+{% endhighlight %}
+
+
+)
+# Version avec les poids MC seuls
+)
 {% highlight sh %}
 Processing root file FCNCttWmqq_v0_5jets_tagging.root
 Categorie       NEvt  SumW
