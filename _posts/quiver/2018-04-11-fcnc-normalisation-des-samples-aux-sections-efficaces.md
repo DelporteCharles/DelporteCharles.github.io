@@ -41,6 +41,7 @@ normalises le lot ttbar a Br = 0.1%.
 # Yields selection papier
 
 * yields attendus dans le papier (pour Br(tqH))
+![IMAGE](/images/q/842650B95AA443AD45DBD8B5073CF1C8.jpg)
 {% highlight sh %}
 Expected number of events tt pour Br = 0.1%
 
