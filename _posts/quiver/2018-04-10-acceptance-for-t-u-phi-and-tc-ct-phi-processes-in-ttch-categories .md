@@ -30,8 +30,8 @@ tags:
 # Mes yields (avec et sans la correction pour le coefficient C à Br(tqH))
 {% highlight sh %}
 * dans le fichier de configuration, j ai pris pour sections efficaces :
-  * ttcHyyWmln 410804 : 0,617 fb
-  * ttcHyyWpln 410805 : 0,617 fb
+  * ttcHyyWmln 410804 : 0.617 fb
+  * ttcHyyWpln 410805 : 0.617 fb
   * ttcHyyWmqq 410806 : 1.264 fb
   * ttcHyyWpqq 410807 : 1.264 fb
   * tphi(qqyy) 410753 : 1.227 fb
@@ -45,12 +45,39 @@ tags:
 * Selection hadronique 5 jets avec les nouvelles categories
 )
 {% highlight sh %}
+Expected number of events tt pour Br = 0.1%
+
+Categorie       SumW(tt)  tphi  uphi  ctphi tcphi tH/tt
+had:M2tight:A : 2.00      0.06  0.06  0.07  0.09  0.14
+had:M2tight:B : 3.54      0.45  0.40  0.39  0.40  0.46
+had:M1loose:A : 1.35      0.06  0.07  0.07  0.06  0.19
+had:M1loose:A : 2.77      0.40  0.37  0.30  0.30  0.49
+{% endhighlight %}
+
+{% highlight sh %}
+- comme prevu, tres peu d evenements tH se trouvent en categorie A, du fait qu il n y a pas le jet c
+- par contre, pas mal d evenements tH passentla selection pour les categories 1-B et 2-B, bien que l acceptance pour les evts tH soit ~ 2x moins grande que pour les evts tt (e.g. categorie 1.B dans les cutflows ci-dessous) par rapport a la preselection 4 jets
+{% endhighlight %}
+
+## comparaison de cutflow
+
+* samples Wmqq et uphi
+)
+### Cutflow Wmqq
+)
+![IMAGE](/images/q/8E26CAC89EBBBB9E0F58F0559C1BB3F7.jpg)
+### Cutflow tcphi
+)
+![IMAGE](/images/q/E65F1DB4255946203BA7D82C18A9E876.jpg)
+## detail par sample
+)
+{% highlight sh %}
 Processing root file FCNCttWpln_v1_5jets_tagging.root
 Using 5 leading jets in combinatoric
 had:M2tight:A : 332 	0.0787313
 had:M2tight:B : 604 	0.123346
 had:M1loose:A : 667 	0.134404
-had:M1loose:B : 1255 	0.247878
+had:M1loose:A : 1255 	0.247878
 {% endhighlight %}
 
 {% highlight sh %}

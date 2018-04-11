@@ -28,8 +28,8 @@ normalises le lot ttbar a Br = 0.1%.
 
 {% highlight sh %}
 * d apres mes calculs :
-  * ttcHyyWmln 410804 : 0,617 fb
-  * ttcHyyWpln 410805 : 0,617 fb
+  * ttcHyyWmln 410804 : 0.617 fb
+  * ttcHyyWpln 410805 : 0.617 fb
   * ttcHyyWmqq 410806 : 1.264 fb
   * ttcHyyWpqq 410807 : 1.264 fb
   * tphi(qqyy) 410753 : 1.227 fb
