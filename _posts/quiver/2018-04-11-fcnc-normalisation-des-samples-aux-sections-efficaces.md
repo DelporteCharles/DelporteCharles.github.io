@@ -34,8 +34,8 @@ normalises le lot ttbar a Br = 0.1%.
   * ttcHyyWpqq 410807 : 1.264 fb
   * tphi(qqyy) 410753 : 1.227 fb
   * uphi(qqyy) 410757 : 1.227 fb
-  * tcphi(qqyy) 410755  : 0.60 fb
-  * ctphi(qqyy) 410759  : 0.60 fb
+  * tcphi(qqyy) 410755  : 0.177 fb
+  * ctphi(qqyy) 410759  : 0.177 fb
 {% endhighlight %}
 
 # Yields selection papier
@@ -93,10 +93,10 @@ lep:M1loose : 1 	0.000778055
 {% highlight sh %}
 Processing root file FCNCctphiQHgamgambWqq_v1_4jets.root
 Categorie     NEvt  SumW
-had:M2tight : 1070 	0.379653
-had:M1loose : 1248 	0.469196
+had:M2tight : 1070 	0.111998
+had:M1loose : 1248 	0.138413
 lep:M2tight : 0 	0
-lep:M1loose : 1 	0.000193842
+lep:M1loose : 1 	0.000057
 {% endhighlight %}
 
 {% highlight sh %}
@@ -111,9 +111,9 @@ lep:M1loose : 0 	0
 {% highlight sh %}
 Processing root file FCNCtcphiQHgamgambWqq_v1_4jets.root
 Categorie     NEvt  SumW
-had:M2tight : 1112 	0.41011
-had:M1loose : 1295 	0.477442
-lep:M2tight : 3 	0.00191544
+had:M2tight : 1112 	0.120982
+had:M1loose : 1295 	 0.140845
+lep:M2tight : 3 	0.000565
 lep:M1loose : 0 	0
 {% endhighlight %}
 

@@ -36,8 +36,8 @@ tags:
   * ttcHyyWpqq 410807 : 1.264 fb
   * tphi(qqyy) 410753 : 1.227 fb
   * uphi(qqyy) 410757 : 1.227 fb
-  * tcphi(qqyy) 410755  : 0.60 fb
-  * ctphi(qqyy) 410759  : 0.60 fb
+  * tcphi(qqyy) 410755  : 0.177 fb
+  * ctphi(qqyy) 410759  : 0.177 fb
 {% endhighlight %}
 
 # Avec la normalisation MCWeight x XSection x lumi
@@ -110,10 +110,10 @@ had:M1loose:B : 2501 	1.12547
 {% highlight sh %}
 Processing root file FCNCctphiQHgamgambWqq_v1_5jets_tagging.root
 Using 5 leading jets in combinatoric
-had:M2tight:A : 233 	0.0719167
-had:M2tight:B : 1122 	0.388507
-had:M1loose:A : 165 	0.0650322
-had:M1loose:B : 793 	0.302794
+had:M2tight:A : 233 	0.021215
+had:M2tight:B : 1122 	0.114610
+had:M1loose:A : 165 	0.019184
+had:M1loose:B : 793 	0.089324
 {% endhighlight %}
 
 {% highlight sh %}
@@ -128,10 +128,10 @@ had:M1loose:B : 489 	0.366217
 {% highlight sh %}
 Processing root file FCNCtcphiQHgamgambWqq_v1_5jets_tagging.root
 Using 5 leading jets in combinatoric
-had:M2tight:A : 254 	0.0923442
-had:M2tight:B : 1151 	0.402025
-had:M1loose:A : 141 	0.0561969
-had:M1loose:B : 852 	0.304061
+had:M2tight:A : 254 	0.027242
+had:M2tight:B : 1151 	0.118597
+had:M1loose:A : 141 	0.016578
+had:M1loose:B : 852 	0.089698
 {% endhighlight %}
 
 {% highlight sh %}
