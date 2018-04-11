@@ -48,10 +48,10 @@ tags:
 Expected number of events tt pour Br = 0.1%
 
 Categorie       SumW(tt)  tphi  uphi  ctphi tcphi tH/tt
-had:M2tight:A : 2.00      0.06  0.06  0.07  0.09  0.14
-had:M2tight:B : 3.54      0.45  0.40  0.39  0.40  0.46
-had:M1loose:A : 1.35      0.06  0.07  0.07  0.06  0.19
-had:M1loose:A : 2.77      0.40  0.37  0.30  0.30  0.49
+had:M2tight:A : 2.00      0.06  0.06  0.02  0.03  0.085
+had:M2tight:B : 3.54      0.45  0.40  0.11  0.12  0.17
+had:M1loose:A : 1.35      0.06  0.07  0.02  0.02  0.13
+had:M1loose:A : 2.77      0.40  0.37  0.09  0.09  0.34
 {% endhighlight %}
 
 {% highlight sh %}
