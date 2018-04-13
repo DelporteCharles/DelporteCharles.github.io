@@ -1,4 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-04-11T15:01:58+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">FCNC normalisation des samples aux sections efficaces</title><link href="/2018/04/11/fcnc-normalisation-des-samples-aux-sections-efficaces.html" rel="alternate" type="text/html" title="FCNC normalisation des samples aux sections efficaces" /><published>2018-04-11T00:00:00+02:00</published><updated>2018-04-11T00:00:00+02:00</updated><id>/2018/04/11/fcnc-normalisation-des-samples-aux-sections-efficaces</id><content type="html" xml:base="/2018/04/11/fcnc-normalisation-des-samples-aux-sections-efficaces.html">&lt;h1 id=&quot;motivation&quot;&gt;Motivation&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-04-13T13:24:39+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">FCNC Combinatoric TruthMatching (v2)</title><link href="/2018/04/13/fcnc-combinatoric-truthmatching-(v2).html" rel="alternate" type="text/html" title="FCNC Combinatoric TruthMatching (v2)" /><published>2018-04-13T00:00:00+02:00</published><updated>2018-04-13T00:00:00+02:00</updated><id>/2018/04/13/fcnc-combinatoric-truthmatching-(v2)</id><content type="html" xml:base="/2018/04/13/fcnc-combinatoric-truthmatching-(v2).html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;optimiser la selection des jets parmis les differents combinaisons qui passent les coupures
+)
+    &lt;h1 id=&quot;sample&quot;&gt;Sample&lt;/h1&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Signal h019 Wpqq+Wmqq
+)
+    &lt;h1 id=&quot;procedure&quot;&gt;Procedure&lt;/h1&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Analyse nominale sur les 5 leading pT jets avec categories en bTagging&lt;/li&gt;
+  &lt;li&gt;Les evenements sont classes selon les categories habituelles (selon les priorites 1 puis 2 pour mTop SM, A puis B)
+    &lt;ul&gt;
+      &lt;li&gt;si un evenement vit dans sa categorie avec une seule combinaison, je regarde s’il est ‘matched’ :
+        &lt;ul&gt;
+          &lt;li&gt;dR(c quark, jet de mTop1) &amp;lt; 0.4&lt;/li&gt;
+          &lt;li&gt;dR(b quark, jet bTagged de mTop2) &amp;lt; 0.4&lt;/li&gt;
+          &lt;li&gt;dR(leading pT light quark, jet light le plus proche de mTop2) &amp;lt; 0.4&lt;/li&gt;
+          &lt;li&gt;dR(light quark restant, jet light restant de mTop2) &amp;lt; 0.4&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;si plusieurs combinaisons passent la selection pour la même categorie (mais aucune ne passe une ‘meilleure’ categorie), j’essaie 3 strategies pour trouver la strategie qui donnera des ‘matched’ le plus souvent :
+        &lt;ul&gt;
+          &lt;li&gt;firstCombLeadingPt (le default actuel) : la premiere combinaison qui passe les coupures avec les jets ordonnes en pT&lt;/li&gt;
+          &lt;li&gt;mTop1Matched : la combinaison selectionnee est celle qui donne abs(mTop1-173) le plus proche de 0&lt;/li&gt;
+          &lt;li&gt;mTop2Matched : la combinaison selectionnee est celle qui donne abs(mTop2-173) le plus proche de 0&lt;/li&gt;
+          &lt;li&gt;mTop12Matched : la combinaison selectionnee est celle qui donne abs(mTop1-173)+abs(mTop2-173) le plus proche de 0&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;puis je regarder si la combinaison selectionnee est ‘matched’ selon le meme critere que precedement (dR &amp;lt; 0.4 pour chaque association quark-jet)&lt;/li&gt;
+      &lt;li&gt;pour mesure a quel point on pourrait encore faire mieux, je regarder aussi la combinaison qui minimise la somme des dR cites au-dessus (deltaRMatched) : ca utilise la truth mais c’est juste pour se faire une idee des pertes potentielles (meme si certains de ces matchings en dR sont surement fortuits avec des jets de pile-up)
+)
+        &lt;h1 id=&quot;plots-presentes&quot;&gt;Plots presentes&lt;/h1&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;categories de matching (plots a 5 bins)
+    &lt;ul&gt;
+      &lt;li&gt;on regarde surtout le bin entre 4-5 (tous les jets sont matches a un quark)&lt;/li&gt;
+      &lt;li&gt;et aussi le bin 3-4 (les jets b et c sont matches aux quarks b et c respectivement)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;nombre de jets legers matches aux quarks du W (plots a 3 bins)
+)
+    &lt;h1 id=&quot;categorie-1a&quot;&gt;Categorie 1A&lt;/h1&gt;
+    &lt;p&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;en general on a la bonne paire bc grace au b-c-tagging&lt;/li&gt;
+  &lt;li&gt;quand il y a plusieurs possibilites pour le c, on a de meilleurs matching en considerant la combinaison avec le meilleur mTop2
+)
+&lt;img src=&quot;/images/q/9FDFF9994054CD258ED733234E8D0379.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;quand il n’y a qu’une possibilite pour le c, la plus grande valeur du min(pT jet) et mTop2 (un peu moins) donnent les 2 bons quarks dans 30% des cas et 1 dans 50% (35%) des cas
+)
+&lt;img src=&quot;/images/q/AF22487090EAE5A441933D7F20B104F4.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+        &lt;h1 id=&quot;categorie-1b&quot;&gt;Categorie 1B&lt;/h1&gt;
+        &lt;p&gt;)&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;quand il y a plusieurs possibilites pour le c, on a de meilleurs matching en considerant la combinaison avec le meilleur mTop1
+)
+&lt;img src=&quot;/images/q/53A92B0D3EEB29C6206DBCCFE1EEBB7B.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;quand il n’y a qu’une possibilite pour le c, la plus grande valeur du min(pT jet) et mTop2 (un peu moins) donnent les 2 bons jets du W dans 35% des cas et 1 dans 30% des cas
+)
+&lt;img src=&quot;/images/q/ECB3BD92766EA8DB25731CEE4741F74B.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+    &lt;h1 id=&quot;categorie-2a&quot;&gt;Categorie 2A&lt;/h1&gt;
+    &lt;p&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;quand il y a plusieurs possibilites pour le c, on a de meilleurs matching de la paire bc en considerant la combinaison avec le meilleur mTop1
+)
+&lt;img src=&quot;/images/q/3D55BC95A84C0F1E8C50DC336CFCCBB1.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;on a presque toujours un quark qui est perdu, mais prendre la combinaison avec la plus petite valeur de max(dR(b,j)) ou mTop2 permettent d’avoir un bon jet du W dans 70% et 65% des evts
+)
+&lt;img src=&quot;/images/q/668EDE488EFF36E0FCFB81024308D928.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+    &lt;h1 id=&quot;categorie-2b&quot;&gt;Categorie 2B&lt;/h1&gt;
+    &lt;p&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;quand il y a plusieurs possibilites pour le c, on a de meilleurs matching en considerant la combinaison avec le meilleur mTop1
+)
+&lt;img src=&quot;/images/q/5493A4F091EDBE222FFC9C936F4B68AB.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;on a presque toujours un quark qui est perdu, mais prendre la combinaison avec la plus petite valeur de max(dR(b,j)) ou mTop2 permettent d’avoir un bon jet du W dans 65% et 60% des evts
+)
+&lt;img src=&quot;/images/q/AC7FBDEA4ADAB938936733DFD06B7902.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+    &lt;h1 id=&quot;proposition-pour-la-combinatoire&quot;&gt;Proposition pour la combinatoire&lt;/h1&gt;
+  &lt;/li&gt;
+  &lt;li&gt;si plusieurs possibilites pour le jet c, on prends celle qui donne le meilleur mTop1&lt;/li&gt;
+  &lt;li&gt;une fois le c-jet fixe :
+    &lt;ul&gt;
+      &lt;li&gt;en categorie 1, on prends la combinaison de jets qui donne le meilleur mTop2&lt;/li&gt;
+      &lt;li&gt;en categorie 2, on prends la combinaison avec la plus petite valeur de max(dR(b,j))
+)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="combinatoric" /><category term="fcnc" /><category term="truthmatching" /><summary type="html">Purpose</summary></entry><entry><title type="html">FCNC normalisation des samples aux sections efficaces</title><link href="/2018/04/11/fcnc-normalisation-des-samples-aux-sections-efficaces.html" rel="alternate" type="text/html" title="FCNC normalisation des samples aux sections efficaces" /><published>2018-04-11T00:00:00+02:00</published><updated>2018-04-11T00:00:00+02:00</updated><id>/2018/04/11/fcnc-normalisation-des-samples-aux-sections-efficaces</id><content type="html" xml:base="/2018/04/11/fcnc-normalisation-des-samples-aux-sections-efficaces.html">&lt;h1 id=&quot;motivation&quot;&gt;Motivation&lt;/h1&gt;
 &lt;p&gt;)&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; avoir les poids d evenements corrects en tenant compte de :&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; MC Weight&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; XSection&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Lumi &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 36.1 fb-1&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -830,48 +925,4 @@ Categories sur le screenshot avec 4 plots :
 
 &lt;p&gt;)&lt;/p&gt;
 
-&lt;p&gt;)&lt;/p&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Purpose</summary></entry><entry><title type="html">FCNC MC yields</title><link href="/2018/02/15/fcnc-mc-yields.html" rel="alternate" type="text/html" title="FCNC MC yields" /><published>2018-02-15T00:00:00+01:00</published><updated>2018-02-15T00:00:00+01:00</updated><id>/2018/02/15/fcnc-mc-yields</id><content type="html" xml:base="/2018/02/15/fcnc-mc-yields.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
-
-&lt;p&gt;Comparison with Daniel and JB
-)&lt;/p&gt;
-&lt;h1 id=&quot;sample&quot;&gt;Sample&lt;/h1&gt;
-
-&lt;p&gt;Wmqq
-)&lt;/p&gt;
-&lt;h1 id=&quot;selection&quot;&gt;Selection&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;paper selection&lt;/li&gt;
-  &lt;li&gt;paper selection + b-Tagging&lt;/li&gt;
-  &lt;li&gt;paper selection + b-Tagging + try 5 leading jets&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;)&lt;/p&gt;
-&lt;h1 id=&quot;paper-selection&quot;&gt;paper selection&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;nombres identiques a Daniel
-)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Hadron-Tight 3237&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Hadron-Loose 5249&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Lepton-Tight 3&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Lepton-Loose 1&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h1 id=&quot;paper-selection--b-tagging&quot;&gt;paper selection + b-Tagging&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;nombres identiques a Daniel
-)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Hadron-Tight A 880&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Hadron-Tight B 2099&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Hadron-Tight C 514&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Hadron-Loose A 1369&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Hadron-Loose B 3162&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Hadron-Loose C 1385&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Lepton-Tight A 0&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Lepton-Tight B 1&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Lepton-Tight C 2&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Lepton-Loose A 0&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Lepton-Loose B 0&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Lepton-Loose C 1&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h1 id=&quot;paper-selection--b-tagging--try-5-leading-jets&quot;&gt;paper selection + b-Tagging + try 5 leading jets&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;nombres identiques a Daniel
-)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Hadron-Tight A 1686&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Hadron-Tight B 3727&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Hadron-Tight C 847&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Hadron-Loose A 1115&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Hadron-Loose B 2702&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Hadron-Loose C 1038&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Lepton-Tight A 2&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Lepton-Tight B 4&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Lepton-Tight C 7&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Lepton-Loose A 1&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Lepton-Loose B 2&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Lepton-Loose C 0&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;)&lt;/p&gt;</content><author><name></name></author><category term="fcnc" /><category term="mc" /><summary type="html">Purpose</summary></entry></feed>
+&lt;p&gt;)&lt;/p&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Purpose</summary></entry></feed>
