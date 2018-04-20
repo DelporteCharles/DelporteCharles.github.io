@@ -1,4 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-04-13T13:24:39+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">FCNC Combinatoric TruthMatching (v2)</title><link href="/2018/04/13/fcnc-combinatoric-truthmatching-(v2).html" rel="alternate" type="text/html" title="FCNC Combinatoric TruthMatching (v2)" /><published>2018-04-13T00:00:00+02:00</published><updated>2018-04-13T00:00:00+02:00</updated><id>/2018/04/13/fcnc-combinatoric-truthmatching-(v2)</id><content type="html" xml:base="/2018/04/13/fcnc-combinatoric-truthmatching-(v2).html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-04-20T10:30:38+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">FCNC Matching with MTop</title><link href="/2018/04/20/fcnc-matching-with-mtop.html" rel="alternate" type="text/html" title="FCNC Matching with MTop" /><published>2018-04-20T00:00:00+02:00</published><updated>2018-04-20T00:00:00+02:00</updated><id>/2018/04/20/fcnc-matching-with-mtop</id><content type="html" xml:base="/2018/04/20/fcnc-matching-with-mtop.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;definir a partir de quelle valeur de mTop1 on doit chercher les combinaisons les plus proches dans tous les categories, et mTop2 pour la categorie 1
+)
+    &lt;h1 id=&quot;procedure&quot;&gt;Procedure&lt;/h1&gt;
+    &lt;p&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;selection sur la combinatoire comme definit precedemment&lt;/li&gt;
+  &lt;li&gt;je remplit de facon independante les histogrammes de :
+    &lt;ul&gt;
+      &lt;li&gt;mTop1 si dR(c-jet, c-quark) &amp;lt; 0.4&lt;/li&gt;
+      &lt;li&gt;mTop2 si dR(b-jet, b-quark) &amp;lt; 0.4 et dR(jet0, quark0) &amp;lt; 0.4 et dR(jet1, quark1)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Jean-Baptiste suggerait de prendre la combinaison matchée en dR, mais est-ce que ca n’introduirait pas un biais par rapport a notre strategie dans son ensemble ?
+)
+    &lt;h1 id=&quot;valeurs-moyennes-de-mtop-mesurees-avec-le-matching&quot;&gt;Valeurs moyennes de mTop mesurees avec le matching&lt;/h1&gt;
+    &lt;p&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;1A :&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  mTop1 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 171.9 GeV&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  mTop2 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 170 GeV&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;1B :&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  mTop1 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 172.4 GeV&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  mTop2 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 171.7 GeV&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;2A :&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  mTop1 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 172.2 GeV&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;2B :&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  mTop1 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 172.4 GeV&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Proposition commune a toutes les categories :&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  mTop1 : 172 GeV&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  mTop2 : 171 GeV&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;)&lt;/p&gt;
+&lt;h1 id=&quot;categorie-1a&quot;&gt;Categorie 1A&lt;/h1&gt;
+&lt;p&gt;)
+&lt;img src=&quot;/images/q/73F30EC980942B557783A0BDA6B11998.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+&lt;img src=&quot;/images/q/EDCC371E626358103B48DC419E3C99BD.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;categorie-1b&quot;&gt;Categorie 1B&lt;/h1&gt;
+&lt;p&gt;)
+&lt;img src=&quot;/images/q/490E2619C270C419BFA74FB284EAAEEE.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+&lt;img src=&quot;/images/q/03A8630950AABEC017F8868D8F9D6757.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;categorie-2a&quot;&gt;Categorie 2A&lt;/h1&gt;
+&lt;p&gt;)
+&lt;img src=&quot;/images/q/65DC188C0DEC1C2B6616952ACD98AB8B.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;categorie-2b&quot;&gt;Categorie 2B&lt;/h1&gt;
+&lt;p&gt;)
+&lt;img src=&quot;/images/q/6888111F1C3ECACEBF0EA7CFC13FFC9B.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;)&lt;/p&gt;</content><author><name></name></author><summary type="html">Purpose</summary></entry><entry><title type="html">FCNC resonnant backgrounds</title><link href="/2018/04/19/fcnc-resonnant-backgrounds.html" rel="alternate" type="text/html" title="FCNC resonnant backgrounds" /><published>2018-04-19T00:00:00+02:00</published><updated>2018-04-19T00:00:00+02:00</updated><id>/2018/04/19/fcnc-resonnant-backgrounds</id><content type="html" xml:base="/2018/04/19/fcnc-resonnant-backgrounds.html">&lt;p&gt;)&lt;/p&gt;
+&lt;h1 id=&quot;samples&quot;&gt;Samples&lt;/h1&gt;
+&lt;p&gt;)
+mc16a&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;mc16a.PowhegPy8_NNLOPS_ggH125.MxAODDetailed.p3404.h019.root
+mc16a.PowhegPy8_NNPDF30_VBFH125.MxAODDetailed.p3404.h019.root&lt;/li&gt;
+  &lt;li&gt;mc16a.PowhegPy8_WmH125J.MxAODDetailed.p3418.h019.root&lt;/li&gt;
+  &lt;li&gt;mc16a.PowhegPy8_WpH125J.MxAODDetailed.p3418.h019.root&lt;/li&gt;
+  &lt;li&gt;mc16a.PowhegPy8_ggZH125.MxAODDetailed.p3404.h019.root&lt;/li&gt;
+  &lt;li&gt;mc16a.PowhegPy8_bbH.MxAODDetailed.p3418.h019.root
+mc16a.PowhegPy8_ZH125J.MxAODDetailed.p3472.h019.root&lt;/li&gt;
+  &lt;li&gt;mc16a.PowhegPy8_ttH125.MxAODDetailed.p3418.h019.root&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;mc16a.MGPy8_tHjb125_yt_plus1.MxAODDetailed.p3404.h019.root
+mc16a.aMCnloHwpp_tWH125_yt_plus1.MxAODDetailed.p3404.h019.root&lt;/p&gt;
+
+&lt;p&gt;mc16d&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;mc16d.PowhegPy8_ggZH125.MxAODDetailed.p3418.h019.root&lt;/li&gt;
+  &lt;li&gt;mc16d.PowhegPy8_NNLOPS_ggH125.MxAODDetailed.p3418.h019.root&lt;/li&gt;
+  &lt;li&gt;mc16d.PowhegPy8_WmH125J.MxAODDetailed.p3418.h019.root&lt;/li&gt;
+  &lt;li&gt;mc16d.PowhegPy8_WpH125J.MxAODDetailed.p3418.h019.root&lt;/li&gt;
+  &lt;li&gt;mc16d.PowhegPy8_ttH125.MxAODDetailed.p3418.h019.root&lt;/li&gt;
+  &lt;li&gt;mc16d.PowhegPy8_bbH.MxAODDetailed.p3418.h019.root&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;mc16d.MGPy8_tHjb125_yt_plus1_mc16d.MxAODDetailed.p3472.h019.root
+mc16d.aMCnloHwpp_tWH125_yt_plus1.MxAODDetailed.p3418.h019.root&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;mc16d.PowhegPy8_NNLOPS_ggH125.MxAODDetailed.p3418.h019.root
+// mc16d.PowhegH7_NNLOPS_ggH125.MxAODDetailed.p3418.h019.root
+)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">) Samples ) mc16a</summary></entry><entry><title type="html">Z+jets to do</title><link href="/2018/04/18/z+jets-to-do.html" rel="alternate" type="text/html" title="Z+jets to do" /><published>2018-04-18T00:00:00+02:00</published><updated>2018-04-18T00:00:00+02:00</updated><id>/2018/04/18/z+jets-to-do</id><content type="html" xml:base="/2018/04/18/z+jets-to-do.html">&lt;ul&gt;
+  &lt;li&gt;[ ] pourquoi 2 jets bb n’est pas affecte par la coupure en MET ?
+)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">[ ] pourquoi 2 jets bb n’est pas affecte par la coupure en MET ? )</summary></entry><entry><title type="html">Bug avec tH (chez moi uniquement)</title><link href="/2018/04/17/bug-avec-th-(chez-moi-uniquement).html" rel="alternate" type="text/html" title="Bug avec tH (chez moi uniquement)" /><published>2018-04-17T00:00:00+02:00</published><updated>2018-04-17T00:00:00+02:00</updated><id>/2018/04/17/bug-avec-th-(chez-moi-uniquement)</id><content type="html" xml:base="/2018/04/17/bug-avec-th-(chez-moi-uniquement).html">&lt;p&gt;)
+FCNCtphiQHgamgambWqq_test0_tH
+)&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;tt-&amp;gt;Scan&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;evt:mTop1:mTop2:njet30==3&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;       19 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;      1420 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 1095.8487 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 338.09689 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;         0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        3 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        0 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;        68 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 708.67102 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 338.09689 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;         1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><summary type="html">) FCNCtphiQHgamgambWqq_test0_tH ) tt-&amp;gt;Scan(&quot;evt:mTop1:mTop2:njet30==3&quot;)* 2 * 19 * 1420 * 1095.8487 * 338.09689 * 0 ** 3 * 0 * 68 * 708.67102 * 338.09689 * 1 *</summary></entry><entry><title type="html">FCNC Combinatoric TruthMatching (v2)</title><link href="/2018/04/13/fcnc-combinatoric-truthmatching-(v2).html" rel="alternate" type="text/html" title="FCNC Combinatoric TruthMatching (v2)" /><published>2018-04-13T00:00:00+02:00</published><updated>2018-04-13T00:00:00+02:00</updated><id>/2018/04/13/fcnc-combinatoric-truthmatching-(v2)</id><content type="html" xml:base="/2018/04/13/fcnc-combinatoric-truthmatching-(v2).html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;optimiser la selection des jets parmis les differents combinaisons qui passent les coupures
@@ -605,324 +689,4 @@ Categories sur le screenshot avec 4 plots :
 &lt;h1 id=&quot;nombres-inclusifs-une-combinaison--plusieurs-combinaisons-possibles&quot;&gt;Nombres inclusifs (une combinaison + plusieurs combinaisons possibles)&lt;/h1&gt;
 &lt;p&gt;)&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM2tightA&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |         633 |     1807 |       35 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |         637 |     1807 |     35.3 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |         653 |     1807 |     36.1 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |         654 |     1807 |     36.2 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |         750 |     1807 |     41.5 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM2tightB&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |         881 |     3551 |     24.8 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |         891 |     3551 |     25.1 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |         889 |     3551 |       25 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |         905 |     3551 |     25.5 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |    1.12e+03 |     3551 |     31.6 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM2tightC&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |          77 |      877 |     8.78 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |          78 |      877 |     8.89 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |          78 |      877 |     8.89 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |          78 |      877 |     8.89 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |          89 |      877 |     10.1 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM1looseA&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |          13 |     1182 |      1.1 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |          13 |     1182 |      1.1 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |          20 |     1182 |     1.69 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |          20 |     1182 |     1.69 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |          21 |     1182 |     1.78 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM1looseB&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |          17 |     2506 |    0.678 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |          17 |     2506 |    0.678 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |          33 |     2506 |     1.32 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |          34 |     2506 |     1.36 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |          38 |     2506 |     1.52 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM1looseC&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |           4 |      985 |    0.406 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |           4 |      985 |    0.406 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |           4 |      985 |    0.406 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |           4 |      985 |    0.406 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |           5 |      985 |    0.508 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="combinatoric" /><category term="fcnc" /><category term="truthmatching" /><summary type="html">Purpose</summary></entry><entry><title type="html">FCNC impact of combinatoric</title><link href="/2018/03/28/fcnc-impact-of-combinatoric.html" rel="alternate" type="text/html" title="FCNC impact of combinatoric" /><published>2018-03-28T00:00:00+02:00</published><updated>2018-03-28T00:00:00+02:00</updated><id>/2018/03/28/fcnc-impact-of-combinatoric</id><content type="html" xml:base="/2018/03/28/fcnc-impact-of-combinatoric.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;how many combinations per event will pass the selection ?&lt;/li&gt;
-  &lt;li&gt;is it correct to train the BDT on the 1rst combination ?
-)
-    &lt;h1 id=&quot;procedure&quot;&gt;Procedure&lt;/h1&gt;
-  &lt;/li&gt;
-  &lt;li&gt;sample is FCNC signal Wmqq&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;usual selection, w/wo b-Tagging&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;if the event enters the tight category, fill how many combinations pass the tight selection&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;if the event enters the loose category (and not tight), fill how many combinations pass the loose selection&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;same for tagging categories, with priority A &amp;gt; B &amp;gt; C
-)
-    &lt;h1 id=&quot;observations-principales&quot;&gt;Observations principales&lt;/h1&gt;
-  &lt;/li&gt;
-  &lt;li&gt;dans la selection sans tagging, environ 75% des evts ont une seule combinaison qui passe la selection&lt;/li&gt;
-  &lt;li&gt;avec le bTagging et 4 jets, on a moins d’acceptance dans les categories A+B ce qui se verifie avec tres souvent une seule combinaison qui passe&lt;/li&gt;
-  &lt;li&gt;si on utilise 5 jets, on a un plus de combinaisons comme attendu:
-    &lt;ul&gt;
-      &lt;li&gt;en tight, encore environ 70% des evts ont une seule combinaison&lt;/li&gt;
-      &lt;li&gt;en loose, seuls 50% des evts ont une seule bonne combinaison, et les 50% restant ont 3 ou 4 combinaisons selon la categorie de tagging
-)
-        &lt;h1 id=&quot;paper-selection&quot;&gt;Paper selection&lt;/h1&gt;
-        &lt;p&gt;)&lt;/p&gt;
-        &lt;h2 id=&quot;tight&quot;&gt;Tight&lt;/h2&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/609D5F73A9855393CAA7D96C9B5F7226.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;loose&quot;&gt;Loose&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/236179DCC8B572512B12948E3148CE71.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h1 id=&quot;tagging-categories-4-jets&quot;&gt;Tagging categories 4 jets&lt;/h1&gt;
-&lt;p&gt;)&lt;/p&gt;
-&lt;h2 id=&quot;tight-1&quot;&gt;Tight&lt;/h2&gt;
-&lt;p&gt;)&lt;/p&gt;
-&lt;h3 id=&quot;a&quot;&gt;A&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/112F890090560081819B51C168821347.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;b&quot;&gt;B&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/56A1085857FA37777AC464DF51725FEC.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;c&quot;&gt;C&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/1B4C1C782C6849523A70688B5815D310.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;loose-1&quot;&gt;Loose&lt;/h2&gt;
-&lt;p&gt;)&lt;/p&gt;
-&lt;h3 id=&quot;a-1&quot;&gt;A&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/94AD8FE7BF24FC81A2F318BC0DE31305.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;b-1&quot;&gt;B&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/FB92A90EEA919E18626316A28232DE09.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;c-1&quot;&gt;C&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/17D745FADCA56793BD604C9E913E9E72.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h1 id=&quot;tagging-categories-5-jets&quot;&gt;Tagging categories 5 jets&lt;/h1&gt;
-&lt;p&gt;)&lt;/p&gt;
-&lt;h2 id=&quot;tight-2&quot;&gt;Tight&lt;/h2&gt;
-&lt;p&gt;)&lt;/p&gt;
-&lt;h3 id=&quot;a-2&quot;&gt;A&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/BC122D2330CE2AC40C4777F721803155.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;b-2&quot;&gt;B&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/B622C54C9146DDAF8AB298E7047A2CB6.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;c-2&quot;&gt;C&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/950FE96A13938E440B1B7DB5A9F62C7E.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;loose-2&quot;&gt;Loose&lt;/h2&gt;
-&lt;p&gt;)&lt;/p&gt;
-&lt;h3 id=&quot;a-3&quot;&gt;A&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/96D6898C0B99E666899D0F790D7BADA3.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;b-3&quot;&gt;B&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/86E46C7AE0E3E903AC1007AD7808A256.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;c-3&quot;&gt;C&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/58F5511FBDBF5997457685186FD6520F.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;)&lt;/p&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Purpose</summary></entry><entry><title type="html">FCNC MVA</title><link href="/2018/03/23/fcnc-mva.html" rel="alternate" type="text/html" title="FCNC MVA" /><published>2018-03-23T00:00:00+01:00</published><updated>2018-03-23T00:00:00+01:00</updated><id>/2018/03/23/fcnc-mva</id><content type="html" xml:base="/2018/03/23/fcnc-mva.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Improve sensitivity using MVA methods
-)
-    &lt;h1 id=&quot;procedure&quot;&gt;Procedure&lt;/h1&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Samples :
-    &lt;ul&gt;
-      &lt;li&gt;Wmqq
-        &lt;ul&gt;
-          &lt;li&gt;je rajouterai Wpqq a la prochaine iteration&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Sherpa yy&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;BDT with configuration that of VHbb paper
-    &lt;ul&gt;
-      &lt;li&gt;200 Trees&lt;/li&gt;
-      &lt;li&gt;maxDepth 4&lt;/li&gt;
-      &lt;li&gt;nCuts 100&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Variables d’entrainement du BDT : presque toutes les variables dont j’ai montre les plots, sauf les variables sur chaque photon individuellement ou sur le systeme diphoton seul (je test avec pTyy et etayy seuls a la fin de la page) … par contre, dPhicH est autorise par exemple
-    &lt;ul&gt;
-      &lt;li&gt;pour se faire une idee (desole pour la mise en forme), les variables sont : pTj0:etaj0:pTj1:etaj1:pTb:etab:dRbW:dPhibW:dEtabW:mW:mTopSM:mindRbj:mindPhibj:MefftopSM:pTratiobjj0j1:pTratioj0j1:pTtt:ytt:mtt:HTcjy0y1bjj0j1:HT4jets:HTjets:dRcH:dPhicH:dEtacH:mTopEx:MefftopEx:maxdRcy:mindRcy:maxdPhicy:mindPhicy:costhetastary&lt;/li&gt;
-      &lt;li&gt;je vais supprimer la plupart des variables, c’est juste pour faire un premier test ou on peut voir le gain maximal&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;traitement des poids : les poids sont tous mis a 1.
-    &lt;ul&gt;
-      &lt;li&gt;c’est pas optimal, mais j’hesite entre ca et ignorer les evenements a poid negatif … au pire, ca rend le BDT pas optimal, on pourra le verifier apres&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;selection
-    &lt;ul&gt;
-      &lt;li&gt;4 jets : paper selection&lt;/li&gt;
-      &lt;li&gt;5 jets : same as paper selection up to 5 leading pT jets, to increase stat&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;no attempt for tagging categories yet : categories A + B have lower stat than the standard paper categories
-)
-    &lt;h1 id=&quot;roc-curves-4-5-jets&quot;&gt;ROC Curves 4-5 jets&lt;/h1&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/7799083FE8B86961F9FA330D22679501.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h1 id=&quot;4-jets&quot;&gt;4 jets&lt;/h1&gt;
-&lt;p&gt;)
-&lt;img src=&quot;/images/q/F7FEC4A07DE069CC213F5D35EC0A88AA.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Correlation entre le BDT et myy pour le bruit de fond et le signal&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/540E44DC0620B48D1AEF9D9FA9D5EE2A.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;en faisant le profil, on voit qu’il y a potentiellement une correlation pour le bruit de fond, mais qu’elle ne concerne que la region bas BDT : dans le plot de gauche c’est inclusif sur le BDT, a droite pour BDT &amp;gt; 0&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/F914518D38B0965D9F3A6B1406E8544E.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h1 id=&quot;5-jets&quot;&gt;5 jets&lt;/h1&gt;
-&lt;p&gt;)
-&lt;img src=&quot;/images/q/2E04ADF787215E3EB3E209DE9634CAE9.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Correlation entre le BDT et myy pour le bruit de fond et le signal&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/DBD5144E46B7765F7E0B6C93367C6E43.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;en faisant le profil, on voit qu’il y a potentiellement une correlation pour le bruit de fond, mais qu’elle ne concerne que la region bas BDT : dans le plot de gauche c’est inclusif sur le BDT, a droite pour BDT &amp;gt; 0&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/ADD6D20D29C8310C305AACADEA53120D.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h1 id=&quot;bdt-avec-ptyy-et-etayy-seulement&quot;&gt;BDT avec pTyy et etayy seulement&lt;/h1&gt;
-&lt;p&gt;)&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;la separation est beaucoup plus difficile, comme attendu&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/984D52D922F523CC9282FEA44226438B.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/A698B546499254583DCC70E2A4596F2F.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;correlation entre BDT et myy&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/5AC69EF3F01A9301FF23748EC358FCB6.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;profile du BDT en fonction de myy : moins correle a myy, mais c’est aussi parce qu’il n’y a pas beaucoup de discrimination de facon generale&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/ED959015E60F14ACAD5D3AB198D4E53E.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;TMVAClassification &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; BDTTree_FCNCttWmqq_v1_4jets BDTTree_FCNCttShergg_allVariables_v1_4jets pTj0:etaj0:pTj1:etaj1:pTb:etab:dRbW:dPhibW:dEtabW:mW:mTopSM:mindR_bj:mindPhi_bj:Meff_topSM:pTratio_bj_j0j1:pTratio_j0_j1:pT_tt:y_tt:m_tt:HT_cj_y0_y1_bj_j0_j1:HT4jets:HTjets:dR_cH:dPhi_cH:dEta_cH:m_TopEx:Meff_topEx:maxdR_cy:mindR_cy:maxdPhi_cy:mindPhi_cy:costhetastar_y &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;variablesOptimizationLocal rootFiles/h019/ BDTTree_FCNCttWpqq_v0_4jets_tagging:BDTTree_FCNCttWmqq_v0_4jets_tagging BDTTree_FCNCttShergg_allVariables_v1_4jets_tagging pTj0:pTj1:pTb:dRbW test0
-)&lt;/p&gt;</content><author><name></name></author><category term="bdt" /><category term="fcnc" /><summary type="html">Purpose</summary></entry><entry><title type="html">Slides FCNC</title><link href="/2018/03/05/slides-fcnc.html" rel="alternate" type="text/html" title="Slides FCNC" /><published>2018-03-05T00:00:00+01:00</published><updated>2018-03-05T00:00:00+01:00</updated><id>/2018/03/05/slides-fcnc</id><content type="html" xml:base="/2018/03/05/slides-fcnc.html">&lt;p&gt;Daniel&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;[x] presentation generale est plutôt bonne. Rajouter le nom de nous trois sur la slide-1&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;[ ] slide 5,leptonic il faudrait aussi les nombres pour les categories 1 et 2 (loose/tight) les autres etant
-  définies plus tard&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;[x] slide 6 expliciter la coupure ctag faite de 1coupure &amp;gt; et une coupure &amp;lt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;[x] slide 7 la definition “and no c-tagged jet” peut prêter à confusion: simplement on ne demande “rien” &lt;br /&gt;
- de special au jet associé aux 2 phostons; idem pour b-tag&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;[x] slide 9: indiquer que tu vas aussi comparer à Sherpa (et la stat en hadronique sera bien meilleure)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;[x] slide 7-8-9 (aussi souligné par Jean-Baptiste) un point important est qu’on ne se limite plus aux 4 (2 pour mode leptonique) jets de plus haut PT-&amp;gt; introduit la nomenclature “4-jets”et 5-jets&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;[x] slide 9 : Est-ce que le Deltaphi c/H n’est pas aussi discriminant? (autant ou plus que b/W)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;[x] slide 11: utilisation de Powheg devrait etre en tete des prochains steps, il me semble.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;JB&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;[x] p1 : je remplacerais “t —&amp;gt; cH(gamgam)” par « search for the t-q-H coupling using the H —&amp;gt; yy decay »
-(t —&amp;gt; cH est trop restrictif, on regarde q)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Daniel</summary></entry><entry><title type="html">FCNC TruthMatching</title><link href="/2018/02/27/fcnc-truthmatching.html" rel="alternate" type="text/html" title="FCNC TruthMatching" /><published>2018-02-27T00:00:00+01:00</published><updated>2018-02-27T00:00:00+01:00</updated><id>/2018/02/27/fcnc-truthmatching</id><content type="html" xml:base="/2018/02/27/fcnc-truthmatching.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Voir quelle proportion des objets reco utilises dans l’analyse nous viennent des TruthParticles visées
-)
-    &lt;h1 id=&quot;sample&quot;&gt;Sample&lt;/h1&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Wmqq
-)
-    &lt;h1 id=&quot;selection&quot;&gt;Selection&lt;/h1&gt;
-  &lt;/li&gt;
-  &lt;li&gt;habituelle avec les categories de tagging
-    &lt;ul&gt;
-      &lt;li&gt;avec les coupures de C-Tagging calibrées&lt;/li&gt;
-      &lt;li&gt;avec la coupure FJVT&lt;/li&gt;
-      &lt;li&gt;1) avec jets pt &amp;gt; 30 et tout eta&lt;/li&gt;
-      &lt;li&gt;2) avec jets pt &amp;gt; 25 et abseta &amp;lt; 2.5
-)
-        &lt;h1 id=&quot;matching&quot;&gt;Matching&lt;/h1&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;un objet est matched si dans son utilisation dans le calcul des mTops et vis a vis du b/c-tagging, il presente dR &amp;lt; 0.4 avec l’objet truth correspondant&lt;/li&gt;
-  &lt;li&gt;pour les deux quarks dans W-&amp;gt;qq du top SM, je match d’abord le leading quark avec le jet le plus proche (parmi les deux jets non b-tagged utilise dans le top SM), et le subleading quark est alors associe a l’autre jet&lt;/li&gt;
-  &lt;li&gt;s’il n’y a pas de jet b-tagged ou qu’il y en a plusieurs, ils sont ordonnés en pT pour savoir lequel doit matcher à quel quark
-)
-    &lt;h1 id=&quot;bins&quot;&gt;Bins&lt;/h1&gt;
-  &lt;/li&gt;
-  &lt;li&gt;4 : b, c, q0 et q1 matched (q0 et q1 dans W-&amp;gt;qq)&lt;/li&gt;
-  &lt;li&gt;3 : b et c matched, mais pas q0 et/ou q1&lt;/li&gt;
-  &lt;li&gt;2 : c matched mais pas b&lt;/li&gt;
-  &lt;li&gt;1 : b matched mais pas c&lt;/li&gt;
-  &lt;li&gt;0 : ni b ni c matched
-)
-    &lt;h1 id=&quot;principales-observations&quot;&gt;Principales observations&lt;/h1&gt;
-  &lt;/li&gt;
-  &lt;li&gt;en Tight A : bon matching bcqq et bc (4eme et 5eme bins), entre 30% et 40% chacun&lt;/li&gt;
-  &lt;li&gt;en Tight B : on match plus souvent le b mais pas le c (2eme bin) : normal, c’est la categorie un bTag mais pas de cTag
-    &lt;ul&gt;
-      &lt;li&gt;mais dans 1/5 des evenements, on a quand meme tous les bons objets (5eme bin)&lt;/li&gt;
-      &lt;li&gt;dans encore 1/5 des evenements, on a quand meme la bonne paire bc (4eme bin)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;en Tight C : on match plus souvent le c mais pas le b (normal, c’est la categorie un cTag mais pas de bTag)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;dans ces categories tight, on a plutot interet a garder les coupures actuelles sur les jets (30 GeV tout eta) plutot que 25 GeV abseta &amp;lt; 2.5&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;en Loose A : c’est le matching bc mais il manque au moins un des quarks de Wqq qui domine (3eme bin), autour de 60%-70%, donc rien de choquant : on a un mauvais jet dans le top2, c’est normal qu’il y aie besoin d’une fenetre en masse plus large&lt;/li&gt;
-  &lt;li&gt;en Loose B : idem, mais contribution plus importante de b matched sans le c (2eme bin), et un peu de ni b ni c matchés (1er bin)&lt;/li&gt;
-  &lt;li&gt;en Loose C : on match tres souvent le c mais pas le b, dans des proportions similaires a la categorie tight :
-)
-    &lt;h1 id=&quot;tight-a&quot;&gt;Tight A&lt;/h1&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/71D52E9B93C88B487B4E16C74E3F205C.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h1 id=&quot;tight-b&quot;&gt;Tight B&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/7C0605F7491CCDFF6D06DD85D49CCD4E.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h1 id=&quot;tight-c&quot;&gt;Tight C&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/0218856917E265983A4E56E83A60DCA1.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h1 id=&quot;loose-a&quot;&gt;Loose A&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/BA627220AE2634E1AE2EF3753884B613.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h1 id=&quot;loose-b&quot;&gt;Loose B&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/7C7CC1A741FD9E90C875E45DA6569291.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h1 id=&quot;loose-c&quot;&gt;Loose C&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/E5630FE54118508908B2795546F25637.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;h1 id=&quot;distributions&quot;&gt;Distributions&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;toutes categories (Tight, Loose, ABC) confondues … mais chaque evenements est accepte au moins dans l’une des categories
-)
-&lt;img src=&quot;/images/q/0E6588E8ED275C75E7F09AF4B1C22B81.png&quot; alt=&quot;at leading q eta(j) (leading q best match).png&quot; /&gt;
-&lt;img src=&quot;/images/q/232A7628536062AC87EB35F2838F9ABE.png&quot; alt=&quot;at leading q pT(j) (leading q best match).png&quot; /&gt;
-&lt;img src=&quot;/images/q/92AE025C4F43C355CD1BBDC7B78D9CD6.png&quot; alt=&quot;at subleading q eta(j) (leading q best match).png&quot; /&gt;
-&lt;img src=&quot;/images/q/10DC571389912BAEF22D1B115B892F92.png&quot; alt=&quot;at subleading q pT(j) (leading q best match).png&quot; /&gt;
-&lt;img src=&quot;/images/q/FF8C219BE807865C355F70C2DBB8C43C.png&quot; alt=&quot;eta(bjet).png&quot; /&gt;
-&lt;img src=&quot;/images/q/A6C925C27DF700A1F2663D32E5D5B4F0.png&quot; alt=&quot;eta(bquark).png&quot; /&gt;
-&lt;img src=&quot;/images/q/0A54B9AE5BFB9A148CE1EB5259C1D6F0.png&quot; alt=&quot;eta(cjet).png&quot; /&gt;
-&lt;img src=&quot;/images/q/08E93B03CAB2A9F190577F7C39CEC6BB.png&quot; alt=&quot;eta(cquark).png&quot; /&gt;
-&lt;img src=&quot;/images/q/D2A33B231D0CFEA30C496027299BA6B2.png&quot; alt=&quot;eta(leading q) (leading q best match).png&quot; /&gt;
-&lt;img src=&quot;/images/q/5C3945B30181727B867E3C3DD203D1ED.png&quot; alt=&quot;eta(subleading q) (leading q best match).png&quot; /&gt;
-&lt;img src=&quot;/images/q/8DD3F36B4CCAA30D2278ED35916CE51A.png&quot; alt=&quot;pT(bjet).png&quot; /&gt;
-&lt;img src=&quot;/images/q/6EE310098EFF2189C5CCF7805F71E9C3.png&quot; alt=&quot;pT(bquark).png&quot; /&gt;
-&lt;img src=&quot;/images/q/5D6F1D678BF378BEE3009E30E1194E0E.png&quot; alt=&quot;pT(cjet).png&quot; /&gt;
-&lt;img src=&quot;/images/q/742E1E70DAFCB2AA485FF6F5CBA57702.png&quot; alt=&quot;pT(cquark).png&quot; /&gt;
-&lt;img src=&quot;/images/q/0B02C74DF302F83048C8EC8E600ED5A6.png&quot; alt=&quot;pT(leading q) (leading q best match).png&quot; /&gt;
-&lt;img src=&quot;/images/q/3EFAE310ABDB42067CBDB0B083EE62FC.png&quot; alt=&quot;pT(subleading q) (leading q best match).png&quot; /&gt;
-&lt;img src=&quot;/images/q/233A67296CE0B082F74598564AB08062.png&quot; alt=&quot;ratio pT(bquark,bjet).png&quot; /&gt;
-&lt;img src=&quot;/images/q/0E2EC18BA1911741C056AFA8A3F8A3E8.png&quot; alt=&quot;ratio pT(cquark,cjet).png&quot; /&gt;
-&lt;img src=&quot;/images/q/475402682A588EC38CCF77717DDA2C5D.png&quot; alt=&quot;ratio pT(leading q,j) (leading q best match).png&quot; /&gt;
-&lt;img src=&quot;/images/q/F9BF66EEA8204715FC77A68B26471329.png&quot; alt=&quot;ratio pT(subleading q,j) (leading q best match).png&quot; /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;)&lt;/p&gt;
-
-&lt;p&gt;)&lt;/p&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Purpose</summary></entry></feed>
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM2tightA&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |         633 |     1807 |       35 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |         637 |     1807 |     35.3 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |         653 |     1807 |     36.1 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |         654 |     1807 |     36.2 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |         750 |     1807 |     41.5 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM2tightB&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |         881 |     3551 |     24.8 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |         891 |     3551 |     25.1 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |         889 |     3551 |       25 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |         905 |     3551 |     25.5 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |    1.12e+03 |     3551 |     31.6 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM2tightC&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |          77 |      877 |     8.78 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |          78 |      877 |     8.89 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |          78 |      877 |     8.89 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |          78 |      877 |     8.89 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |          89 |      877 |     10.1 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM1looseA&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |          13 |     1182 |      1.1 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |          13 |     1182 |      1.1 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |          20 |     1182 |     1.69 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |          20 |     1182 |     1.69 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |          21 |     1182 |     1.78 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM1looseB&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |          17 |     2506 |    0.678 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |          17 |     2506 |    0.678 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |          33 |     2506 |     1.32 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |          34 |     2506 |     1.36 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |          38 |     2506 |     1.52 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM1looseC&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |           4 |      985 |    0.406 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |           4 |      985 |    0.406 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |           4 |      985 |    0.406 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |           4 |      985 |    0.406 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |           5 |      985 |    0.508 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="combinatoric" /><category term="fcnc" /><category term="truthmatching" /><summary type="html">Purpose</summary></entry></feed>
