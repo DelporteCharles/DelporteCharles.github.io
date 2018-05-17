@@ -1,4 +1,153 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-04-20T10:30:38+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">FCNC Matching with MTop</title><link href="/2018/04/20/fcnc-matching-with-mtop.html" rel="alternate" type="text/html" title="FCNC Matching with MTop" /><published>2018-04-20T00:00:00+02:00</published><updated>2018-04-20T00:00:00+02:00</updated><id>/2018/04/20/fcnc-matching-with-mtop</id><content type="html" xml:base="/2018/04/20/fcnc-matching-with-mtop.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-05-17T10:00:51+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">Optimisation BDT tH</title><link href="/2018/05/16/optimisation-bdt-th.html" rel="alternate" type="text/html" title="Optimisation BDT tH" /><published>2018-05-16T00:00:00+02:00</published><updated>2018-05-16T00:00:00+02:00</updated><id>/2018/05/16/optimisation-bdt-th</id><content type="html" xml:base="/2018/05/16/optimisation-bdt-th.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+
+&lt;p&gt;Optimiser le BDT tH
+)&lt;/p&gt;
+&lt;h1 id=&quot;samples&quot;&gt;Samples&lt;/h1&gt;
+
+&lt;p&gt;Signal single-top t/u-phi
+Background Sherpa yy + jets
+)&lt;/p&gt;
+&lt;h1 id=&quot;procedure&quot;&gt;Procedure&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;identique a l’optimisation du BDT tt : on part de toutes les variables, et on enleve la moins performante a chaque iteration&lt;/li&gt;
+  &lt;li&gt;le meilleur BDT est celui qui a le moins de variables et qui, des qu’on lui retire une variable de plus, perds en significance&lt;/li&gt;
+  &lt;li&gt;procedure en 3 temps + 1
+    &lt;ul&gt;
+      &lt;li&gt;optimisation pour avoir les meilleurs variables pT/eta/m&lt;/li&gt;
+      &lt;li&gt;optimisation pour avoir les meilleurs variables de deltaR/deltaPhi&lt;/li&gt;
+      &lt;li&gt;optimisation pour avoir les meilleurs variables comme HT ou Somme Vectorielle des pT (pseudo-MET)&lt;/li&gt;
+      &lt;li&gt;re-optimisation parmi les variables selectionnees ci-dessus
+)
+        &lt;h1 id=&quot;bdt-des-variables-cinematiques-pteta&quot;&gt;BDT des variables cinematiques pT/eta&lt;/h1&gt;
+        &lt;p&gt;)
+&lt;img src=&quot;/images/q/C065C0F99A8CD81DF7054C428A5FDCD4.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;variablesOptimizationLocal rootFiles_tH/h021/  BDTTree_FCNCtphiQHgamgambWqq_v11_tH:BDTTree_FCNCuphiQHgamgambWqq_v11_tH BDTTree_FCNCttShergg_v8_tH pTyy:mW:pTj1:pTb:etayy:etab:etaj0:pTratiobjj0j1:etaj1:pTratioj0j1:pTj0&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Classement :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;pTyy&lt;/li&gt;
+  &lt;li&gt;mW&lt;/li&gt;
+  &lt;li&gt;pTj0&lt;/li&gt;
+  &lt;li&gt;pTratioj0j1&lt;/li&gt;
+  &lt;li&gt;etaj0&lt;/li&gt;
+  &lt;li&gt;etab&lt;/li&gt;
+  &lt;li&gt;pTb&lt;/li&gt;
+  &lt;li&gt;etayy&lt;/li&gt;
+  &lt;li&gt;etaj1&lt;/li&gt;
+  &lt;li&gt;pTj1&lt;/li&gt;
+  &lt;li&gt;pTratiobjj0j1&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Suggestion à garder pour l’optimisation finale :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;pTyy&lt;/li&gt;
+  &lt;li&gt;mW&lt;/li&gt;
+  &lt;li&gt;pTj0&lt;/li&gt;
+  &lt;li&gt;pTratioj0j1
+)
+    &lt;h1 id=&quot;bdt-des-variables-de-deltar&quot;&gt;BDT des variables de deltaR&lt;/h1&gt;
+    &lt;p&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;variablesOptimizationLocal rootFiles_tH/h021/  BDTTree_FCNCtphiQHgamgambWqq_v11_tH:BDTTree_FCNCuphiQHgamgambWqq_v11_tH BDTTree_FCNCttShergg_v8_tH mindRbj:dRbW:dPhibW:mindPhibj:dEtabW:costhetastary&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/A107E54B7FFA7043D2BAD6D91136D107.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+Classement :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;dRbW&lt;/li&gt;
+  &lt;li&gt;mindRbj&lt;/li&gt;
+  &lt;li&gt;mindPhibj&lt;/li&gt;
+  &lt;li&gt;dEtabW&lt;/li&gt;
+  &lt;li&gt;costhetastary&lt;/li&gt;
+  &lt;li&gt;dPhibW&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Suggestion à garder pour l’optimisation finale :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;dRbW&lt;/li&gt;
+  &lt;li&gt;mindRbj&lt;/li&gt;
+  &lt;li&gt;mindPhibj
+)
+    &lt;h1 id=&quot;bdt-des-variables-ht--pseudo-met&quot;&gt;BDT des variables HT / pseudo-MET&lt;/h1&gt;
+    &lt;p&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;variablesOptimizationLocal rootFiles_tH/h021/  BDTTree_FCNCtphiQHgamgambWqq_v11_tH:BDTTree_FCNCuphiQHgamgambWqq_v11_tH BDTTree_FCNCttShergg_v8_tH HTcjy0y1bjj0j1:HT4jets:MefftopSM:MefftopEx:HTjets:SumPtVect:SumPtVectAllJets&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/CD1AC7FC77846AA42CD54E0038C05321.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+Classement :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;MefftopEx (= pTy0 + pTy1)&lt;/li&gt;
+  &lt;li&gt;MefftopSM&lt;/li&gt;
+  &lt;li&gt;HTjets&lt;/li&gt;
+  &lt;li&gt;SumPtVectAllJets&lt;/li&gt;
+  &lt;li&gt;HT4jets&lt;/li&gt;
+  &lt;li&gt;SumPtVect&lt;/li&gt;
+  &lt;li&gt;HTcjy0y1bjj0j1&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Suggestion à garder pour l’optimisation finale :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;MefftopEx&lt;/li&gt;
+  &lt;li&gt;MefftopSM&lt;/li&gt;
+  &lt;li&gt;HTjets&lt;/li&gt;
+  &lt;li&gt;SumPtVectAllJets
+)
+    &lt;h1 id=&quot;optimisation-finale&quot;&gt;Optimisation finale&lt;/h1&gt;
+    &lt;p&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;variablesOptimizationLocal rootFiles_tH/h021/  BDTTree_FCNCtphiQHgamgambWqq_v11_tH:BDTTree_FCNCuphiQHgamgambWqq_v11_tH BDTTree_FCNCttShergg_v8_tH pTyy:mW:pTj0:pTratioj0j1:dRbW:mindRbj:mindPhibj:MefftopEx:MefftopSM:HTjets:SumPtVectAllJets&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/q/125C6622BEF04F2A22C90EE00DC49A73.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
+Classement :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;pTyy&lt;/li&gt;
+  &lt;li&gt;mW&lt;/li&gt;
+  &lt;li&gt;MefftopSM&lt;/li&gt;
+  &lt;li&gt;HTjets&lt;/li&gt;
+  &lt;li&gt;mindRbj&lt;/li&gt;
+  &lt;li&gt;MefftopEx&lt;/li&gt;
+  &lt;li&gt;dRbW&lt;/li&gt;
+  &lt;li&gt;pTratioj0j1&lt;/li&gt;
+  &lt;li&gt;pTj0&lt;/li&gt;
+  &lt;li&gt;SumPtVectAllJets&lt;/li&gt;
+  &lt;li&gt;mindPhibj&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Suggestion de variables à garder :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;pTyy&lt;/li&gt;
+  &lt;li&gt;mW&lt;/li&gt;
+  &lt;li&gt;MefftopSM&lt;/li&gt;
+  &lt;li&gt;HTjets&lt;/li&gt;
+  &lt;li&gt;mindRbj&lt;/li&gt;
+  &lt;li&gt;MefftopEx&lt;/li&gt;
+  &lt;li&gt;dRbW&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Ou :&lt;/p&gt;
+
+&lt;p&gt;MefftopSM)&lt;/p&gt;
+
+&lt;p&gt;)&lt;/p&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Purpose</summary></entry><entry><title type="html">FCNC PoPy signal samples</title><link href="/2018/05/03/fcnc-popy-signal-samples.html" rel="alternate" type="text/html" title="FCNC PoPy signal samples" /><published>2018-05-03T00:00:00+02:00</published><updated>2018-05-03T00:00:00+02:00</updated><id>/2018/05/03/fcnc-popy-signal-samples</id><content type="html" xml:base="/2018/05/03/fcnc-popy-signal-samples.html">&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;delporte@cca001 FCNC]&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;rucio list-dids mc16_13TeV.4107%.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2%.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| SCOPE:NAME                                                                                                                                 | &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;DID TYPE]   |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;|--------------------------------------------------------------------------------------------------------------------------------------------+--------------|&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410764.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWmln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410765.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWpln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410766.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWmqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410767.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWpqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410768.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWmln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410769.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWpln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410770.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWmqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410771.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWpqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">[delporte@cca001 FCNC]$ rucio list-dids mc16_13TeV.4107%.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2%.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+| SCOPE:NAME | [DID TYPE] ||--------------------------------------------------------------------------------------------------------------------------------------------+--------------|| mc16_13TeV:mc16_13TeV.410764.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWmln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410765.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWpln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410766.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWmqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410767.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWpqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410768.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWmln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410769.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWpln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410770.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWmqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410771.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWpqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER |+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+</summary></entry><entry><title type="html">FCNC Matching with MTop</title><link href="/2018/04/20/fcnc-matching-with-mtop.html" rel="alternate" type="text/html" title="FCNC Matching with MTop" /><published>2018-04-20T00:00:00+02:00</published><updated>2018-04-20T00:00:00+02:00</updated><id>/2018/04/20/fcnc-matching-with-mtop</id><content type="html" xml:base="/2018/04/20/fcnc-matching-with-mtop.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;definir a partir de quelle valeur de mTop1 on doit chercher les combinaisons les plus proches dans tous les categories, et mTop2 pour la categorie 1
@@ -411,282 +560,4 @@ Categories sur le screenshot avec 4 plots :
   &lt;li&gt;cat1A fold1o2)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_1o2_tagcat_1_sel_1&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;-0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;0.5))&amp;amp;amp;&amp;amp;amp;(tagcat==1))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;gt;=120&amp;amp;amp;&amp;amp;amp;mTopSM&amp;amp;lt;=220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_1o2_tagcat_1_sel_2&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;-0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;0.5))&amp;amp;amp;&amp;amp;amp;(tagcat==1))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;lt;120||mTopSM&amp;amp;gt;220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_2o2_tagcat_1_sel_1&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;1.5))&amp;amp;amp;&amp;amp;amp;(tagcat==1))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;gt;=120&amp;amp;amp;&amp;amp;amp;mTopSM&amp;amp;lt;=220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;3&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_2o2_tagcat_1_sel_2&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;1.5))&amp;amp;amp;&amp;amp;amp;(tagcat==1))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;lt;120||mTopSM&amp;amp;gt;220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;4&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_1o2_tagcat_2_sel_1&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;-0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;0.5))&amp;amp;amp;&amp;amp;amp;(tagcat==2))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;gt;=120&amp;amp;amp;&amp;amp;amp;mTopSM&amp;amp;lt;=220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;5&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_1o2_tagcat_2_sel_2&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;-0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;0.5))&amp;amp;amp;&amp;amp;amp;(tagcat==2))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;lt;120||mTopSM&amp;amp;gt;220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;6&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_2o2_tagcat_2_sel_1&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;1.5))&amp;amp;amp;&amp;amp;amp;(tagcat==2))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;gt;=120&amp;amp;amp;&amp;amp;amp;mTopSM&amp;amp;lt;=220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;7&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_2o2_tagcat_2_sel_2&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;1.5))&amp;amp;amp;&amp;amp;amp;(tagcat==2))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;lt;120||mTopSM&amp;amp;gt;220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Purpose</summary></entry><entry><title type="html">FCNC MVA Optimisations</title><link href="/2018/04/05/fcnc-mva-optimisations.html" rel="alternate" type="text/html" title="FCNC MVA Optimisations" /><published>2018-04-05T00:00:00+02:00</published><updated>2018-04-05T00:00:00+02:00</updated><id>/2018/04/05/fcnc-mva-optimisations</id><content type="html" xml:base="/2018/04/05/fcnc-mva-optimisations.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Trouver le meilleur set de variables pour le BDT (pas forcement celui avec les meilleures performances, sinon on a qu’a prendre toutes les variables, mais celui avec un nombre raisonnable de variables sans grosse perte de discrimination)
-)
-    &lt;h1 id=&quot;samples&quot;&gt;Samples&lt;/h1&gt;
-  &lt;/li&gt;
-  &lt;li&gt;h019
-    &lt;ul&gt;
-      &lt;li&gt;FCNC W +- qq&lt;/li&gt;
-      &lt;li&gt;Sherpa yy + jets
-)
-        &lt;h1 id=&quot;selection&quot;&gt;Selection&lt;/h1&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Selection 5 jets&lt;/li&gt;
-  &lt;li&gt;Categories de tagging A et B uniquement, avec un BDT individuel dans chaque categorie (1-A, 1-B, 2-A, 2-B)&lt;/li&gt;
-  &lt;li&gt;Si plusieurs combinaisons sont possibles, je prends celle qui donne mTop2 le plus proche de 173 
-)
-    &lt;h1 id=&quot;procedure&quot;&gt;Procedure&lt;/h1&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Je separe les variables en 3 categories pour faire un premier tri :
-    &lt;ul&gt;
-      &lt;li&gt;pT/eta/m&lt;/li&gt;
-      &lt;li&gt;dR/dEta/DPhi&lt;/li&gt;
-      &lt;li&gt;Meff/Ht&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Dans chacune de ces catégories, je garderai les 3-4 meilleures variables, et je fais une nouvelles selection de variables parmi celles-ci a la fin&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;BDT entraines avec le setup VHbb&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Poids negatifs pris en compte&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Procedure iterative :
-    &lt;ol&gt;
-      &lt;li&gt;je demarre avec toutes les variables&lt;/li&gt;
-      &lt;li&gt;pour chaque variable (restante), j’entraine un nouveau BDT sans la variable en question&lt;/li&gt;
-      &lt;li&gt;le BDT qui donne la meilleure significance indique la variable la moins utile : elle ne sera pas utilisee dans les prochaines iterations&lt;/li&gt;
-      &lt;li&gt;je reprends au point b. et à chaque iteration j’enleve une nouvelle variable
-)&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;la significance est evaluee sur les distributions de BDT (rebinnees comme dans VHbb, de facon a reduire l’erreur stat dans chaque bin a une valeur raisonnable) en calculant dans chaque categorie (combinees ensuite en quadrature) :
-)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;  Float_t sensitivity &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0.&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  Float_t uncertainty &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0.&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  Int_t nBins &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; m_mvaHistSig-&amp;gt;GetNbinsX&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Int_t &lt;span class=&quot;nv&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; i&amp;lt;nBins&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; i++&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double iS &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; m_mvaHistSig-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;i+1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double iB &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; m_mvaHistBkg-&amp;gt;GetBinContent&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;i+1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double idS &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; m_mvaHistSig-&amp;gt;GetBinError&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;i+1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double idB &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; m_mvaHistBkg-&amp;gt;GetBinError&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;i+1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;iS&amp;lt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0 or iB&amp;lt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        &lt;span class=&quot;k&quot;&gt;continue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double iLSB &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; log&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1+iS/iB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double s &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 2&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;iS+iB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;iLSB-iS&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      double u &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; iLSB &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; iLSB &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; idS &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; idS + &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;iLSB - iS/iB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;iLSB - iS/iB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; idB &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; idB&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      &lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      sensitivity +&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; s&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;      uncertainty +&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; u&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  m_sensitivity &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; sqrt&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;sensitivity&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h1 id=&quot;plots-de-ranking&quot;&gt;Plots de ranking&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;chaque bin en x correspond à un BDT entrainé, où on a retiré des variables d’entrainement la variable indiquee en label du bin. Dans chaque bloc, la premiere variable retiree correspond au BDT qui donne la meilleure significance, ce qui montre que cette variable est la moins importante de toutes celles testees. Pour l’iteration suivante, elle est donc definitivement supprimee, et on cherche a retirer une variable de plus du BDT a chaque iteration.&lt;/li&gt;
-  &lt;li&gt;je pense que l’on sait que l’on atteint un seuil critique dans les variables enlevees lorsque, quelle que soit variable retiree, la significance diminue significativement par rapports aux BDT du bloc d’avant …
-)
-    &lt;h1 id=&quot;pt--eta--m&quot;&gt;pT / eta / m&lt;/h1&gt;
-    &lt;p&gt;)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Ordre d’importance des variables (importance decroissante)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;pTyy&lt;/li&gt;
-  &lt;li&gt;mW&lt;/li&gt;
-  &lt;li&gt;mtt&lt;/li&gt;
-  &lt;li&gt;pTj1&lt;/li&gt;
-  &lt;li&gt;pTb&lt;/li&gt;
-  &lt;li&gt;etayy&lt;/li&gt;
-  &lt;li&gt;etab&lt;/li&gt;
-  &lt;li&gt;pTtt&lt;/li&gt;
-  &lt;li&gt;etaj0&lt;/li&gt;
-  &lt;li&gt;pTratiobjj0j1&lt;/li&gt;
-  &lt;li&gt;etaj1&lt;/li&gt;
-  &lt;li&gt;pTratioj0j1&lt;/li&gt;
-  &lt;li&gt;ytt&lt;/li&gt;
-  &lt;li&gt;pTj0&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;6% de difference en significance entre le meilleure entrainement avec 13 variables et le moins bon à 2 variables
-)&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Proposition de variables a conserver :&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;pTyy&lt;/li&gt;
-  &lt;li&gt;mW&lt;/li&gt;
-  &lt;li&gt;mtt&lt;/li&gt;
-  &lt;li&gt;pTj1&lt;/li&gt;
-  &lt;li&gt;pTb&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/E99C96AB7336869E39E7544981F3797B.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;variablesOptimizationLocal rootFiles/h019/ BDTTree_FCNCttWpqq_v0_5jets_tagging:BDTTree_FCNCttWmqq_v0_5jets_tagging BDTTree_FCNCttShergg_allVariables_v1_5jets_tagging pTj0:etaj0:pTj1:etaj1:pTb:etab:mW:pTratiobjj0j1:pTratioj0j1:pTtt:ytt:mtt:pTyy:etayy kinematic_v0&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h1 id=&quot;dr--dphi--deta&quot;&gt;dR / dPhi / dEta&lt;/h1&gt;
-&lt;p&gt;)&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Ordre d’importance des variables (importance decroissante)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;maxdRcy&lt;/li&gt;
-  &lt;li&gt;mindRbj&lt;/li&gt;
-  &lt;li&gt;dEtacH&lt;/li&gt;
-  &lt;li&gt;mindRcy&lt;/li&gt;
-  &lt;li&gt;dRbW&lt;/li&gt;
-  &lt;li&gt;maxdPhicy&lt;/li&gt;
-  &lt;li&gt;dPhibW&lt;/li&gt;
-  &lt;li&gt;mindPhicy&lt;/li&gt;
-  &lt;li&gt;mindPhibj&lt;/li&gt;
-  &lt;li&gt;dRcH&lt;/li&gt;
-  &lt;li&gt;dEtabW&lt;/li&gt;
-  &lt;li&gt;dPhicH&lt;/li&gt;
-  &lt;li&gt;costhetastary&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;3% de difference en significance entre le meilleure entrainement avec 12 variables et le moins bon à variables
-)&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Proposition de variables a conserver :&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;maxdRcy&lt;/li&gt;
-  &lt;li&gt;mindRbj&lt;/li&gt;
-  &lt;li&gt;dEtacH&lt;/li&gt;
-  &lt;li&gt;mindRcy&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/E509F703A03DD58CB9A31E254544D270.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;variablesOptimizationLocal rootFiles/h019/ BDTTree_FCNCttWpqq_v0_5jets_tagging:BDTTree_FCNCttWmqq_v0_5jets_tagging BDTTree_FCNCttShergg_allVariables_v1_5jets_tagging dRbW:dPhibW:dEtabW:mindRbj:mindPhibj:dRcH:dPhicH:dEtacH:maxdRcy:mindRcy:maxdPhicy:mindPhicy:costhetastary distances_v0&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h1 id=&quot;meff--ht&quot;&gt;Meff / HT&lt;/h1&gt;
-&lt;p&gt;)&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Ordre d’importance des variables (importance decroissante)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;HTcjy0y1bjj0j1&lt;/li&gt;
-  &lt;li&gt;HT4jets&lt;/li&gt;
-  &lt;li&gt;MefftopSM&lt;/li&gt;
-  &lt;li&gt;MefftopEx&lt;/li&gt;
-  &lt;li&gt;HTjets&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;2.5% de difference en significance entre le meilleure entrainement avec 12 variables et le moins bon à 2 variables
-)&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Proposition de variables a conserver :&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;HTcjy0y1bjj0j1&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;–&amp;gt; retirer les autres variables n’impact quasiment pas, et dans la mesure où toutes ces variables sont tres correlees entre elles, pas la peine d’en donner plusieurs au BDT, il s’agissait surtout de trouver la meilleure d’entre elles&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/46C59B0779D07B13D95476B916F4FD8B.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;variablesOptimizationLocal rootFiles/h019/ BDTTree_FCNCttWpqq_v0_5jets_tagging:BDTTree_FCNCttWmqq_v0_5jets_tagging BDTTree_FCNCttShergg_allVariables_v1_5jets_tagging MefftopSM:HTcjy0y1bjj0j1:HT4jets:HTjets:MefftopEx meffht_v0&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h1 id=&quot;optimisation-finale&quot;&gt;Optimisation finale&lt;/h1&gt;
-&lt;p&gt;)&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;je rajoute costhetastary pour verifier la significance avec toutes les variables selectionnees precedemment (BDT temoins disons … je re-coderai ce BDT temoins plus proprement une autre fois) … costhetastary devrait etre eliminee assez rapidement, et permettra peut-etre de supprimer certaines variables qui rankent bien grace a des fluctuations statistiques
-)&lt;/li&gt;
-  &lt;li&gt;Ordre d’importance des variables (importance decroissante)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;HTcjy0y1bjj0j1&lt;/li&gt;
-  &lt;li&gt;mindRbj&lt;/li&gt;
-  &lt;li&gt;maxdRcy&lt;/li&gt;
-  &lt;li&gt;mtt&lt;/li&gt;
-  &lt;li&gt;pTb&lt;/li&gt;
-  &lt;li&gt;mW&lt;/li&gt;
-  &lt;li&gt;pTyy&lt;/li&gt;
-  &lt;li&gt;pTj1&lt;/li&gt;
-  &lt;li&gt;costhetastary&lt;/li&gt;
-  &lt;li&gt;mindRcy&lt;/li&gt;
-  &lt;li&gt;dEtacH&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;4.9% de difference en significance entre le meilleure entrainement avec 12 variables et le moins bon à 2 variables
-)&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Proposition finale de variables a conserver (TRAIN__Thu_Apr__5&lt;em&gt;14_28_01_2018&lt;/em&gt;) :&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;HTcjy0y1bjj0j1&lt;/li&gt;
-  &lt;li&gt;mindRbj&lt;/li&gt;
-  &lt;li&gt;maxdRcy&lt;/li&gt;
-  &lt;li&gt;mtt&lt;/li&gt;
-  &lt;li&gt;pTb&lt;/li&gt;
-  &lt;li&gt;mW&lt;/li&gt;
-  &lt;li&gt;pTyy&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;–&amp;gt; significance de 1821.26 (voire 1er bin du bloc precedent la suppression de pTyy) avec seulement 7 variables
-–&amp;gt; significance de 1852.59 dans un BDT avec toutes les variables testees dans cette note (32 variables)
-==&amp;gt; 1.7% de perte en significance en passant de 32 variables aux 7 meilleures&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/556BF85876FD5D6614822CEDA2F2F017.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/D9967B6AC96215730D70DE9BBF4E1921.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/99A167FC0DBBBE52B47EA867FDC3D4EE.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-&lt;img src=&quot;/images/q/A21B35015024A831C542E0F74F8EB9BE.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;correlation de ce BDT a myy : profile BDT:myy pour le bruit de fond&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/q/4C764DDC74FCBD62CACB71BCE3DE9E1C.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;variablesOptimizationLocal rootFiles/h019/ BDTTree_FCNCttWpqq_v0_5jets_tagging:BDTTree_FCNCttWmqq_v0_5jets_tagging BDTTree_FCNCttShergg_allVariables_v1_5jets_tagging pTyy:mW:mtt:pTj1:pTb:maxdRcy:mindRbj:dEtacH:mindRcy:HTcjy0y1bjj0j1:costhetastary final_v0&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;for-record--all-variables&quot;&gt;for record : all variables&lt;/h3&gt;
-&lt;p&gt;)&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;variablesOptimizationLocal rootFiles/h019/ BDTTree_FCNCttWpqq_v0_5jets_tagging:BDTTree_FCNCttWmqq_v0_5jets_tagging BDTTree_FCNCttShergg_allVariables_v1_5jets_tagging pTj0:etaj0:pTj1:etaj1:pTb:etab:dRbW:dPhibW:dEtabW:mW:mindRbj:mindPhibj:MefftopSM:pTratiobjj0j1:pTratioj0j1:pTtt:ytt:mtt:HTcjy0y1bjj0j1:HT4jets:HTjets:dRcH:dPhicH:dEtacH:mTopEx:MefftopEx:maxdRcy:mindRcy:maxdPhicy:mindPhicy:costhetastary:ptyy:etayy allVars&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Purpose</summary></entry><entry><title type="html">FCNC Combinatoric TruthMatching</title><link href="/2018/04/03/fcnc-combinatoric-truthmatching.html" rel="alternate" type="text/html" title="FCNC Combinatoric TruthMatching" /><published>2018-04-03T00:00:00+02:00</published><updated>2018-04-03T00:00:00+02:00</updated><id>/2018/04/03/fcnc-combinatoric-truthmatching</id><content type="html" xml:base="/2018/04/03/fcnc-combinatoric-truthmatching.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;optimiser la selection des jets parmis les differents combinaisons qui passent les coupures
-)
-    &lt;h1 id=&quot;sample&quot;&gt;Sample&lt;/h1&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Signal h017 Wmqq
-)
-    &lt;h1 id=&quot;procedure&quot;&gt;Procedure&lt;/h1&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Analyse nominale sur les 5 leading pT jets avec categories en bTagging&lt;/li&gt;
-  &lt;li&gt;Les evenements sont classes selon les categories habituelles (selon les priorites 1 puis 2 pour mTop SM, A puis B puis C pour le tagging)
-    &lt;ul&gt;
-      &lt;li&gt;si un evenement vit dans sa categorie avec une seule combinaison, je regarde s’il est ‘matched’ :
-        &lt;ul&gt;
-          &lt;li&gt;dR(c quark, jet de mTop1) &amp;lt; 0.4&lt;/li&gt;
-          &lt;li&gt;dR(b quark, jet bTagged de mTop2) &amp;lt; 0.4&lt;/li&gt;
-          &lt;li&gt;dR(leading pT light quark, jet light le plus proche de mTop2) &amp;lt; 0.4&lt;/li&gt;
-          &lt;li&gt;dR(light quark restant, jet light restant de mTop2) &amp;lt; 0.4&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;si plusieurs combinaisons passent la selection pour la même categorie (mais aucune ne passe une ‘meilleure’ categorie), j’essaie 3 strategies pour trouver la strategie qui donnera des ‘matched’ le plus souvent :
-        &lt;ul&gt;
-          &lt;li&gt;firstCombLeadingPt (le default actuel) : la premiere combinaison qui passe les coupures avec les jets ordonnes en pT&lt;/li&gt;
-          &lt;li&gt;mTop1Matched : la combinaison selectionnee est celle qui donne abs(mTop1-173) le plus proche de 0&lt;/li&gt;
-          &lt;li&gt;mTop2Matched : la combinaison selectionnee est celle qui donne abs(mTop2-173) le plus proche de 0&lt;/li&gt;
-          &lt;li&gt;mTop12Matched : la combinaison selectionnee est celle qui donne abs(mTop1-173)+abs(mTop2-173) le plus proche de 0&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;puis je regarder si la combinaison selectionnee est ‘matched’ selon le meme critere que precedement (dR &amp;lt; 0.4 pour chaque association quark-jet)&lt;/li&gt;
-      &lt;li&gt;pour mesure a quel point on pourrait encore faire mieux, je regarder aussi la combinaison qui minimise la somme des dR cites au-dessus (deltaRMatched) : ca utilise la truth mais c’est juste pour se faire une idee des pertes potentielles (meme si certains de ces matchings en dR sont surement fortuits avec des jets de pile-up)
-)
-        &lt;h1 id=&quot;observations-principales&quot;&gt;Observations principales&lt;/h1&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;en categorie 1 (tight) : peu de differences entre les differentes strategies reco, mais matcher avec mTop2 (ou par extension mTop1+mTop2) semble faire gagner le plus, et ca fait plus de sens que la strategie actuelle (firstCombLeadingPt).
-    &lt;ul&gt;
-      &lt;li&gt;le truth-matching en dR semble montrer qu’on prend la meilleure combinaison a peine une fois sur 2, et les strategies que j’ai essayees (mTop1, mTop2, mTop12) ameliorent a peine : vu que firstCombLeadingPt donne moins de 50% de bons matchings parmis ceux possibles (si on considere que le max serait la valeur pour deltaRMatched) peut-etre qu’il faudrait prendre la combinaison avec HT plus faible ou quelque chose comme ca ? le plus petit jet de pt ?&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;en categorie 2 (loose) : il n’y a que tres peu (1%) de bon matching possible, mais une nouvelle fois mTop2 semble donner le meilleur gain, surtout en 2-A et 2-B
-)
-    &lt;h1 id=&quot;nombres-pour-les-evenements-ayant-plusieurs-combinaisons-possibles&quot;&gt;Nombres pour les evenements ayant plusieurs combinaisons possibles&lt;/h1&gt;
-    &lt;p&gt;)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM2tightA&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |         108 |      484 |     22.3 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |         112 |      484 |     23.1 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |         128 |      484 |     26.4 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |         129 |      484 |     26.7 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |         225 |      484 |     46.5 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM2tightB&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |         252 |     1446 |     17.4 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |         262 |     1446 |     18.1 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |         260 |     1446 |       18 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |         276 |     1446 |     19.1 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |         493 |     1446 |     34.1 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM2tightC&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |          10 |      240 |     4.17 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |          11 |      240 |     4.58 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |          11 |      240 |     4.58 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |          11 |      240 |     4.58 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |          22 |      240 |     9.17 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM1looseA&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |           1 |      565 |    0.177 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |           1 |      565 |    0.177 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |           8 |      565 |     1.42 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |           8 |      565 |     1.42 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |           9 |      565 |     1.59 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM1looseB&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |           8 |     1363 |    0.587 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |           8 |     1363 |    0.587 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |          24 |     1363 |     1.76 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |          25 |     1363 |     1.83 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |          29 |     1363 |     2.13 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM1looseC&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |           3 |      443 |    0.677 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |           3 |      443 |    0.677 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |           3 |      443 |    0.677 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |           3 |      443 |    0.677 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |           4 |      443 |    0.903 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h1 id=&quot;nombres-inclusifs-une-combinaison--plusieurs-combinaisons-possibles&quot;&gt;Nombres inclusifs (une combinaison + plusieurs combinaisons possibles)&lt;/h1&gt;
-&lt;p&gt;)&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM2tightA&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |         633 |     1807 |       35 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |         637 |     1807 |     35.3 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |         653 |     1807 |     36.1 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |         654 |     1807 |     36.2 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |         750 |     1807 |     41.5 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM2tightB&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |         881 |     3551 |     24.8 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |         891 |     3551 |     25.1 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |         889 |     3551 |       25 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |         905 |     3551 |     25.5 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |    1.12e+03 |     3551 |     31.6 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM2tightC&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |          77 |      877 |     8.78 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |          78 |      877 |     8.89 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |          78 |      877 |     8.89 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |          78 |      877 |     8.89 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |          89 |      877 |     10.1 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM1looseA&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |          13 |     1182 |      1.1 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |          13 |     1182 |      1.1 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |          20 |     1182 |     1.69 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |          20 |     1182 |     1.69 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |          21 |     1182 |     1.78 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM1looseB&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |          17 |     2506 |    0.678 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |          17 |     2506 |    0.678 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |          33 |     2506 |     1.32 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |          34 |     2506 |     1.36 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |          38 |     2506 |     1.52 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; hadM1looseC&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Matching strategy    | Matched     | Total     | Fraction&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;--------------------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;-----------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;---------&lt;/span&gt; | &lt;span class=&quot;nt&quot;&gt;--------&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  firstCombLeadingPt |           4 |      985 |    0.406 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop1Matched |           4 |      985 |    0.406 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;        mTop2Matched |           4 |      985 |    0.406 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       mTop12Matched |           4 |      985 |    0.406 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;       deltaRMatched |           5 |      985 |    0.508 %&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;nt&quot;&gt;---------------------------------------------------------&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="combinatoric" /><category term="fcnc" /><category term="truthmatching" /><summary type="html">Purpose</summary></entry></feed>
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_1o2_tagcat_1_sel_1&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;-0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;0.5))&amp;amp;amp;&amp;amp;amp;(tagcat==1))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;gt;=120&amp;amp;amp;&amp;amp;amp;mTopSM&amp;amp;lt;=220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_1o2_tagcat_1_sel_2&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;-0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;0.5))&amp;amp;amp;&amp;amp;amp;(tagcat==1))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;lt;120||mTopSM&amp;amp;gt;220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_2o2_tagcat_1_sel_1&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;1.5))&amp;amp;amp;&amp;amp;amp;(tagcat==1))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;gt;=120&amp;amp;amp;&amp;amp;amp;mTopSM&amp;amp;lt;=220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;3&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_2o2_tagcat_1_sel_2&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;1.5))&amp;amp;amp;&amp;amp;amp;(tagcat==1))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;lt;120||mTopSM&amp;amp;gt;220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;4&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_1o2_tagcat_2_sel_1&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;-0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;0.5))&amp;amp;amp;&amp;amp;amp;(tagcat==2))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;gt;=120&amp;amp;amp;&amp;amp;amp;mTopSM&amp;amp;lt;=220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;5&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_1o2_tagcat_2_sel_2&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;-0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;0.5))&amp;amp;amp;&amp;amp;amp;(tagcat==2))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;lt;120||mTopSM&amp;amp;gt;220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;6&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_2o2_tagcat_2_sel_1&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;1.5))&amp;amp;amp;&amp;amp;amp;(tagcat==2))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;gt;=120&amp;amp;amp;&amp;amp;amp;mTopSM&amp;amp;lt;=220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&amp;lt;SubMethod &lt;span class=&quot;nv&quot;&gt;Index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;7&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;BDT::BDTCat_2o2_tagcat_2_sel_2&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(((EventNumberMod2%2&amp;amp;gt;0.5)&amp;amp;amp;&amp;amp;amp;(EventNumberMod2%2&amp;amp;lt;1.5))&amp;amp;amp;&amp;amp;amp;(tagcat==2))&amp;amp;amp;&amp;amp;amp;(mTopSM&amp;amp;lt;120||mTopSM&amp;amp;gt;220)&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pTyy:mW:mtt:pTb:maxdRcy:mindRbj:HTcjy0y1bjj0j1&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Purpose</summary></entry></feed>

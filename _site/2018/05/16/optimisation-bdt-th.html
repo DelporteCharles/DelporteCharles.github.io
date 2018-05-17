@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Optimisation BDT tH</title>
+  <meta name="description" content="Purpose">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2018/05/16/optimisation-bdt-th.html">
+  <link rel="alternate" type="application/rss+xml" title="My PhD notes" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">My PhD notes</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Optimisation BDT tH</h1>
+    <p class="post-meta">
+      <time datetime="2018-05-16T00:00:00+02:00" itemprop="datePublished">
+        
+        May 16, 2018
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="purpose">Purpose</h1>
+
+<p>Optimiser le BDT tH
+)</p>
+<h1 id="samples">Samples</h1>
+
+<p>Signal single-top t/u-phi
+Background Sherpa yy + jets
+)</p>
+<h1 id="procedure">Procedure</h1>
+
+<ul>
+  <li>identique a l’optimisation du BDT tt : on part de toutes les variables, et on enleve la moins performante a chaque iteration</li>
+  <li>le meilleur BDT est celui qui a le moins de variables et qui, des qu’on lui retire une variable de plus, perds en significance</li>
+  <li>procedure en 3 temps + 1
+    <ul>
+      <li>optimisation pour avoir les meilleurs variables pT/eta/m</li>
+      <li>optimisation pour avoir les meilleurs variables de deltaR/deltaPhi</li>
+      <li>optimisation pour avoir les meilleurs variables comme HT ou Somme Vectorielle des pT (pseudo-MET)</li>
+      <li>re-optimisation parmi les variables selectionnees ci-dessus
+)
+        <h1 id="bdt-des-variables-cinematiques-pteta">BDT des variables cinematiques pT/eta</h1>
+        <p>)
+<img src="/images/q/C065C0F99A8CD81DF7054C428A5FDCD4.jpg" alt="IMAGE" /></p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">variablesOptimizationLocal rootFiles_tH/h021/  BDTTree_FCNCtphiQHgamgambWqq_v11_tH:BDTTree_FCNCuphiQHgamgambWqq_v11_tH BDTTree_FCNCttShergg_v8_tH pTyy:mW:pTj1:pTb:etayy:etab:etaj0:pTratiobjj0j1:etaj1:pTratioj0j1:pTj0</code></pre></figure>
+
+<p>Classement :</p>
+
+<ol>
+  <li>pTyy</li>
+  <li>mW</li>
+  <li>pTj0</li>
+  <li>pTratioj0j1</li>
+  <li>etaj0</li>
+  <li>etab</li>
+  <li>pTb</li>
+  <li>etayy</li>
+  <li>etaj1</li>
+  <li>pTj1</li>
+  <li>pTratiobjj0j1</li>
+</ol>
+
+<p>Suggestion à garder pour l’optimisation finale :</p>
+
+<ol>
+  <li>pTyy</li>
+  <li>mW</li>
+  <li>pTj0</li>
+  <li>pTratioj0j1
+)
+    <h1 id="bdt-des-variables-de-deltar">BDT des variables de deltaR</h1>
+    <p>)</p>
+  </li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">variablesOptimizationLocal rootFiles_tH/h021/  BDTTree_FCNCtphiQHgamgambWqq_v11_tH:BDTTree_FCNCuphiQHgamgambWqq_v11_tH BDTTree_FCNCttShergg_v8_tH mindRbj:dRbW:dPhibW:mindPhibj:dEtabW:costhetastary</code></pre></figure>
+
+<p><img src="/images/q/A107E54B7FFA7043D2BAD6D91136D107.jpg" alt="IMAGE" />
+Classement :</p>
+
+<ol>
+  <li>dRbW</li>
+  <li>mindRbj</li>
+  <li>mindPhibj</li>
+  <li>dEtabW</li>
+  <li>costhetastary</li>
+  <li>dPhibW</li>
+</ol>
+
+<p>Suggestion à garder pour l’optimisation finale :</p>
+
+<ol>
+  <li>dRbW</li>
+  <li>mindRbj</li>
+  <li>mindPhibj
+)
+    <h1 id="bdt-des-variables-ht--pseudo-met">BDT des variables HT / pseudo-MET</h1>
+    <p>)</p>
+  </li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">variablesOptimizationLocal rootFiles_tH/h021/  BDTTree_FCNCtphiQHgamgambWqq_v11_tH:BDTTree_FCNCuphiQHgamgambWqq_v11_tH BDTTree_FCNCttShergg_v8_tH HTcjy0y1bjj0j1:HT4jets:MefftopSM:MefftopEx:HTjets:SumPtVect:SumPtVectAllJets</code></pre></figure>
+
+<p><img src="/images/q/CD1AC7FC77846AA42CD54E0038C05321.jpg" alt="IMAGE" />
+Classement :</p>
+
+<ol>
+  <li>MefftopEx (= pTy0 + pTy1)</li>
+  <li>MefftopSM</li>
+  <li>HTjets</li>
+  <li>SumPtVectAllJets</li>
+  <li>HT4jets</li>
+  <li>SumPtVect</li>
+  <li>HTcjy0y1bjj0j1</li>
+</ol>
+
+<p>Suggestion à garder pour l’optimisation finale :</p>
+
+<ol>
+  <li>MefftopEx</li>
+  <li>MefftopSM</li>
+  <li>HTjets</li>
+  <li>SumPtVectAllJets
+)
+    <h1 id="optimisation-finale">Optimisation finale</h1>
+    <p>)</p>
+  </li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">variablesOptimizationLocal rootFiles_tH/h021/  BDTTree_FCNCtphiQHgamgambWqq_v11_tH:BDTTree_FCNCuphiQHgamgambWqq_v11_tH BDTTree_FCNCttShergg_v8_tH pTyy:mW:pTj0:pTratioj0j1:dRbW:mindRbj:mindPhibj:MefftopEx:MefftopSM:HTjets:SumPtVectAllJets</code></pre></figure>
+
+<p><img src="/images/q/125C6622BEF04F2A22C90EE00DC49A73.jpg" alt="IMAGE" />
+Classement :</p>
+
+<ol>
+  <li>pTyy</li>
+  <li>mW</li>
+  <li>MefftopSM</li>
+  <li>HTjets</li>
+  <li>mindRbj</li>
+  <li>MefftopEx</li>
+  <li>dRbW</li>
+  <li>pTratioj0j1</li>
+  <li>pTj0</li>
+  <li>SumPtVectAllJets</li>
+  <li>mindPhibj</li>
+</ol>
+
+<p>Suggestion de variables à garder :</p>
+
+<ol>
+  <li>pTyy</li>
+  <li>mW</li>
+  <li>MefftopSM</li>
+  <li>HTjets</li>
+  <li>mindRbj</li>
+  <li>MefftopEx</li>
+  <li>dRbW</li>
+</ol>
+
+<p>Ou :</p>
+
+<p>MefftopSM)</p>
+
+<p>)</p>
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">My PhD notes</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              My PhD notes
+            
+            </li>
+            
+            <li><a href="mailto:charles.delporte@cern.ch">charles.delporte@cern.ch</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>My personal notes from Quiver</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
