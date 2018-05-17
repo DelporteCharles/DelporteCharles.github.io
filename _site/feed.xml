@@ -1,153 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-05-17T10:00:51+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">Optimisation BDT tH</title><link href="/2018/05/16/optimisation-bdt-th.html" rel="alternate" type="text/html" title="Optimisation BDT tH" /><published>2018-05-16T00:00:00+02:00</published><updated>2018-05-16T00:00:00+02:00</updated><id>/2018/05/16/optimisation-bdt-th</id><content type="html" xml:base="/2018/05/16/optimisation-bdt-th.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-05-17T10:08:43+02:00</updated><id>/</id><title type="html">My PhD notes</title><subtitle>My personal notes from Quiver</subtitle><entry><title type="html">Optimisation BDT tH</title><link href="/2018/05/16/optimisation-bdt-th.html" rel="alternate" type="text/html" title="Optimisation BDT tH" /><published>2018-05-16T00:00:00+02:00</published><updated>2018-05-16T00:00:00+02:00</updated><id>/2018/05/16/optimisation-bdt-th</id><content type="html" xml:base="/2018/05/16/optimisation-bdt-th.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+&lt;p&gt;)&lt;/p&gt;
 
-&lt;p&gt;Optimiser le BDT tH
-)&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Optimiser le BDT tH&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
 &lt;h1 id=&quot;samples&quot;&gt;Samples&lt;/h1&gt;
+&lt;p&gt;)&lt;/p&gt;
 
-&lt;p&gt;Signal single-top t/u-phi
-Background Sherpa yy + jets
-)&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Signal single-top t/u-phi&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Background Sherpa yy + jets&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
 &lt;h1 id=&quot;procedure&quot;&gt;Procedure&lt;/h1&gt;
+&lt;p&gt;)&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;identique a l’optimisation du BDT tt : on part de toutes les variables, et on enleve la moins performante a chaque iteration&lt;/li&gt;
-  &lt;li&gt;le meilleur BDT est celui qui a le moins de variables et qui, des qu’on lui retire une variable de plus, perds en significance&lt;/li&gt;
-  &lt;li&gt;procedure en 3 temps + 1
-    &lt;ul&gt;
-      &lt;li&gt;optimisation pour avoir les meilleurs variables pT/eta/m&lt;/li&gt;
-      &lt;li&gt;optimisation pour avoir les meilleurs variables de deltaR/deltaPhi&lt;/li&gt;
-      &lt;li&gt;optimisation pour avoir les meilleurs variables comme HT ou Somme Vectorielle des pT (pseudo-MET)&lt;/li&gt;
-      &lt;li&gt;re-optimisation parmi les variables selectionnees ci-dessus
-)
-        &lt;h1 id=&quot;bdt-des-variables-cinematiques-pteta&quot;&gt;BDT des variables cinematiques pT/eta&lt;/h1&gt;
-        &lt;p&gt;)
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;- identique a l&lt;span class=&quot;s1&quot;&gt;'optimisation du BDT tt : on part de toutes les variables, et on enleve la moins performante a chaque iteration&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;- le meilleur BDT est celui qui a le moins de variables et qui, des qu'&lt;/span&gt;on lui retire une variable de plus, perds en significance&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;- procedure en 3 temps + 1&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  - optimisation pour avoir les meilleurs variables pT/eta/m&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  - optimisation pour avoir les meilleurs variables de deltaR/deltaPhi&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  - optimisation pour avoir les meilleurs variables comme HT ou Somme Vectorielle des pT &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;pseudo-MET&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;  - re-optimisation parmi les variables selectionnees ci-dessus&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;bdt-des-variables-cinematiques-pteta&quot;&gt;BDT des variables cinematiques pT/eta&lt;/h1&gt;
+&lt;p&gt;)
 &lt;img src=&quot;/images/q/C065C0F99A8CD81DF7054C428A5FDCD4.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;variablesOptimizationLocal rootFiles_tH/h021/  BDTTree_FCNCtphiQHgamgambWqq_v11_tH:BDTTree_FCNCuphiQHgamgambWqq_v11_tH BDTTree_FCNCttShergg_v8_tH pTyy:mW:pTj1:pTb:etayy:etab:etaj0:pTratiobjj0j1:etaj1:pTratioj0j1:pTj0&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Classement :&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Classement :&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;1. pTyy&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;2. mW&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;4. pTj0&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;5. pTratioj0j1&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;6. etaj0&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;7. etab&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;8. pTb&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;9. etayy&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;10. etaj1&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;11. pTj1&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;12. pTratiobjj0j1&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Suggestion à garder pour l&lt;span class=&quot;s1&quot;&gt;'optimisation finale :&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;1. pTyy&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;2. mW&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;4. pTj0&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;5. pTratioj0j1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;pTyy&lt;/li&gt;
-  &lt;li&gt;mW&lt;/li&gt;
-  &lt;li&gt;pTj0&lt;/li&gt;
-  &lt;li&gt;pTratioj0j1&lt;/li&gt;
-  &lt;li&gt;etaj0&lt;/li&gt;
-  &lt;li&gt;etab&lt;/li&gt;
-  &lt;li&gt;pTb&lt;/li&gt;
-  &lt;li&gt;etayy&lt;/li&gt;
-  &lt;li&gt;etaj1&lt;/li&gt;
-  &lt;li&gt;pTj1&lt;/li&gt;
-  &lt;li&gt;pTratiobjj0j1&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Suggestion à garder pour l’optimisation finale :&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;pTyy&lt;/li&gt;
-  &lt;li&gt;mW&lt;/li&gt;
-  &lt;li&gt;pTj0&lt;/li&gt;
-  &lt;li&gt;pTratioj0j1
-)
-    &lt;h1 id=&quot;bdt-des-variables-de-deltar&quot;&gt;BDT des variables de deltaR&lt;/h1&gt;
-    &lt;p&gt;)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+&lt;h1 id=&quot;bdt-des-variables-de-deltar&quot;&gt;BDT des variables de deltaR&lt;/h1&gt;
+&lt;p&gt;)&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;variablesOptimizationLocal rootFiles_tH/h021/  BDTTree_FCNCtphiQHgamgambWqq_v11_tH:BDTTree_FCNCuphiQHgamgambWqq_v11_tH BDTTree_FCNCttShergg_v8_tH mindRbj:dRbW:dPhibW:mindPhibj:dEtabW:costhetastary&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/q/A107E54B7FFA7043D2BAD6D91136D107.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-Classement :&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/q/A107E54B7FFA7043D2BAD6D91136D107.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;dRbW&lt;/li&gt;
-  &lt;li&gt;mindRbj&lt;/li&gt;
-  &lt;li&gt;mindPhibj&lt;/li&gt;
-  &lt;li&gt;dEtabW&lt;/li&gt;
-  &lt;li&gt;costhetastary&lt;/li&gt;
-  &lt;li&gt;dPhibW&lt;/li&gt;
-&lt;/ol&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Classement :&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;1. dRbW&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;2. mindRbj&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;3. mindPhibj&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;4. dEtabW&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;5. costhetastary&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;6. dPhibW&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Suggestion à garder pour l&lt;span class=&quot;s1&quot;&gt;'optimisation finale :&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;1. dRbW&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;2. mindRbj&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;3. mindPhibj&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Suggestion à garder pour l’optimisation finale :&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;dRbW&lt;/li&gt;
-  &lt;li&gt;mindRbj&lt;/li&gt;
-  &lt;li&gt;mindPhibj
-)
-    &lt;h1 id=&quot;bdt-des-variables-ht--pseudo-met&quot;&gt;BDT des variables HT / pseudo-MET&lt;/h1&gt;
-    &lt;p&gt;)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+&lt;h1 id=&quot;bdt-des-variables-ht--pseudo-met&quot;&gt;BDT des variables HT / pseudo-MET&lt;/h1&gt;
+&lt;p&gt;)&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;variablesOptimizationLocal rootFiles_tH/h021/  BDTTree_FCNCtphiQHgamgambWqq_v11_tH:BDTTree_FCNCuphiQHgamgambWqq_v11_tH BDTTree_FCNCttShergg_v8_tH HTcjy0y1bjj0j1:HT4jets:MefftopSM:MefftopEx:HTjets:SumPtVect:SumPtVectAllJets&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/q/CD1AC7FC77846AA42CD54E0038C05321.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-Classement :&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/q/CD1AC7FC77846AA42CD54E0038C05321.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;MefftopEx (= pTy0 + pTy1)&lt;/li&gt;
-  &lt;li&gt;MefftopSM&lt;/li&gt;
-  &lt;li&gt;HTjets&lt;/li&gt;
-  &lt;li&gt;SumPtVectAllJets&lt;/li&gt;
-  &lt;li&gt;HT4jets&lt;/li&gt;
-  &lt;li&gt;SumPtVect&lt;/li&gt;
-  &lt;li&gt;HTcjy0y1bjj0j1&lt;/li&gt;
-&lt;/ol&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Classement :&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;1. MefftopEx &lt;span class=&quot;o&quot;&gt;(=&lt;/span&gt; pTy0 + pTy1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;2. MefftopSM&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;3. HTjets&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;4. SumPtVectAllJets&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;5. HT4jets&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;6. SumPtVect&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;7. HTcjy0y1bjj0j1&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Suggestion à garder pour l&lt;span class=&quot;s1&quot;&gt;'optimisation finale :&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;1. MefftopEx&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;2. MefftopSM&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;3. HTjets&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;4. SumPtVectAllJets&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Suggestion à garder pour l’optimisation finale :&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;MefftopEx&lt;/li&gt;
-  &lt;li&gt;MefftopSM&lt;/li&gt;
-  &lt;li&gt;HTjets&lt;/li&gt;
-  &lt;li&gt;SumPtVectAllJets
-)
-    &lt;h1 id=&quot;optimisation-finale&quot;&gt;Optimisation finale&lt;/h1&gt;
-    &lt;p&gt;)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+&lt;h1 id=&quot;optimisation-finale&quot;&gt;Optimisation finale&lt;/h1&gt;
+&lt;p&gt;)&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;variablesOptimizationLocal rootFiles_tH/h021/  BDTTree_FCNCtphiQHgamgambWqq_v11_tH:BDTTree_FCNCuphiQHgamgambWqq_v11_tH BDTTree_FCNCttShergg_v8_tH pTyy:mW:pTj0:pTratioj0j1:dRbW:mindRbj:mindPhibj:MefftopEx:MefftopSM:HTjets:SumPtVectAllJets&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/q/125C6622BEF04F2A22C90EE00DC49A73.jpg&quot; alt=&quot;IMAGE&quot; /&gt;
-Classement :&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/q/125C6622BEF04F2A22C90EE00DC49A73.jpg&quot; alt=&quot;IMAGE&quot; /&gt;&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;pTyy&lt;/li&gt;
-  &lt;li&gt;mW&lt;/li&gt;
-  &lt;li&gt;MefftopSM&lt;/li&gt;
-  &lt;li&gt;HTjets&lt;/li&gt;
-  &lt;li&gt;mindRbj&lt;/li&gt;
-  &lt;li&gt;MefftopEx&lt;/li&gt;
-  &lt;li&gt;dRbW&lt;/li&gt;
-  &lt;li&gt;pTratioj0j1&lt;/li&gt;
-  &lt;li&gt;pTj0&lt;/li&gt;
-  &lt;li&gt;SumPtVectAllJets&lt;/li&gt;
-  &lt;li&gt;mindPhibj&lt;/li&gt;
-&lt;/ol&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;Classement :&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;1. pTyy&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;2. mW&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;3. MefftopSM&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;4. HTjets&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;5. mindRbj&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;6. MefftopEx&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;7. dRbW&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;8. pTratioj0j1&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;9. pTj0&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;10. SumPtVectAllJets&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;11. mindPhibj&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Suggestion de variables à garder :&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;1. pTyy&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;2. mW&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;3. MefftopSM&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;4. HTjets&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;5. mindRbj&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;6. MefftopEx&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;7. dRbW&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Ou :&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;MefftopSM &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; pTb + pTj0 + pTj1&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;HTjets &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; Somme scalaire du pT de tous les jets de l&lt;span class=&quot;s1&quot;&gt;'evenement&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;MefftopEx = pTy0 + pTy1 (le nom vient de la selection ttbar où on a le c)&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Fichier xml :&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;/sps/atlas/d/delporte/FCNC/FCNCAnaPlotStat/AnaPlot/MVA/training_tH_tuphi_3pj_7vars_opt_v0/weights/TMVAClassification_BDTCategories_tH_final_optimisation_v0.weights.xml&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;Pour lire le BDT, utiliser la methode AddVariable avec les variables dans le meme ordre que le classement de l'&lt;/span&gt;optimisation :&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;1. pTyy&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;2. mW&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;3. MefftopSM&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;4. HTjets&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;5. mindRbj&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;6. MefftopEx&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;7. dRbW&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;et ensuite myy et EventNumberMod2 comme variables spectatrices&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Suggestion de variables à garder :&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;pTyy&lt;/li&gt;
-  &lt;li&gt;mW&lt;/li&gt;
-  &lt;li&gt;MefftopSM&lt;/li&gt;
-  &lt;li&gt;HTjets&lt;/li&gt;
-  &lt;li&gt;mindRbj&lt;/li&gt;
-  &lt;li&gt;MefftopEx&lt;/li&gt;
-  &lt;li&gt;dRbW&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Ou :&lt;/p&gt;
-
-&lt;p&gt;MefftopSM)&lt;/p&gt;
-
-&lt;p&gt;)&lt;/p&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">Purpose</summary></entry><entry><title type="html">FCNC PoPy signal samples</title><link href="/2018/05/03/fcnc-popy-signal-samples.html" rel="alternate" type="text/html" title="FCNC PoPy signal samples" /><published>2018-05-03T00:00:00+02:00</published><updated>2018-05-03T00:00:00+02:00</updated><id>/2018/05/03/fcnc-popy-signal-samples</id><content type="html" xml:base="/2018/05/03/fcnc-popy-signal-samples.html">&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;delporte@cca001 FCNC]&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;rucio list-dids mc16_13TeV.4107%.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2%.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| SCOPE:NAME                                                                                                                                 | &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;DID TYPE]   |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;|--------------------------------------------------------------------------------------------------------------------------------------------+--------------|&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410764.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWmln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410765.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWpln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410766.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWmqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410767.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWpqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410768.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWmln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410769.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWpln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410770.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWmqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410771.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWpqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">[delporte@cca001 FCNC]$ rucio list-dids mc16_13TeV.4107%.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2%.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+| SCOPE:NAME | [DID TYPE] ||--------------------------------------------------------------------------------------------------------------------------------------------+--------------|| mc16_13TeV:mc16_13TeV.410764.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWmln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410765.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWpln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410766.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWmqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410767.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWpqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410768.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWmln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410769.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWpln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410770.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWmqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410771.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWpqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER |+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+</summary></entry><entry><title type="html">FCNC Matching with MTop</title><link href="/2018/04/20/fcnc-matching-with-mtop.html" rel="alternate" type="text/html" title="FCNC Matching with MTop" /><published>2018-04-20T00:00:00+02:00</published><updated>2018-04-20T00:00:00+02:00</updated><id>/2018/04/20/fcnc-matching-with-mtop</id><content type="html" xml:base="/2018/04/20/fcnc-matching-with-mtop.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
+&lt;p&gt;)&lt;/p&gt;</content><author><name></name></author><summary type="html">Purpose ) Optimiser le BDT tH</summary></entry><entry><title type="html">FCNC PoPy signal samples</title><link href="/2018/05/03/fcnc-popy-signal-samples.html" rel="alternate" type="text/html" title="FCNC PoPy signal samples" /><published>2018-05-03T00:00:00+02:00</published><updated>2018-05-03T00:00:00+02:00</updated><id>/2018/05/03/fcnc-popy-signal-samples</id><content type="html" xml:base="/2018/05/03/fcnc-popy-signal-samples.html">&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;delporte@cca001 FCNC]&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;rucio list-dids mc16_13TeV.4107%.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2%.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| SCOPE:NAME                                                                                                                                 | &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;DID TYPE]   |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;|--------------------------------------------------------------------------------------------------------------------------------------------+--------------|&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410764.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWmln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410765.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWpln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410766.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWmqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410767.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWpqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410768.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWmln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410769.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWpln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410770.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWmqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;| mc16_13TeV:mc16_13TeV.410771.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWpqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER    |&lt;br data-jekyll-commonmark-ghpages=&quot;&quot; /&gt;+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="fcnc" /><summary type="html">[delporte@cca001 FCNC]$ rucio list-dids mc16_13TeV.4107%.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2%.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+| SCOPE:NAME | [DID TYPE] ||--------------------------------------------------------------------------------------------------------------------------------------------+--------------|| mc16_13TeV:mc16_13TeV.410764.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWmln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410765.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWpln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410766.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWmqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410767.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2cHgamgambWpqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410768.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWmln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410769.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWpln.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410770.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWmqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER || mc16_13TeV:mc16_13TeV.410771.PhPy8EG_NNPDF30ME_A14_ttbar_hdamp258p75_Q2uHgamgambWpqq.deriv.DAOD_HIGG1D1.e6639_e5984_a875_r9364_r9315_p3524 | CONTAINER |+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+</summary></entry><entry><title type="html">FCNC Matching with MTop</title><link href="/2018/04/20/fcnc-matching-with-mtop.html" rel="alternate" type="text/html" title="FCNC Matching with MTop" /><published>2018-04-20T00:00:00+02:00</published><updated>2018-04-20T00:00:00+02:00</updated><id>/2018/04/20/fcnc-matching-with-mtop</id><content type="html" xml:base="/2018/04/20/fcnc-matching-with-mtop.html">&lt;h1 id=&quot;purpose&quot;&gt;Purpose&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;definir a partir de quelle valeur de mTop1 on doit chercher les combinaisons les plus proches dans tous les categories, et mTop2 pour la categorie 1
